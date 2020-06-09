@@ -6,6 +6,8 @@ author:
   name: Md. Emruz Hossain
 #   image: /assets/images/profile-image.jpg
 categories:
-- features
+- configuration
+- configuration-achievements-section
 ---
 
+Mollit officia incididunt magna dolore ullamco cillum voluptate magna. Irure cillum fugiat ullamco dolore eiusmod aliquip magna. Ullamco ea ut esse duis consectetur aliquip incididunt sunt qui voluptate reprehenderit anim consectetur.
