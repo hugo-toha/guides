@@ -1,6 +1,6 @@
 ---
 title: "Skills Section"
-date: 2020-06-08T06:11:57+06:00
+date: 2020-06-08T06:20:45+06:00
 # hero: /assets/images/background/flower.jpg
 author:
   name: Md. Emruz Hossain

@@ -1,6 +1,6 @@
 ---
 title: "Markdown Syntax Guide"
-date: 2020-06-08T07:18:36+06:00
+date: 2020-06-08T07:15:40+06:00
 # hero: /assets/images/background/flower.jpg
 author:
   name: Md. Emruz Hossain

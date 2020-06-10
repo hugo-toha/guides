@@ -1,5 +1,5 @@
 ---
-title: Math Type Settings
+title: Math
 id: writing-posts-math
 weight: 5
 ---

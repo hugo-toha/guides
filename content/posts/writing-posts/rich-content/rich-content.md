@@ -1,6 +1,6 @@
 ---
 title: "Rich Content"
-date: 2020-06-08T06:19:13+06:00
+date: 2020-06-08T06:15:30+06:00
 # hero: /assets/images/background/flower.jpg
 author:
   name: Md. Emruz Hossain
