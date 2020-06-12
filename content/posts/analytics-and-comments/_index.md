@@ -1,5 +1,5 @@
 ---
 title: Analytics and Comments
 id: analytics-and-comments
-weight: 5
+weight: 6
 ---
