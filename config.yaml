@@ -1,4 +1,5 @@
 baseURL: https://toha.netlify.app
+
 languageCode: en-us
 title: "Toha"
 theme: "toha"
@@ -17,3 +18,7 @@ disqusShortname: toha-example-site
 
 # Enable global emoji support
 enableEmoji: true
+
+# Custom parameters
+params:
+  gitRepo: https://github.com/hossainemruz/toha-example-site
