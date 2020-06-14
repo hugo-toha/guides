@@ -1,7 +1,7 @@
 ---
 title: "Projects Section"
 date: 2020-06-08T06:20:35+06:00
-# hero: /assets/images/background/flower.jpg
+hero: /images/posts/writing-posts/projects.svg
 author:
   name: Md. Emruz Hossain
 #   image: /assets/images/profile-image.jpg
