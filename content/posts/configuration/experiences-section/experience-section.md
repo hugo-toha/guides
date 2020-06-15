@@ -1,7 +1,7 @@
 ---
 title: "Experiences Section"
 date: 2020-06-08T06:20:40+06:00
-hero: /images/posts/writing-posts/experience.svg
+hero: /images/posts/configuration/experiences-section-hero.svg
 author:
   name: Md. Emruz Hossain
 #   image: /assets/images/profile-image.jpg
@@ -10,4 +10,50 @@ categories:
 - configuration-experiences-section
 ---
 
-Et occaecat nostrud magna elit ullamco magna deserunt amet cillum mollit cillum dolore nulla aliquip. In qui ut ea est consectetur consequat cillum eiusmod elit consectetur cupidatat et dolore nulla. Nisi tempor velit reprehenderit minim esse officia aute fugiat cupidatat sint Lorem mollit nostrud consequat. Minim do laboris in duis eu veniam qui ipsum dolor ipsum. Id consectetur adipisicing elit minim non eiusmod mollit incididunt dolore exercitation mollit anim. Do nulla sint occaecat ea consequat commodo qui. Fugiat do reprehenderit pariatur ad mollit.
+{{< img src="/images/posts/configuration/experiences.png" >}}
+
+```yaml
+# Your experiences
+experiences:
+- designation: Software Engineer
+  company:
+    name: Example Co.
+    url: "https://www.example.com"
+    location: Dhaka Branch
+    # company overview
+    overview: Example Co. is a widely recognized company for cloud native development. It build tools for Kubernetes.
+  start: Nov 2017
+  # don't provide end date if you are currently working there. It will be replaced by "Present"
+  # end: Dec 2020
+  # give some points about what was your responsibilities at the company.
+  responsibilities:
+    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases and cluster's resource definition.
+    - My another responsibilities.
+    - My more responsibilities.
+
+- designation: Software Engineer
+  company:
+    name: PreExample Co.
+    url: "https://www.preexample.com"
+    location: Nowhere
+    overview: PreExample Co. is gateway company to enter into Example co. So, nothing special here.
+  start: March 2016
+  end: May 2017
+  responsibilities:
+    - Write lots of example codes.
+    - Read lots of examples.
+    - See lots of example videos.
+
+- designation: Intern
+  company:
+    name: Intern Counting Company (ICC).
+    url: "https://www.intern.com"
+    location: Intern Land
+    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineer.
+  start: Jun 2015
+  end: Jan 2016
+  responsibilities:
+    - Count lost of interns.
+    - Count more interns.
+    - Count myself as intern.
+```

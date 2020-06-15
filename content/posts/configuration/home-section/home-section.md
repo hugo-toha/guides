@@ -1,7 +1,7 @@
 ---
 title: "Home Section"
 date: 2020-06-08T06:20:55+06:00
-hero: /images/posts/writing-posts/home.svg
+hero: /images/posts/configuration/home-section-hero.svg
 author:
   name: Md. Emruz Hossain
 #   image: /assets/images/profile-image.jpg
@@ -10,4 +10,47 @@ categories:
 - configuration-home-section
 ---
 
-Magna pariatur non do adipisicing ut magna aliqua non laboris commodo. Laboris ipsum adipisicing amet ullamco veniam fugiat. Velit cupidatat eiusmod ullamco tempor occaecat in aliquip commodo elit laboris ut. Labore incididunt fugiat dolore anim quis consequat nisi labore aute ut nostrud excepteur. Laborum labore aute velit ullamco proident fugiat reprehenderit laborum eiusmod. Cillum minim veniam do excepteur sint nisi eu id et anim.
+{{< img src="/images/posts/configuration/home.png" >}}
+
+```yaml
+# background image of the landing page
+background: "images/background.jpg"
+
+# some information about you
+author:
+  name: "Jane Doe"
+  image: "images/avatar.png"
+  # give your some contact information. they will be used in the footer
+  contactInfo:
+    email: "janedoe@example.com"
+    phone: "+0123456789"
+  # a summary of what you do
+  summary:
+  - I am a Developer
+  - I work with Go
+  - I love to work with some fun projects
+
+# Menus of the home page
+menus:
+- name: Home
+  url: "#home"
+  weight: 1
+- name: About
+  url: "#about"
+  weight: 2
+- name: Skills
+  url: "#skills"
+  weight: 3
+- name: Experiences
+  url: "#experiences"
+  weight: 4
+- name: Projects
+  url: "#projects"
+  weight: 5
+- name: Recent Posts
+  url: "#recent-posts"
+  weight: 6
+- name: Achievements
+  url: "#achievements"
+  weight: 7
+```
