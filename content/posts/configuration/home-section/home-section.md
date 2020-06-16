@@ -14,11 +14,11 @@ After installing this theme, when you first run your site it may not look like w
 
 At first, you have to create a folder named `data` in the root of your site if it was not created already. This folder will contain the site's data in YAML format. Here, we are going to create a `site.yaml` file that will contain the necessary information to build the `Home` section.
 
-Now, create `site.yaml` file in `data` directory of your site. Then, follow the following steps to configure your site.
+Now, create `site.yaml` file in the `data` directory of your site. Then, follow the following steps to configure your site.
 
 ### Set Background Image
 
-At first, let's set a background for your website. Put your desired background image in `static/images` directory. Then add the following in your `site.yaml` file,
+At first, let's set a background for your website. Put your desired background image in the `static/images` directory. Then add the following in your `site.yaml` file,
 
 ```yaml
 # background image of the landing page
@@ -51,7 +51,7 @@ Once you have added the author section in `site.yaml`, you should see the profil
 
 ### Add Menu Information
 
-You might have noticed that only `Blog` entry was shown in the top menubar. To show the other menus, you have to provide their information in `menus` section `site.yaml`. Add the following `menus` section in your `site.yaml` file.
+You might have noticed that only `Blog` entry was shown in the top menubar. To show the other menus, you have to provide their information in the `menus` section `site.yaml`. Add the following `menus` section in your `site.yaml` file.
 
 ```yaml
 # Menus of the home page
@@ -83,7 +83,7 @@ Now, you should see the menus are showing properly on your site. You can add any
 
 {{< vs 2 >}}
 
-The following image shows how the contents of `site.yaml` is mapped to the `Home` section.
+The following image shows how the contents of `site.yaml` are mapped into the `Home` section.
 
 {{< img src="/images/posts/configuration/home.png" >}}
 
