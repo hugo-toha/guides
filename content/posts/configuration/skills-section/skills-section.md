@@ -10,6 +10,7 @@ categories:
 - configuration-skills-section
 ---
 
+### Complete Post Coming Soon...
 
 {{< img src="/images/posts/configuration/skills.png">}}
 
