@@ -1,6 +1,6 @@
 ---
 title: "Markdown Syntax Guide"
-date: 2020-06-08T07:15:40+06:00
+date: 2020-06-08T06:15:40+06:00
 hero: /images/posts/writing-posts/code.svg
 author:
   name: Md. Emruz Hossain
