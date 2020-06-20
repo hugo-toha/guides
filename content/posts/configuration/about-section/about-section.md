@@ -38,7 +38,7 @@ summary: 'I am a passionate software engineer with x years of working experience
 
 Try to make it as brief as possible. Don't make it too wordy. We have other sections that give more insight into your expertise.
 
-You can use markdown syntax in the `summary` field.
+>You can use markdown syntax in the `summary` field.
 
 ### Add Your Social Links
 
@@ -122,7 +122,7 @@ The following image shows how the contents of `about.yaml` are mapped into the `
 
 ### Example `about.yaml` File
 
-Here is the `about.yaml` file that has been used to create the `About` section of this site.
+Here, is the `about.yaml` file that has been used to create the `About` section of this site.
 
 ```yaml
 # your designation

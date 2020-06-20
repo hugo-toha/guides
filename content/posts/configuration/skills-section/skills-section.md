@@ -1,5 +1,5 @@
 ---
-title: "Skills Section"
+title: "Configuring Skills Section"
 date: 2020-06-08T06:20:45+06:00
 hero: /images/posts/configuration/skills-section-hero.svg
 author:
@@ -10,13 +10,38 @@ categories:
 - configuration-skills-section
 ---
 
-### Complete Post Coming Soon...
+The `Skills` section should give the viewer an idea about not only the list of skills you have but also an idea of the depth of your knowledge on a particular skill. In this post, we are going to configure the `Skills` section of your site.
+
+At first, create `skills.yaml` files in the `data` directory of your site. Then, follow the following instruction.
+
+### Add Your Skills
+
+Now, let's add a `skills` section in your `skills.yaml` file as bellow,
+
+```yaml
+skills:
+- name: Kubernetes
+  icon: "images/skills/kubernetes.png"
+  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+```
+
+Here, you have to provide `name`, `icon`, and `summary` fields for a skill. The `summary` field should provide an idea about your depth of knowledge of this particular skill.
+
+>You can use markdown syntax in the `summary` field.
+
+{{< vs 2 >}}
+
+The following image shows how the content of `skills.yaml` files are mapped into the `Skills` section.
 
 {{< img src="/images/posts/configuration/skills.png">}}
 
+### Example `skills.yaml` File
+
+Here, is the `skills.yaml` file that has been used to create the `Skills` section of this site.
+
 ```yaml
 # Your Skills.
-# Give a summary of you each skill in summary section.
+# Give a summary of you each skill in the summary section.
 skills:
 - name: Kubernetes
   icon: "images/skills/kubernetes.png"
@@ -24,7 +49,7 @@ skills:
 
 - name: Go Development
   icon: "images/skills/go.png"
-  summary: "Using as main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
 
 - name: Cloud Computing
   icon: "images/skills/cloud.png"
@@ -40,11 +65,11 @@ skills:
 
 - name: Linux
   icon: "images/skills/linux.png"
-  summary: "Using as main operating system. Capable of writing bash/shell scripts."
+  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
 
 - name: Git
   icon: "images/skills/git.png"
-  summary: "Experienced with git based development. Mostly, use Github. Also have experience in working with GitLab."
+  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
 
 - name: C++
   icon: "images/skills/c++.png"
