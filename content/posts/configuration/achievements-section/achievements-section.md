@@ -1,5 +1,5 @@
 ---
-title: "Achievements Section"
+title: "Configuring Achievements Section"
 date: 2020-06-08T06:20:30+06:00
 hero: /images/posts/configuration/achievements-section-hero.svg
 author:
@@ -10,16 +10,45 @@ categories:
 - configuration-achievements-section
 ---
 
-### Complete Post Coming Soon...
+The `Achievements` section has been designed to showcase your achievements in a gallery view. This post will show how to configure the `Achievements` section of your site.
+
+At first,  create an `achievements.yaml` file in the `data` directory of your site. Then, follow the following instruction.
+
+### Add Your Achievements
+
+Now, add your achievements under the `achievements` section in your `achievements.yaml` file as below,
+
+```yaml
+achievements:
+- title: Best Presenter
+  image: images/achievements/presenter.jpg
+  summary: Best presenter in the 2020 XYZ conference.
+```
+
+Each achievements  entry should have the following fields,
+
+- **title**: The title of the achievement.
+- **image**: An image of the achievement.
+- **summary**: A summary of the achievement.
+
+>You can use markdown syntax in the `summary` field.
+
+{{< vs 2 >}}
+
+The following image shows how the contents of `achievements.yaml` are mapped into the `Achievements` section.
 
 {{< img src="/images/posts/configuration/achievements.png" >}}
+
+### Example `achievements.yaml` File
+
+Here, is the `achievements.yaml` file that has been used to create the `Achievements` section of this site.
 
 ```yaml
 # Your achievements achievements
 achievements:
 - title: Best Presenter
   image: images/achievements/presenter.jpg
-  summary: Best presenter in 2020 XYZ conference.
+  summary: Best presenter in the 2020 XYZ conference.
 - title: Champion
   image: images/achievements/sport.jpg
   summary: Champion in cycling inter-city cycling championship 2020.
