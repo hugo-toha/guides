@@ -11,11 +11,11 @@ categories:
 
 This post will give you step by step instructions on how to install and use this theme.
 
-## Requirements
+### Requirements
 
 - Hugo Version 0.68.0 or higher
 
-## Installation
+### Installation
 
 - Create your site if you haven't already
 
@@ -37,7 +37,7 @@ git submodule add https://github.com/hossainemruz/toha.git themes/toha
 
 If you want to customize the theme templates, then fork it and use the fork as your theme.
 
-## Configuration
+### Configuration
 
 Configure your `config.yaml` file of your site as below:
 
@@ -71,7 +71,7 @@ params:
 
 You can just copy the content for `config.yaml` files from `theme/toha/exampleSite/config.yaml`.
 
-## Usage
+### Usage
 
 Run your hugo site with this theme.
 
