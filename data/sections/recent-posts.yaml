@@ -1,0 +1,5 @@
+section:
+  name: Recent Posts
+  enable: true
+  weight: 5
+  showOnNavbar: true
