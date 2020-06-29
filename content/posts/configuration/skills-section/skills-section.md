@@ -10,6 +10,10 @@ categories:
 - configuration-skills-section
 ---
 
+{{< alert type="danger">}}
+ *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/sections` directory and should follow [this](https://github.com/hossainemruz/toha-example-site/tree/master/data/sections) format.
+{{</ alert >}}
+
 The `Skills` section should give the viewer an idea about not only the list of skills you have but also an idea of the depth of your knowledge on a particular skill. In this post, we are going to configure the `Skills` section of your site.
 
 At first, create `skills.yaml` files in the `data` directory of your site. Then, follow the following instruction.

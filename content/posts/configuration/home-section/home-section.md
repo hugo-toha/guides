@@ -10,6 +10,10 @@ categories:
 - configuration-home-section
 ---
 
+{{< alert type="danger">}}
+ *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/sections` directory and should follow [this](https://github.com/hossainemruz/toha-example-site/tree/master/data/sections) format.
+{{</ alert >}}
+
 After installing this theme, when you first run your site it may not look like what you are seeing in this example site. This is because you haven't provided the site's data yet. This post will show you how to configure the `Home` section of the landing page.
 
 At first, you have to create a folder named `data` in the root of your site if it was not created already. This folder will contain the site's data in YAML format. Here, we are going to create a `site.yaml` file that will contain the necessary information to build the `Home` section.

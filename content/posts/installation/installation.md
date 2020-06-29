@@ -57,7 +57,6 @@ markup:
 googleAnalytics: <your google analytics id>
 
 # Enable Disqus forum
-# optional
 disqusShortname: <your disqus short code>
 
 # Enable global emoji support
@@ -65,8 +64,34 @@ enableEmoji: true
 
 # Custom parameters
 params:
-  # Github Repo URL. This is used to add "Improve This Page" button
+  # background image of the landing page
+  background: "images/background.jpg"
+
+  # GitHub repo URL of your site
   gitRepo: <your site's Github repo URL>
+
+  # specify whether you want to write blog post or not
+  enableBlogPost: true
+
+  # specify the list of custom menus that you want to show in the top navbar.
+  # they will be separated by a divider from the main menus.
+  customMenus:
+  - name: Notes
+    url: <your custom menu link>
+
+  # some information about you
+  author:
+    name: "Jane Doe"
+    image: "images/avatar.png"
+    # give your some contact information. they will be used in the footer
+    contactInfo:
+      email: "janedoe@example.com"
+      phone: "+0123456789"
+    # a summary of what you do
+    summary:
+    - I am a Developer
+    - I work with Go
+    - I love to work with some fun projects
 ```
 
 You can just copy the content for `config.yaml` files from `theme/toha/exampleSite/config.yaml`.
@@ -83,4 +108,4 @@ Don't panic if the generated site does not look like what have you seen in the d
 
 Follow the posts giving step by step instructions for configuring your data folder from [here](https://toha.netlify.app/posts/configuration/home-section/home-section/).
 
-You can also follow the sample format given in `themes/toha/exampleSite/data` directory.
+You can also follow the sample format given in `themes/toha/exampleSite/data/sections` directory.

@@ -1,3 +1,11 @@
+# section information
+section:
+  name: Experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+
 # Your experiences
 experiences:
 - designation: Software Engineer

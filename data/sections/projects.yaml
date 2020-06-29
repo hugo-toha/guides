@@ -1,3 +1,10 @@
+# section information
+section:
+  name: Projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
 # filter buttons
 buttons:
 - name: All

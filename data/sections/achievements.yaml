@@ -1,3 +1,10 @@
+# section information
+section:
+  name: Achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+
 # Your achievements achievements
 achievements:
 - title: Best Presenter
