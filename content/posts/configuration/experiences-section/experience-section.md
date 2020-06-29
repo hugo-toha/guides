@@ -10,6 +10,10 @@ categories:
 - configuration-experiences-section
 ---
 
+{{< alert type="danger">}}
+ *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/sections` directory and should follow [this](https://github.com/hossainemruz/toha-example-site/tree/master/data/sections) format.
+{{</ alert >}}
+
 The `Experiences` section has been designed to truly reflect your career background. It should give the viewer an idea about the responsibilities you have handled in various stages of your career. In this post, we are going to configure the `Experiences` section of your site.
 
 At first, create an `experiences.yaml` file in the `data` directory of your site. Then, follow the following instruction.
