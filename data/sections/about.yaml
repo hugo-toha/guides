@@ -3,7 +3,7 @@ section:
   name: About
   enable: true
   weight: 1
-  showOnNavbar: true
+  showOnNavbar: false
 
 # your designation
 designation: Software Engineer

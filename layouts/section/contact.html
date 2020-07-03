@@ -1,0 +1,17 @@
+{{ define "header" }}
+    <!-- Put your custom css file link here -->
+    <link rel="stylesheet" href="/css/contact.css" />
+{{ end }}
+
+{{ define "navbar" }}
+    <!-- Add navbar to your contact page -->
+    {{ partial "navbar-2.html" (dict "baseURL" .Site.BaseURL "title" .Site.Title "hasToggleButton" false "navBrandURL"  .Site.BaseURL ) }}
+{{ end }}
+
+{{ define "content" }}
+    <!-- Put your contact page content here -->
+    <div class="container contact-content">
+        <h1>This is contact page header</h1>
+        {{ .Content }}
+    </div>
+{{ end }}

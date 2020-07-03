@@ -1,0 +1,17 @@
+{{ define "header" }}
+    <!-- Put your custom css file link here -->
+    <link rel="stylesheet" href="/css/about.css" />
+{{ end }}
+
+{{ define "navbar" }}
+    <!-- Add navbar to your about page -->
+    {{ partial "navbar-2.html" (dict "baseURL" .Site.BaseURL "title" .Site.Title "hasToggleButton" false "navBrandURL"  .Site.BaseURL ) }}
+{{ end }}
+
+{{ define "content" }}
+    <!-- Put your about page content here -->
+    <div class="container about-content">
+        <h1>This is  about page header</h1>
+        {{ .Content }}
+    </div>
+{{ end }}
