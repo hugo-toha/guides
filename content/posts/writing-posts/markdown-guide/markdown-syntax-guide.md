@@ -4,7 +4,7 @@ date: 2020-06-08T06:15:40+06:00
 hero: /images/posts/writing-posts/code.svg
 author:
   name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
+  image: /assets/images/profile-image.jpg
 categories:
 - writing-posts
 - writing-posts-markdown-guide
