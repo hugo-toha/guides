@@ -2,13 +2,12 @@
 title: "Math Type Settings"
 date: 2020-06-08T06:15:35+06:00
 hero: /images/posts/writing-posts/math.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-math: true
-categories:
-- writing-posts
-- writing-posts-math
+menu:
+  sidebar:
+    name: Math Guide
+    identifier: writing-post-math-guide
+    parent: writing-post
+    weight: 40
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.

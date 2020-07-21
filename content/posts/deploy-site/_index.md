@@ -1,5 +1,8 @@
 ---
 title: Deploy Site
-id: deploy-site
-weight: 5
+menu:
+  sidebar:
+    name: Deploy Site
+    identifier: deploy-site
+    weight: 300
 ---

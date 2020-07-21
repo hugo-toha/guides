@@ -2,12 +2,12 @@
 title: "Configuring Projects Section"
 date: 2020-06-08T06:20:35+06:00
 hero: /images/posts/configuration/projects-section-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-projects-section
+menu:
+  sidebar:
+    name: Projects Section
+    identifier: configuration-projects
+    parent: configuration
+    weight: 140
 ---
 
 {{< alert type="danger">}}

@@ -2,12 +2,12 @@
 title: "Configuring Home Section"
 date: 2020-06-08T06:20:55+06:00
 hero: /images/posts/configuration/home-section-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-home-section
+menu:
+  sidebar:
+    name: Home Section
+    identifier: configuration-home
+    parent: configuration
+    weight: 105
 ---
 
 {{< alert type="danger">}}

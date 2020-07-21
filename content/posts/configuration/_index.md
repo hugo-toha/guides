@@ -1,5 +1,8 @@
 ---
 title: Configuration
-id: configuration
-weight: 3
+menu:
+  sidebar:
+    name: Configuration
+    identifier: configuration
+    weight: 100
 ---

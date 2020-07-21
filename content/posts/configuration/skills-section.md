@@ -2,12 +2,12 @@
 title: "Configuring Skills Section"
 date: 2020-06-08T06:20:45+06:00
 hero: /images/posts/configuration/skills-section-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-skills-section
+menu:
+  sidebar:
+    name: Skills Section
+    identifier: configuration-skills
+    parent: configuration
+    weight: 120
 ---
 
 {{< alert type="danger">}}

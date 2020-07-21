@@ -2,12 +2,12 @@
 title: "Using Emoji"
 date: 2020-06-08T06:15:25+06:00
 hero: /images/posts/writing-posts/emoji.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- writing-posts
-- writing-posts-emoji
+menu:
+  sidebar:
+    name: Using Emoji
+    identifier: writing-post-using-emoji
+    parent: writing-post
+    weight: 60
 ---
 
 Emoji can be enabled in a Hugo project in a number of ways. 
