@@ -1,5 +1,8 @@
 ---
 title: Short Codes
-id: short-codes
-weight: 7
+menu:
+  sidebar:
+    name: Short Codes
+    identifier: short-codes
+    weight: 600
 ---

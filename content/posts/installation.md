@@ -2,11 +2,11 @@
 title: "Installation"
 date: 2020-06-08T08:06:25+06:00
 hero: /images/posts/installation/hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- installation
+menu:
+  sidebar:
+    name: Installation
+    identifier: installation
+    weight: 10
 ---
 
 This post will give you step by step instructions on how to install and use this theme.

@@ -1,5 +1,8 @@
 ---
 title: Customizing
-id: customizing
-weight: 6
+menu:
+  sidebar:
+    name: Customizing
+    identifier: customizing
+    weight: 400
 ---

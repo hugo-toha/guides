@@ -2,12 +2,12 @@
 title: "Markdown Syntax Guide"
 date: 2020-06-08T06:15:40+06:00
 hero: /images/posts/writing-posts/code.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- writing-posts
-- writing-posts-markdown-guide
+menu:
+  sidebar:
+    name: Markdown Guide
+    identifier: writing-post-md-guide
+    parent: writing-post
+    weight: 30
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

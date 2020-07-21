@@ -2,12 +2,12 @@
 title: "Configuring Recent Posts Section"
 date: 2020-06-08T06:20:34+06:00
 hero: /images/posts/configuration/recent-posts-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-recent-posts-section
+menu:
+  sidebar:
+    name: Recent Posts Section
+    identifier: configuration-recent-posts
+    parent: configuration
+    weight: 150
 ---
 
 {{< alert type="danger">}}

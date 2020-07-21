@@ -1,5 +1,9 @@
 ---
 title: Category
-id: writing-posts-category
-weight: 1
+menu:
+  sidebar:
+    name: Category
+    identifier: writing-post-category
+    parent: writing-post
+    weight: 10
 ---

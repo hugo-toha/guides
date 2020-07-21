@@ -1,5 +1,8 @@
 ---
 title: Writing Posts
-id: writing-posts
-weight: 4
+menu:
+  sidebar:
+    name: Writing Posts
+    identifier: writing-post
+    weight: 200
 ---

@@ -2,12 +2,12 @@
 title: "Configuring About Section"
 date: 2020-06-08T06:20:50+06:00
 hero: /images/posts/configuration/about-section-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-about-section
+menu:
+  sidebar:
+    name: About Section
+    identifier: configuration-about
+    parent: configuration
+    weight: 110
 ---
 
 {{< alert type="danger">}}

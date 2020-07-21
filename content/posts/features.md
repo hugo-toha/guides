@@ -2,11 +2,11 @@
 title: "Features"
 date: 2020-06-08T08:59:13+06:00
 hero: /images/posts/features/hero.png
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- features
+menu:
+  sidebar:
+    name: Features
+    identifier: features
+    weight: 1
 ---
 
 This theme has been designed from a personal point of preference. As a developer, I want to organize my portfolio in a way that will reflect my skills best. So, this theme may or may not meet your needs but I will be happy to have your feedback.

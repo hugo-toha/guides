@@ -2,12 +2,12 @@
 title: "Configuring Experiences Section"
 date: 2020-06-08T06:20:40+06:00
 hero: /images/posts/configuration/experiences-section-hero.svg
-author:
-  name: Md. Emruz Hossain
-#   image: /assets/images/profile-image.jpg
-categories:
-- configuration
-- configuration-experiences-section
+menu:
+  sidebar:
+    name: Experiences Section
+    identifier: configuration-experiences
+    parent: configuration
+    weight: 130
 ---
 
 {{< alert type="danger">}}

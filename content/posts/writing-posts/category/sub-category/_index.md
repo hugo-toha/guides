@@ -1,5 +1,9 @@
 ---
 title: Sub-Category
-id: writing-posts-category-sub-category
-weight: 2
+menu:
+  sidebar:
+    name: Sub-Category
+    identifier: writing-post-category-sub-category
+    parent: writing-post-category
+    weight: 20
 ---
