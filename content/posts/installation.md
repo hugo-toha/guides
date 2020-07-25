@@ -42,9 +42,10 @@ If you want to customize the theme templates, then fork it and use the fork as y
 Configure your `config.yaml` file of your site as below:
 
 ```yaml
-baseURL: http://example.org/
+baseURL: https://toha.netlify.app
+
 languageCode: en-us
-title: "Toha"
+title: "<Your site Title>"
 theme: "toha"
 
 # Allow raw html in markdown file
@@ -52,26 +53,42 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
 
 # Enable Google Analytics
-googleAnalytics: <your google analytics id>
-
+googleAnalytics: <your site's google analytics id>
 # Enable Disqus forum
-disqusShortname: <your disqus short code>
+disqusShortname: <your site's disqus short code>
 
 # Enable global emoji support
 enableEmoji: true
 
 # Custom parameters
 params:
+  # copyright
+  copyright: © 2020 Copyright.
+
   # background image of the landing page
   background: "images/background.jpg"
+
+  # Provide logos for your site. The inverted logo will be used in the initial
+  # transparent navbar and the main logo will be used in the non-transparent navbar.
+  # It will default to the theme logos if not provided.
+  logo:
+    main: /assets/images/main-logo.png
+    inverted: /assets/images/inverted-logo.png
 
   # GitHub repo URL of your site
   gitRepo: <your site's Github repo URL>
 
-  # specify whether you want to write blog post or not
+  # specify whether you want to write some blog posts or not
   enableBlogPost: true
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: true
 
   # specify the list of custom menus that you want to show in the top navbar.
   # they will be separated by a divider from the main menus.
@@ -79,11 +96,17 @@ params:
   - name: Notes
     url: <your custom menu link>
 
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, you can just hide it from the footer.
+  newsletter:
+    enable: true
+
   # some information about you
   author:
     name: "Jane Doe"
+    nickname: "Jane"
     image: "images/avatar.png"
-    # give your some contact information. they will be used in the footer
+    # give your contact information. they will be used in the footer
     contactInfo:
       email: "janedoe@example.com"
       phone: "+0123456789"
@@ -98,14 +121,12 @@ You can just copy the content for `config.yaml` files from `theme/toha/exampleSi
 
 ### Usage
 
-Run your hugo site with this theme.
+Run your Hugo site with this theme.
 
 ```console
 hugo server -w
 ```
 
-Don't panic if the generated site does not look like what have you seen in the demo. Now, you have to provide some data in `data` folder of your site.
+When you first run your site, it will start with the default parameters. It should look similar to the [example site](https://toha.netlify.app) except it will not have any sections in the homepage. Those sections are added via some data files.
 
-Follow the posts giving step by step instructions for configuring your data folder from [here](https://toha.netlify.app/posts/configuration/home-section/home-section/).
-
-You can also follow the sample format given in `themes/toha/exampleSite/data/sections` directory.
+You can configure your site by following the step by step guides from [here](https://toha.netlify.app/posts/configuration/).

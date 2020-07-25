@@ -47,7 +47,7 @@ The experience timeline has been designed to reflect your career background. It 
 
 ### A Gallery to show your Achievements
 
-The gallery section gives you an opportunity to show your achievements to the public.
+The gallery section allows you to show your achievements to the public.
 
 {{< img src="/images/posts/features/gallery.png" width="900" align="center" >}}
 
@@ -60,5 +60,9 @@ Did you ever find yourself spending lots of time to find a particular post on a 
 {{< img src="/images/posts/features/sidebar.png" width="900" align="center" >}}
 
 {{< vs 3 >}}
+
+### Customizability & Extensibility
+
+It is easy to customize the theme without changing the theme codes. It has been designed to be extensible and customizable. You can easily add a new section or overwrite the CSS of any existing sections without altering the theme.
 
 Still not meeting your requirements? File an feature request [here](https://github.com/hossainemruz/toha).
