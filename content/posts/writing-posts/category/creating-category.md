@@ -87,4 +87,4 @@ We already know about the parameters used here, but we have one new parameter th
 The following image shows how the contents are mapped into the sidebar section. </br>
 ![Image2](https://dev-to-uploads.s3.amazonaws.com/i/cso16yy6wf89eywgbufb.png)
 
-If you want to change the default author name from `Jane Doe` to your preferred one then go to the folder called `layouts` then `partials` then `helpers` then open `get-author-name.html` and edit the name there.
+If you want to change the default author name from `Jane Doe` to your preferred one then go to the folder called `layouts` then `partials` then `helpers` then open `get-author-name.html` and edit the value of the `$authorName:` there.
