@@ -2,6 +2,9 @@
 title: "Creating Category"
 date: 2020-06-08T06:15:55+06:00
 # hero: /assets/images/background/flower.jpg
+author:
+  name: Md.Habibur Rahman
+  image: /images/authors/habib.jpg
 menu:
   sidebar:
     name: Creating Category
@@ -12,7 +15,9 @@ menu:
 
 
 First, we need to understand how to create a post then we will be able to create categories.
-## Post Creation:
+
+## Post Creation
+
 To create a post in your blog first you need to go to the folder named `posts`. Here, create a file `_index.md`(The file name has to be exactly the same as it is mentioned). Then open the file and add below lines: </br>
     
     ---
@@ -53,7 +58,8 @@ The following image shows how the contents of `analytics-and-comments.md` are ma
 
 > In the above figure- Features, Installation, Configuration, Writing Posts, Customizing, Short Codes, etc are folders created just for other posts.
 
-## Category Creation:
+## Category Creation
+
 As we have created one `_index.md` file and one blog post markdown file previously, now to create a category, we need to create a folder. We created a folder called `deploy-site` and inside this folder, we again need to create a `_index.md` file which contains the front-matter as below:</br>
 
 ```    
@@ -87,4 +93,29 @@ We already know about the parameters used here, but we have one new parameter th
 The following image shows how the contents are mapped into the sidebar section. </br>
 ![Image2](https://dev-to-uploads.s3.amazonaws.com/i/cso16yy6wf89eywgbufb.png)
 
-If you want to change the default author name from `Jane Doe` to your preferred one then go to the folder called `layouts` then `partials` then `helpers` then open `get-author-name.html` and edit the value of the `$authorName:` there.
+## Customizing post's author information
+
+By default, the post should use author information from `config.yaml`. If you want to overwrite the default author information, just add following author section in the front-matter:
+
+```yaml
+author:
+  name: Md.Habibur Rahman
+  image: /images/authors/habib.jpg
+```
+
+Your final front-matter should look-like:
+
+```yaml
+title: "Creating Category"
+date: 2020-06-08T06:15:55+06:00
+# hero: /assets/images/background/flower.jpg
+author:
+  name: Md.Habibur Rahman
+  image: /images/authors/habib.jpg
+menu:
+  sidebar:
+    name: Creating Category
+    identifier: writing-post-category-create
+    parent: writing-post-category
+    weight: 10
+```
