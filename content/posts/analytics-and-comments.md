@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: Analytics & Comments
     identifier: analytics-and-comments
-    weight: 500
+    weight: 600
 ---
 
 ### Complete Post Coming Soon...

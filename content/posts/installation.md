@@ -69,9 +69,6 @@ enableEmoji: true
 
 # Custom parameters
 params:
-  # copyright
-  copyright: © 2020 Copyright.
-
   # background image of the landing page
   background: "images/background.jpg"
 
@@ -81,6 +78,7 @@ params:
   logo:
     main: /assets/images/main-logo.png
     inverted: /assets/images/inverted-logo.png
+    favicon: /assets/images/favicon.png
 
   # GitHub repo URL of your site
   gitRepo: <your site's Github repo URL>
@@ -91,31 +89,10 @@ params:
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
 
-  # specify the list of custom menus that you want to show in the top navbar.
-  # they will be separated by a divider from the main menus.
-  customMenus:
-  - name: Notes
-    url: <your custom menu link>
-
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: true
-
-  # some information about you
-  author:
-    name: "Jane Doe"
-    nickname: "Jane"
-    image: "images/avatar.png"
-    # give your contact information. they will be used in the footer
-    contactInfo:
-      email: "janedoe@example.com"
-      phone: "+0123456789"
-    # a summary of what you do
-    summary:
-    - I am a Developer
-    - I work with Go
-    - I love to work with some fun projects
 ```
 
 You can just copy the content for `config.yaml` files from `theme/toha/exampleSite/config.yaml`.

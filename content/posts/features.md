@@ -67,3 +67,7 @@ Did you ever find yourself spending lots of time to find a particular post on a 
 It is easy to customize the theme without changing the theme codes. It has been designed to be extensible and customizable. You can easily add a new section or overwrite the CSS of any existing sections without altering the theme.
 
 Still not meeting your requirements? File an feature request [here](https://github.com/hossainemruz/toha).
+
+### Multiple Language Support
+
+This theme has built-in support for multiple language. You can translate your content in multiple languages easily for better reachability.
