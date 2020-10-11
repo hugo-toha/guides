@@ -1,9 +1,11 @@
 # section information
 section:
-  name: About
+  name: আমার-সম্পর্কে
+  id: about
   enable: true
   weight: 1
   showOnNavbar: true
+  template: sections/about.html
 
 # your designation
 designation: Software Engineer

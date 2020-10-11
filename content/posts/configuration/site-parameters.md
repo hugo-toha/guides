@@ -32,34 +32,7 @@ Now, let's add a logo for your site. You have to provide two different logos. On
 logo:
   main: /assets/images/main-logo.png
   inverted: /assets/images/inverted-logo.png
-```
-
-### Add Copyright Notice
-
-Let's add a copyright notice for your site. This will be shown at the bottom of the footer. Add the following in `params` section of `config.yaml` file.
-
-```yaml
-copyright: © 2020 Copyright.
-```
-
-### Add Author Information
-
-Now, provide your basic information. Add the following `author` section in `params` section of your `config.yaml` file.
-
-```yaml
-author:
-  name: "Jane Doe"
-  nickname: "Jane"
-  image: "images/avatar.png"
-  # give your contact information. they will be used in the footer
-  contactInfo:
-    email: "janedoe@example.com"
-    phone: "+0123456789"
-  # a summary of what you do
-  summary:
-  - I am a Developer
-  - I work with Go
-  - I love to work with some fun projects
+  favicon: /assets/images/favicon.png
 ```
 
 ### Enable Blog Post
@@ -100,18 +73,6 @@ gitRepo: <your site's Github repo URL>
 
 This will add a button labeled `Improve This Page` at the bottom of every blog post. The button will route the user directly to the respective edit page in Github.
 
-### Add Custom Menus
-
-If you want to add some custom menus in the navbar, you can easily add them by adding the following in the `params` section of `config.yaml` file.
-
-```yaml
-customMenus:
-- name: Notes
-  url: https://hossainemruz.gitbook.io/notes/
-```
-
-This is particularly helpful when you want to add a link to another site in the navbar.
-
 ### Enable/Disable Newsletter
 
 Although the newsletter feature is not functional yet, it is shown in the footer for aesthetic purposes. You can hide it by adding following in the `params` section of  `config.yaml` file.
@@ -134,6 +95,60 @@ markup:
       unsafe: true
 ```
 
+### Add Author Information
+
+Now, provide your basic information. Create a `author.yaml` file in your `/data` directory and add the author information there.
+
+```yaml
+# some information about you
+name: "Jane Doe"
+nickname: "Jane"
+image: "images/avatar.png"
+
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+
+# give your contact information. they will be used in the footer
+contactInfo:
+  email: "janedoe@example.com"
+  phone: "+0123456789"
+
+# a summary of what you do
+summary:
+- I am a Developer
+- I work with Go
+- I love to work with some fun projects
+```
+
+### Add Copyright Notice
+
+Let's add a copyright notice for your site. This will be shown at the bottom of the footer. Create `site.yaml` file in your `/data` directory and add the following section there.
+
+```yaml
+copyright: © 2020 Copyright.
+```
+
+### Site's Description
+
+Now, add a description of your site that will help the search engines to find your site. Add a description section in your `site.yaml` file.
+
+```yaml
+# Meta description for your site.  This will help the search engines to find your site.
+description: Example site for hugo theme Toha.
+```
+
+### Add Custom Menus
+
+If you want to add some custom menus in the navbar, you can easily add them by adding the following in the `site.yaml` file.
+
+```yaml
+customMenus:
+- name: Notes
+  url: https://hossainemruz.gitbook.io/notes/
+```
+
+This is particularly helpful when you want to add a link to another site in the navbar.
+
 ### Example `params` Section
 
 Finally, here is the `params` section used in this example site.
@@ -141,9 +156,6 @@ Finally, here is the `params` section used in this example site.
 ```yaml
 # Site parameters
 params:
-  # copyright
-  copyright: © 2020 Copyright.
-
   # background image of the landing page
   background: "images/background.jpg"
 
@@ -153,6 +165,7 @@ params:
   logo:
     main: /assets/images/main-logo.png
     inverted: /assets/images/inverted-logo.png
+    favicon: /assets/images/favicon.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/hossainemruz/toha-example-site
@@ -163,29 +176,8 @@ params:
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
 
-  # specify the list of custom menus that you want to show in the top navbar.
-  # they will be separated by a divider from the main menus.
-  customMenus:
-  - name: Notes
-    url: https://hossainemruz.gitbook.io/notes/
-
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: true
-
-  # some information about you
-  author:
-    name: "Jane Doe"
-    nickname: "Jane"
-    image: "images/avatar.png"
-    # give your contact information. they will be used in the footer
-    contactInfo:
-      email: "janedoe@example.com"
-      phone: "+0123456789"
-    # a summary of what you do
-    summary:
-    - I am a Developer
-    - I work with Go
-    - I love to work with some fun projects
 ```

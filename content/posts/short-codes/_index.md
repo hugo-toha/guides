@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Short Codes
     identifier: short-codes
-    weight: 600
+    weight: 700
 ---
