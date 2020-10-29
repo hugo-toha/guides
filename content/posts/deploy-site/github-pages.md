@@ -10,7 +10,7 @@ menu:
     weight: 10
 ---
 
-In this post, we are going to go though the process of deploying a hugo static site in [Github Pages](https://pages.github.com/). Here, we are going to deploy a example portfolio in Github Pages using Toha theme from scratch.
+In this post, we are going to go though the process of deploying a hugo static site in [Github Pages](https://pages.github.com/). Here, we are going to create a hugo site from scratch, configure it with Toha theme, make it multilingual, add some example content, and finally deploy it in Github Pages.
 
 ### Preparing Github Repository
 
@@ -49,13 +49,42 @@ Now, let's set the `source` branch as our default branch. Go to  `Settings > Bra
 
 Going forward, all our development will go against this `source` branch.
 
-### Creating Site
+### Preparing Site
+
+In this section, we are going to create our hugo site. Then, we will configure our site using Toha theme.
 
 #### Create Site
 
+At first make sure that you have [Hugo](https://gohugo.io/getting-started/installing/) installed. Then, run the following command in the root of your repository to initiate a hugo website.
+
+```bash
+$ hugo new site ./ -f=yaml --force
+```
+
+This will create a basic hugo site structure. If you run `hugo server` at this stage and navigate to the server url (typically `http://localhost:1313`), you will see a blank page.
+
 #### Add Theme
 
+Now, it is time to add Toha theme into our site. Add the theme as git sub-module of your repository using the following command:
+
+```console
+$ git submodule add https://github.com/hossainemruz/toha.git themes/toha
+```
+
+{{< vs 1 >}}
+
+>Don't use SSH URL of the theme during adding it as git sub-module. Also, don't clone the theme in your `themes` directory using `git clone`. Otherwise, we won't be able to automate the site publishing.
+
+
 #### Configure Site
+
+Now, we are ready to configure our theme.
+
+#####  Update `config.yaml`
+
+##### Add Sections
+
+##### Add Posts
 
 ### Publishing Site
 
