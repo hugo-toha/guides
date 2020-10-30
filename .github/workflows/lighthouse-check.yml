@@ -11,7 +11,7 @@ jobs:
       id: lighthouseCheck
       with:
         emulatedFormFactor: 'all'
-      #   urls: 'https://toha.netlify.app'
+        urls: 'https://toha.netlify.app'
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
