@@ -10,15 +10,15 @@ jobs:
       uses: foo-software/lighthouse-check-action@master
       id: lighthouseCheck
       with:
+        accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
         emulatedFormFactor: 'all'
+        prCommentEnabled: true
         urls: 'https://toha.netlify.app'
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
       uses: foo-software/lighthouse-check-status-action@master
       with:
-        accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
-        prCommentEnabled: true
         lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
         minAccessibilityScore: "95"
         minBestPracticesScore: "85"
