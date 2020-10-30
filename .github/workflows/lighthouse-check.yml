@@ -13,7 +13,7 @@ jobs:
         accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
         emulatedFormFactor: 'all'
         prCommentEnabled: true
-        urls: 'https://toha.netlify.app,https://toha.netlify.app/posts/,https://toha.netlify.app/posts/writing-posts/markdown-syntax-guide/'
+        urls: 'https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app,https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app/posts/,https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app/posts/writing-posts/markdown-syntax-guide/'
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
