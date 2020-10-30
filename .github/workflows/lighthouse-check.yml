@@ -1,8 +1,8 @@
-name: Test Lighthouse Check
+name: Lighthouse
 on: [pull_request]
 
 jobs:
-  lighthouse-check:
+  score-check:
     runs-on: ubuntu-latest
     steps:
     # Run Lighthouse check
@@ -13,7 +13,7 @@ jobs:
         accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
         emulatedFormFactor: 'all'
         prCommentEnabled: true
-        urls: 'https://toha.netlify.app'
+        urls: 'https://toha.netlify.app,https://toha.netlify.app/posts/,https://toha.netlify.app/posts/writing-posts/markdown-syntax-guide/'
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
