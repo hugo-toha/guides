@@ -7,12 +7,11 @@ jobs:
     steps:
     # Wait for the preview deployed by Netlify
     - name: Wait for preview deployed
-      uses: fountainhead/action-wait-for-check@master
-      id: wait-for-preview
+      uses: jakepartusch/wait-for-netlify-action@master
+      id: preview
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        checkName: netlify/toha/deploy-preview
-        ref: ${{ github.event.pull_request.head.sha || github.sha }}
+        site_name: "toha"
+        max_timeout: 300
 
     # Run Lighthouse check
     - name: Run Lighthouse
@@ -22,7 +21,7 @@ jobs:
         accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
         emulatedFormFactor: 'all'
         prCommentEnabled: true
-        urls: "https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app,https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app/posts/,https://deploy-preview-${{github.event.issue.number}}--toha.netlify.app/posts/writing-posts/markdown-syntax-guide/"
+        urls: "${{ steps.preview.outputs.url }},${{ steps.preview.outputs.url }}/posts/,${{ steps.preview.outputs.url }}/posts/writing-posts/markdown-syntax-guide/"
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
