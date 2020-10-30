@@ -1,24 +1,35 @@
-name: Test Lighthouse Check
+name: Lighthouse
 on: [pull_request]
 
 jobs:
-  lighthouse-check:
+  score-check:
     runs-on: ubuntu-latest
     steps:
+    # Wait for the preview deployed by Netlify
+    - name: Wait for preview deployed
+      uses: jakepartusch/wait-for-netlify-action@master
+      id: preview
+      with:
+        site_name: "toha"
+        max_timeout: 300
+
     # Run Lighthouse check
     - name: Run Lighthouse
       uses: foo-software/lighthouse-check-action@master
       id: lighthouseCheck
       with:
-        urls: 'https://toha.netlify.app'
+        accessToken: ${{ secrets.LIGHTHOUSE_TOKEN }}
+        emulatedFormFactor: 'all'
+        prCommentEnabled: true
+        urls: "${{ steps.preview.outputs.url }},${{ steps.preview.outputs.url }}/posts/,${{ steps.preview.outputs.url }}/posts/writing-posts/markdown-syntax-guide/"
 
     # Verify Lighthouse scores
     - name: Verify Lighthouse  scores
       uses: foo-software/lighthouse-check-status-action@master
       with:
         lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-        minAccessibilityScore: "90"
-        minBestPracticesScore: "50"
-        minPerformanceScore: "50"
+        minAccessibilityScore: "95"
+        minBestPracticesScore: "85"
+        minPerformanceScore: "60"
         minProgressiveWebAppScore: "50"
-        minSeoScore: "50"
+        minSeoScore: "90"
