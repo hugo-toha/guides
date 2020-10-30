@@ -1,0 +1,24 @@
+name: Test Lighthouse Check
+on: [pull_request]
+
+jobs:
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+    # Run Lighthouse check
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      id: lighthouseCheck
+      with:
+        urls: 'https://toha.netlify.app'
+
+    # Verify Lighthouse scores
+    - name: Verify Lighthouse  scores
+      uses: foo-software/lighthouse-check-status-action@master
+      with:
+        lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+        minAccessibilityScore: "90"
+        minBestPracticesScore: "50"
+        minPerformanceScore: "50"
+        minProgressiveWebAppScore: "50"
+        minSeoScore: "50"
