@@ -28,7 +28,6 @@ jobs:
         uses: percy/snapshot-action@v0.1.0
         with:
           build-directory: "public"
-          flags: --snapshot-files=index.html,404.html,posts/,posts/writing-posts/markdown-syntax-guide/
-          config: ./.github/percy-config.yml
+          flags: '--config=./.ghithub/percy-config.yml --snapshot-files="index.html,404.html,posts/,posts/writing-posts/markdown-syntax-guide/'
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
