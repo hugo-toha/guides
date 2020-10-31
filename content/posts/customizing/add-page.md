@@ -66,7 +66,7 @@ And for styling create a file `static/css/about.css` like this
 
 ### Link to it
 
-At this point, your custom page exists and is routeable via `/about` (based on the Branch Bundle folder path). You may link to it from any of your content, but a common use case would be to link to it from the navigation. You can supply custom menu items [here](http://localhost:1313/posts/configuration/site-parameters/#add-custom-menus). In our case we would update our `site.yaml` to include
+At this point, your custom page exists and is routeable via `/about` (based on the Branch Bundle folder path). You may link to it from any of your content, but a common use case would be to link to it from the navigation. You can supply custom menu items [here](/posts/configuration/site-parameters/#add-custom-menus). In our case we would update our `site.yaml` to include
 
 ```yaml
 customMenus:
