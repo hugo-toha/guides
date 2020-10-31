@@ -14,13 +14,12 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 <!--more-->
 ---
 
-## Instagram Simple Shortcode
+<!-- Commented out due to an issue with the shortcode pulling from an instagram API that is 400'ing now -->
+<!-- ## Instagram Simple Shortcode -->
 
-<!-- https://github.com/chipzoller/hugo-clarity/issues/69 -->
+<!-- <br> -->
 
-<br>
-
----
+<!-- --- -->
 
 ## YouTube Privacy Enhanced Shortcode
 
