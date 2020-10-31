@@ -9,3 +9,5 @@ description: Example site for hugo theme Toha.
 customMenus:
 - name: Notes
   url: https://hossainemruz.gitbook.io/notes/
+- name: About
+  url: /about

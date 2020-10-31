@@ -1,6 +1,6 @@
 ---
 title: "How to add a new section"
-date: 2020-10-23T00:00:00+00:00
+date: 2020-06-08T00:00:00+00:00
 hero: /images/posts/configuration/about-section-hero.svg
 menu:
   sidebar:
