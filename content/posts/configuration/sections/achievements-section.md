@@ -5,8 +5,8 @@ hero: /images/posts/configuration/achievements-section-hero.svg
 menu:
   sidebar:
     name: Achievements Section
-    identifier: configuration-achievements
-    parent: configuration
+    identifier: achievements-section
+    parent: sections
     weight: 160
 ---
 

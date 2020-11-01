@@ -5,8 +5,8 @@ hero: /images/posts/configuration/skills-section-hero.svg
 menu:
   sidebar:
     name: Skills Section
-    identifier: configuration-skills
-    parent: configuration
+    identifier: skills-sections
+    parent: sections
     weight: 120
 ---
 

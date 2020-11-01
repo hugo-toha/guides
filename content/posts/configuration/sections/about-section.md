@@ -5,8 +5,8 @@ hero: /images/posts/configuration/about-section-hero.svg
 menu:
   sidebar:
     name: About Section
-    identifier: configuration-about
-    parent: configuration
+    identifier: about-section
+    parent: sections
     weight: 110
 ---
 

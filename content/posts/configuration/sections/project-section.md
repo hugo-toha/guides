@@ -5,8 +5,8 @@ hero: /images/posts/configuration/projects-section-hero.svg
 menu:
   sidebar:
     name: Projects Section
-    identifier: configuration-projects
-    parent: configuration
+    identifier: projects-section
+    parent: sections
     weight: 140
 ---
 

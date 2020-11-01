@@ -5,8 +5,8 @@ hero: /images/posts/configuration/experiences-section-hero.svg
 menu:
   sidebar:
     name: Experiences Section
-    identifier: configuration-experiences
-    parent: configuration
+    identifier: experiences-section
+    parent: sections
     weight: 130
 ---
 

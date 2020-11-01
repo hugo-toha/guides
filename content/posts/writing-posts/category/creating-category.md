@@ -60,7 +60,7 @@ The following image shows how the contents of `analytics-and-comments.md` are ma
 
 ## Category Creation
 
-As we have created one `_index.md` file and one blog post markdown file previously, now to create a category, we need to create a folder. We created a folder called `deploy-site` and inside this folder, we again need to create a `_index.md` file which contains the front-matter as below:</br>
+As we have created one `_index.md` file and one blog post markdown file previously, now to create a category, we need to create a folder. We created a folder called `getting-started` and inside this folder, we again need to create a `_index.md` file which contains the front-matter as below:</br>
 
 ```    
 ---
@@ -68,11 +68,11 @@ title: Deploy Site
 menu:
   sidebar:
     name: Deploy Site
-    identifier: deploy-site
+    identifier: getting-started
     weight: 300
 ---
 ```
-The meaning of each parameter in the above code block has been discussed earlier. Just, for the time being, keep in mind that we are going to create the category name as `deploy-site` that's why we included it as an identifier in this `_index.md` file but you can give any name you want. Next, we are going to create a markdown file called `github-pages.md` which will be our blog post file for this folder. Our `github-pages.md` includes the following lines:</br>
+The meaning of each parameter in the above code block has been discussed earlier. Just, for the time being, keep in mind that we are going to create the category name as `getting-started` that's why we included it as an identifier in this `_index.md` file but you can give any name you want. Next, we are going to create a markdown file called `github-pages.md` which will be our blog post file for this folder. Our `github-pages.md` includes the following lines:</br>
 
 ```
 ---
@@ -82,8 +82,8 @@ hero: /images/posts/writing-posts/git.svg
 menu:
   sidebar:
     name: Github Pages
-    identifier: deploy-site-github
-    parent: deploy-site
+    identifier: getting-started-github
+    parent: getting-started
     weight: 10
 ---
 ### Complete Post Coming Soon...

@@ -5,8 +5,8 @@ hero: /images/posts/configuration/recent-posts-hero.svg
 menu:
   sidebar:
     name: Recent Posts Section
-    identifier: configuration-recent-posts
-    parent: configuration
+    identifier: recent-posts-section
+    parent: sections
     weight: 150
 ---
 

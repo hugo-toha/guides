@@ -1,5 +1,5 @@
-# toha-example-site
+# Toha Guides
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0436f0e6-da35-430d-bec1-2eaa9473dbca/deploy-status)](https://app.netlify.com/sites/toha/deploys) ![Repository Size](https://img.shields.io/github/repo-size/hossainemruz/toha-example-site) ![Last Commit](https://img.shields.io/github/last-commit/hossainemruz/toha-example-site) ![Contributor](https://img.shields.io/github/contributors/hossainemruz/toha-example-site) ![License](https://img.shields.io/github/license/hossainemruz/toha-example-site)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3dac568a-bcdd-4b98-8a47-15ccf6dd8bd4/deploy-status)](https://app.netlify.com/sites/toha/deploys) ![Repository Size](https://img.shields.io/github/repo-size/hugo-toha/guides) ![Last Commit](https://img.shields.io/github/last-commit/hugo-toha/guides) ![Contributor](https://img.shields.io/github/contributors/hugo-toha/guides) ![License](https://img.shields.io/github/license/hugo-toha/guides)
 
-Example site for Hugo theme [Toha](https://github.com/hossainemruz/toha).
+Documentation site for Hugo theme [Toha](https://github.com/hossainemruz/toha).
