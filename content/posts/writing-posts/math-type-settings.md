@@ -8,6 +8,7 @@ menu:
     identifier: writing-post-math-guide
     parent: writing-post
     weight: 40
+math: true
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.

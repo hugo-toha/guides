@@ -1,7 +1,7 @@
 ---
 title: "Deploy site in Github Pages"
 date: 2020-06-08T06:00:20+06:00
-hero: /images/posts/writing-posts/git.svg
+hero: /posts/deploy-site/github-pages/images/hero.svg
 menu:
   sidebar:
     name: Github Pages
@@ -18,7 +18,7 @@ In this section, we are going to prepare an empty repository in Github for our e
 
 #### Create Github Repository
 
-At first, create a repo named `<your user name>.github.io`. Please, add a README or LICENSE file. It will be helpful later. You can also fork the following example repository [toha-theme/toha-theme.github.io](https://github.com/toha-theme/toha-theme.github.io) and replace `toha-theme` part with your own username.
+At first, create a repo named `<your user name>.github.io`. Please, add a README or LICENSE file. It will be helpful later. You can also fork the following example repository [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io) and replace `hugo-toha` part with your own username.
 
 #### Setup Default Branch
 
@@ -29,7 +29,7 @@ Let's create the `source` brach:
 - At first, clone the repository to your local machine.
 
 ```bash
-$ git clone git@github.com:toha-theme/toha-theme.github.io.git
+$ git clone git@github.com:hugo-toha/hugo-toha.github.io.git
 ```
 
 - Now, enter into the repository and create a new branch named `source`.
@@ -45,7 +45,7 @@ $ git push origin source
 
 Now, let's set the `source` branch as our default branch. Go to  `Settings > Branches` of your repository and replace `main` with `source` under `Default branch` section. Then, save the change by clicking `Update` button. A screenshot of the process is shown below:
 
-{{< img src="/images/deploy-site/github/set_default_branch.png" align="center" >}}
+{{< img src="/posts/deploy-site/github-pages/images/set_default_branch.png" align="center" >}}
 
 Going forward, all our development will go against this `source` branch.
 
@@ -68,7 +68,7 @@ This will create a basic hugo site structure. If you run `hugo server` at this s
 Now, it is time to add Toha theme into our site. Add the theme as git sub-module of your repository using the following command:
 
 ```console
-$ git submodule add https://github.com/hossainemruz/toha.git themes/toha
+$ git submodule add https://github.com/hugo-toha/toha.git themes/toha
 ```
 
 {{< vs 1 >}}
@@ -82,7 +82,11 @@ Now, we are ready to configure our theme.
 
 #####  Update `config.yaml`
 
-##### Add Sections
+##### Add Site Data
+
+##### Add Author Data
+
+##### Add Sections Data
 
 ##### Add Posts
 
@@ -90,6 +94,53 @@ Now, we are ready to configure our theme.
 
 #### Enable Github Action
 
+At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the settings:
+
+{{< img src="/posts/deploy-site/github-pages/images/enable-action.png" align="center" >}}
+
 #### Add Workflow
+
+Now, create `.github` folder at the root of your repository. Then, create `workflows` folder inside `.github` folder. Finally, create `deploy-site.yaml` inside the `workflows` folder and the following content there:
+
+```yaml
+name: Deploy to Github Pages
+
+# run when a commit is pushed to "source" branch
+on:
+  push:
+    branches:
+    - source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    # checkout to the commit that has been pushed
+    - uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    
+    # install Hugo
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.77.0'
+        extended: true
+
+    # build website
+    - name: Build
+      run: hugo --minify
+
+    # push the generated content into the `main` (former `master`) branch.
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: main # if your main branch is `master` use that here.
+        publish_dir: ./public
+```
+
+You are all set. Now, if you commit commit the changes into your `source` branch. A Github Action will start. Wait for the Github Action to complete.
 
 ### Automate Theme Update
