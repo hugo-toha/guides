@@ -1,0 +1,12 @@
+# Update dependencies
+
+version: 2
+updates:
+# Update the Github Action  versions
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  labels:
+  - "dependencies"
+  - "automerge"

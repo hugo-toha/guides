@@ -144,3 +144,16 @@ jobs:
 You are all set. Now, if you commit commit the changes into your `source` branch. A Github Action will start. Wait for the Github Action to complete.
 
 ### Automate Theme Update
+
+In this section, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will daily check if there is any update in the submodules. If there is any update, it will create a PR updating to the latest version.
+
+- At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview).
+- Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository.
+{{< img src="/posts/deploy-site/github-pages/images/enable-dependabot.png" align="center" >}}
+
+{{< vs >}}
+
+- Now, create a `dependabot.yml` file in the root of your repository with the following content:
+
+```yaml
+```
