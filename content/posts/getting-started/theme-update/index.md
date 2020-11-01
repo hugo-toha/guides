@@ -16,7 +16,8 @@ In this section, we are going to setup a `Dependabot` Github app to automaticall
 
 - At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview).
 - Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository.
-{{< img src="/posts/getting-started/github-pages/images/enable-dependabot.png" align="center" >}}
+
+{{< img src="/posts/getting-started/theme-update/enable_dependabot.png" align="center" >}}
 
 {{< vs >}}
 
