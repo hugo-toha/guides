@@ -42,9 +42,6 @@ Now, let's set the `source` branch as our default branch. Go to  `Settings > Bra
 
 Going forward, all our development will go against this `source` branch.
 
-
-### Publishing Site
-
 #### Set Github Pages Branch
 
 `Settings -> Options` Scroll down until `Github Pages` section.
@@ -57,7 +54,7 @@ Make sure `Source` is set to `main` brach.
 
 At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the settings:
 
-{{< img src="/posts/getting-started/github-pages/images/enable-action.png" align="center" >}}
+{{< img src="/posts/getting-started/github-pages/images/enable_action.png" align="center" >}}
 
 #### Add Workflow
 
@@ -104,3 +101,18 @@ jobs:
 
 You are all set. Now, if you commit commit the changes into your `source` branch. A Github Action will start. Wait for the Github Action to complete.
 
+
+
+#### Deploy
+
+##### Workflow Running
+
+{{< img src="/posts/getting-started/github-pages/images/action_running.png" align="center" >}}
+
+##### Workflow Completed
+
+{{< img src="/posts/getting-started/github-pages/images/action_completed.png" align="center" >}}
+
+##### Site Deployed
+
+{{< img src="/posts/getting-started/github-pages/images/site_deployed.png" align="center" >}}
