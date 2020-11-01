@@ -92,6 +92,14 @@ Now, we are ready to configure our theme.
 
 ### Publishing Site
 
+#### Set Github Pages Branch
+
+`Settings -> Options` Scroll down until `Github Pages` section.
+
+Make sure `Source` is set to `main` brach.
+
+{{< img src="/posts/deploy-site/github-pages/images/github_pages_branch.png" align="center" >}}
+
 #### Enable Github Action
 
 At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the settings:
@@ -145,7 +153,7 @@ You are all set. Now, if you commit commit the changes into your `source` branch
 
 ### Automate Theme Update
 
-In this section, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will daily check if there is any update in the submodules. If there is any update, it will create a PR updating to the latest version.
+In this section, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will check daily if there is any update in the submodules. If there is any update, it will create a PR updating to the latest version.
 
 - At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview).
 - Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository.
@@ -153,7 +161,19 @@ In this section, we are going to setup a `Dependabot` Github app to automaticall
 
 {{< vs >}}
 
-- Now, create a `dependabot.yml` file in the root of your repository with the following content:
+- Now, create a `dependabot.yml` file in the `.github` folder of your repository with the following content:
 
 ```yaml
+# Update dependencies
+
+version: 2
+updates:
+# Update the git submodules
+- package-ecosystem: "gitsubmodule"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  labels:
+  - "dependencies"
+  - "automerge"
 ```
