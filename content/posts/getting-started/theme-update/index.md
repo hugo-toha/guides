@@ -37,3 +37,5 @@ updates:
   - "dependencies"
   - "automerge"
 ```
+
+To know more configuration options for Dependabot, please visit [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates).

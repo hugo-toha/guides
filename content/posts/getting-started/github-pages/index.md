@@ -10,55 +10,44 @@ menu:
     weight: 20
 ---
 
-In this post, we are going to go though the process of deploying a hugo static site in [Github Pages](https://pages.github.com/).
+In this post, we are going to deploy the site we have created in previous post in [Github Pages](https://pages.github.com/). At first, make sure that your repository name is `<your username>.github.io`. Then, commit any local uncommitted changes and push into Github.
 
 
 #### Setup Default Branch
 
-GitHub Pages don't serve from a hugo site directly. Instead, we have to provide the generated files after running `hugo --minify` command. So, we are going to maintain two branches. The `main` (previously known as `master`) brach will host the generated contents. Github will serve the site from this branch. We will create another branch named `source`. This will hold our markdowns files and hugo templates.
+GitHub don't serve a site from hugo templates directly. Instead, we have to provide the generated (HTML, CSS, JS etc.) files after building the site. From now, we are going to maintain two branches for our site. The `main` (previously known as `master`) branch will holds the generated contents after building the site. Github will serve the site from this branch. We will create another branch named `source`. This will hold our markdowns files and hugo templates.
 
-Let's create the `source` brach:
-
-- At first, clone the repository to your local machine.
+Let's create the `source` branch `main` branch and push it into Github.
 
 ```bash
-$ git clone git@github.com:hugo-toha/hugo-toha.github.io.git
-```
-
-- Now, enter into the repository and create a new branch named `source`.
-```bash
+# create the source brach
 $ git checkout -b source
-```
-
-- Finally, push the brach into Github.
-
-```bash
+# push the source branch into Github
 $ git push origin source
 ```
 
-Now, let's set the `source` branch as our default branch. Go to  `Settings > Branches` of your repository and replace `main` with `source` under `Default branch` section. Then, save the change by clicking `Update` button. A screenshot of the process is shown below:
+Now, we are going to set the `source` branch as our default branch. Go to  `Settings > Branches` of your repository and replace `main` with `source` under `Default branch` section. Then, save the change by clicking `Update` button. A screenshot of the process is shown below:
 
 {{< img src="/posts/getting-started/github-pages/images/set_default_branch.png" align="center" >}}
 
-Going forward, all our development will go against this `source` branch.
+{{< vs 2 >}}
+Going forward, all our developments will happen against this `source` branch.
 
 #### Set Github Pages Branch
 
-`Settings -> Options` Scroll down until `Github Pages` section.
-
-Make sure `Source` is set to `main` brach.
+Now, we have to tell Github which branch we are using for holding generated contents. Go to the `Settings` of your repository. Scroll down until you find `Github Pages` section. Select `main` branch and `/(root)` directory under `Source` section.
 
 {{< img src="/posts/getting-started/github-pages/images/github_pages_branch.png" align="center" >}}
 
 #### Enable Github Action
 
-At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the settings:
+We are going to automate the deploying process using [Github Actions](https://github.com/features/actions). At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the respective setting:
 
 {{< img src="/posts/getting-started/github-pages/images/enable_action.png" align="center" >}}
 
 #### Add Workflow
 
-Now, create `.github` folder at the root of your repository. Then, create `workflows` folder inside `.github` folder. Finally, create `getting-started.yaml` inside the `workflows` folder and the following content there:
+We are going to use [peaceiris/actions-hugo](https://github.com/peaceiris/actions-hugo) action to set up hugo and [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) to deploy the site. Create `.github` folder at the root of your repository. Then, create `workflows` folder inside the `.github` folder. Finally, create a `deploy-site.yaml` file inside the `workflows` folder and add the following content there:
 
 ```yaml
 name: Deploy to Github Pages
@@ -99,20 +88,24 @@ jobs:
         publish_dir: ./public
 ```
 
-You are all set. Now, if you commit commit the changes into your `source` branch. A Github Action will start. Wait for the Github Action to complete.
-
-
+This action will start on every push into the `source` branch. It will build the site and commit the generated content into `main` branch.
 
 #### Deploy
 
-##### Workflow Running
+If you have followed the guide properly, your site should be ready to deploy in Github Pages. Now, if you push any commit into your `source` branch, a Github Action will start and deploy your site automatically.
+
+Push a commit into the `source` branch and go to `Actions` tab of your repository to verify that the action has started.
 
 {{< img src="/posts/getting-started/github-pages/images/action_running.png" align="center" >}}
 
-##### Workflow Completed
+{{< vs 2 >}}
+
+Now, wait for the actions to complete. If it completes successfully, you should see a green tick indicating successful run.
 
 {{< img src="/posts/getting-started/github-pages/images/action_completed.png" align="center" >}}
 
-##### Site Deployed
+{{< vs 2 >}}
+
+Once the Github Action has completed successfully, you can browse your site at `https://<your username>.github.io`.
 
 {{< img src="/posts/getting-started/github-pages/images/site_deployed.png" align="center" >}}
