@@ -10,18 +10,17 @@ menu:
     weight: 40
 ---
 
-### Automate Theme Update
+You might want to keep your site up-to-date with the latest version of theme to enjoy the latest features and fixes. In this post, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will check daily if there is any update in the submodules. If it finds any update in the theme, it will create a PR updating your site to the latest theme version.
 
-In this section, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will check daily if there is any update in the submodules. If there is any update, it will create a PR updating to the latest version.
+### Setup Dependabot
 
-- At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview).
-- Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository.
+At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview). Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository. A screenshot has been given below that is showing the process:
 
 {{< img src="/posts/getting-started/theme-update/enable_dependabot.png" align="center" >}}
 
-{{< vs >}}
+{{< vs 2 >}}
 
-- Now, create a `dependabot.yml` file in the `.github` folder of your repository with the following content:
+Now, create a `dependabot.yml` file in the `.github` folder of your repository with the following content:
 
 ```yaml
 # Update dependencies
@@ -38,4 +37,6 @@ updates:
   - "automerge"
 ```
 
-To know more configuration options for Dependabot, please visit [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates).
+You are all set. Now, depndabot will check for sub-module update daily. It will create a PR to your site if it find any update in the theme.
+
+To know more about the configuration options of Dependabot, please visit [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates).
