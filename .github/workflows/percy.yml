@@ -1,6 +1,6 @@
 name: Percy.io Visual Diff
-
-on: [push]
+# Run action on pull request
+on: [pull_request]
 
 jobs:
   build:
