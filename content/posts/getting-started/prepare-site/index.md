@@ -49,7 +49,7 @@ Now, you can already run your site locally. Let's run the site in watch mode usi
 ```console
 $ hugo server -t toha -w
 ```
-If you navigate to [http://localhost:1313](http://localhost:1313), you should see a basic site with Toha theme. In the next section, we are going to configure the site to look like the [hugo-toha.github.io](https://hugo-toha.github.io/). As we have run the server in watch mode, any changes we make to the site will be instantly visible in the browser.
+If you navigate to `http://localhost:1313`, you should see a basic site with Toha theme. In the next section, we are going to configure the site to look like the [hugo-toha.github.io](https://hugo-toha.github.io/). As we have run the server in watch mode, any changes we make to the site will be instantly visible in the browser.
 
 ### Configure Site
 
@@ -401,7 +401,7 @@ Now, we are ready add our first post into our site. Here, we are going to add th
 - Now, create `index.md` file inside the `introduction` folder. This `index.md` file will hold the post contents.
 - Add the following [sample contents](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/index.md) in the newly created `index.md` file.
 
-Now, your post should appear at [http://localhost:1313/posts](http://localhost:1313/posts) and your `Recent Posts` section also should show this post card. For translating a post, just create a new file with name `index.<language code>.md` in the same directory. Then, add the translated content there.
+Now, your post should appear at `http://localhost:1313/posts` and your `Recent Posts` section also should show this post card. For translating a post, just create a new file with name `index.<language code>.md` in the same directory. Then, add the translated content there.
 
 For more sample posts, please visit [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts).
 

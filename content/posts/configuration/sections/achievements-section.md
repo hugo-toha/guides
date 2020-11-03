@@ -11,7 +11,7 @@ menu:
 ---
 
 {{< alert type="danger">}}
- *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/sections` directory and should follow [this](https://github.com/hossainemruz/toha-example-site/tree/master/data/sections) format.
+ *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/en/sections` directory and should follow [this](https://github.com/hugo-toha/hugo-toha.github.io/tree/master/data/en/sections) format.
 {{</ alert >}}
 
 The `Achievements` section has been designed to showcase your achievements in a gallery view. This post will show how to configure the `Achievements` section of your site.
