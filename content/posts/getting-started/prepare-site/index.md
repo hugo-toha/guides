@@ -30,6 +30,14 @@ $ hugo new site ./ -f=yaml --force
 
 This command will create a basic hugo site structure. Here, `-f=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty.
 
+### Intialize the git repository
+
+Now,it is time to add a git to your website. Intiasie the git repository using the following command:
+
+```
+$ git init
+```
+
 ### Add Theme
 
 Now, it is time to add a theme into your site. Add Toha theme as git sub-module of your repository using the following command:
