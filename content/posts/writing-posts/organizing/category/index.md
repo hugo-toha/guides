@@ -107,7 +107,7 @@ Your final front-matter should look-like:
 ```yaml
 title: "Creating Category"
 date: 2020-06-08T06:15:55+06:00
-# hero: /assets/images/background/flower.jpg
+# hero: images/background/flower.jpg
 author:
   name: Md.Habibur Rahman
   image: /images/authors/habib.jpg

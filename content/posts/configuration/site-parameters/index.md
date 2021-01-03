@@ -15,7 +15,7 @@ In this post, I am going to show you how you can change the site parameters to c
 
 ### Add Background Image
 
-At first, let's set a background on your website. Put your desired background image in the `static/images` directory. Then add the following in the `params` section of your `config.yaml` file.
+At first, let's set a background on your website. Put your desired background image in the `assets/images` directory. Then add the following in the `params` section of your `config.yaml` file.
 
 ```yaml
 background: "images/<your background image name(with file extension)>"
@@ -23,15 +23,15 @@ background: "images/<your background image name(with file extension)>"
 
 ### Add Site's Logo
 
-Now, let's add a logo for your site. You have to provide two different logos. One is for the transparent navbar and another for the non-transparent navbar. Put your logos into `static/images` directory and add the following in the `params` section of `config.yaml` file.
+Now, let's add a logo for your site. You have to provide two different logos. One is for the transparent navbar and another for the non-transparent navbar. Put your logos into `assets/images` directory and add the following in the `params` section of `config.yaml` file.
 
 ```yaml
 # The inverted logo will be used in the initial transparent navbar and
 # the main logo will be used in the non-transparent navbar.
 logo:
-  main: /assets/images/main-logo.png
-  inverted: /assets/images/inverted-logo.png
-  favicon: /assets/images/favicon.png
+  main: images/main-logo.png
+  inverted: images/inverted-logo.png
+  favicon: images/favicon.png
 ```
 
 ### Enable Blog Post
@@ -162,9 +162,9 @@ params:
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   # It will default to the theme logos if not provided.
   logo:
-    main: /assets/images/main-logo.png
-    inverted: /assets/images/inverted-logo.png
-    favicon: /assets/images/favicon.png
+    main: images/main-logo.png
+    inverted: images/inverted-logo.png
+    favicon: images/favicon.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/hossainemruz/toha-example-site
