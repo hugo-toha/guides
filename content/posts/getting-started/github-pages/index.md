@@ -1,7 +1,6 @@
 ---
 title: "Deploy site in Github Pages"
 date: 2020-06-08T22:00:20+06:00
-hero: /posts/getting-started/github-pages/images/octocat.jpg
 menu:
   sidebar:
     name: Deploy in Github Pages

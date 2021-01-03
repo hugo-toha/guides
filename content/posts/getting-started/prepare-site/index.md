@@ -1,7 +1,6 @@
 ---
 title: "Prepare Your Site"
 date: 2020-06-08T23:00:20+06:00
-hero: /posts/getting-started/prepare-site/octocat.jpg
 menu:
   sidebar:
     name: Prepare Site

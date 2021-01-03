@@ -1,7 +1,6 @@
 ---
 title: "Automate Theme Update"
 date: 2020-06-08T20:00:15+06:00
-hero: /posts/getting-started/theme-update/configure-bot.svg
 menu:
   sidebar:
     name: Automate Theme Update

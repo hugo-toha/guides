@@ -1,7 +1,6 @@
 ---
 title: "Deploy site in Netlify"
 date: 2020-06-08T21:00:15+06:00
-hero: /posts/getting-started/netlify/images/netlify.png
 menu:
   sidebar:
     name: Deploy in Netlify

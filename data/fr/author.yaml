@@ -1,6 +1,6 @@
 name: "Jane Doe"
 nickname: "Jane"
-image: "images/avatar.png"
+image: "images/author/jessica.png"
 
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Bonjour, je suis"
