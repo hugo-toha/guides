@@ -1,7 +1,6 @@
 ---
 title: "Deploy site in Github Pages"
 date: 2020-06-08T22:00:20+06:00
-hero: /posts/getting-started/github-pages/images/octocat.jpg
 menu:
   sidebar:
     name: Deploy in Github Pages
@@ -28,7 +27,7 @@ $ git push origin source
 
 Now, we are going to set the `source` branch as our default branch. Go to  `Settings > Branches` of your repository and replace `main` with `source` under `Default branch` section. Then, save the change by clicking `Update` button. A screenshot of the process is shown below:
 
-{{< img src="/posts/getting-started/github-pages/images/set_default_branch.png" align="center" >}}
+{{< img src="images/set_default_branch.png" align="center" >}}
 
 {{< vs 2 >}}
 Going forward, all our developments will happen against this `source` branch.
@@ -37,13 +36,13 @@ Going forward, all our developments will happen against this `source` branch.
 
 Now, we have to tell Github which branch we are using for holding generated contents. Go to the `Settings` of your repository. Scroll down until you find `Github Pages` section. Select `main` branch and `/(root)` directory under `Source` section.
 
-{{< img src="/posts/getting-started/github-pages/images/github_pages_branch.png" align="center" >}}
+{{< img src="images/github_pages_branch.png" align="center" >}}
 
 #### Enable Github Action
 
 We are going to automate the deploying process using [Github Actions](https://github.com/features/actions). At first, make sure that Github Action is enabled in your repository. Go to `Settings > Actions` of your repository and make sure `Action permissions` is set to `Allow all actions`. Here, is a screenshot of the respective setting:
 
-{{< img src="/posts/getting-started/github-pages/images/enable_action.png" align="center" >}}
+{{< img src="images/enable_action.png" align="center" >}}
 
 #### Add Workflow
 
@@ -96,16 +95,16 @@ If you have followed the guide properly, your site should be ready to deploy in 
 
 Push a commit into the `source` branch and go to `Actions` tab of your repository to verify that the action has started.
 
-{{< img src="/posts/getting-started/github-pages/images/action_running.png" align="center" >}}
+{{< img src="images/action_running.png" align="center" >}}
 
 {{< vs 2 >}}
 
 Now, wait for the actions to complete. If it completes successfully, you should see a green tick indicating successful run.
 
-{{< img src="/posts/getting-started/github-pages/images/action_completed.png" align="center" >}}
+{{< img src="images/action_completed.png" align="center" >}}
 
 {{< vs 2 >}}
 
 Once the Github Action has completed successfully, you can browse your site at `https://<your username>.github.io`.
 
-{{< img src="/posts/getting-started/github-pages/images/site_deployed.png" align="center" >}}
+{{< img src="images/site_deployed.png" align="center" >}}
