@@ -40,7 +40,7 @@ Each achievements  entry should have the following fields,
 
 The following image shows how the contents of `achievements.yaml` are mapped into the `Achievements` section.
 
-{{< img src="/images/posts/configuration/achievements.png" >}}
+{{< img src="images/achievements.png" >}}
 
 ### Example `achievements.yaml` File
 

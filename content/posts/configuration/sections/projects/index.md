@@ -70,7 +70,7 @@ You can specify the following field for a project,
 
 The following image shows how the contents of `projects.yaml` are mapped into the `Projects` section.
 
-{{< img src="/images/posts/configuration/projects.png" >}}
+{{< img src="images/projects.png" >}}
 
 ### Example `projects.yaml` File
 

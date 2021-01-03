@@ -15,4 +15,4 @@ menu:
 
 The `Recent Posts` section does not require any configuration. It will be automatically populated when you write any posts.
 
-{{<img src="/images/posts/configuration/recent-posts.svg" >}}
+{{<img src="images/recent-posts.svg" >}}

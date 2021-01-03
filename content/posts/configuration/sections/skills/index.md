@@ -36,7 +36,7 @@ Here, you have to provide `name`, `icon`, and `summary` fields for a skill. The 
 
 The following image shows how the content of `skills.yaml` files are mapped into the `Skills` section.
 
-{{< img src="/images/posts/configuration/skills.png">}}
+{{< img src="images/skills.png">}}
 
 ### Example `skills.yaml` File
 

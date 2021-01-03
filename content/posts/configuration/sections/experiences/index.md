@@ -55,7 +55,7 @@ Each entry in the `experiences` section should have the following information,
 
 The following image shows how the contents of `experiences.yaml` are mapped into the `Experiences` section.
 
-{{< img src="/images/posts/configuration/experiences.png" >}}
+{{< img src="images/experiences.png" >}}
 
 ### Example `experiences.yaml` File
 
