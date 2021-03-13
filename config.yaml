@@ -30,6 +30,14 @@ markup:
     endLevel: 6
     ordered: false
 
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
 # Enable Google Analytics
 googleAnalytics: UA-122321624-2
 
@@ -53,7 +61,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
+  gitRepo: https://github.com/hugo-toha/guides
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true
