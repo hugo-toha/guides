@@ -1,7 +1,6 @@
 ---
 title: "Automate Theme Update"
 date: 2020-06-08T20:00:15+06:00
-hero: /posts/getting-started/theme-update/configure-bot.svg
 menu:
   sidebar:
     name: Automate Theme Update
@@ -16,7 +15,7 @@ You might want to keep your site up-to-date with the latest version of theme to 
 
 At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview). Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository. A screenshot has been given below that is showing the process:
 
-{{< img src="/posts/getting-started/theme-update/enable_dependabot.png" align="center" >}}
+{{< img src="enable_dependabot.png" align="center" >}}
 
 {{< vs 2 >}}
 

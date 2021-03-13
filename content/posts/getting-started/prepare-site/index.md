@@ -1,7 +1,6 @@
 ---
 title: "Prepare Your Site"
 date: 2020-06-08T23:00:20+06:00
-hero: /posts/getting-started/prepare-site/octocat.jpg
 menu:
   sidebar:
     name: Prepare Site
@@ -239,7 +238,7 @@ skills:
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
 ```
 
-Put the skills images into `/static/images/sections/skills/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/static/images/sections/skills). Also, you can find the `skills.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/skills.yaml).
+Put the skills images into `images/sections/skills/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/skills). Also, you can find the `skills.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/skills.yaml).
 
 ###### Experiences Section
 
@@ -346,7 +345,7 @@ projects:
   summary: A Hugo theme for personal portfolio.
   tags: ["hobby","hugo","theme","professional"]
 ```
-Put the projects images into `/static/images/sections/projects/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/static/images/sections/projects). Also, you can find the `projects.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
+Put the projects images into `images/sections/projects/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). Also, you can find the `projects.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
 ###### Recent Posts Section
 
@@ -396,7 +395,7 @@ achievements:
   image: /images/sections/achievements/woman-winner.jpg
   summary: Wined best paper award at IEE Conference 2020.
 ```
-Put the projects images into `/static/images/sections/achievements/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/static/images/sections/achievements). Also, you can find the `achievements.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/achievements.yaml).
+Put the projects images into `images/sections/achievements/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/achievements). Also, you can find the `achievements.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/achievements.yaml).
 
 #### Add Posts
 
