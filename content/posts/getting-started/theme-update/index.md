@@ -36,6 +36,6 @@ updates:
   - "automerge"
 ```
 
-You are all set. Now, depndabot will check for sub-module update daily. It will create a PR to your site if it find any update in the theme.
+You are all set. Now, dependabot will check for sub-module update daily. It will create a PR to your site if it finds any update in the theme.
 
 To know more about the configuration options of Dependabot, please visit [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates).

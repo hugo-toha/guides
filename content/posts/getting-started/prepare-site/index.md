@@ -29,9 +29,9 @@ $ hugo new site ./ -f=yaml --force
 
 This command will create a basic hugo site structure. Here, `-f=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty.
 
-### Intialize the git repository
+### Initialize the git repository
 
-Now,it is time to add a git to your website. Intiasie the git repository using the following command:
+Now,it is time to add a git to your website. Initialize the git repository using the following command:
 
 ```
 $ git init
@@ -111,7 +111,7 @@ Here, you are seeing a basic configuration for Toha theme. You can see the confi
 
 #### Add Data
 
-Most of the contents of this theme is driven by some YAML files in `data` directory. In this section, we are going to add some sample data. Since, we building a multilingual site, we are going to keep the data for each language separate into their own locale folder.
+Most of the contents of this theme is driven by some YAML files in `data` directory. In this section, we are going to add some sample data. Since, we're building a multilingual site, we are going to keep the data for each language separate into their own locale folder.
 
 At first, create `en` folder inside your `data` directory. We are going to add data for `English` language here.
 
@@ -402,7 +402,7 @@ Put the projects images into `images/sections/achievements/` directory of your r
 Now, we are ready add our first post into our site. Here, we are going to add this [introduction post](https://hugo-toha.github.io/posts/introduction/).
 
 - At first, create a `posts` folder inside `content` directory of your site.
-- Then, create `_index.md` file inside the `posts` directory. Copy the content of [this file](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/_index.md) file andd paste into the newly created `_index.md` file.
+- Then, create `_index.md` file inside the `posts` directory. Copy the content of [this file](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/_index.md) file and paste into the newly created `_index.md` file.
 - Create `introduction` folder inside your `posts` directory.
 - Add the following [hero.svg](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/hero.svg) inside your `introduction` folder.
 - Now, create `index.md` file inside the `introduction` folder. This `index.md` file will hold the post contents.
