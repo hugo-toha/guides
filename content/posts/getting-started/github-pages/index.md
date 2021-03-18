@@ -14,12 +14,12 @@ In this post, we are going to deploy the site we have created in previous post i
 
 #### Setup Default Branch
 
-GitHub don't serve a site from hugo templates directly. Instead, we have to provide the generated (HTML, CSS, JS etc.) files after building the site. From now, we are going to maintain two branches for our site. The `main` (previously known as `master`) branch will holds the generated contents after building the site. Github will serve the site from this branch. We will create another branch named `source`. This will hold our markdowns files and hugo templates.
+GitHub don't serve a site from hugo templates directly. Instead, we have to provide the generated (HTML, CSS, JS etc.) files after building the site. From now, we are going to maintain two branches for our site. The `main` (previously known as `master`) branch will hold the generated contents after building the site. Github will serve the site from this branch. We will create another branch named `source`. This will hold our markdowns files and hugo templates.
 
 Let's create the `source` branch `main` branch and push it into Github.
 
 ```bash
-# create the source brach
+# create the source branch
 $ git checkout -b source
 # push the source branch into Github
 $ git push origin source

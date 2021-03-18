@@ -56,7 +56,7 @@ projects:
 You can specify the following field for a project,
 
 - **name**: The name of the project.
-- **logo**: The logo of the project. If the project does not have a logo, the theme will automatically add a place holder there.
+- **logo**: The logo of the project. If the project does not have a logo, the theme will automatically add a placeholder there.
 - **role**: Your role in the project.
 - **timeline**: The timeline when you have worked on the project.
 - **repo**: If the project is an open-source project and hosted on Github, you can provide the repository URL. This will be used to show the star count for the project.

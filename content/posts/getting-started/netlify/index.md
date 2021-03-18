@@ -11,7 +11,7 @@ menu:
 
 [Netlify](https://www.netlify.com/) offers an excellent and easy process for deploying hugo static site. You can deploy your site in matter of few clicks. Unlike Github Pages, you can name your repository whatever you want. You can also customize the site URL.
 
-In this post, we will show the step by step process of deploying a hugo site with netlify.
+In this post, we will show the step-by-step process of deploying a hugo site with netlify.
 
 ### Add Netlify Configuration
 
@@ -73,7 +73,7 @@ After authenticating, it will ask to select your desired repository. Select the 
 
 {{< vs 2 >}}
 
-Now, netlify will take you to the deploy page. Select the brach you want to deploy. Netlify should automatically populate the required fields from the `netlify.toml` file you created earlier in this post. When you are satisfied with the configurations, press the `Deploy` button.
+Now, netlify will take you to the deployment page. Select the branch you want to deploy. Netlify should automatically populate the required fields from the `netlify.toml` file you created earlier in this post. When you are satisfied with the configurations, press the `Deploy` button.
 
 {{< img src="images/5.png" align="center" >}}
 
@@ -103,6 +103,6 @@ You can easily customize the URL of your site with just few clicks as shown belo
 
 {{< vs 2 >}}
 
-4. Once you have saved the new name, you will see the the URL of your site has been updated instantly. Now, you can browse your site at the new URL.
+4. Once you have saved the new name, you will see the URL of your site has been updated instantly. Now, you can browse your site at the new URL.
 
 {{< img src="images/10.png" align="center" >}}
