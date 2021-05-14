@@ -224,17 +224,17 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Kubernetes
-  icon: "/images/sections/skills/kubernetes.png"
+  logo: "/images/sections/skills/kubernetes.png"
   summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
   url: "https://kubernetes.io/"
 
 - name: Go Development
-  icon: "/images/sections/skills/go.png"
+  logo: "/images/sections/skills/go.png"
   summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
   url: "https://golang.org/"
 
 - name: Cloud Computing
-  icon: "/images/sections/skills/cloud.png"
+  logo: "/images/sections/skills/cloud.png"
   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
 ```
 
