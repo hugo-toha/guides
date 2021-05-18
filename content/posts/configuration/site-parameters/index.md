@@ -74,14 +74,22 @@ This will add a button labeled `Improve This Page` at the bottom of every blog p
 
 ### Enable/Disable Newsletter
 
-Although the newsletter feature is not functional yet, it is shown in the footer for aesthetic purposes. You can hide it by adding following in the `params` section of  `config.yaml` file.
+The newsletter feature only supports Mailchimp for now.  
+Add the following in the `params` section of `config.yaml` file.
+
+```yaml
+newsletter:
+  enable: true
+  provider: mailchimp
+  mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+```
+
+If you don't want to use the newsletter feature, you can hide it by adding following in the `params` section of  `config.yaml` file.
 
 ```yaml
 newsletter:
   enable: false
 ```
-
-I would love to add this functionality as soon as possible. However, I am not familiar with the services required to make this functional. If you know such services that provide this newsletter functionality, please let me know in the comment.
 
 ### Enable RAW HTML in the Markdown File
 
