@@ -14,7 +14,7 @@ menu:
 ---
 
 ## We've all been there
-We all want to be able to customize the layout of a given theme, and I with this short tutorial I will show you how. I stumbled my way through this, and I hope you won't have to as well.
+We all want to be able to customize the layout of a given theme, and in this short tutorial I will show you how. I stumbled my way through this, and I hope you won't have to as well.
 
 ### Step 1 / CSS
 Finding what you are wanting to customize. The first thing I wanted to do was customize the css styles. I stumbled through a few git issues, and posts and found that truly the author made it easy, I just didn't think it through (as I was new to Hugo as well).
