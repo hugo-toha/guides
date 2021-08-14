@@ -9,10 +9,22 @@ menu:
     weight: 150
 ---
 
-{{< alert type="danger">}}
- *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/en/sections` directory and should follow [this](https://github.com/hugo-toha/hugo-toha.github.io/tree/master/data/en/sections) format.
-{{</ alert >}}
+The `Recent Posts` section will display the most recent posts from your content. The configuration is simple, and should be stored in `data/en/sections`.
 
-The `Recent Posts` section does not require any configuration. It will be automatically populated when you write any posts.
+### Configuration
+
+After you have created the file `recent-posts.yaml`, the configuration is very simple,
+
+```yaml
+# section information
+section:
+  name: Recent Posts # Title of section (default: "")
+  id: recent-posts # url id/slug of section *Required*
+  enable: true # Boolean to determine if this section is enabled (default: false)
+  weight: 6 # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
+  hideTitle: true # Can optionally hide the title in sections (default: false)
+  numShow: 4 # Can optionally increase the number of posts to display (default: 3)
+```
 
 {{<img src="images/recent-posts.svg" >}}
