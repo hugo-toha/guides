@@ -13,7 +13,7 @@ You might want to keep your site up-to-date with the latest version of theme to 
 
 ### Setup Dependabot
 
-At first install `Dependabot`in your account/organization from [here](https://github.com/marketplace/dependabot-preview). Then, enable it in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository. A screenshot has been given below that is showing the process:
+Enable `Dependabot` in your repository by clicking `Enable Dependabot` button under `Insights > Dependency Graph > Dependabot` settings of your repository. For more information please check [GitHub Documentation](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-version-updates). A screenshot has been given below that is showing the process:
 
 {{< img src="enable_dependabot.png" align="center" >}}
 
@@ -38,4 +38,4 @@ updates:
 
 You are all set. Now, dependabot will check for sub-module update daily. It will create a PR to your site if it finds any update in the theme.
 
-To know more about the configuration options of Dependabot, please visit [here](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates).
+To know more about the configuration options of Dependabot, please visit [here](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates).
