@@ -41,9 +41,6 @@ outputs:
 # Enable Google Analytics
 googleAnalytics: UA-122321624-2
 
-# Enable Disqus forum
-disqusShortname: toha-example-site
-
 # Enable global emoji support
 enableEmoji: true
 
@@ -62,9 +59,47 @@ params:
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/hugo-toha/guides
+  # Default branch of your Git repo
+  gitBranch: main
 
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
+  # Configure various features of this theme
+  features:
+    # Enable and configure portfolio
+    portfolio:
+      enable: true
+    # Enable and configure blog posts
+    blog:
+      enable: true
+      # Share post on different social media
+      shareButtons:
+        facebook: true
+        twitter: true
+        linkedin: true
+        reddit: true
+        whatsapp: true
+        email: true
+        # tumblr: true
+        # pocket: true
+        # diaspora: true
+        # mastodon: true
+
+    # Enable comment feature. There, should be only one of them.
+    comment:
+      enable: true
+      disqus:
+        shortName: toha-example-site
+      # valine:
+      #   appId: HTV6askWxVo3vOxlqjjaq2hd-MsYXbMMI
+      #   appKey: pVrT3C85KGIuk27t07eh6bUC
+      #   avatar: retro
+      #   placeholder: Share your thought.
+      #   lang: en
+      #   recordIP: true
+      #   enableQQ: true
+
+    # Enable & configure "Notes" features
+    notes:
+      enable: false
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
