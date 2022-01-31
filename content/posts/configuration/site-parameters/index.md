@@ -146,12 +146,14 @@ description: Example site for hugo theme Toha.
 
 ### Add Custom Menus
 
-If you want to add some custom menus in the navbar, you can easily add them by adding the following in the `site.yaml` file.
+If you want to add some custom menus in the navbar, you can easily add them by adding the following in the `site.yaml` file. Custom menus are visible in the navigation bar by default. To hide them, set `hideFromNavbar` to `true`. Custom menus are hidden from the footer's navigation area by default. To show a custom menu item in the footer, set its `showOnFooter` property to `true`.
 
 ```yaml
 customMenus:
 - name: Notes
   url: https://hossainemruz.gitbook.io/notes/
+  hideFromNavbar: false
+  showOnFooter: true
 ```
 
 This is particularly helpful when you want to add a link to another site in the navbar.
