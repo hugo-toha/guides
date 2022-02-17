@@ -9,4 +9,58 @@ menu:
     weight: 600
 ---
 
-### Complete Post Coming Soon...
+## Analytics
+
+Toha currently supports three analytics methods:
+
+### Goat Counter
+
+[GoatCounter](https://www.goatcounter.com/) is the most complete, simple and privacy friendly analytics method provided by Toha. Its script tracks the most viewed pages, total number of users, devices, and much more, all while being open source! You can add the user ID you will receive from their page to your ```config.yaml`` like so:
+
+```yaml
+  features:
+    Analytics:
+      enable: true
+
+      # Goat Counter
+      GoatCounter: <goat-counter-id>
+```
+
+### Counter.Dev
+
+[Counter.dev](https://counter.dev) is a simple, privacy friendly and open source analytics website which enables you to track the total user count, first visited page and some other metrics on your website. Unfortunately, to keep things simple (and free) they dont show a ranking of the most visited pages, but rather the ones that are accessed the first. You can enable it by adding to your ```config.yaml``` the email you registered with at counter.dev's page:
+
+```yaml
+  features:
+    Analytics:
+      enable: true
+
+      # Counder.Dev
+      CounterDev: <user-email>
+```
+
+The tracking code will be automatically added to your site
+
+### Google Analytics
+
+{{< alert type="danger" >}}
+Beware that, [according to recent case law](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics might be illegal on the European Union
+{{< /alert >}}
+
+You can also Google Analytics support by using one of the two following methods:
+
+* Using Hugo's default ```GoogleAnalytics```variable, exposed directly in the configuration. You should add the user ID provided by google (it might start with UA- if it comes from an order version) directly in ```config.yaml```
+* Under ```features/Analytics```. Your config file would look like this:
+
+```yaml
+  features:
+    Analytics:
+      enable: true
+
+      # Google Analytics
+      Google: <user-id>
+```
+
+## Comments
+
+### Comming soon...
