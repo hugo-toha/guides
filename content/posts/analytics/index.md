@@ -13,6 +13,10 @@ menu:
 
 Toha currently supports three analytics methods:
 
+{{< alert type="warning" >}}
+Note: When adding analtics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, annonymous methods such as counter.dev and goatcounter.com dont need a banner, since they do not collect personally identifiable data.
+{{< /alert >}}
+
 ### Goat Counter
 
 [GoatCounter](https://www.goatcounter.com/) is the most complete, simple and privacy friendly analytics method provided by Toha. Its script tracks the most viewed pages, total number of users, devices, and much more, all while being open source! You can add the user ID you will receive from their page to your ```config.yaml`` like so:
