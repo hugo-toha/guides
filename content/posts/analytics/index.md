@@ -1,11 +1,11 @@
 ---
-title: "Analytics and Comments"
+title: "Analytics"
 date: 2020-06-08T06:00:23+06:00
-description: Adding analytics and disquss comment in hugo theme Toha
+description: Adding analytics in hugo theme Toha
 menu:
   sidebar:
-    name: Analytics & Comments
-    identifier: analytics-and-comments
+    name: Analytics
+    identifier: analytics
     weight: 600
 ---
 
