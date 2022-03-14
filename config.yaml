@@ -38,9 +38,6 @@ outputs:
   - RSS
   - JSON
 
-# Enable Google Analytics
-googleAnalytics: UA-122321624-2
-
 # Enable global emoji support
 enableEmoji: true
 
@@ -96,6 +93,28 @@ params:
       #   lang: en
       #   recordIP: true
       #   enableQQ: true
+
+    # Enable Analytics
+    analytics:
+      enabled: true
+      # Google Analytics
+      google:
+        id: UA-122321624-2
+      # # CounterDev
+      # counterDev:
+      #   id: <your counterdev id>
+      # # GoatCounter
+      # goatCounter:
+      #   code: <your goat counter code>
+
+    # # Enable Support
+    # support:
+    #   enabled: true
+    #   kofi:
+    #     user: hossainemruz
+    #     text: Tip Me
+    #     textColor: '#f9fafc'
+    #     backgroundColor: '#248aaa'
 
     # Enable & configure "Notes" features
     notes:
