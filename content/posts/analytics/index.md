@@ -11,66 +11,65 @@ menu:
 
 ## Analytics
 
-Toha currently supports three analytics methods. First, analytics themselves have to be enabled by setting:
+This theme has built in support for various analytic tools. Currently, it supports the following analytics:
 
-```yaml
-  features:
-    Analytics:
-      enabled: true
-```
-
-And, once that parameter has been set, any or all of the different methods can be independently specified as follows:
+- [GoatCounter](https://www.goatcounter.com/)
+- [counter.dev](https://counter.dev/)
+- [Google Analytics](https://analytics.google.com)
 
 {{< alert type="warning" >}}
-Note: When adding analtics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, annonymous methods such as counter.dev and goatcounter.com dont need a banner, since they do not collect personally identifiable data.
+Warning: When adding analytics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, anonymous methods such as [counter.dev](https://counter.dev) and [GoatCounter](https://www.goatcounter.com/) don't need a banner, since they do not collect personally identifiable data.
 {{< /alert >}}
 
 ### Goat Counter
 
-[GoatCounter](https://www.goatcounter.com/) is the most complete, simple and privacy friendly analytics method provided by Toha. Its script tracks the most viewed pages, total number of users, devices, and much more, all while being open source! You can add the user ID you will receive from their page to your ```config.yaml`` like so:
+[GoatCounter](https://www.goatcounter.com/) is the most complete, simple and privacy friendly analytics method supported in Toha. Its script tracks the most viewed pages, total number of users, devices, and much more, all while being open source!
+
+To enable GoatCounter analytics in your site, you have to sign in at [goatcounter.com](https://www.goatcounter.com) and obtain a code for your site. Then, you have to add `analytics` section under `params.features` section of your `config.yaml` file as below:
 
 ```yaml
+params:
   features:
-    Analytics:
+    analytics:
       enabled: true
-
-      # Goat Counter
-      GoatCounter:
-        code: <goat-counter-id>
+      goatCounter:
+        code: <your goat counter code>
 ```
 
-### Counter.Dev
+### counter.dev
 
-[Counter.dev](https://counter.dev) is a simple, privacy friendly and open source analytics website which enables you to track the total user count, first visited page and some other metrics on your website. Unfortunately, to keep things simple (and free) they dont show a ranking of the most visited pages, but rather the ones that are accessed the first. You can enable it by adding to your ```config.yaml``` the email you registered with at counter.dev's page:
+[counter.dev](https://counter.dev) is a simple, privacy friendly and open source analytics website which enables you to track the total user count, first visited page and some other metrics on your website. Unfortunately, to keep things simple (and free) they don't show a ranking of the most visited pages, but rather the ones that are accessed the first.
+
+You can enable it by adding the email you registered with at counter.dev's page in your `config.yaml` as below:
 
 ```yaml
+params:
   features:
-    Analytics:
+    analytics:
       enabled: true
-
-      # Counder.Dev
-      CounterDev:
-        id: <user-email>
+      counterDev:
+        id: <your counter.dev id>
 ```
 
-The tracking code will be automatically added to your site
+The tracking code will be automatically added to your site.
 
 ### Google Analytics
 
 {{< alert type="danger" >}}
-Beware that, [according to recent case law](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics might be illegal on the European Union
+Beware that [according to recent case law](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics might be illegal in the European Union
 {{< /alert >}}
 
-You can also Google Analytics support by providing a [Tracking ID (property number) or Measurement ID](https://support.google.com/analytics/answer/7372977?hl=en) using the following schema:
+You can enable Google Analytics in your site by adding your tracking id in your `config.yaml` file as below:
 
 ```yaml
+params:
   features:
-    Analytics:
+    analytics:
       enabled: true
-
-      # Google Analytics
-      Google:
-        id: <user-id>
+      google:
+        id: UA-122321624-2
 ```
 
-Toha is will detect which version you are using and either provide the v3 or v4 google analytics.
+You can use both V3 or V4 tracking ID. The theme will automatically detect the tracking code version and add the respective tracking scripts accordingly to your site.
+
+For additional privacy settings regarding Google Analytics, you can provide `privacy.googleAnalytics` section in your `config.yaml` file as described [here](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings).
