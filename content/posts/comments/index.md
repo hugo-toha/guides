@@ -79,7 +79,7 @@ params:
         repo: your-repo/name
         repoID: your-repo-id
         category: your-category
-        categoryID: your-category-ID
+        categoryID: your-category-id
         # theme: light
         # map: url
         # reaction: 1

@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Shortcodes
     identifier: shortcodes
-    weight: 40
+    weight: 700
 hero: boat.jpg
 ---
 
