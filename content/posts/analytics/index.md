@@ -11,7 +11,15 @@ menu:
 
 ## Analytics
 
-Toha currently supports three analytics methods:
+Toha currently supports three analytics methods. First, analytics themselves have to be enabled by setting:
+
+```yaml
+  features:
+    Analytics:
+      enabled: true
+```
+
+And, once that parameter has been set, any or all of the different methods can be independently specified as follows:
 
 {{< alert type="warning" >}}
 Note: When adding analtics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, annonymous methods such as counter.dev and goatcounter.com dont need a banner, since they do not collect personally identifiable data.
@@ -24,10 +32,11 @@ Note: When adding analtics, you should consider local legislation to see if a pr
 ```yaml
   features:
     Analytics:
-      enable: true
+      enabled: true
 
       # Goat Counter
-      GoatCounter: <goat-counter-id>
+      GoatCounter:
+        code: <goat-counter-id>
 ```
 
 ### Counter.Dev
@@ -37,10 +46,11 @@ Note: When adding analtics, you should consider local legislation to see if a pr
 ```yaml
   features:
     Analytics:
-      enable: true
+      enabled: true
 
       # Counder.Dev
-      CounterDev: <user-email>
+      CounterDev:
+        id: <user-email>
 ```
 
 The tracking code will be automatically added to your site
@@ -62,9 +72,6 @@ You can also Google Analytics support by using one of the two following methods:
       enable: true
 
       # Google Analytics
-      Google: <user-id>
+      Google:
+        id: <user-id>
 ```
-
-## Comments
-
-### Comming soon...
