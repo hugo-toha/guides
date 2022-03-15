@@ -61,17 +61,16 @@ The tracking code will be automatically added to your site
 Beware that, [according to recent case law](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics might be illegal on the European Union
 {{< /alert >}}
 
-You can also Google Analytics support by using one of the two following methods:
-
-* Using Hugo's default ```GoogleAnalytics```variable, exposed directly in the configuration. You should add the user ID provided by google (it might start with UA- if it comes from an order version) directly in ```config.yaml```
-* Under ```features/Analytics```. Your config file would look like this:
+You can also Google Analytics support by providing a [Tracking ID (property number) or Measurement ID](https://support.google.com/analytics/answer/7372977?hl=en) using the following schema:
 
 ```yaml
   features:
     Analytics:
-      enable: true
+      enabled: true
 
       # Google Analytics
       Google:
         id: <user-id>
 ```
+
+Toha is will detect which version you are using and either provide the v3 or v4 google analytics.
