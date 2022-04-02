@@ -53,6 +53,8 @@ params:
 
 The tracking code will be automatically added to your site.
 
+Note: On some sites, [an error has been detected](https://github.com/ihucos/counter.dev/issues/37) where only the root directory ("/") is passed over to counter.dev, so the tracking wont show anything under the "pages" section. To fix this, one can add `referrerPolicy: no-referrer-when-downgrade` as a parameter on the "counterDev" section, ensuring that new page visits are always correctly passed onto counter.dev.
+
 ### Google Analytics
 
 {{< alert type="danger" >}}
