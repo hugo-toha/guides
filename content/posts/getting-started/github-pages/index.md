@@ -124,11 +124,11 @@ WWW    3600    IN A     185.199.110.153
 WWW    3600    IN A     185.199.111.153
 ```
 
-To veryfy your domain to make sure nobody from Github can claim it except from you, you can follow the steps contained in [this guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
+To verify your domain to make sure nobody from Github can claim it except from you, you can follow the steps contained in [this guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
 
 Finally create a `CNAME` file inside `/static` directory of your repository. Add your domain name there:
 
-```yaml
+```
 example.com
 ```
 Once the Github Action has completed successfully, you can browse your site at `https://<your domain name>`.
