@@ -8,6 +8,9 @@ menu:
     parent: configuration
     weight: 105
 ---
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
 
 After installing this theme, when you first run your site, it will start with the default parameters. It should look similar to this example site except it will not have any sections on the homepage. Those sections are added via some data files. In the next few posts, I am going to show you how you can add those sections by providing the data files.
 

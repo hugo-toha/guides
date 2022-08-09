@@ -9,6 +9,10 @@ menu:
     weight: 150
 ---
 
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
+
 The `Recent Posts` section will display the most recent posts from your content. The configuration is simple, and should be stored in `data/en/sections`.
 
 ### Configuration
