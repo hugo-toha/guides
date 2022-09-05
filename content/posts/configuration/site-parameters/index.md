@@ -140,7 +140,7 @@ summary:
 - I love to work with some fun projects
 ```
 
-> Note: contactInfo paramerters will user the `icon` parameter to find the icon. this parameter must match the font awesome icon names [examples](https://fontawesome.com/search?o=r&f=brands)
+> Note: `contactInfo` paramerters will use the `icon` parameter to find the icon. This parameter must match the font awesome icon names [examples](https://fontawesome.com/search?o=r&f=brands)
 
 ### Add Copyright Notice
 
