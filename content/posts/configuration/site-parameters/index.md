@@ -128,6 +128,10 @@ greeting: "Hi, I am"
 contactInfo:
   email: "janedoe@example.com"
   phone: "+0123456789"
+  stack-overflow:
+    icon: stack-overflow
+    url: "https://stackoverflow.com/users/1/exampleUser"
+    text: "ExampleUser"
 
 # a summary of what you do
 summary:
@@ -135,6 +139,8 @@ summary:
 - I work with Go
 - I love to work with some fun projects
 ```
+
+> Note: contactInfo paramerters will user the `icon` parameter to find the icon. this parameter must match the font awesome icon names [examples](https://fontawesome.com/search?o=r&f=brands)
 
 ### Add Copyright Notice
 
