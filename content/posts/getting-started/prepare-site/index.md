@@ -148,6 +148,10 @@ image: "images/author/john.png"
 contactInfo:
   email: "johndoe@example.com"
   phone: "+0123456789"
+  stack-overflow:
+    icon: stack-overflow
+    url: "https://stackoverflow.com/users/1/exampleUser"
+    text: "ExampleUser"
 
 # some summary about what you do
 summary:
