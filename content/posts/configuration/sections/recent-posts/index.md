@@ -29,7 +29,7 @@ section:
   showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
   hideTitle: true # Can optionally hide the title in sections (default: false)
   numShow: 4 # Can optionally increase the number of posts to display (default: 3)
-  showButton: false #Can optionally show 'More Posts' button (default: false)
+  showMoreButton: false #Can optionally show 'More Posts' button (default: false)
 ```
 
 {{<img src="images/recent-posts.svg" >}}
