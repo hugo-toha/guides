@@ -6,6 +6,6 @@ menu:
   sidebar:
     name: External Link Example
     identifier: external-link
-    url: https://example.com/
+    pageRef: https://example.com/
     weight: 850
 ---
