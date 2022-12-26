@@ -12,6 +12,7 @@ menu:
 This theme supports adding various support/donation links in your site. Currently, supported support links are:
 
 - [Ko-fi](https://ko-fi.com/)
+- [Buy Me a Coffee](https://www.buymeacoffee.com/zicklam)
 
 ## Ko-fi
 
@@ -27,4 +28,24 @@ params:
         text: Tip Me
         textColor: '#f9fafc'
         backgroundColor: '#248aaa'
+```
+
+## Buy Me a Coffee
+
+You can add your "Buy Me a Coffee" floating button in your website. To add the floating button, add the `support` section under `params.features` section of your sites `config.yaml` file:
+
+![bmacbutton](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-button.png)
+![bmacwidget](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-widget.png)
+
+
+```yaml
+params:
+  features:
+    support:
+      enabled: true
+      buymeacoffee:
+        user: <your buymeacoffee.com user>
+        text: Support me on Buy me a coffee!
+        info: Buy me a coffee!
+        color: '#FFDD00'
 ```
