@@ -10,4 +10,9 @@ jobs:
     # checkout to latest commit
     - uses: actions/checkout@master
     # run markdown linter
-    - uses: gaurav-nelson/github-action-markdown-link-check@1.0.14
+    - uses: BoundfoxStudios/action-hugo-link-check@v2
+      with:
+        timeout: 300
+        # hugo-root: docs
+        # hugo-content-dir: docs/content
+        # hugo-config: docs/config.yaml
