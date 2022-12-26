@@ -10,7 +10,7 @@ jobs:
     # checkout to latest commit
     - uses: actions/checkout@master
     # run markdown linter
-    - uses: BoundfoxStudios/action-hugo-link-check@v1
+    - uses: BoundfoxStudios/action-hugo-link-check@v2
       with:
         timeout: 300
         hugo-root: ./
