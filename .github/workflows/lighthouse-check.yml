@@ -23,4 +23,5 @@ jobs:
         gitHubAccessToken: ${{secrets.GITHUB_TOKEN}}
         emulatedFormFactor: 'all'
         prCommentEnabled: true
+        prCommentSaveOld: false
         urls: "${{ steps.preview.outputs.url }},${{ steps.preview.outputs.url }}/posts/,${{ steps.preview.outputs.url }}/posts/writing-posts/markdown-syntax/"
