@@ -38,7 +38,7 @@ experiences:
 
 - company:
     name: PreExample Co.
-    url: "https://www.preexample.com"
+    url: "https://example.com"
     location: Nowhere
     overview: PreExample Co. est une société passerelle pour entrer dans Example co. Donc, rien de spécial ici.
   positions:
@@ -52,7 +52,7 @@ experiences:
 
 - company:
     name: Intern Counting Company (ICC).
-    url: "https://www.intern.com"
+    url: "https://example.com"
     location: Intern Land
     overview: La Compagnie de comptage des stagiaires (ICC) est responsable du comptage des ingénieurs stagiaires du monde entier.
   positions:

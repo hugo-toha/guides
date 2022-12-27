@@ -285,7 +285,7 @@ experiences:
 
 - company:
     name: PreExample Co.
-    url: "https://www.preexample.com"
+    url: "https://example.com"
     location: Nowhere
     overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
   positions:

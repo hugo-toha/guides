@@ -15,7 +15,7 @@ jobs:
       id: preview
       with:
         site_name: "toha-guides"
-        max_timeout: 60
+        max_timeout: 300
       env:
         NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
 
