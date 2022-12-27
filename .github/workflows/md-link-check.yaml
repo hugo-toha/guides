@@ -9,28 +9,24 @@ jobs:
     steps:
     # checkout to latest commit
     - uses: actions/checkout@master
-    # run markdown linter
-    - name: Check for broken Links
-      uses: marojor/hugo-broken-link-checker@v1.0.5
-      # with:
-      #   skip-file: 'skip-rules-for-broken-links-check.txt'
-    # - uses: BoundfoxStudios/action-hugo-link-check@v2
-    #   id: link-check
-    #   continue-on-error: true
-    #   with:
-    #     timeout: 300
-    #     fail-on-broken-links: 0
-    #     hugo-startup-wait-time: 120
-    #     hugo-root: ./
-    #     hugo-content-dir: ./content
-    #     hugo-config: ./config.yaml
-    # - name: "Print Broken Links"
-    #   run: |
-    #     BROKEN_LINK_COUNT="${{ steps.link-check.outputs.broken-links-count }}"
-    #     if [[ "$BROKEN_LINK_COUNT" -gt 0 ]]; then
-    #       echo ${{ steps.link-check.outputs.broken-links}}
-    #       exit 1
-    #     else
-    #       echo "No broken link found"
-    #       exit 0
-    #     fi
+
+    - name: Waiting for Netlify Preview
+      uses: josephduffy/wait-for-netlify-action@v1
+      id: netflify-preview
+      with:
+        site_name: "toha-guides"
+        max_timeout: 120
+
+    - name: Link Checker
+      id: lychee
+      uses: lycheeverse/lychee-action@v1.5.4
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      with:
+        args: "--verbose ${{steps.netlify-preview.url}}"
+
+    - name: Comment Broken Links
+      uses: marocchino/sticky-pull-request-comment@v2
+      if: env.lychee_exit_code != 0
+      with:
+        path: ./lychee/out.md
