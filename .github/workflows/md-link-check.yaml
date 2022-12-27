@@ -13,6 +13,8 @@ jobs:
     - uses: BoundfoxStudios/action-hugo-link-check@v2
       with:
         timeout: 300
+        fail-on-broken-links: 0
+        hugo-startup-wait-time: 60
         hugo-root: ./
         hugo-content-dir: ./content
         hugo-config: ./config.yaml
