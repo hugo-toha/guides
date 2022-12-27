@@ -9,7 +9,12 @@ menu:
     weight: 10
 ---
 
-Greeting! Thank you for deciding to use this theme. In this post, we are going to create a hugo site from scratch. Then, we will configure it with `Toha` theme, make it multilingual, add some example posts. At the end of this post, you should be able to run a fully functional hugo site with `Toha` theme locally.
+
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
+
+In this post, we are going to create a hugo site from scratch. Then, we will configure it with `Toha` theme, make it multilingual, add some example posts. At the end of this post, you should be able to run a fully functional hugo site with `Toha` theme locally.
 
 If you want a head start, you can just fork [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io) repo, rename it and update with your own data. This repo has already been configured to deploy in [Github Pages](https://pages.github.com/) and [Netlify](https://www.netlify.com/).
 
@@ -143,6 +148,10 @@ image: "images/author/john.png"
 contactInfo:
   email: "johndoe@example.com"
   phone: "+0123456789"
+  stack-overflow:
+    icon: stack-overflow
+    url: "https://stackoverflow.com/users/1/exampleUser"
+    text: "ExampleUser"
 
 # some summary about what you do
 summary:
@@ -276,7 +285,7 @@ experiences:
 
 - company:
     name: PreExample Co.
-    url: "https://www.preexample.com"
+    url: "https://example.com"
     location: Nowhere
     overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
   positions:

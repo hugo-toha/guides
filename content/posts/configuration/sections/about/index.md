@@ -9,6 +9,10 @@ menu:
     weight: 110
 ---
 
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
+
 The `About` section should give the viewer a brief idea about yourself. In this post, we are going to configure the `About` section of your website.
 
 At first, create `about.yaml` file in the `data/en/sections` directory of your site. Then, follow the following instructions.

@@ -16,6 +16,7 @@ This theme has built in support for various analytic tools. Currently, it suppor
 - [GoatCounter](https://www.goatcounter.com/)
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
+- [Matomo](https://matomo.org/)
 
 {{< alert type="warning" >}}
 Warning: When adding analytics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, anonymous methods such as [counter.dev](https://counter.dev) and [GoatCounter](https://www.goatcounter.com/) don't need a banner, since they do not collect personally identifiable data.
@@ -75,3 +76,17 @@ params:
 You can use both V3 or V4 tracking ID. The theme will automatically detect the tracking code version and add the respective tracking scripts accordingly to your site.
 
 For additional privacy settings regarding Google Analytics, you can provide `privacy.googleAnalytics` section in your `config.yaml` file as described [here](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings).
+
+### Matomo
+
+You can enable Matomo (formerly Piwik) by modifying the `config.yaml` file as shown in the following example:
+
+```yaml
+params:
+  features:
+    analytics:
+      enabled: true
+      matomo:
+        instance: matomo.example.com
+        siteId: 1 # The number generated after adding a site in your instance
+```

@@ -9,9 +9,9 @@ menu:
     weight: 140
 ---
 
-{{< alert type="danger">}}
- *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/en/sections` directory and should follow [this](https://github.com/hugo-toha/hugo-toha.github.io/tree/master/data/en/sections) format.
-{{</ alert >}}
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
 
 The `Projects` section has been designed to showcase your projects in a meaningful way. In this post, we are going to configure the `Projects` section of your site.
 

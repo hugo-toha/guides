@@ -9,9 +9,9 @@ menu:
     weight: 130
 ---
 
-{{< alert type="danger">}}
- *Warning:* New breaking changes has been introduced in the `master`. This guide is now outdated. It will be updated soon. Now, your site configuration files should be in `data/en/sections` directory and should follow [this](https://github.com/hugo-toha/hugo-toha.github.io/tree/master/data/en/sections) format.
-{{</ alert >}}
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
 
 The `Experiences` section has been designed to truly reflect your career background. It should give the viewer an idea about the responsibilities you have handled in various stages of your career. In this post, we are going to configure the `Experiences` section of your site.
 
@@ -83,7 +83,7 @@ experiences:
 - designation: Software Engineer
   company:
     name: PreExample Co.
-    url: "https://www.preexample.com"
+    url: "https://example.com"
     location: Nowhere
     overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
   start: March 2016
@@ -96,7 +96,7 @@ experiences:
 - designation: Intern
   company:
     name: Intern Counting Company (ICC).
-    url: "https://www.intern.com"
+    url: "https://example.com"
     location: Intern Land
     overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
   start: Jun 2015

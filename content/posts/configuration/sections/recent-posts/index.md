@@ -9,6 +9,10 @@ menu:
     weight: 150
 ---
 
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
+
 The `Recent Posts` section will display the most recent posts from your content. The configuration is simple, and should be stored in `data/en/sections`.
 
 ### Configuration
@@ -25,6 +29,7 @@ section:
   showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
   hideTitle: true # Can optionally hide the title in sections (default: false)
   numShow: 4 # Can optionally increase the number of posts to display (default: 3)
+  showMoreButton: false #Can optionally show 'More Posts' button (default: false)
 ```
 
 {{<img src="images/recent-posts.svg" >}}

@@ -12,31 +12,16 @@ menu:
 In this post, we are going to deploy the site we have created in previous post in [Github Pages](https://pages.github.com/). At first, make sure that your repository name is `<your username>.github.io`. Then, commit any local uncommitted changes and push into Github.
 
 
-#### Setup Default Branch
+#### Create `gh-pages` Branch
 
-GitHub don't serve a site from hugo templates directly. Instead, we have to provide the generated (HTML, CSS, JS etc.) files after building the site. From now, we are going to maintain two branches for our site. The `main` (previously known as `master`) branch will hold the generated contents after building the site. Github will serve the site from this branch. We will create another branch named `source`. This will hold our markdowns files and hugo templates.
-
-Let's create the `source` branch `main` branch and push it into Github.
+At first, create a new branch named `gh-pages`. Github will automatically set respective configurations for Github Pages when it see a branch with this name.
 
 ```bash
-# create the source branch
-$ git checkout -b source
+# create the gh-pages branch
+$ git checkout -b gh-pages
 # push the source branch into Github
-$ git push origin source
+$ git push gh-pages gh-pages
 ```
-
-Now, we are going to set the `source` branch as our default branch. Go to  `Settings > Branches` of your repository and replace `main` with `source` under `Default branch` section. Then, save the change by clicking `Update` button. A screenshot of the process is shown below:
-
-{{< img src="images/set_default_branch.png" align="center" >}}
-
-{{< vs 2 >}}
-Going forward, all our developments will happen against this `source` branch.
-
-#### Set Github Pages Branch
-
-Now, we have to tell Github which branch we are using for holding generated contents. Go to the `Settings` of your repository. Scroll down until you find `Github Pages` section. Select `main` branch and `/(root)` directory under `Source` section.
-
-{{< img src="images/github_pages_branch.png" align="center" >}}
 
 #### Enable Github Action
 
@@ -55,45 +40,45 @@ name: Deploy to Github Pages
 on:
   push:
     branches:
-    - source
+    - main
 
 jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
     # checkout to the commit that has been pushed
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         submodules: true  # Fetch Hugo themes (true OR recursive)
         fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
     
     # install Hugo
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
+      uses: peaceiris/actions-hugo@v2.5.0
       with:
-        hugo-version: '0.77.0'
+        hugo-version: 'latest'
         extended: true
 
     # build website
     - name: Build
       run: hugo --minify
 
-    # push the generated content into the `main` (former `master`) branch.
+    # push the generated content into the `gh-pages` branch.
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v3.8.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: main # if your main branch is `master` use that here.
+        publish_branch: gh-pages
         publish_dir: ./public
 ```
 
-This action will start on every push into the `source` branch. It will build the site and commit the generated content into `main` branch.
+This action will start on every push into the `main` branch. It will build the site and commit the generated content into `gh-pages` branch.
 
 #### Deploy
 
-If you have followed the guide properly, your site should be ready to deploy in Github Pages. Now, if you push any commit into your `source` branch, a Github Action will start and deploy your site automatically.
+If you have followed the guide properly, your site should be ready to deploy in Github Pages. Now, if you push any commit into your `main` branch, a Github Action will start and deploy your site automatically.
 
-Push a commit into the `source` branch and go to `Actions` tab of your repository to verify that the action has started.
+Push a commit into the `main` branch and go to `Actions` tab of your repository to verify that the action has started.
 
 {{< img src="images/action_running.png" align="center" >}}
 
@@ -108,3 +93,29 @@ Now, wait for the actions to complete. If it completes successfully, you should 
 Once the Github Action has completed successfully, you can browse your site at `https://<your username>.github.io`.
 
 {{< img src="images/site_deployed.png" align="center" >}}
+
+#### Add custom domain name
+
+If you own a domain name and willing to use it in this website go to your domain name provider website. Then add the following Resource Records:
+```
+@      3600    IN A     185.199.108.153
+@      3600    IN A     185.199.109.153
+@      3600    IN A     185.199.110.153
+@      3600    IN A     185.199.111.153
+
+WWW    3600    IN A     185.199.108.153
+WWW    3600    IN A     185.199.109.153
+WWW    3600    IN A     185.199.110.153
+WWW    3600    IN A     185.199.111.153
+```
+
+To verify your domain to make sure nobody from Github can claim it except from you, you can follow the steps contained in [this guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
+
+Finally create a `CNAME` file inside `/static` directory of your repository. Add your domain name there:
+
+```
+example.com
+```
+Once the Github Action has completed successfully, you can browse your site at `https://<your domain name>`.
+
+Note that by browsing to `https://<your username>.github.io` it will automaitcally redirect to `https://<your domain name>`.

@@ -8,6 +8,9 @@ menu:
     parent: configuration
     weight: 105
 ---
+{{< alert type="danger" >}}
+This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
+{{< /alert >}}
 
 After installing this theme, when you first run your site, it will start with the default parameters. It should look similar to this example site except it will not have any sections on the homepage. Those sections are added via some data files. In the next few posts, I am going to show you how you can add those sections by providing the data files.
 
@@ -72,6 +75,12 @@ gitRepo: <your site's Github repo URL>
 
 This will add a button labeled `Improve This Page` at the bottom of every blog post. The button will route the user directly to the respective edit page in Github.
 
+If your default branch isn't called `main` then you need to add your git default branch in the `params` section of your `config.yaml` file.
+
+```yaml
+gitBranch: <your git default branch name>
+```
+
 ### Enable/Disable Newsletter
 
 The newsletter feature only supports Mailchimp for now.  
@@ -119,6 +128,10 @@ greeting: "Hi, I am"
 contactInfo:
   email: "janedoe@example.com"
   phone: "+0123456789"
+  stack-overflow:
+    icon: stack-overflow
+    url: "https://stackoverflow.com/users/1/exampleUser"
+    text: "ExampleUser"
 
 # a summary of what you do
 summary:
@@ -126,6 +139,8 @@ summary:
 - I work with Go
 - I love to work with some fun projects
 ```
+
+> Note: `contactInfo` paramerters will use the `icon` parameter to find the icon. This parameter must match the font awesome icon names [examples](https://fontawesome.com/search?o=r&f=brands)
 
 ### Add Copyright Notice
 
