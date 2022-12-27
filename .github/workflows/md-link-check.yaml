@@ -28,8 +28,13 @@ jobs:
         args: "--verbose ${{steps.netlify-preview.outputs.url}}"
         fail: true
 
+    - name: Check output
+      run: |
+        ls
+        cat lychee/out.md
+
     - name: Comment Broken Links
       uses: marocchino/sticky-pull-request-comment@v2
       if:  ${{ steps.lychee.outputs.exit_code }} != 0
       with:
-        path: ./lychee/out.md
+        path: lychee/out.md
