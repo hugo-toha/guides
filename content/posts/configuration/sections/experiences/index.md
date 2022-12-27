@@ -83,7 +83,7 @@ experiences:
 - designation: Software Engineer
   company:
     name: PreExample Co.
-    url: "https://www.preexample.com"
+    url: "https://example.com"
     location: Nowhere
     overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
   start: March 2016
@@ -96,7 +96,7 @@ experiences:
 - designation: Intern
   company:
     name: Intern Counting Company (ICC).
-    url: "https://www.intern.com"
+    url: "https://example.com"
     location: Intern Land
     overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
   start: Jun 2015
