@@ -12,7 +12,7 @@ jobs:
 
     - name: Waiting for Netlify Preview
       uses: kamranayub/wait-for-netlify-action@v2.1.1
-      id: wait-for-netflify-preview
+      id: netlify-preview
       with:
         site_name: "toha-guides"
         max_timeout: 60
