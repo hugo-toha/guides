@@ -10,12 +10,14 @@ jobs:
     # checkout to latest commit
     - uses: actions/checkout@master
 
-    - name: Waiting for Netlify Preview
-      uses: josephduffy/wait-for-netlify-action@v1
-      id: netflify-preview
+    - name: Wait for Deploy Preview
+      uses: lewagon/wait-on-check-action@v1.2.0
+      id: deploy-preview
       with:
-        site_name: "toha-guides"
-        max_timeout: 120
+        ref: ${{ github.ref }}
+        check-name: 'netlify/toha-guides/deploy-preview'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        wait-interval: 5
 
     - name: Link Checker
       id: lychee
@@ -23,7 +25,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:
-        args: "--verbose ${{steps.netlify-preview.url}}"
+        args: "--verbose https://deploy-preview-${{github.event.issue.number}}--toha-guides.netlify.app/"
 
     - name: Comment Broken Links
       uses: marocchino/sticky-pull-request-comment@v2
