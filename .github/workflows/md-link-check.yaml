@@ -26,7 +26,6 @@ jobs:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:
         args: "--verbose ${{steps.netlify-preview.outputs.url}}"
-        fail: true
 
     - name: Check output
       run: |
