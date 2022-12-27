@@ -26,6 +26,8 @@ jobs:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:
         args: "--verbose ${{steps.netlify-preview.outputs.url}}"
+        debug: true
+        fail: true
 
     - name: Comment Broken Links
       uses: marocchino/sticky-pull-request-comment@v2
