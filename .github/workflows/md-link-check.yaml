@@ -28,9 +28,10 @@ jobs:
         args: "--verbose --exclude-mail ${{steps.preview.outputs.url}}"
 
     - name: Printing Link checker output
-      run: echo "${{steps.lychee.outputs.exit_code}}"
+      run: echo "$lychee_exit_code"
+
     - name: Comment Broken Links
       uses: marocchino/sticky-pull-request-comment@v2
-      if: ${{steps.lychee.outputs.exit_code}} != 0
+      if: $lychee_exit_code != 0
       with:
         path: lychee/out.md
