@@ -13,6 +13,36 @@ menu:
 
 Here, I am going to assume that you want to start a fresh Hugo site using this theme. If you are already using Hugo for your site, then you must know how to use a theme. In that case, please follow this [sample repo](https://github.com/hugo-toha/hugo-toha.github.io) for further reference.
 
+### Requirements
+
+In order to run the theme locally, you must have the following tools installed.
+
+1. Hugo version `v0.109.x` (extended) or later.
+2. [Go](https://go.dev/doc/install) language version `v1.18.x` or later.
+3. Node version `v18.x` and npm version `8.x` or later.
+
+Make sure you have the required tools installed to the proper version using the following commands.
+
+```bash
+# Check Hugo version
+➜ hugo version
+hugo v0.109.0+extended linux/amd64 BuildDate=unknown
+
+# Check Go version
+➜ go version
+go version go1.19.4 linux/amd64
+
+# Check Node version
+➜ node -v
+v18.12.1
+
+# Check NPM version
+➜ npm -v
+8.19.2
+```
+
+### Getting Started
+
 Now, let's get back into our mission. Simply, follow these 5 steps to get started with your site.
 
 #### Step 1: Fork the example repo and rename
@@ -21,10 +51,9 @@ At first, **fork** this [sample repo](https://github.com/hugo-toha/hugo-toha.git
 
 #### Step 2: Clone the forked repo locally
 
-Once you have forked and renamed the repository, you can now clone the forked repository in your local machine for further changes. Use the `--recursive` flag with `git clone` command. This will force git to pull the theme locally.
-
+Once you have forked and renamed the repository, you can now clone the forked repository in your local machine for further changes.
 ```bash
-git clone git@github.com:<your username>/<forked repo name> --recursive
+git clone git@github.com:<your username>/<forked repo name>
 ```
 
 #### Step 3: Change `config.yaml` file
@@ -67,9 +96,24 @@ newsletter:
   enable: false
 ```
 
-#### Step 4: Install Hugo and run the site locally
+#### Step 4: Run the site locally
 
-If you haven't installed Hugo already on your local machine, install it first by following the guide from [here](https://gohugo.io/getting-started/installing/). Then, run the site locally by running the following command:
+Now, run the following commands to run your site locally:
+
+a. Load Hugo modules
+
+```bash
+hugo mod tidy
+```
+
+b. Install node modules
+
+```bash
+hugo mod npm pack
+npm install
+```
+
+c. Run the site
 
 ```bash
 hugo server -w

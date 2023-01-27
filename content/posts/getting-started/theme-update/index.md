@@ -9,6 +9,10 @@ menu:
     weight: 40
 ---
 
+{{< alert type="danger" >}}
+This doc is outdated. We will be updating the doc soon.
+{{< /alert >}}
+
 You might want to keep your site up-to-date with the latest version of theme to enjoy the latest features and fixes. In this post, we are going to setup a `Dependabot` Github app to automatically update the theme version. The app will check daily if there is any update in the submodules. If it finds any update in the theme, it will create a PR updating your site to the latest theme version.
 
 ### Setup Dependabot

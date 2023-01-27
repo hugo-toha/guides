@@ -44,28 +44,36 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     # checkout to the commit that has been pushed
     - uses: actions/checkout@v3
-      with:
-        submodules: true  # Fetch Hugo themes (true OR recursive)
-        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-    
-    # install Hugo
+
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.5.0
+      uses: peaceiris/actions-hugo@v2.6.0
       with:
         hugo-version: 'latest'
         extended: true
 
-    # build website
+    - name: Update Hugo Modules
+      run: hugo mod tidy
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install node modules
+      run: |
+        hugo mod npm pack
+        npm install
+
     - name: Build
       run: hugo --minify
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.8.0
+      uses: peaceiris/actions-gh-pages@v3.9.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
