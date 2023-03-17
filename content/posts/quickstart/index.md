@@ -56,7 +56,15 @@ Once you have forked and renamed the repository, you can now clone the forked re
 git clone git@github.com:<your username>/<forked repo name>
 ```
 
-#### Step 3: Change `config.yaml` file
+#### Step 3: Update the module file
+
+You should see `go.mod` and `go.sum` files in the root of the repository. Update the first line of the `go.mod` file as below:
+
+```bash
+module github.com/<your username>/<forked repo name>
+```
+
+#### Step 4: Change `config.yaml` file
 
 Now, open the repository in an editor and change the following configurations in your `config.yaml` file located at the root of your repository.
 
@@ -96,7 +104,7 @@ newsletter:
   enable: false
 ```
 
-#### Step 4: Run the site locally
+#### Step 5: Run the site locally
 
 Now, run the following commands to run your site locally:
 
@@ -126,7 +134,7 @@ If everything goes right, you should see an output similar to this.
 
 Now, go to [localhost:1313](http://localhost:1313/) in your browser and you should see your site running.
 
-#### Step 5: Push the changes to Github
+#### Step 6: Push the changes to Github
 
 If you have come this far, it means your site is running locally without any issue. Let's push these changes to Github.
 
