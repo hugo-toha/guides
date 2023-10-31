@@ -26,7 +26,7 @@ Warning: When adding analytics, you should consider local legislation to see if 
 
 [GoatCounter](https://www.goatcounter.com/) is the most complete, simple and privacy friendly analytics method supported in Toha. Its script tracks the most viewed pages, total number of users, devices, and much more, all while being open source!
 
-To enable GoatCounter analytics in your site, you have to sign in at [goatcounter.com](https://www.goatcounter.com) and obtain a code for your site. Then, you have to add `analytics` section under `params.features` section of your `config.yaml` file as below:
+To enable GoatCounter analytics in your site, you have two options: one is to sign in at [goatcounter.com](https://www.goatcounter.com) and obtain a code for your site, the second is to self-hosted an instance of GoatCounter. Then, you have to add `analytics` section under `params.features` section of your `config.yaml` file as below:
 
 ```yaml
 params:
@@ -34,7 +34,8 @@ params:
     analytics:
       enabled: true
       goatCounter:
-        code: <your goat counter code>
+        code: <your GoatCounter code>  # Not self-hosted
+        instance: <your GoatCounter instance url>  # For self-hosted you should use only one of the two methods
 ```
 
 ### counter.dev
