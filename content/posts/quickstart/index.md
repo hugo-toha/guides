@@ -17,7 +17,7 @@ Here, I am going to assume that you want to start a fresh Hugo site using this t
 
 In order to run the theme locally, you must have the following tools installed.
 
-1. Hugo version `v0.109.x` (extended) or later.
+1. Hugo version `v0.118.x` (extended) or later.
 2. [Go](https://go.dev/doc/install) language version `v1.18.x` or later.
 3. Node version `v18.x` and npm version `8.x` or later.
 
@@ -26,7 +26,7 @@ Make sure you have the required tools installed to the proper version using the 
 ```bash
 # Check Hugo version
 ➜ hugo version
-hugo v0.109.0+extended linux/amd64 BuildDate=unknown
+hugo v0.118.2+extended linux/amd64 BuildDate=unknown
 
 # Check Go version
 ➜ go version
