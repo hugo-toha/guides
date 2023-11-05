@@ -9,8 +9,6 @@ menu:
     weight: 1
 ---
 
-[Test Link](/posts/getting-started/prepare-site/index.md)
-
 Ce thème a été conçu à partir d'un point de préférence personnel. En tant que développeur, je veux organiser mon portfolio de façon à ce qu'il reflète au mieux mes compétences. Donc, ce thème peut ou pas répondre à vos besoins, mais je serai heureux d'avoir vos commentaires.
 
 Ce billet vous donnera un aperçu des fonctionnalités intégrées à ce thème .
