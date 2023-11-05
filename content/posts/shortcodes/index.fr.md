@@ -11,7 +11,7 @@ hero: boat.jpg
 ---
 Ce billet échantillon est destiné à tester les éléments suivants :
 
-- Image de héros par défaut.
+- Manipulation d'une image.
 - Différents shortcodes.
 
 ## Alerte
@@ -130,4 +130,3 @@ Voici la ligne 2. Il devrait y avoir un espace vertical de `4rem` avec la ligne 
 
 <!-- markdown-link-check-disable-next-line -->
 Vidéo de [Rahul Sharma](https://www.pexels.com/@rahul-sharma-493988) sur [Pexels](https://www.pexels.com).
-
