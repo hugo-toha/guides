@@ -4,7 +4,7 @@ date: 2023-11-05T14:06:25+02:00
 description: "Codes abrégés"
 menu:
   sidebar:
-    name: "Code abrégés"
+    name: "Codes abrégés"
     identifier: shortcodes
     weight: 700
 hero: boat.jpg
