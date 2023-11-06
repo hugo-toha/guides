@@ -15,3 +15,4 @@ Au 05/11/2023, les billets intégralement traduits en français sont :
 - [x] Features/index.md
 - [x] Quickstart/index.md
 - [x] Shortcodes/index.md
+- [x] Supports/_index.md 
