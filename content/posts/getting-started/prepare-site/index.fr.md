@@ -9,12 +9,7 @@ menu:
     weight: 10
 ---
 
-
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
-
-Dans ce billet, nous allons créer un site hugo de zéro. Alors, nous le configurerons avec le thème `toha`, le rendre multilingue, ajouter quelques exemples de billets. A la fin de ce billet, vous devriez être capable d'exécuter pleinement un site Hugo avec le thème `Toha`  localement.
+Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons avec le thème `toha`, le rendre multilingue, ajouter quelques exemples de billets. A la fin de ce billet, vous devriez être capable d'exécuter pleinement un site Hugo avec le thème `Toha` localement.
 
 Si vous voulez un démarrage de la tête, vous pouvez juste forker le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez le et mettez le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
 
@@ -26,7 +21,7 @@ D'abord, créez un dépôt sur Github. Si vous voulez déployer ce site dans Git
 
 ### Créer un site
 
-Maintenant, assurez-vous d'avoir [Hugo](https://gohugo.io/getting-started/installing/) installé. Ce thème devrait fonctionner avec hugo version `v0.68.0` et plus. Maintenant, lancez la commande suivante depuis la racine de votre dépôt pour initier un site web hugo.
+Maintenant, assurez-vous d'avoir [Hugo](https://gohugo.io/getting-started/installing/) installé. Ce thème devrait fonctionner avec hugo version `v0.111.0` et plus. Maintenant, lancez la commande suivante depuis la racine de votre dépôt pour initier un site web hugo.
 
 ```console
 $ hugo new site ./ -f=yaml --force
@@ -77,7 +72,20 @@ baseURL: https://hugo-toha.github.io
 
 languageCode: en-us
 title: "John's Blog"
-theme: "toha"
+
+# Use Hugo modules to add theme
+module:
+  imports:
+  - path: github.com/hugo-toha/toha/v4
+  mounts:
+  - source: static/files
+    target: static/files
+  - source: ./node_modules/flag-icon-css/flags
+    target: static/flags
+  - source: ./node_modules/@fontsource/mulish/files
+    target: static/files
+  - source: ./node_modules/katex/dist/fonts
+    target: static/fonts
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -85,13 +93,30 @@ languages:
   en:
     languageName: English
     weight: 1
+  fr:
+    languageName: Français
+    weight: 2
 
-# Control TOC depth
+# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
+# DefaultContentLanguage: bn
+
+# Allow raw html in markdown file
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 # Enable global emoji support
 enableEmoji: true
@@ -117,13 +142,13 @@ Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir 
 
 #### Ajouter de données
 
-La plupart des contenus de ce thème sont pilotés par quelques fichiers YAML dans le répertoire `data`. Dans cette section, nous allons ajouter quelques échantillons de données. Puisque nous sommes en train de bâtir un site multilingue, noujs allons garder séparer les données de chaque langue dans leur propre répertoire local.
+La plupart des contenus de ce thème sont pilotés par quelques fichiers YAML dans le répertoire `data`. Dans cette section, nous allons ajouter quelques échantillons de données. Puisque nous sommes en train de bâtir un site multilingue, nous allons séparer les données de chaque langue dans leur propre répertoire local.
 
-D'abord, créons le répertoire `en` dans votre répertoire `data`. Ici, nous sommes en train d'ajouter des données pour la langue `anglaise`.
+D'abord, créez le répertoire `en` dans votre répertoire `data`. Ici, nous sommes en train d'ajouter des données pour la langue `anglaise`.
 
 ##### Site Information
 
-Maintenant, créons un fichier `site.yaml` dans le répertoire `/data/en/` de votre dépôt. Ajoutons-y le contenu suivant:
+Maintenant, créez un fichier `site.yaml` dans le répertoire `/data/en/` de votre dépôt. Ajoutez-y le contenu suivant:
 
 ```yaml
 # Copyright Notice
@@ -134,9 +159,9 @@ description: Portfolio and personal blog of John Doe.
 ```
 Pour voir toutes les options disponibles pour les informations du site, consulter [cet extrait de fichier](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/site.yaml).
 
-##### Author Information
+##### Auteur Information
 
-Maintenant, créons un fichier `author.yaml` dans le répertoire `data/en` et ajoutez vos informations comme suit:
+Maintenant, créez un fichier `author.yaml` dans le répertoire `data/en` et ajoutez vos informations comme suit:
 
 ```yaml
 # Quelques informations à propos de vous.
@@ -197,20 +222,69 @@ summary: 'I am a passionate software engineer with x years of working experience
 # Vos liens sur les réseaux sociaux
 # Mettez-en autant que vous voulez. Utilisez use font-awesome for the icons
 socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "example@gmail.com"
+
 - name: Github
   icon: "fab fa-github"
   url: "https://www.github.com/example"
 
-# Vos compétences génériques.
-# Donnez un pourcentage entre 50 et 100 avec des intervalles de 5
-# Les couleurs actuellement supportées : blue (bleu), yellow (jaune), pink (rose), green (vert), sky (ciel), orange (orange)
-softSkills:
-- name: Leadership
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "#"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "#"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "#"
+
+- name: Facebook
+  icon: "fab fa-facebook"
+  url: "#"
+
+# Affichez vos badges
+# Vous pouvez montrer vos certifications depuis https://www.credly.com
+# Vous pouvez aussi afficher des barres circulaire indiquant le niveau d'expertise de certaines compétences
+badges:
+- type: certification
+  name: Certified Kubernetes Security Specialist
+  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+
+- type: certification
+  name: Istio and IBM Cloud Kubernetes Service
+  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+
+- type: certification
+  name: Artificial Intelligence and Machine Learning
+  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+
+- type: soft-skill-indicator
+  name: Leadership
   percentage: 85
   color: blue
-- name: Team Work
+
+- type: soft-skill-indicator
+  name: Team Work
   percentage: 90
   color: yellow
+
+- type: soft-skill-indicator
+  name: Hard Working
+  percentage: 85
+  color: orange
+
+# Vous pouvez aussi fournir un code couleur à la place d'un nom de couleur
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
 ```
 Mettre le fichier `resume.pdf` dans le répertoire `/static/files`. Vous pouvez trouver le fichier `about.yaml` utilisé dans le site exemple depuis [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/about.yaml).
 
@@ -251,7 +325,7 @@ Mettez vos images de compétences dans le répertoire `images/sections/skills` d
 
 ###### Section Expériences
 
-Créons un fichier `experiences.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
+Créez un fichier `experiences.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
 # section information
@@ -270,7 +344,7 @@ experiences:
     name: Example Co.
     url: "https://www.example.com"
     location: Dhaka Branch
-    # company overview
+    # Aperçu de l'entreprise
     overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
   positions:
   - designation: Senior Software Engineer
@@ -302,7 +376,7 @@ Vous pouvez trouver le fichier `experiences.yaml` utilisé dans le site exemple 
 
 ###### Section Projets
 
-Créons un fichier `projects.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
+Créez un fichier `projects.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
 # section information
@@ -310,7 +384,7 @@ section:
   name: Projects
   id: projects
   enable: true
-  weight: 4
+  weight: 5
   showOnNavbar: true
   # En option : Possibilité de masquer le titre dans les sections
   # hideTitle: true
@@ -356,9 +430,9 @@ projects:
 ```
 Mettez les images des projets dans le répertoire `images/sections/projects/`. Vous trouverez les images [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). Vous pouvez également trouver le fichier `projects.yaml` utilisé dans le site exemple par [là](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
-###### Recent Posts Section
+###### Section Billets récents
 
-Créons le fichier `recent-posts.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
+Créez le fichier `recent-posts.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
 
 ```yaml
 # section information
@@ -366,8 +440,11 @@ section:
   name: Recent Posts
   id: recent-posts
   enable: true
-  weight: 5
-  showOnNavbar: true
+  weight: 6
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# no additional configuration is required
 ```
 
 Vous pouvez trouver le fichier `recent-posts.yaml` utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/recent-posts.yaml).
@@ -376,7 +453,7 @@ Vous pouvez trouver le fichier `recent-posts.yaml` utilisé dans le site d'exemp
 
 ###### Section Réalisation
 
-Créons un fichier `achievements.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
+Créez un fichier `achievements.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
 
 ```yaml
 # section information
@@ -384,7 +461,7 @@ section:
   name: Achievements
   id: achievements
   enable: true
-  weight: 6
+  weight: 8
   showOnNavbar: true
   # En option : Possibilité de masquer le titre dans les sections
   # hideTitle: true
@@ -406,24 +483,24 @@ achievements:
 ```
 Mettez les images des projets dans le répertoire `images/sections/achievements/`. Vous trouverez les images [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/achievements). Vous pouvez également trouver le fichier `achievements.yaml` utilisé dans le site exemple par [là](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/achievements.yaml).
 
-#### Add Posts
+#### Ajout de billets
 
-Now, we are ready add our first post into our site. Here, we are going to add this [introduction post](https://hugo-toha.github.io/posts/introduction/).
+Maintenant, nous sommes prêts à ajouter nos premiers billet dans notre site. Ici, nous allons ajouter ce [billet d'introduction](https://hugo-toha.github.io/posts/introduction/).
 
-- At first, create a `posts` folder inside `content` directory of your site.
-- Then, create `_index.md` file inside the `posts` directory. Copy the content of [this file](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/_index.md) file and paste into the newly created `_index.md` file.
-- Create `introduction` folder inside your `posts` directory.
-- Add the following [hero.svg](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/hero.svg) inside your `introduction` folder.
-- Now, create `index.md` file inside the `introduction` folder. This `index.md` file will hold the post contents.
-- Add the following [sample contents](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/index.md) in the newly created `index.md` file.
+- D'abord, créez un répertoire `posts` à l'intérieur du répertoire `content` de votre site.
+- Ensuite, créez un fichier `_index.md` à l'intérieur du répertoire `posts`. Copiez le contenu de ce [fichier](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/_index.md) et collez le dans le nouveau fichier `_index.md` récemment créé.
+- Créez un répertoire `introduction` à l'intérieur du répertoire `posts`.
+- Ajoutez le [hero.svg](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/hero.svg) suivant à l'intérieur de votre répertoire `introduction`.
+- Maintenant, créez un fichier `index.md` à l'intérieur du répertoire `introduction`. Ce fichier `index.md` contiendra les contenus du billet.
+- Ajoutez l'[extrait de contenus](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/index.md) suivant dans le fichier `index.md` récemment créé.
 
-Now, your post should appear at `http://localhost:1313/posts` and your `Recent Posts` section also should show this post card. For translating a post, just create a new file with name `index.<language code>.md` in the same directory. Then, add the translated content there.
+Maintenant, votre billet devrait apparaître à `http://localhost:1313/posts` et votre section `Billets Récents` devrait aussi afficher la carte de ce billet. Pour traduire ce billet, créez simplement un nouveau fichier `index.<langage code>.md` dans le même répertoire. Puis, ajoutez le contenu traduit dedans.
 
-For more sample posts, please visit [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts).
+Pour plus d'échantillon de billets, [rendez-vous](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts) par ici s'il vous plaît.
 
-### What Next
+### Et ensuite ?
 
-At this point, your site should look similar to the [example site](https://hugo-toha.github.io/). Now, it's time to deploy your site. You can follow the following deployments guides:
+A ce stade, votre site doit avoir une apparence similaire au [site d'exemple](https://hugo-toha.github.io/). Maintenant, il est temps de déployer votre site. Vous pouvez suivre les guides de déploiement ci-dessous:
 
-- [Deploy in Github Pages](https://toha-guides.netlify.app/posts/getting-started/github-pages/)
-- [Deploy in Netlify](https://toha-guides.netlify.app/posts/getting-started/netlify/)
+- [Déployer dans Github Pages](https://toha-guides.netlify.app/posts/getting-started/github-pages/)
+- [Déployer dans Netlify](https://toha-guides.netlify.app/posts/getting-started/netlify/)
