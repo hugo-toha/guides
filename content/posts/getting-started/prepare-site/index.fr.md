@@ -3,7 +3,7 @@ title: "Préparer Votre Site"
 date: 2023-11-06T21:44:20+02:00
 menu:
   sidebar:
-    name: Prepare Site
+    name: Prepare votre site
     identifier: getting-started-prepare-site
     parent: getting-started
     weight: 10
@@ -138,7 +138,7 @@ params:
     enable: true
 ```
 
-Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le formulaire du site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consulter [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/). 
+Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/). 
 
 #### Ajouter de données
 
@@ -197,7 +197,7 @@ Maintenant, nous allons ajouter différentes section dans notre page d'accueil. 
 Créons un fichier `about.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: About
   id: about
@@ -220,7 +220,7 @@ resume: "files/resume.pdf"
 summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
 
 # Vos liens sur les réseaux sociaux
-# Mettez-en autant que vous voulez. Utilisez use font-awesome for the icons
+# Mettez-en autant que vous voulez. Utilisez font-awesome pour les icônes
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
@@ -293,7 +293,7 @@ Mettre le fichier `resume.pdf` dans le répertoire `/static/files`. Vous pouvez 
 Créons un fichier `skills.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: Skills
   id: skills
@@ -328,7 +328,7 @@ Mettez vos images de compétences dans le répertoire `images/sections/skills` d
 Créez un fichier `experiences.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: Experiences
   id: experiences
@@ -379,7 +379,7 @@ Vous pouvez trouver le fichier `experiences.yaml` utilisé dans le site exemple 
 Créez un fichier `projects.yaml` dans votre répertoire `/data/en/sections`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: Projects
   id: projects
@@ -435,16 +435,16 @@ Mettez les images des projets dans le répertoire `images/sections/projects/`. V
 Créez le fichier `recent-posts.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: Recent Posts
   id: recent-posts
   enable: true
   weight: 6
-  # Can optionally hide the title in sections
+  # En option : Possibilité de masquer le titre dans les sections
   # hideTitle: true
 
-# no additional configuration is required
+# Pas de configuration additionnelles requises
 ```
 
 Vous pouvez trouver le fichier `recent-posts.yaml` utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/recent-posts.yaml).
@@ -456,7 +456,7 @@ Vous pouvez trouver le fichier `recent-posts.yaml` utilisé dans le site d'exemp
 Créez un fichier `achievements.yaml` dans votre répertoire `/data/en/sections/`. Puis ajoutez le contenu suivant:
 
 ```yaml
-# section information
+# Information de section
 section:
   name: Achievements
   id: achievements
@@ -496,7 +496,7 @@ Maintenant, nous sommes prêts à ajouter nos premiers billet dans notre site. I
 
 Maintenant, votre billet devrait apparaître à `http://localhost:1313/posts` et votre section `Billets Récents` devrait aussi afficher la carte de ce billet. Pour traduire ce billet, créez simplement un nouveau fichier `index.<langage code>.md` dans le même répertoire. Puis, ajoutez le contenu traduit dedans.
 
-Pour plus d'échantillon de billets, [rendez-vous](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts) par ici s'il vous plaît.
+Pour plus de billets d'échantillon, s'il vous plaît consultez [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts).
 
 ### Et ensuite ?
 

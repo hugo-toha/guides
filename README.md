@@ -10,14 +10,14 @@ Les articles français sont rangés dans le répertoire `content/posts` dans les
 
 ## Les articles déjà traduits
 
-Au 06/11/2023, les billets intégralement traduits en français sont :
+Au 11/11/2023, les billets intégralement traduits en français sont :
 
 - [x] Features/index.md
 - [x] Quickstart/index.md
 - [x] Shortcodes/index.md
 - [x] Supports/index.md
-- [ ] Getting-started/prepare-site/index.md
-- [ ] Getting-started/github_pages/index.md
+- [x] Getting-started/prepare-site/index.md
+- [x] Getting-started/github_pages/index.md
 - [ ] Getting-started/netlify/index.md
 - [ ] Getting-started/theme-update/index.md
 - [ ] Configuration/site-parameters/index.md
