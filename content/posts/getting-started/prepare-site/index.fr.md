@@ -146,7 +146,7 @@ La plupart des contenus de ce thème sont pilotés par quelques fichiers YAML da
 
 D'abord, créez le répertoire `en` dans votre répertoire `data`. Ici, nous sommes en train d'ajouter des données pour la langue `anglaise`.
 
-##### Site Information
+##### Informations sur le site
 
 Maintenant, créez un fichier `site.yaml` dans le répertoire `/data/en/` de votre dépôt. Ajoutez-y le contenu suivant:
 
@@ -159,7 +159,7 @@ description: Portfolio and personal blog of John Doe.
 ```
 Pour voir toutes les options disponibles pour les informations du site, consulter [cet extrait de fichier](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/site.yaml).
 
-##### Auteur Information
+##### Informations sur l'auteur
 
 Maintenant, créez un fichier `author.yaml` dans le répertoire `data/en` et ajoutez vos informations comme suit:
 
