@@ -21,7 +21,7 @@ D'abord, créez un dépôt sur Github. Si vous voulez déployer ce site dans Git
 
 ### Créer un site
 
-Maintenant, assurez-vous d'avoir [Hugo](https://gohugo.io/getting-started/installing/) installé. Ce thème devrait fonctionner avec hugo version `v0.111.0` et plus. Maintenant, lancez la commande suivante depuis la racine de votre dépôt pour initier un site web hugo.
+Maintenant, assurez-vous d'avoir [Hugo](https://gohugo.io/getting-started/installing/) installé. Ce thème devrait fonctionner avec hugo version `v0.118.0` et plus. Maintenant, lancez la commande suivante depuis la racine de votre dépôt pour initier un site web hugo.
 
 ```console
 $ hugo new site ./ -f=yaml --force
