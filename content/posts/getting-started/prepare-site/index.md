@@ -9,7 +9,6 @@ menu:
     weight: 10
 ---
 
-
 In this post, we are going to create a hugo site from scratch. Then, we will configure it with `Toha` theme, make it multilingual, add some example posts. At the end of this post, you should be able to run a fully functional hugo site with `Toha` theme locally.
 
 If you want a head start, you can just fork [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io) repo, rename it and update with your own data. This repo has already been configured to deploy in [Github Pages](https://pages.github.com/) and [Netlify](https://www.netlify.com/).
