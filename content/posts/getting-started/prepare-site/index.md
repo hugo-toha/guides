@@ -13,8 +13,6 @@ In this post, we are going to create a hugo site from scratch. Then, we will con
 
 If you want a head start, you can just fork [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io) repo, rename it and update with your own data. This repo has already been configured to deploy in [Github Pages](https://pages.github.com/) and [Netlify](https://www.netlify.com/).
 
-If you already have a hugo site, skip to the [Add Theme](#add-theme) section.
-
 ### Create Repository
 
 At first, create a repository in Github. If you want to deploy this site in Github Pages, your repo named should be `<your user name>.github.io`. Clone the repository into your local machine and navigate into it.
@@ -24,47 +22,66 @@ At first, create a repository in Github. If you want to deploy this site in Gith
 Now, make sure that you have [Hugo](https://gohugo.io/getting-started/installing/) installed. This theme should work with hugo version `v0.118.0` and later. Now, run the following command in the root of your repository to initiate a hugo website.
 
 ```console
-$ hugo new site ./ -f=yaml --force
+hugo new site ./ --format=yaml --force
 ```
 
-This command will create a basic hugo site structure. Here, `-f=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty.
-
-### Initialize the git repository
-
-Now,it is time to add a git to your website. Initialize the git repository using the following command:
-
-```
-$ git init
-```
+This command will create a basic hugo site structure. Here, `-f=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty. It will create `hugo.yaml` file that will hold the all the necessary configurations for your site.
 
 ### Add Theme
 
-Now, it is time to add a theme into your site. Add Toha theme as git sub-module of your repository using the following command:
+We are going to use hugo module to add `Toha` theme into our site. At first, initialize hugo modules using the following command:
 
-```console
-$ git submodule add https://github.com/hugo-toha/toha.git themes/toha
+```bash
+hugo mod init github.com/<your user name>/<your repo name>
 ```
 
-{{< vs 1 >}}
+This command will create a `go.mod` file in the root of your repository.
 
->Don't use SSH URL of the theme during adding it as git sub-module. Also, don't clone the theme in your `themes` directory using `git clone`. Otherwise, we won't be able to automate the site publishing using Github Action or Netlify.
+Then, add the following module section in your `hugo.yaml` file:
+
+```yaml
+module:
+  imports:
+  - path: github.com/hugo-toha/toha/v4
+  mounts:
+  - source: ./node_modules/flag-icon-css/flags
+    target: static/flags
+  - source: ./node_modules/@fontsource/mulish/files
+    target: static/files
+  - source: ./node_modules/katex/dist/fonts
+    target: static/fonts
+```
+
+Finally, run the following commands to download the theme and its dependencies:
+
+```bash
+# download the theme
+hugo mod get -u
+# download the theme's dependencies
+hugo mod tidy
+# generate node dependencies
+hugo mod npm pack
+# install install dependencies
+npm install
+```
 
 ### Run Site Locally
 
 Now, you can already run your site locally. Let's run the site in watch mode using the following command:
 
 ```console
-$ hugo server -t toha -w
+hugo server -w
 ```
+
 If you navigate to `http://localhost:1313`, you should see a basic site with Toha theme. In the next section, we are going to configure the site to look like the [hugo-toha.github.io](https://hugo-toha.github.io/). As we have run the server in watch mode, any changes we make to the site will be instantly visible in the browser.
 
 ### Configure Site
 
 Now, we are ready to configure our site. In this section, we are going to add  author information, different sections, and sample posts etc.
 
-####  Update `config.yaml`
+#### Update `hugo.yaml`
 
-When you have created the site using `hugo new site` command, it has created a `config.yaml` file in the root of your repository. Replace the default content of the `config.yaml` file with the following:
+When you have created the site using `hugo new site` command, it has created a `hugo.yaml` file in the root of your repository. Replace the default content of the `hugo.yaml` file with the following:
 
 ```yaml
 baseURL: https://hugo-toha.github.io
@@ -73,7 +90,7 @@ languageCode: en-us
 title: "John's Blog"
 
 # Use Hugo modules to add theme
-module:
+module: 
   imports:
   - path: github.com/hugo-toha/toha/v4
   mounts:
@@ -92,9 +109,6 @@ languages:
   en:
     languageName: English
     weight: 1
-  fr:
-    languageName: Français
-    weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
@@ -125,19 +139,25 @@ params:
   # GitHub repo URL of your site
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
+  features:
+    # Enable portfolio section
+    portfolio:
+      enable: true
 
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
+    # Enable blog posts
+    blog:
+      enable: true
 
-  # Provide newsletter configuration. This feature hasn't been implemented yet.
-  # Currently, you can just hide it from the footer.
-  newsletter:
+    # Enable Table of contents in reading page
+    toc:
+      enable: true
+
+  # Configure footer
+  footer:
     enable: true
 ```
 
-Here, you are seeing a basic configuration for Toha theme. You can see the configuration file used in the example site form [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). For more detailed configuration options, please check [this post](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
+Here, you are seeing a basic configuration for Toha theme. You can see the configuration file used in the example site form [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/hugo.yaml). For more detailed configuration options, please check [this post](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
 
 #### Add Data
 
@@ -426,6 +446,7 @@ projects:
   summary: A Hugo theme for personal portfolio.
   tags: ["hobby","hugo","theme","professional"]
 ```
+
 Put the projects images into `images/sections/projects/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). Also, you can find the `projects.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
 ###### Recent Posts Section
@@ -480,6 +501,7 @@ achievements:
   image: /images/sections/achievements/woman-winner.jpg
   summary: Wined best paper award at IEE Conference 2020.
 ```
+
 Put the projects images into `images/sections/achievements/` directory of your repository. You will find the images [here](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/achievements). Also, you can find the `achievements.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/achievements.yaml).
 
 #### Add Posts
