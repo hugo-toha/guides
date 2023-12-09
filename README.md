@@ -1,24 +1,5 @@
-# Les guides du thème Toha en langue française
+# Toha Guides
 
-La documentation (VO) pour le thème [Toha](https://github.com/hugo-toha/toha) pour hugo.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3dac568a-bcdd-4b98-8a47-15ccf6dd8bd4/deploy-status)](https://app.netlify.com/sites/toha/deploys) ![Repository Size](https://img.shields.io/github/repo-size/hugo-toha/guides) ![Contributor](https://img.shields.io/github/contributors/hugo-toha/guides) ![Last Commit](https://img.shields.io/github/last-commit/hugo-toha/guides) ![Open Issues](https://img.shields.io/github/issues/hugo-toha/guides?color=important) ![Open Pull Requests](https://img.shields.io/github/issues-pr/hugo-toha/guides?color=yellowgreen) ![License](https://img.shields.io/github/license/hugo-toha/guides) ![Security Header](https://img.shields.io/security-headers?url=https%3A%2F%2Ftoha-guides.netlify.app) 
 
-## Préambule
-
-Ce dépôt est un fork du [dépôt original](https://github.com/hugo-toha/guides) de la documentation du thème Toha pour Hugo. Ce dépôt me sert de base de travail pour la traduction des billets en langue anglaise dans la langue française. **Je ne suis pas traducteur de métier, alors soyez indulgent avec mes traductions s'il vous plaît. Merci d'avance.**
-
-Les articles français sont rangés dans le répertoire `content/posts` dans les différents sous-répertoires associés. Ils sont identifiables avec la chaine de caractères `fr` dans leurs noms de fichier.
-
-## Les articles déjà traduits
-
-Au 11/11/2023, les billets intégralement traduits en français sont :
-
-- [x] Features/index.md
-- [x] Quickstart/index.md
-- [x] Shortcodes/index.md
-- [x] Supports/index.md
-- [x] Getting-started/prepare-site/index.md
-- [x] Getting-started/github_pages/index.md
-- [ ] Getting-started/netlify/index.md
-- [ ] Getting-started/theme-update/index.md
-- [ ] Configuration/site-parameters/index.md
-- [ ] Configuration/sections/about/index.md
+Documentation site for Hugo theme [Toha](https://github.com/hugo-toha/toha).
