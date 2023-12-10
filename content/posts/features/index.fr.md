@@ -23,7 +23,7 @@ Ce thème a été conçu pour être minimaliste et beau. Le schéma de couleur a
 
 ### Responsable
 
-Ce thème est totalement responsable. Il est beau et cohérent sur les ordinateurs de bureau, ordinateurs portables, Tablettes, et appareils Mobile. 
+Ce thème est totalement responsable. Il est beau et cohérent sur les ordinateurs de bureau, ordinateurs portables, Tablettes, et appareils Mobile.
 
 {{< img src="images/responsive.png" align="center" >}}
 
@@ -31,7 +31,7 @@ Ce thème est totalement responsable. Il est beau et cohérent sur les ordinateu
 
 ### Des cartes au design soigné
 
-Les cartes de compétence et de projet ont été soigneusement conçue pour donner les plus utiles informations. Elle donne également au spectacteur une idée de l'étendu des connaissances sur une compétence particulière. Les cartes de projets donnent une idée de la popularité de vos projets s'il s'agit de projets open source sur Github.
+Les cartes de compétence et de projet ont été soigneusement conçue pour donner les informations les plus utiles. Elle donne également au visiteur une idée de l'étendu des connaissances sur une compétence particulière. Les cartes de projets donnent une idée de la popularité de vos projets s'il s'agit de projets open source sur Github.
 
 {{< img src="images/cards.png" align="center" >}}
 
