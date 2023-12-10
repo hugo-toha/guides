@@ -3,17 +3,17 @@ title: "Préparer Votre Site"
 date: 2023-11-06T21:44:20+02:00
 menu:
   sidebar:
-    name: Prepare votre site
+    name: Préparer votre site
     identifier: getting-started-prepare-site
-    parent: getting-started
+    parent: Démarrer
     weight: 10
 ---
 
 Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons avec le thème `toha`, le rendre multilingue, ajouter quelques exemples de billets. A la fin de ce billet, vous devriez être capable d'exécuter pleinement un site Hugo avec le thème `Toha` localement.
 
-Si vous voulez un démarrage de la tête, vous pouvez juste forker le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez le et mettez le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
+Si vous voulez un démarrage de la tête, vous pouvez juste forker le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez-le et mettez-le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
 
-Si vous avez déjà un site hugo, sautez à la section [Ajouter un theme](#add-theme) 
+Si vous avez déjà un site hugo, sautez à la section [Ajouter un thème](#add-theme)
 
 ### Créer un dépôt
 
@@ -33,7 +33,7 @@ Cette commande créera une structure de base d'un site hugo. Ici, le flag `-f=ya
 
 Maintenant, il est temps d'ajouter git à votre site web. Initialisez le dépôt git en utilisant la commande suivante :
 
-```
+```console
 $ git init
 ```
 
@@ -61,9 +61,9 @@ Si vous naviguez sur `http://localhost:1313`, vous devriez voir un site de base 
 
 ### Configurer le site
 
-Maintenant, nous sommes prêt à configurer notre site. Dans cette section, nous allons ajouter les informations de l'auteur, différentes sections, et des echantillon de billets etc.
+Maintenant, nous sommes prêt à configurer notre site. Dans cette section, nous allons ajouter les informations de l'auteur, différentes sections, et des echantillons de billets etc.
 
-####  Mise à jour du `config.yaml`
+#### Mise à jour du `config.yaml`
 
 Quand vous avez créé le site en utilisant la commande `hugo new site`, il a créé un fichier `config.yaml` à la racine de votre dépôt. Remplacer le contenu par défaut du fichier `config.yaml` avec ce qui suit:
 
@@ -138,7 +138,7 @@ params:
     enable: true
 ```
 
-Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/). 
+Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
 
 #### Ajouter de données
 
@@ -157,6 +157,7 @@ copyright: © 2020 Copyright.
 # Meta description de votre site.  Ca aidera les moteurs de recherche à retrouver votre site.
 description: Portfolio and personal blog of John Doe.
 ```
+
 Pour voir toutes les options disponibles pour les informations du site, consulter [cet extrait de fichier](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/site.yaml).
 
 ##### Informations sur l'auteur
@@ -190,7 +191,7 @@ summary:
 
 ##### Ajouter des sections
 
-Maintenant, nous allons ajouter différentes section dans notre page d'accueil. D'abord, créons un répertoire `sections` à l'intérieur de votre répertoire `data/en`. Ici, nous allons ajouter quelques sections avec des configurations minimales. Pour voir les options détaillées de configuration pour les sections, veuillez consulter [ici](https://toha-guides.netlify.app/posts/configuration/sections/).
+Maintenant, nous allons ajouter différentes sections dans notre page d'accueil. D'abord, créons un répertoire `sections` à l'intérieur de votre répertoire `data/en`. Ici, nous allons ajouter quelques sections avec des configurations minimales. Pour voir les options détaillées de configuration pour les sections, veuillez consulter [ici](https://toha-guides.netlify.app/posts/configuration/sections/).
 
 ###### La section A propos
 
@@ -286,6 +287,7 @@ badges:
 #   percentage: 75
 #   color: "#00adb5"
 ```
+
 Mettre le fichier `resume.pdf` dans le répertoire `/static/files`. Vous pouvez trouver le fichier `about.yaml` utilisé dans le site exemple depuis [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/about.yaml).
 
 ###### Section Compétences
@@ -428,6 +430,7 @@ projects:
   summary: A Hugo theme for personal portfolio.
   tags: ["hobby","hugo","theme","professional"]
 ```
+
 Mettez les images des projets dans le répertoire `images/sections/projects/`. Vous trouverez les images [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). Vous pouvez également trouver le fichier `projects.yaml` utilisé dans le site exemple par [là](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
 ###### Section Billets récents
@@ -481,6 +484,7 @@ achievements:
   image: /images/sections/achievements/woman-winner.jpg
   summary: Wined best paper award at IEE Conference 2020.
 ```
+
 Mettez les images des projets dans le répertoire `images/sections/achievements/`. Vous trouverez les images [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/achievements). Vous pouvez également trouver le fichier `achievements.yaml` utilisé dans le site exemple par [là](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/achievements.yaml).
 
 #### Ajout de billets
@@ -494,7 +498,7 @@ Maintenant, nous sommes prêts à ajouter nos premiers billet dans notre site. I
 - Maintenant, créez un fichier `index.md` à l'intérieur du répertoire `introduction`. Ce fichier `index.md` contiendra les contenus du billet.
 - Ajoutez l'[extrait de contenus](https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/index.md) suivant dans le fichier `index.md` récemment créé.
 
-Maintenant, votre billet devrait apparaître à `http://localhost:1313/posts` et votre section `Billets Récents` devrait aussi afficher la carte de ce billet. Pour traduire ce billet, créez simplement un nouveau fichier `index.<langage code>.md` dans le même répertoire. Puis, ajoutez le contenu traduit dedans.
+Désormais, votre billet devrait apparaître à `http://localhost:1313/posts` et votre section `Billets Récents` devrait aussi afficher la carte de ce billet. Pour traduire ce billet, créez simplement un nouveau fichier `index.<langage code>.md` dans le même répertoire. Puis, ajoutez le contenu traduit dedans.
 
 Pour plus de billets d'échantillon, s'il vous plaît consultez [ici](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts).
 
