@@ -9,6 +9,7 @@ menu:
     weight: 660
 ---
 
+
 Ce thème supporte l'ajout de liens de soutien/donation sur votre site. Actuellement, les liens de soutien supportés sont:
 
 - [Ko-fi](https://ko-fi.com/)

@@ -126,7 +126,9 @@ c. Exécuter le site
 
 ```bash
 hugo server -w
-```  
+```
+
+<br>
 
 Si tout se passe bien, vous devriez voir une sortie similaire à ceci.
 {{< img src="images/local_site.png" align="center" alt="Command to run site locally">}}

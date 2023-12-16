@@ -68,6 +68,7 @@ Maintenant, connectez-vous sur [netlify](https://www.netlify.com/). Ensuite, ren
 
 {{< vs 2 >}}
 
+
 Une nouvelle pop-up s'ouvrira. Sélectionnez `Github` et authentifiez-vous, avec votre compte Github.
 
 {{< img src="images/3.png" align="center" >}}

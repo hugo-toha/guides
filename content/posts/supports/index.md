@@ -47,3 +47,4 @@ params:
         text: Support me on Buy me a coffee!
         info: Buy me a coffee!
         color: '#FFDD00'
+```
