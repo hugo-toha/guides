@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Déployer dans Github Pages
     identifier: getting-started-github
-    parent: Démarrer
+    parent: Getting-started
     weight: 20
 ---
 
