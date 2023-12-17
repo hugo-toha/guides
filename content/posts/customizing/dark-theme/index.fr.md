@@ -8,7 +8,7 @@ menu:
   sidebar:
     name: Activer le thème sombre
     identifier: enable-dark-theme
-    parent: Personnalisation
+    parent: customizing
     weight: 405
 ---
 
