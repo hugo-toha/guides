@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Préparer votre site
     identifier: getting-started-prepare-site
-    parent: Démarrer
+    parent: getting-started
     weight: 10
 ---
 
