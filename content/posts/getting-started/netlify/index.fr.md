@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Déployer dans Netlify
     identifier: getting-started-netlify
-    parent: Démarrer
+    parent: Getting-started
     weight: 30
 ---
 
