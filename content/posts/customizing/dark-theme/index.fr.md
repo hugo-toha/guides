@@ -2,8 +2,8 @@
 title: "Activer le mode sombre"
 date: 2022-06-12T01:30:50+06:00
 author:
-  name: Emruz Hossain
-  image: images/author/emruz.jpg
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Activer le thème sombre
