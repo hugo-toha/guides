@@ -9,13 +9,13 @@ menu:
     weight: 30
 ---
 
-[Netlify](https://www.netlify.com/) offers an excellent and easy process for deploying hugo static site. You can deploy your site in matter of few clicks. Unlike Github Pages, you can name your repository whatever you want. You can also customize the site URL.
+[Netlify](https://www.netlify.com/) offre un facile et excellent processus pour le déploiement d'un site statique hugo. Vous pouvez déployer votre site en quelques clics. Contrairement à Github Pages, vous pouvez nommer votre dépôt comme vous le souhaitez. Vous pouvez également personnaliser l'URL du site.
 
-In this post, we will show the step-by-step process of deploying a hugo site with netlify.
+Dans ce billet, nous montreons le processus pas-à-pas d'un déploiement de site hugo avec Netlify.
 
-### Add Netlify Configuration
+### Ajouter une configuration de Netlify
 
-At first, create a `netlify.toml` file at the root of your repository and add the following configuration there:
+D'abord, créons un ficher `netlify.toml` à la racine de votre dépôt et ajoutez-y la configuration suivante:
 
 ```toml
 [build]
@@ -58,29 +58,30 @@ command = "hugo mod tidy && hugo mod npm pack && npm install && hugo --gc --mini
 HUGO_ENABLEGITINFO = "true"
 ```
 
-Commit and push the `netlify.toml` file into Github. Now, you are ready to deploy your site with netlify.
+Commit et pousser le fichier `netlify.toml` dans Github. Maintenant, vous être prêt à déployer votre site sur Netlify.
 
-### Deploy Site
+### Déploiement du site
 
-Now, login into [netlify](https://www.netlify.com/). Then, go to `Sites` tab of your netlify dashboard and click `New site form Git` button.
+Maintenant, connectez-vous sur [netlify](https://www.netlify.com/). Ensuite, rendez-vous dans l'onglet `Sites` de votre tableau de bord et cliquez sur le bouton `New site form Git`.
 
 {{< img src="images/2.png" align="center" >}}
 
 {{< vs 2 >}}
 
-A new popup will open. Select `Github` and authenticate, with your Github account.
+
+Une nouvelle pop-up s'ouvrira. Sélectionnez `Github` et authentifiez-vous, avec votre compte Github.
 
 {{< img src="images/3.png" align="center" >}}
 
 {{< vs 2 >}}
 
-After authenticating, it will ask to select your desired repository. Select the repository you are using for your site.
+Après l'authentification, on vous demandera de sélectionnez le dépôt désiré. Sélectionnez le dépôt que vous utilisez pour votre site.
 
 {{< img src="images/4.png" align="center" >}}
 
 {{< vs 2 >}}
 
-Now, netlify will take you to the deployment page. Select the branch you want to deploy. Netlify should automatically populate the required fields from the `netlify.toml` file you created earlier in this post. When you are satisfied with the configurations, press the `Deploy` button.
+Maintenant, Netlify vous mènera à la page de déploiement. Sélectionnez la branche que vous voulez déployer. Netlify devrait remplir automatiquement les champs requis à partir du fichier `netlify.toml` que vous avez créé un peu plus tôt dans ce billet. Quand vous êtes satisfait des configurations, appuyez sur le bouton `Deploy`
 
 {{< img src="images/5.png" align="center" >}}
 
@@ -90,7 +91,7 @@ Now, netlify will start publishing your site immediately. Wait for the publishin
 
 {{< img src="images/6.png" align="center" >}}
 
-### Customize URL
+### Personnalisation de l'URL
 
 You can easily customize the URL of your site with just few clicks as shown below.
 
@@ -104,7 +105,7 @@ You can easily customize the URL of your site with just few clicks as shown belo
 
 {{< vs 2 >}}
 
-3. Then, give your site whatever name you want.
+3. Alors, donnez à votre site le nom que vous voulez
 
 {{< img src="images/9.png" align="center" >}}
 

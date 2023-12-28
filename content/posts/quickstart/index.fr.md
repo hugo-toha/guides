@@ -21,7 +21,7 @@ Pour exécuter ce thème localement, vous devez avoir les outils suivants instal
 2. Langage [Go](https://go.dev/doc/install) version `v1.18.x` or plus.
 3. Node version `v18.x` et npm version `8.x` ou plus.
 
-Assurez-vous d'avoir les outils nécessaires dans les versions appropriées en utilisant les commandes suivantes. 
+Assurez-vous d'avoir les outils nécessaires dans les versions appropriées en utilisant les commandes suivantes.
 
 ```bash
 # Contrôle de la version de Hugo
@@ -60,6 +60,7 @@ git clone git@github.com:<votre username>/<nom du dépôt forké>
 #### Etape 3: Mettre à jour le fichier du module
 
 Vous devriez voir les fichiers `go.mod` et `go.sum` à la racine du dépôt. Mettez à jour la première ligne du fichier `go.mod` comme suit:
+
 ```bash
 module github.com/<votre username>/<nom du dépôt forké>
 ```
@@ -70,7 +71,8 @@ Maintenant, ouvrez le dépôt dans un éditeur et modifiez les configurations da
 
 ##### Modifier le `baseURL`
 
-D'abord, modifiez le `baseURL` avec l'URL de votre site. Si vous voulez utilisez Github Pages pour héberger votre site, alors paramétrez comme suit:
+D'abord, modifiez le `baseURL` avec l'URL de votre site. Si vous voulez utilisez Github Pages pour héberger votre site, alors paramètrez comme suit:
+
 ```yaml
 baseURL: https://<votre username>.github.io
 ```
@@ -85,7 +87,7 @@ gitRepo: https://github.com/<votre username>/<votre nom de dépôt forké>
 
 ##### Désactiver l'analytique ou la configurer correctement
 
-Le dépôt d'échantillon fournit le service Google Analytics pre-configuré. L'identifiant analytics indique le site d'origine. Donc, soit vous désactivez les analyses ou bien vous les configurez correctement selon ce [guide](/posts/analytics/).
+Le dépôt d'échantillon fournit le service Google Analytics pré-configuré. L'identifiant analytics indique le site d'origine. Donc, soit vous désactivez les analyses, soit vous les configurez correctement selon ce [guide](/posts/analytics/).
 
 Vous pouvez désactiver les analyses en paramètrant le champ suivant sous la section `params.features` :
 
@@ -96,7 +98,7 @@ analytics:
 
 ##### Désactiver la fonctionnalité de lettre d'information
 
-Le dépôt d'échantillon fournit un service de lettre d'information [mailchimp](https://mailchimp.com/) pré-configuré. Désactivez le en paramètrant le champ suivant sous la section `params.footer`.
+Le dépôt d'échantillon fournit un service de lettre d'information [mailchimp](https://mailchimp.com/) pré-configuré. Désactivez-le en paramètrant le champ suivant sous la section `params.footer`.
 
 ```yaml
 newsletter:

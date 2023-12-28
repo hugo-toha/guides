@@ -90,7 +90,8 @@ languageCode: en-us
 title: "John's Blog"
 
 # Use Hugo modules to add theme
-module: 
+
+module:
   imports:
   - path: github.com/hugo-toha/toha/v4
   mounts:
@@ -109,6 +110,9 @@ languages:
   en:
     languageName: English
     weight: 1
+  fr:
+    languageName: Français
+    weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn

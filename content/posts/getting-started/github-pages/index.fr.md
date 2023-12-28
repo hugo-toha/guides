@@ -9,7 +9,7 @@ menu:
     weight: 20
 ---
 
-Dans ce billet, nous allons déployer le site que nous avons créé dans le précédent billet dans [Github Pages](https://pages.github.com/). D'abord, assurez-vous que le nom de votre dépôt soit `<your username>.github.io`. Ensuite, commitez n'importe quelles modifications locales et pousser dans Github.
+Dans ce billet, nous allons déployer le site que nous avons créé dans le précédent billet dans [Github Pages](https://pages.github.com/). D'abord, assurez-vous que le nom de votre dépôt soit `<your username>.github.io`. Ensuite, commitez n'importe quelles modifications locales et poussez dans Github.
 
 #### Créer une branche `gh-pages`
 
@@ -21,6 +21,7 @@ $ git checkout -b gh-pages
 # push de la branche source sur Github
 $ git push gh-pages gh-pages
 ```
+
 #### Activer Github Action
 
 Nous allons automatiser le processus de déploiement en utilisant [Github Actions](https://github.com/features/actions). D'abord, assurez-vous que Github Action soit activé dans votre dépôt. Allez dans `Settings > Actions` de votre dépôt assurez-vous que `Action permissions` est configuré sur `Allow all actions`. Ici, une capture d'écran du paramètre décrit.
@@ -29,7 +30,7 @@ Nous allons automatiser le processus de déploiement en utilisant [Github Action
 
 #### Ajouter le flux de travail
 
-Nous allons utiliser [peaceiris/actions-hugo](https://github.com/peaceiris/actions-hugo) action pour configurer hugo et [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) pour déployer le site. Créez un répertoire `.github` à la racine de votre dépôt. Ensuite, créez un répertoire `workflows` à l'intérieur du répertoire `.github`. Enfin, créez un fichier `deploy-site.yaml` à l'intérieur du répertoire `workflows` et ajoutez-y le contenu suivant:
+Nous allons utiliser l'action [peaceiris/actions-hugo](https://github.com/peaceiris/actions-hugo) pour configurer hugo et [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) pour déployer le site. Créez un répertoire `.github` à la racine de votre dépôt. Ensuite, créez un répertoire `workflows` à l'intérieur du répertoire `.github`. Enfin, créez un fichier `deploy-site.yaml` à l'intérieur du répertoire `workflows` et ajoutez-y le contenu suivant:
 
 ```yaml
 name: Deploy to Github Pages
@@ -104,7 +105,7 @@ Une fois la Github Action terminée avec succès, vous pouvez parcourir votre si
 
 Si vous possédez un nom de domaine et que vous souhaitez l'utiliser pour ce site, rendez-vous sur le site de votre fournisseur de nom de domaine. Ajoutez les enregistrements de ressources suivants:
 
-```
+```console
 @      3600    IN A     185.199.108.153
 @      3600    IN A     185.199.109.153
 @      3600    IN A     185.199.110.153
@@ -120,9 +121,10 @@ Pour vérifier votre domaine pour vous assurer que personne de Github ne puisse 
 
 Enfin, créez un fichier `CNAME` à l'intérieur du répertoire `/static` de votre dépôt. Ajoutez votre nom de domaine là:
 
-```
+```console
 example.com
 ```
+
 Une fois la Github Action terminée avec succès, vous pouvez parcourir votre site à `https://<your domain name>`.
 
 Notez qu'en naviguant sur `https://<your username>.github.io`, il redirigera automatiquement sur `https://<your domain name>`.

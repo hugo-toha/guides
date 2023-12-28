@@ -37,7 +37,6 @@ You can add your "Buy Me a Coffee" floating button in your website. To add the f
 ![bmacbutton](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-button.png)
 ![bmacwidget](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-widget.png)
 
-
 ```yaml
 params:
   features:
@@ -48,3 +47,4 @@ params:
         text: Support me on Buy me a coffee!
         info: Buy me a coffee!
         color: '#FFDD00'
+```

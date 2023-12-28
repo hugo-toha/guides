@@ -1,15 +1,16 @@
 ---
-title: "Supports Links"
+title: "Les liens de soutien"
 date: 2022-03-14T06:00:23+06:00
 description: Adding support links in hugo theme Toha
 menu:
   sidebar:
-    name: Support Links
+    name: Liens de soutien
     identifier: supports
     weight: 660
 ---
 
-Ce thème supporte l'ajout de liens de soutien/donation sur votre site. Actuellement, les liens de soutien supportés sont: 
+
+Ce thème supporte l'ajout de liens de soutien/donation sur votre site. Actuellement, les liens de soutien supportés sont:
 
 - [Ko-fi](https://ko-fi.com/)
 - [Buy Me a Coffee](https://www.buymeacoffee.com/zicklam)
