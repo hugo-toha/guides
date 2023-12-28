@@ -4,7 +4,7 @@ date: 2022-03-14T06:00:23+06:00
 description: Adding support links in hugo theme Toha
 menu:
   sidebar:
-    name: Support Links
+    name: Liens de soutien
     identifier: supports
     weight: 660
 ---
