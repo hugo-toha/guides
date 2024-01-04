@@ -52,6 +52,7 @@ At first, **fork** this [sample repo](https://github.com/hugo-toha/hugo-toha.git
 #### Step 2: Clone the forked repo locally
 
 Once you have forked and renamed the repository, you can now clone the forked repository in your local machine for further changes.
+
 ```bash
 git clone git@github.com:<your username>/<forked repo name>
 ```
