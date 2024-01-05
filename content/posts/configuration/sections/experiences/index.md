@@ -9,100 +9,73 @@ menu:
     weight: 130
 ---
 
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
+The `Experiences` section is designed to showcase your career background and highlight the responsibilities you have handled throughout your professional journey. In this post, we will guide you on how to configure the `Experiences` section of your site. For a complete reference, you can refer to the sample [experiences.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/experiences.yaml) file.
 
-The `Experiences` section has been designed to truly reflect your career background. It should give the viewer an idea about the responsibilities you have handled in various stages of your career. In this post, we are going to configure the `Experiences` section of your site.
+To begin, create a new file named `experiences.yaml` in the `data/en/sections` directory of your site. Then, follow the instructions below.
 
-At first, create an `experiences.yaml` file in the `data` directory of your site. Then, follow the following instruction.
+### Add Section Information
+
+Add the following section metadata to your `experiences.yaml` file:
+
+```yaml
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+```
 
 ### Add Your Experiences
 
-Now, let's add an `experiences` section in the `experiences.yaml` file as below,
+To add an experience, include the respective information under `experiences` section in the `experiences.yaml` file as below:
 
 ```yaml
 # Your experiences
 experiences:
-- designation: Software Engineer
-  company:
+- company:
     name: Example Co.
     url: "https://www.example.com"
     location: Dhaka Branch
     # company overview
     overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  start: Nov 2017
-  # don't provide end date if you are currently working there. It will be replaced by "Present"
-  end: Dec 2020
-  # give some points about what was your responsibilities at the company.
-  responsibilities:
-  - Design, develop and manage disaster a recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-  - My another responsibility.
-  - My more responsibilities.
+  positions:
+  - designation: Senior Software Engineer
+    start: Nov 2019
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Design and develop XYZ tool for ABC task
+    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
+    - Lead backend team.
+
+  - designation: Junior Software Engineer
+    start: Nov 2017
+    end: Oct 2019
+    responsibilities:
+    - Implement and test xyz feature for abc tool.
+    - Support client for abc tool.
+    - Learn k,d,w technology for xyz.
 ```
 
 Each entry in the `experiences` section should have the following information,
 
-- **designation**: Represents your position at the company.
 - **company**: Some information about your company. You should provide `name`, `url`, `location`, and a brief `overview` of the company.
-- **start**: Time when you had joined the company.
-- **end**: Time when you have left the company. If you are currently working in the company, don't provide this field.
-- **responsibilities**: A list of responsibilities you handled in the company. This section is very important as it will give the viewer an idea about the professional responsibilities you are capable to deal with.
+- **positions**: A list of positions you have held in the company. You can provide multiple positions if you have changed your position in the company.
+- **designation**: Represents the role that you were playing at the position.
+- **start**: Time when you had joined at the position.
+- **end**: Time when you have left the position. If you are currently working at the position, don't provide this field.
+- **responsibilities**: A list of responsibilities you handled at that position. This section is very important as it will give the viewer an idea about the professional responsibilities you are capable to deal with.
 
 > You can use markdown syntax in `overview` field of `company` section and `responsibilities` field.
 
-{{< vs 2 >}}
+<!-- {{< vs 2 >}}
 
 The following image shows how the contents of `experiences.yaml` are mapped into the `Experiences` section.
 
-{{< img src="images/experiences.png" >}}
-
-### Example `experiences.yaml` File
-
-Here, is the `experiences.yaml` file that has been used to create the `Experiences` section of this site.
-
-```yaml
-# Your experiences
-experiences:
-- designation: Software Engineer
-  company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  start: Nov 2017
-  # don't provide end date if you are currently working there. It will be replaced by "Present"
-  # end: Dec 2020
-  # give some points about what was your responsibilities at the company.
-  responsibilities:
-  - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-  - My another responsibility.
-  - My more responsibilities.
-
-- designation: Software Engineer
-  company:
-    name: PreExample Co.
-    url: "https://example.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
-  start: March 2016
-  end: May 2017
-  responsibilities:
-  - Write lots of example codes.
-  - Read lots of examples.
-  - See lots of example videos.
-
-- designation: Intern
-  company:
-    name: Intern Counting Company (ICC).
-    url: "https://example.com"
-    location: Intern Land
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
-  start: Jun 2015
-  end: Jan 2016
-  responsibilities:
-  - Count lost of interns.
-  - Count more interns.
-  - Count me as an intern.
-```
+{{< img src="images/experiences.png" >}} -->

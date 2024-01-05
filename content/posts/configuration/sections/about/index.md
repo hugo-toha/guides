@@ -9,15 +9,12 @@ menu:
     weight: 110
 ---
 
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
+The purpose of the `About` section is to provide a brief introduction about yourself on your website. In this post, we will guide you on how to configure the `About` section. For a complete reference, please check out the sample [about.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/about.yaml) file.
 
-The `About` section should give the viewer a brief idea about yourself. In this post, we are going to configure the `About` section of your website.
-
-At first, create `about.yaml` file in the `data/en/sections` directory of your site. Then, follow the following instructions.
+To get started, create an `about.yaml` file in the `data/en/sections` directory of your website. Then, follow the instructions below.
 
 ### Add Section information
+
 ```yaml
 section:
   name: About # Title of section (default: "")
@@ -29,11 +26,12 @@ section:
 ```
 
 #### Template setting
-It is possible to overwrite which partial this section is grabbed from using the template property. The new template should be saved in your `layout/partials` directory.
+
+You have the option to customize the partial used for this section by specifying the `template` property. Simply save the new template in your `layout/partials` directory.
 
 ### Add Your Work Information
 
-Let's add some information about your current job. Add the following section in your `about.yaml` file,
+To include details about your current job, you can add the following section to your `about.yaml` file:
 
 ```yaml
 # your designation
@@ -46,7 +44,7 @@ company:
 
 ### Add a Summary About Yourself
 
-Now, let's add a summary of what you do. The purpose of this section is to give the viewer an idea about your professional expertise at a glance. Add the following section in your `about.yaml` file,
+To provide a concise overview of your professional expertise, let's add a summary section. This will give viewers a quick glimpse into what you do. Add the following section to your `about.yaml` file:
 
 ```yaml
 # a summary about you
@@ -59,7 +57,7 @@ Try to make it as brief as possible. Don't make it too wordy. We have other sect
 
 ### Add Your Social Links
 
-Now, we are going to add some links to your various profiles such as `LinkedIn`, `Twitter`, `Github` etc. Add the following `socialLinks` section in your `about.yaml` file,
+To add links to your various profiles such as LinkedIn, Twitter, and Github, include the following `socialLinks` section in your `about.yaml` file:
 
 ```yaml
 # your social links
@@ -94,16 +92,18 @@ You can use any [Font Awesome](https://fontawesome.com/icons?d=gallery) free ico
 
 ### Add a Resume
 
-Now, let's add your resume. Put the resume pdf file in any folder under `static` directory. Then, add the following section in your `about.yaml` file,
+To add your resume, place the PDF file in `files` folder within the `static` directory. Then, include the following section in your `about.yaml` file:
 
 ```yaml
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+resourceLinks:
+- title: "My Resume"
+  url: "files/resume.pdf"
 ```
 
 ### Add badges
 
-Now, let's add your badges and strength indicator on various soft skills such as leadership, communication, teamwork, etc. Add the following section in your `about.yaml` file,
+Now, let's add your badges and a strength indicator for various soft skills such as leadership, communication, teamwork, etc. Include the following section in your `about.yaml` file:
 
 ```yaml
 # Show your badges
@@ -141,95 +141,17 @@ badges:
   color: orange
 ```
 
-Currently, the skill percentage should be between 50 and 100 and should be divisible by 5. The following colors are available for skills percentage indicator,
+Currently, the skill percentage should be between 0 and 100 and should be divisible by 5. The following colors are available for skills percentage indicator,
 
 - blue
 - yellow
 - pink
 - green
 
+>You can also use any HEX color code in the `color` field.
+
 {{< vs 2 >}}
 
 The following image shows how the contents of `about.yaml` are mapped into the `About` section. (The configuration portion of the image is outdated and softSkills section has been replaced with badges)
 
 {{< img src="images/about.png" >}}
-
-### Example `about.yaml` File
-
-Here, is the `about.yaml` file that has been used to create the `About` section of this site.
-
-```yaml
-# your designation
-designation: Software Engineer
-# your company information
-company:
-  name: Example Co.
-  url: "https://www.example.com"
-
-# your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
-
-# a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
-
-# your social links
-# give as many as you want. use font-awesome for the icons.
-socialLinks:
-- name: Email
-  icon: "fas fa-envelope"
-  url: "example@gmail.com"
-
-- name: Github
-  icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
-
-- name: LinkedIn
-  icon: "fab fa-linkedin"
-  url: "#"
-
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
-
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
-
-# Show your badges
-# You can show your verifiable certificates from https://www.credly.com.
-# You can also show a circular bar indicating the level of expertise on a certain skill
-badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
-  color: blue
-
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
-  color: yellow
-
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 85
-  color: orange
-```
