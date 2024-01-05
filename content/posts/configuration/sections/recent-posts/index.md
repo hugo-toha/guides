@@ -9,15 +9,7 @@ menu:
     weight: 150
 ---
 
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
-
-The `Recent Posts` section will display the most recent posts from your content. The configuration is simple, and should be stored in `data/en/sections`.
-
-### Configuration
-
-After you have created the file `recent-posts.yaml`, the configuration is very simple,
+The `Recent Posts` section is used to showcase the latest posts from your content. To enable this section, create a `recent-posts.yaml` file in the `data/en/sections` directory and include the following content:
 
 ```yaml
 # section information
@@ -31,5 +23,3 @@ section:
   numShow: 4 # Can optionally increase the number of posts to display (default: 3)
   showMoreButton: false #Can optionally show 'More Posts' button (default: false)
 ```
-
-{{<img src="images/recent-posts.svg" >}}

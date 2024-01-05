@@ -9,13 +9,25 @@ menu:
     weight: 140
 ---
 
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
+The purpose of the `Projects` section is to effectively showcase your projects. In this post, we will guide you on how to configure the `Projects` section on your site. For a complete reference, please refer to the sample [projects.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/projects.yaml) file.
 
-The `Projects` section has been designed to showcase your projects in a meaningful way. In this post, we are going to configure the `Projects` section of your site.
+To begin, create a new file named `projects.yaml` in the `data/en/sections` directory of your website. Then, follow the instructions below.
 
-At first, create a `projects.yaml` file in the `data` directory of your site. Then, follow the following instructions.
+### Add Section Information
+
+Add the following section metadata to your `projects.yaml` file:
+
+```yaml
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+```
 
 ### Add Project Filtering Buttons
 
@@ -71,64 +83,3 @@ You can specify the following field for a project,
 The following image shows how the contents of `projects.yaml` are mapped into the `Projects` section.
 
 {{< img src="images/projects.png" >}}
-
-### Example `projects.yaml` File
-
-Here, is the `projects.yaml` file that has been used to create the `Projects` section of this site.
-
-```yaml
-# filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Academic
-  filter: "academic"
-- name: Hobby
-  filter: "hobby"
-
-# your projects
-projects:
-- name: Kubernetes
-  logo: images/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
-
-- name: Tensorflow
-  logo: images/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
-
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
-
-- name: Nocode
-  logo: images/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
-
-- name: Toha
-  logo: images/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
-```
