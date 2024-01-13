@@ -22,7 +22,15 @@ git rm themes/toha/
 git commit -m "Remove v3 theme"
 ```
 
-### 2. Meet the requirements
+### 2. Remove `theme` from `config.yaml`
+
+In the new version, we no longer need to specify the `theme` in the `config.yaml` file. Instead, we will add the theme as a module. Therefore, remove the following line from your `config.yaml` file:
+
+```yaml
+theme: toha
+```
+
+### 3. Meet the requirements
 
 For building the site locally we will need to update/install the following requirements:
 
@@ -32,9 +40,9 @@ For building the site locally we will need to update/install the following requi
 
 Make sure you have installed all the required tools.
 
-### 3. Initialize Hugo Module
+### 4. Initialize Hugo Module
 
-Toha V4 now uses [Hugo Module](https://gohugo.io/hugo-modules/) to manage the theme. To get started, we need to initialize the module.
+Toha V4 now uses [Hugo Module](https://gohugo.io/hugo-modules/) to manage the theme. To get going, we need to initialize the module.
 
 ```bash
 hugo mod init github.com/<your username>/<your repo name>
@@ -42,15 +50,9 @@ hugo mod init github.com/<your username>/<your repo name>
 
 This will create a `go.mod` file in the root of your site. You can check the file to see if it has been created properly.
 
-### 4. Add the theme as a module
+### 5. Add the theme as a module
 
-In the new version, we no longer need to specify the `theme` in the `config.yaml` file. Instead, we will add the theme as a module. Therefore, remove the following line from your `config.yaml` file:
-
-```yaml
-theme: toha
-```
-
-Then, add the following `module` section:
+Now, add the following `module` section in your `config.yaml` file. This will add the theme as a module and also mount the static files from the theme.
 
 ```yaml
 # Use Hugo modules to add theme
@@ -68,7 +70,7 @@ module:
     target: static/fonts
 ```
 
-### 5. Update the `config.yaml` file
+### 6. Update the `config.yaml` file
 
 In the new version, the configuration structure for managing features has been restructured. Therefore, it is necessary to update the `config.yaml` file. For reference, you can check the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml). Here, we will highlight the most commonly used configurations that need to be changed.
 
@@ -211,7 +213,7 @@ flags:
 
 There have been a few other changes. Please refer to the sample configuration file for more details.
 
-### 6. Build the site
+### 7. Build the site
 
 Finally, you ready to build the theme. Please, execute the following steps to build the site:
 
