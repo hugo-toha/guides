@@ -23,7 +23,7 @@ Ce thème a été conçu pour être minimaliste et beau. Le schéma de couleur a
 
 ### Responsable
 
-Ce thème est totalement responsable. Il est beau et cohérent sur les ordinateurs de bureau, ordinateurs portables, Tablettes, et appareils Mobile. 
+Ce thème est totalement responsable. Il est beau et cohérent sur les ordinateurs de bureau, ordinateurs portables, Tablettes, et appareils Mobile.
 
 {{< img src="images/responsive.png" align="center" >}}
 
