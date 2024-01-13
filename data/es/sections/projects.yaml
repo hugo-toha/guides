@@ -24,7 +24,7 @@ projects:
 - name: Kubernetes
   logo: images/sections/projects/kubernetes.png
   role: Contributor
-  timeline: "March 2018 - Present"
+  timeline: "Marzo 2018 - Presente"
   repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Programación y gestión de contenedores de nivel de producción.
@@ -33,7 +33,7 @@ projects:
 - name: Tensorflow
   logo: images/sections/projects/tensorflow.png
   role: Developer
-  timeline: "Jun 2018 - Present"
+  timeline: "Jun 2018 - Presente"
   repo: https://github.com/tensorflow/tensorflow
   #url: ""
   summary: Un framework de aprendizaje automático de código abierto para todos.
@@ -41,7 +41,7 @@ projects:
 
 - name: Muestra de trabajo académico
   role: Jefe de equipo
-  timeline: "Jan 2017 - Nov 2017"
+  timeline: "Enero 2017 - Noviembre 2017"
   url: "https://www.example.com"
   summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
   tags: ["academic","iot"]
@@ -58,7 +58,7 @@ projects:
 - name: Toha
   logo: images/sections/projects/toha.png
   role: Owner
-  timeline: "Jun 2019 - Present"
+  timeline: "Jun 2019 - Presente"
   repo: https://github.com/hossainemruz/toha
   summary: Un tema de Hugo para portafolio personal.
   tags: ["hobby","hugo","theme","professional"]
