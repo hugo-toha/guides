@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Préparer votre site
     identifier: getting-started-prepare-site
-    parent: Démarrer
+    parent: getting-started
     weight: 10
 ---
 
@@ -24,10 +24,10 @@ D'abord, créez un dépôt sur Github. Si vous voulez déployer ce site dans Git
 Maintenant, assurez-vous d'avoir [Hugo](https://gohugo.io/getting-started/installing/) installé. Ce thème devrait fonctionner avec hugo version `v0.118.0` et plus. Maintenant, lancez la commande suivante depuis la racine de votre dépôt pour initier un site web hugo.
 
 ```console
-$ hugo new site ./ -f=yaml --force
+$ hugo new site ./ -f --format yaml
 ```
 
-Cette commande créera une structure de base d'un site hugo. Ici, le flag `-f=yaml` indique à hugo de créer un fichier de configuration au format YAML et le flag `--force` force hugo à créer un site même si le répertoire cible n'est pas vide.
+Cette commande créera une structure de base d'un site hugo. Ici, le flag `--format yaml` indique à hugo de créer un fichier de configuration au format YAML et le flag `-f` force hugo à créer un site même si le répertoire cible n'est pas vide.
 
 ### Initialiser le dépôt git
 

@@ -1,54 +1,106 @@
 ---
-title: "Codes abrégés"
+title: "Les Shortcodes"
 date: 2023-11-05T14:06:25+02:00
 description: "Codes abrégés"
 menu:
   sidebar:
-    name: "Codes abrégés"
+    name: "Les Shortcodes"
     identifier: shortcodes
     weight: 700
 hero: boat.jpg
 ---
-Ce billet échantillon est destiné à tester les éléments suivants :
+Ce billet d'échantillon est destiné à tester les éléments suivants :
 
 - Manipulation d'une image.
 - Différents shortcodes.
 
 ## Alerte
 
-Les alertes suivantes sont disponibles dans ce thème.
+Ce thème propose différents types d'alertes pour votre publication. Par exemple, si on ajoute le code ci-dessous :
+
+```
+{{< alert type="success" >}}
+This is sample alert with `type="success"`.
+{{< /alert >}}
+```
+
+L'alerte qui apparaîtra ressemblera à ça:
 
 {{< alert type="success" >}}
-Voici une alerte avec `type="success"`.
+This is sample alert with `type="success"`.
 {{< /alert >}}
+
+Les alertes suivantes sont également disponible dans ce thème.
+```
+{{< alert type="danger" >}}
+This is sample alert with `type="danger"`.
+{{< /alert >}}
+```
 
 {{< alert type="danger" >}}
-Voici une alerte avec `type="danger"`.
+This is sample alert with `type="danger"`.
 {{< /alert >}}
+
+```
+{{< alert type="warning" >}}
+This is sample alert with `type="warning"`.
+{{< /alert >}}
+```
 
 {{< alert type="warning" >}}
-Voici une alerte avec `type="warning"`.
+This is sample alert with `type="warning"`.
 {{< /alert >}}
 
+```
 {{< alert type="info" >}}
-Voici une alerte avec `type="info"`.
+This is sample alert with `type="info"`.
 {{< /alert >}}
+```
+{{< alert type="info" >}}
+This is sample alert with `type="info"`.
+{{< /alert >}}
+
+```
+{{< alert type="dark" >}}
+This is sample alert with `type="dark"`.
+{{< /alert >}}
+```
 
 {{< alert type="dark" >}}
-Voici une alerte avec `type="dark"`.
+This is sample alert with `type="dark"`.
 {{< /alert >}}
+
+```
+{{< alert type="primary" >}}
+This is sample alert with `type="primary"`.
+{{< /alert >}}
+```
 
 {{< alert type="primary" >}}
-Voici une alerte avec `type="primary"`.
+This is sample alert with `type="primary"`.
 {{< /alert >}}
 
+```
 {{< alert type="secondary" >}}
-Voici une alerte avec `type="secondary"`.
+This is sample alert with `type="secondary"`.
+{{< /alert >}}
+```
+
+{{< alert type="secondary" >}}
+This is sample alert with `type="secondary"`.
 {{< /alert >}}
 
 ## Image
 
 #### Une image sans attributs.
+
+**Code:**
+
+```markdown
+{{</* img src="/posts/shortcodes/boat.jpg" title="A boat at the sea" */>}}
+```
+
+**Résultat:**
 
 {{< img src="/posts/shortcodes/boat.jpg" title="A boat at the sea" >}}
 
@@ -56,17 +108,41 @@ Voici une alerte avec `type="secondary"`.
 
 #### Une image avec les attributs `height` et `width`.
 
+**Code:**
+
+```markdown
+{{</* img src="/posts/shortcodes/boat.jpg" height="400" width="600" title="A boat at the sea" */>}}
+```
+
+**Résultat:**
+
 {{< img src="/posts/shortcodes/boat.jpg" height="400" width="600" title="A boat at the sea" >}}
 
 {{< vs 3 >}}
 
 #### Une image centrée avec les attributs `height` et `width`.
 
+**Code:**
+
+```markdown
+{{</* img src="/posts/shortcodes/boat.jpg" height="400" width="600" align="center" title="A boat at the sea" */>}}
+```
+
+**Résultat:**
+
 {{< img src="/posts/shortcodes/boat.jpg" height="400" width="600" align="center" title="A boat at the sea" >}}
 
 {{< vs 3 >}}
 
 #### Une image avec l'attribut `float`.
+
+**Code:**
+
+```markdown
+{{</* img src="/posts/shortcodes/boat.jpg" height="200" width="500" float="right" title="A boat at the sea" */>}}
+```
+
+**Résultat:**
 
 {{< img src="/posts/shortcodes/boat.jpg" height="200" width="500" float="right" title="A boat at the sea" >}}
 
@@ -80,15 +156,34 @@ Ce thème supporte le découpage de la page en autant de colonnes que vous le so
 
 #### Diviser en 2 colonnes
 
-{{< split 6 6>}}
+**Code:**
 
-##### Colonne de Gauche
+```markdown
+{{</* split 6 6 */>}}
+##### Colonne de gauche
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
 
 ---
 
-##### Colonne de Droite
+##### Colonne de droite
+
+Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
+
+{{</* /split */>}}
+```
+
+**Result:**
+
+{{< split 6 6>}}
+
+##### Colonne de gauche
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
+
+---
+
+##### Colonne de droite
 
 Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
 
@@ -96,21 +191,46 @@ Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida tu
 
 #### Diviser en 3 colonnes
 
-{{< split 4 4 4 >}}
+**Code:**
 
-##### Colonne de Gauche
+```markdown
+{{</* split 4 4 4 */>}}
+##### Colonne de gauche
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
 
 ---
 
-##### Colonne du Milieu
+##### Colonne du milieu
 
 Aenean dignissim dictum ex. Donec a nunc vel nibh placerat interdum.
 
 ---
 
-##### Colonne de Droite
+##### Colonne de droite
+
+Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
+
+{{</* /split */>}}
+```
+
+**Result:**
+
+{{< split 4 4 4 >}}
+
+##### Colonne de gauche
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies.
+
+---
+
+##### Colonne du milieu
+
+Aenean dignissim dictum ex. Donec a nunc vel nibh placerat interdum.
+
+---
+
+##### Colonne de droite
 
 Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat.
 
@@ -120,12 +240,29 @@ Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida tu
 
 Donner un espace vertical entre deux lignes.
 
+**Code:**
+
+```markdown
+Voici la ligne 1.
+{{< vs 4>}}
+Voici la ligne 2. Il devrait y avoir un espace vertical de `4rem` avec la ligne précédente.
+```
+
+**Résultat:**
+
 Voici la ligne 1.
 {{< vs 4>}}
 Voici la ligne 2. Il devrait y avoir un espace vertical de `4rem` avec la ligne précédente.
 
 ## Vidéo
 
+**Code:**
+
+```markdown
+{{</* video src="/videos/sample.mp4" */>}}
+```
+
+**Résultat:**
 {{< video src="/videos/sample.mp4" >}}
 
 <!-- markdown-link-check-disable-next-line -->
