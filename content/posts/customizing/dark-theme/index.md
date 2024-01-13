@@ -12,21 +12,13 @@ menu:
     weight: 405
 ---
 
-## Enable Dark Mode
-
-Toha `v3.6.0` has introduced dark theme. Thanks to [@donfiguerres](https://github.com/donfiguerres). This guide will show you how to enable it.
-
-At first, make sure you have updated the theme version to `v3.6.0` or later. Then, add the following section under `params` section of your `config.yaml` file.
+To enable the dark mode in Toha `v4.0.0`, simply set the `darkMode.enable` field to `true` under the `params.features` section in your `config.yaml` file. For example:
 
 ```yaml
-  darkMode:
-    enable: true
-    provider: darkreader
-    default: system
+params:
+  features:
+    darkMode:
+      enable: true
 ```
 
-Here,
-
-- **enable:** Specifies whether to enable the dark mode or not.
-- **provider:** Specifies the underlying provider that will be used to provide the dark mode functionality. Currently, it supports only [darkreader](https://darkreader.org/). We may support other providers in future.
-- **default:** Specifies which theme to use by default. It supports `system`, `light` and `dark` values.
+Congratulations! You are all set. You can now enjoy the dark mode in your site. The dark mode will obey user's system preference.
