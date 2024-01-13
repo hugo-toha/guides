@@ -191,7 +191,7 @@ Ahora, crea un archivo `author.yaml` dentro del directorio `/data/es/` y añade 
 name: "John Doe"
 nickname: "John"
 # mensaje de saludo antes de tu nombre. El valor predeterminado será "Hi!, I am" si no se proporciona.
-greeting: "Hi, I am"
+greeting: "Hola, soy"
 image: "images/author/john.png"
 # da tu información de contacto. Se utilizará en el pie de página
 contactInfo:
