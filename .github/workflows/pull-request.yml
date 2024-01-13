@@ -53,7 +53,7 @@ jobs:
         prCommentEnabled: true
         prCommentSaveOld: false
         timeout: 5
-        urls: "${{ steps.preview.outputs.url }},${{ steps.preview.outputs.url }}/posts/,${{ steps.preview.outputs.url }}/posts/markdown-sample/,${{ steps.preview.outputs.url }}/posts/shortcodes/"
+        urls: "${{ steps.preview.outputs.url }},${{ steps.preview.outputs.url }}/posts/,${{ steps.preview.outputs.url }}/posts/features/,${{ steps.preview.outputs.url }}/posts/quickstart/"
 
   # Check for any broken links
   markdown-link-check:
@@ -73,7 +73,7 @@ jobs:
 
     - name: Link Checker
       id: lychee
-      uses: lycheeverse/lychee-action@v1.8.0
+      uses: lycheeverse/lychee-action@v1.9.1
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       with:

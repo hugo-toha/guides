@@ -18,6 +18,8 @@ This theme has built in support for various analytic tools. Currently, it suppor
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
 
+For a complete list of supported analytics, please refer the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) file.
+
 {{< alert type="warning" >}}
 Warning: When adding analytics, you should consider local legislation to see if a privacy banner is required to inform users of the tracking in personal data. In general (not legal advice), privacy-friendly, anonymous methods such as [counter.dev](https://counter.dev) and [GoatCounter](https://www.goatcounter.com/) don't need a banner, since they do not collect personally identifiable data.
 {{< /alert >}}
@@ -29,28 +31,27 @@ Warning: When adding analytics, you should consider local legislation to see if 
 To enable GoatCounter analytics in your site, you have two options: one is to sign in at [goatcounter.com](https://www.goatcounter.com) and obtain a code for your site, the second is to self-hosted an instance of GoatCounter. Then, you have to add `analytics` section under `params.features` section of your `config.yaml` file as below:
 
 ```yaml
-params:
-  features:
-    analytics:
-      enabled: true
-      goatCounter:
-        code: <your GoatCounter code>  # Not self-hosted
-        instance: <your GoatCounter instance url>  # For self-hosted you should use only one of the two methods
+analytics:
+  enable: true
+  services:
+    # GoatCounter
+    goatCounter:
+      code: <your GoatCounter code>  # Not self-hosted
+      instance: <your GoatCounter instance url>  # For self-hosted you should use only one of the two methods
 ```
 
 ### counter.dev
 
 [counter.dev](https://counter.dev) is a simple, privacy friendly and open source analytics website which enables you to track the total user count, first visited page and some other metrics on your website. Unfortunately, to keep things simple (and free) they don't show a ranking of the most visited pages, but rather the ones that are accessed the first.
 
-You can enable it by adding the email you registered with at counter.dev's page in your `config.yaml` as below:
+You can enable it by adding the email you registered with at counter.dev's page under `params.features` section in your `config.yaml` as below:
 
 ```yaml
-params:
-  features:
-    analytics:
-      enabled: true
-      counterDev:
-        id: <your counter.dev id>
+analytics:
+  enable: true
+  services:
+    counterDev:
+      id: <your counter.dev id>
 ```
 
 The tracking code will be automatically added to your site.
@@ -63,15 +64,15 @@ Note: On some sites, [an error has been detected](https://github.com/ihucos/coun
 Beware that [according to recent case law](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics might be illegal in the European Union
 {{< /alert >}}
 
-You can enable Google Analytics in your site by adding your tracking id in your `config.yaml` file as below:
+You can enable Google Analytics in your site by adding your tracking id under `params.features` section in your `config.yaml` file as below:
 
 ```yaml
-params:
-  features:
-    analytics:
-      enabled: true
-      google:
-        id: UA-122321624-2
+analytics:
+  enable: true
+  services:
+    # Google Analytics
+    google:
+      id: <your Google Analytics tracking id>
 ```
 
 You can use both V3 or V4 tracking ID. The theme will automatically detect the tracking code version and add the respective tracking scripts accordingly to your site.
@@ -80,14 +81,14 @@ For additional privacy settings regarding Google Analytics, you can provide `pri
 
 ### Matomo
 
-You can enable Matomo (formerly Piwik) by modifying the `config.yaml` file as shown in the following example:
+You can enable Matomo (formerly Piwik) by adding the matomo configuration under `params.features` section in the `config.yaml` file as shown below:
 
 ```yaml
-params:
-  features:
-    analytics:
-      enabled: true
-      matomo:
-        instance: matomo.example.com
-        siteId: 1 # The number generated after adding a site in your instance
+analytics:
+  enable: true
+  services:
+    # Matomo / Piwik
+    matomo:
+      instance: matomo.example.com
+      siteId: 1 # The number generated after adding a site in your instance
 ```

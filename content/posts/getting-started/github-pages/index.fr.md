@@ -5,7 +5,7 @@ menu:
   sidebar:
     name: Déployer dans Github Pages
     identifier: getting-started-github
-    parent: Démarrer
+    parent: getting-started
     weight: 20
 ---
 
@@ -128,3 +128,4 @@ example.com
 Une fois la Github Action terminée avec succès, vous pouvez parcourir votre site à `https://<your domain name>`.
 
 Notez qu'en naviguant sur `https://<your username>.github.io`, il redirigera automatiquement sur `https://<your domain name>`.
+

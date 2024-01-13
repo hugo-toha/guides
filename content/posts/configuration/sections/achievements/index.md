@@ -8,17 +8,30 @@ menu:
     parent: sections
     weight: 160
 ---
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
 
-The `Achievements` section has been designed to showcase your achievements in a gallery view. This post will show how to configure the `Achievements` section of your site.
+The `Achievements` section is designed to display your accomplishments in a visually appealing gallery format. This guide will walk you through the process of configuring the `Achievements` section on your website. For a complete reference, you can refer to the sample [achievements.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/achievements.yaml) file.
 
-At first,  create an `achievements.yaml` file in the `data` directory of your site. Then, follow the following instruction.
+To begin, create a new file named `achievements.yaml` in the `data/en/sections` directory of your website. Then, follow the instructions below.
+
+### Add Section Information
+
+Add the following section metadata to your `achievements.yaml` file:
+
+```yaml
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: true
+  weight: 9
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+```
 
 ### Add Your Achievements
 
-Now, add your achievements under the `achievements` section in your `achievements.yaml` file as below,
+To add your achievements, open the `achievements.yaml` file and include the following entries under the `achievements` section:
 
 ```yaml
 achievements:
@@ -27,7 +40,7 @@ achievements:
   summary: Best presenter in the 2020 XYZ conference.
 ```
 
-Each achievements  entry should have the following fields,
+Each achievements entry should have the following fields,
 
 - **title**: The title of the achievement.
 - **image**: An image of the achievement.
@@ -40,24 +53,3 @@ Each achievements  entry should have the following fields,
 The following image shows how the contents of `achievements.yaml` are mapped into the `Achievements` section.
 
 {{< img src="images/achievements.png" >}}
-
-### Example `achievements.yaml` File
-
-Here, is the `achievements.yaml` file that has been used to create the `Achievements` section of this site.
-
-```yaml
-# Your achievements achievements
-achievements:
-- title: Best Presenter
-  image: images/achievements/presenter.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
-  image: images/achievements/sport.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Graduation
-  image: images/achievements/graduation-cap.jpg
-  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
-- title: Award Winner
-  image: images/achievements/woman-winner.jpg
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto minus facere vero?
-```

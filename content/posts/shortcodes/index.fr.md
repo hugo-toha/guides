@@ -1,4 +1,5 @@
 ---
+
 title: "Les Shortcodes"
 date: 2023-11-05T14:06:25+02:00
 description: "Codes abrégés"
@@ -9,6 +10,7 @@ menu:
     weight: 700
 hero: boat.jpg
 ---
+
 Ce billet d'échantillon est destiné à tester les éléments suivants :
 
 - Manipulation d'une image.
@@ -121,6 +123,7 @@ This is sample alert with `type="secondary"`.
 {{< vs 3 >}}
 
 #### Une image centrée avec les attributs `height` et `width`.
+
 
 **Code:**
 
@@ -263,6 +266,7 @@ Voici la ligne 2. Il devrait y avoir un espace vertical de `4rem` avec la ligne 
 ```
 
 **Résultat:**
+
 {{< video src="/videos/sample.mp4" >}}
 
 <!-- markdown-link-check-disable-next-line -->

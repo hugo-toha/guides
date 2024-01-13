@@ -9,26 +9,41 @@ menu:
     weight: 120
 ---
 
-{{< alert type="danger" >}}
-This doc is outdated. For up-to-date examples, please follow this sample [repo](https://github.com/hugo-toha/hugo-toha.github.io).
-{{< /alert >}}
+The `Skills` section is designed to showcase your skills and provide insights into your expertise in each skill. In this post, we will guide you on how to configure the `Skills` section of your site. For a complete reference, please check out the sample [skills.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/skills.yaml) file.
 
-The `Skills` section should give the viewer an idea about not only the list of skills you have but also an idea of the depth of your knowledge on a particular skill. In this post, we are going to configure the `Skills` section of your site.
+To begin, create a `skills.yaml` file in the `data/en/sections` directory of your site. Then, follow the instructions below.
 
-At first, create `skills.yaml` files in the `data` directory of your site. Then, follow the following instruction.
+### Add Section Information
+
+Add the following section metadata to your `skills.yaml` file:
+
+```yaml
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+```
 
 ### Add Your Skills
 
-Now, let's add a `skills` section in your `skills.yaml` file as bellow,
+To add a `skill` add it's information under `skills` section in your `skills.yaml` file as bellow:
 
 ```yaml
+# Your Skills.
+# Give a summary of you each skill in the summary section.
 skills:
 - name: Kubernetes
-  icon: "images/skills/kubernetes.png"
+  logo: /images/sections/skills/kubernetes.png
   summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  url: "https://kubernetes.io/"
 ```
 
-Here, you have to provide `name`, `icon`, and `summary` fields for a skill. The `summary` field should provide an idea about your depth of knowledge of this particular skill.
+Here, you have to provide the `name`, `log`, and `summary` fields for a skill. The `summary` field should provide an idea about your depth of knowledge of this particular skill.
 
 >You can use markdown syntax in the `summary` field.
 
@@ -37,44 +52,3 @@ Here, you have to provide `name`, `icon`, and `summary` fields for a skill. The 
 The following image shows how the content of `skills.yaml` files are mapped into the `Skills` section.
 
 {{< img src="images/skills.png">}}
-
-### Example `skills.yaml` File
-
-Here, is the `skills.yaml` file that has been used to create the `Skills` section of this site.
-
-```yaml
-# Your Skills.
-# Give a summary of you each skill in the summary section.
-skills:
-- name: Kubernetes
-  icon: "images/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-
-- name: Go Development
-  icon: "images/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-
-- name: Cloud Computing
-  icon: "images/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  icon: "images/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-
-- name: Prometheus
-  icon: "images/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-
-- name: Linux
-  icon: "images/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-
-- name: Git
-  icon: "images/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-
-- name: C++
-  icon: "images/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-```
