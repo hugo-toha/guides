@@ -20,10 +20,10 @@ Ce billet d'échantillon est destiné à tester les éléments suivants :
 
 Ce thème propose différents types d'alertes pour votre publication. Par exemple, si on ajoute le code ci-dessous :
 
-```
-{{< alert type="success" >}}
+```markdown
+{{</* alert type="success" */>}}
 This is sample alert with `type="success"`.
-{{< /alert >}}
+{{</* /alert */>}}
 ```
 
 L'alerte qui apparaîtra ressemblera à ça:
@@ -33,59 +33,59 @@ This is sample alert with `type="success"`.
 {{< /alert >}}
 
 Les alertes suivantes sont également disponible dans ce thème.
+```markdown
+{{</* alert type="danger" */>}}
+This is sample alert with `type="danger"`.
+{{</* /alert */>}}
 ```
+
 {{< alert type="danger" >}}
 This is sample alert with `type="danger"`.
 {{< /alert >}}
-```
 
-{{< alert type="danger" >}}
-This is sample alert with `type="danger"`.
-{{< /alert >}}
-
-```
-{{< alert type="warning" >}}
+```markdown
+{{</* alert type="warning" */>}}
 This is sample alert with `type="warning"`.
-{{< /alert >}}
+{{</* /alert */>}}
 ```
 
 {{< alert type="warning" >}}
 This is sample alert with `type="warning"`.
 {{< /alert >}}
 
+```markdown
+{{< alert type="info" */>}}
+This is sample alert with `type="info"`.
+{{</* /alert */>}}
 ```
 {{< alert type="info" >}}
 This is sample alert with `type="info"`.
 {{< /alert >}}
-```
-{{< alert type="info" >}}
-This is sample alert with `type="info"`.
-{{< /alert >}}
 
-```
-{{< alert type="dark" >}}
+```markdown
+{{< alert type="dark" */>}}
 This is sample alert with `type="dark"`.
-{{< /alert >}}
+{{</* /alert >}}
 ```
 
 {{< alert type="dark" >}}
 This is sample alert with `type="dark"`.
-{{< /alert >}}
+{{</* /alert */>}}
 
-```
-{{< alert type="primary" >}}
+```markdown
+{{</* alert type="primary" */>}}
 This is sample alert with `type="primary"`.
-{{< /alert >}}
+{{</* /alert */>}}
 ```
 
 {{< alert type="primary" >}}
 This is sample alert with `type="primary"`.
 {{< /alert >}}
 
-```
-{{< alert type="secondary" >}}
+```markdown
+{{</* alert type="secondary" */>}}
 This is sample alert with `type="secondary"`.
-{{< /alert >}}
+{{</* /alert */>}}
 ```
 
 {{< alert type="secondary" >}}
