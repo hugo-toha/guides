@@ -16,12 +16,12 @@ skills:
   summary: "Capaz de implementar y administrar aplicaciones en Kubernetes. Con experiencia en escribir controladores de Kubernetes para CRD."
   url: https://kubernetes.io/
 
-- name: Go Development
+- name: Desarrollo con Go
   icon: "images/sections/skills/go.png"
   summary: "Utilizando como lenguaje principal para el desarrollo profesional. Capaz de escribir programas escalables, comprobables y mantenibles."
   url: "https://golang.org/"
 
-- name: Cloud Computing
+- name: Computación en la Nube
   icon: "images/sections/skills/cloud.png"
   summary: "He trabajado con la mayoría de los principales plataformas de computación en la nube, como GCP, AWS, Azure, etc."
 
