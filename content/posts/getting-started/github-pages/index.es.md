@@ -3,7 +3,7 @@ title: "Despliegue el sitio en Github Pages"
 date: 2020-06-08T22:00:20+06:00
 menu:
   sidebar:
-    name: Despliegue el sitio en Github Pages
+    name: Despliegue en Github Pages
     identifier: getting-started-github
     parent: getting-started
     weight: 20
