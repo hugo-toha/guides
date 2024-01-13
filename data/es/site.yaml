@@ -1,0 +1,11 @@
+# Copyright Notice
+copyright: © 2024 Copyright.
+
+# Meta description for your site.  This will help the search engines to find your site.
+description: Página de ejemplo del tema de hugo Toha.
+
+# specify the list of custom menus that you want to show in the top navbar.
+# they will be separated by a divider from the main menus.
+customMenus:
+- name: Notas
+  url: https://hossainemruz.gitbook.io/notes/
