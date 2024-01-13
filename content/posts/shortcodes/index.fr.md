@@ -54,7 +54,7 @@ This is sample alert with `type="warning"`.
 {{< /alert >}}
 
 ```markdown
-{{< alert type="info" */>}}
+{{</* alert type="info" */>}}
 This is sample alert with `type="info"`.
 {{</* /alert */>}}
 ```
@@ -63,7 +63,7 @@ This is sample alert with `type="info"`.
 {{< /alert >}}
 
 ```markdown
-{{< alert type="dark" */>}}
+{{</* alert type="dark" */>}}
 This is sample alert with `type="dark"`.
 {{</* /alert >}}
 ```
