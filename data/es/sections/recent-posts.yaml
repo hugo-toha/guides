@@ -1,11 +1,11 @@
-# section information
+# Información de la sección
 section:
   name: Publicaciones Recientes
   id: recent-posts
   enable: true
-  weight: 5
+  weight: 6
   showOnNavbar: true
-  # Can optionally hide the title in sections
+  # Opcionalmente puede ocultar el título del menú
   # hideTitle: true
 
-# no additional configuration is required
+# No se requiere de configuración adicional
