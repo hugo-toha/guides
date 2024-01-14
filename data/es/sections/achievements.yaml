@@ -1,14 +1,14 @@
-# section information
+# Información de la sección
 section:
   name: Logros
   id: achievements
   enable: true
-  weight: 6
+  weight: 8
   showOnNavbar: true
-  # Can optionally hide the title in sections
+  # Opcionalmente puede ocultar el título del menú
   # hideTitle: true
 
-# Your achievements achievements
+# Tus logros
 achievements:
 - title: Mejor presentador
   image: images/sections/achievements/presenter.jpg
