@@ -28,20 +28,41 @@ This is sample alert with `type="success"`.
 
 L'alerte qui apparaîtra ressemblera à ça:
 
+#### Succès
+
+**code**
+
+```markdown
+{{</* alert type="success" */>}}
+This is sample alert with `type="success"`.
+{{</* /alert */>}}
+```
+
+**Résultat:**
+
 {{< alert type="success" >}}
 This is sample alert with `type="success"`.
 {{< /alert >}}
 
-Les alertes suivantes sont également disponible dans ce thème.
+#### Danger
+
+**Code:**
+
 ```markdown
 {{</* alert type="danger" */>}}
 This is sample alert with `type="danger"`.
 {{</* /alert */>}}
 ```
 
+**Résultat:**
+
 {{< alert type="danger" >}}
 This is sample alert with `type="danger"`.
 {{< /alert >}}
+
+#### Warning
+
+**Code:**
 
 ```markdown
 {{</* alert type="warning" */>}}
@@ -49,47 +70,27 @@ This is sample alert with `type="warning"`.
 {{</* /alert */>}}
 ```
 
+**Résultat:**
+
 {{< alert type="warning" >}}
 This is sample alert with `type="warning"`.
 {{< /alert >}}
+
+#### Info
+
+**Code:**
 
 ```markdown
 {{</* alert type="info" */>}}
 This is sample alert with `type="info"`.
 {{</* /alert */>}}
 ```
+
+**Résultat:**
+
 {{< alert type="info" >}}
 This is sample alert with `type="info"`.
-{{< /alert >}}
 
-```markdown
-{{</* alert type="dark" */>}}
-This is sample alert with `type="dark"`.
-{{</* /alert >}}
-```
-
-{{< alert type="dark" >}}
-This is sample alert with `type="dark"`.
-{{</* /alert */>}}
-
-```markdown
-{{</* alert type="primary" */>}}
-This is sample alert with `type="primary"`.
-{{</* /alert */>}}
-```
-
-{{< alert type="primary" >}}
-This is sample alert with `type="primary"`.
-{{< /alert >}}
-
-```markdown
-{{</* alert type="secondary" */>}}
-This is sample alert with `type="secondary"`.
-{{</* /alert */>}}
-```
-
-{{< alert type="secondary" >}}
-This is sample alert with `type="secondary"`.
 {{< /alert >}}
 
 ## Image

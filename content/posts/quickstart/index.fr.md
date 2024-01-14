@@ -152,9 +152,10 @@ git push origin HEAD
 
 ### Et ensuite ?
 
-- Personnaliser l'arrière-plan, le logo, et quelques autres choses de votre site en suivant [ce guide](/posts/configuration/site-parameters/index.fr.md).
-- Ajouter des informations sur vous en suivant [ce guide](/posts/configuration/sections/about/index.fr.md).
-- Ajouter les informations sur vos compétences en suivant [ce guide](/posts/configuration/sections/skills/index.fr.md).
-- Ajouter les informations sur vos expériences en suivant [ce guide](/posts/configuration/sections/experiences/index.fr.md).
-- Déployer votre site sur Github Page en suivant le guide par [ici](/posts/getting-started/github-pages/index.fr.md).
-- Déployer votre site sur Netlify en suivant le guide par [ici](/posts/getting-started/netlify/index.fr.md).
+- Personnaliser l'arrière-plan, le logo, et quelques autres choses de votre site en suivant [ce guide](/fr/posts/configuration/site-parameters/).
+- Ajouter des informations sur vous en suivant [ce guide](/fr/posts/configuration/sections/about/).
+- Ajouter les informations sur vos compétences en suivant [ce guide](/fr/posts/configuration/sections/skills/).
+- Ajouter les informations sur vos expériences en suivant [ce guide](/fr/posts/configuration/sections/experiences/).
+- Déployer votre site sur Github Page en suivant le guide par [ici](/fr/posts/getting-started/github-pages/).
+- Déployer votre site sur Netlify en suivant le guide par [ici](/fr/posts/getting-started/netlify/).
+
