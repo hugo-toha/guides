@@ -51,7 +51,7 @@ Esto es un ejemplo de alerta con `type="danger"`.
 Esto es un ejemplo de alerta con `type="danger"`.
 {{< /alert >}}
 
-#### Precaución
+#### Advertencia
 
 **Código:**
 
