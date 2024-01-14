@@ -1,4 +1,4 @@
-# section information
+# Información de la sección
 section:
   name: Sobre mi
   id: about
@@ -6,21 +6,21 @@ section:
   weight: 1
   showOnNavbar: true
 
-# your designation
+# Tu designación
 designation: Ingeniero de Software
-# your company information
+# Información de tu empresa
 company:
   name: Example Co.
   url: "https://www.example.com"
 
-# your resume. this file path should be relative to you "static" directory
+# tu currículum. Este archivo debe ser relativo a tu directorio "static"
 resume: "files/resume.pdf"
 
-# a summary about you
+# Un resumen sobre ti
 summary: 'Soy un ingeniero de software apsionado con x años de experiencia. He creado herramientas OSS para [Kubernetes](https://kubernetes.io/) utilizando Go. Mis herramientas ayudan a personas a desplegar sus workloads en Kubernetes. A veces trabajo en projectos divertidos como crear un tema, etc.'
 
-# your social links
-# give as many as you want. use font-awesome for the icons.
+# tus links de redes sociales
+# da tantos como quieras. Utilitza font-awesome para los iconos.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
@@ -46,9 +46,9 @@ socialLinks:
   icon: "fab fa-facebook"
   url: "#"
 
-# your soft skills
-# give the percentage between 50 to 100 with 5 intervals.
-# currently supported colors: blue, yellow, pink, green, sky, orange
+# competencias sociales
+# Da un percentaje entre 50 y 100, en intervalos de 5 unidades.
+# colores soportados: blue, yellow, pink, green, sky, orange.
 softSkills:
 - name: Liderazgo
   percentage: 85
@@ -68,7 +68,7 @@ softSkills:
 - name: Solucionador de problemas
   percentage: 85
   color: orange
-# you can also provide color code instead of pre-defined color name
+# también puede dar códigos de colores en vez de un nombre de color predeterminado
 # - name: Example 1
 #   percentage: 75
 #   color: "#00adb5"
