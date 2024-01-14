@@ -145,7 +145,7 @@ Fusce vulputate dolor augue, ut porta sapien fringilla nec. Vivamus commodo erat
 
 ## División
 
-Este tema suporta dividir la página en tantas columnas como desee.
+Este tema soporta dividir la página en tantas columnas como desee.
 
 #### División en dos columnas
 

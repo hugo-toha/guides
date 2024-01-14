@@ -10,14 +10,14 @@ menu:
 ---
 ## Comentarios
 
-Este tema tiene suporte para comentarios en las publicaciones. Actualmente, soporta las siguientes extensiones de comentarios:
+Este tema tiene soporte para comentarios en las publicaciones. Actualmente, soporta las siguientes extensiones de comentarios:
 
 - [Disqus](https://disqus.com/)
 - [Valine](https://valine.js.org/)
 - [Utterances](https://utteranc.es/)
 - [Giscus](https://giscus.app/)
 
-Para una lista completa de las extensiones de comentarios suportadas, puede consultar el archivo de ejemplo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
+Para una lista completa de las extensiones de comentarios soportadas, puede consultar el archivo de ejemplo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
 
 ### Disqus
 

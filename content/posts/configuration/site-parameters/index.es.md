@@ -85,7 +85,7 @@ gitBranch: <nombre de tu rama por defecto de git>
 
 ### Habilita Boletin Informativo
 
-Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `config.yaml`. Ahora mismo, el boletin informativo solo es suportado por el proveedor Mailchimp. Aquí hay un ejemplo de como debería ser:
+Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `config.yaml`. Ahora mismo, el boletin informativo solo es soportado por el proveedor Mailchimp. Aquí hay un ejemplo de como debería ser:
 
 ```yaml
 newsletter:

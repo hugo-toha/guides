@@ -1,9 +1,9 @@
 ---
-title: "Configuración del tipado de matemáticas"
+title: "Configuración del tipado de Matemáticas"
 date: 2020-06-08T06:15:35+06:00
 menu:
   sidebar:
-    name: Guía de matemáticas
+    name: Guía de Matemáticas
     identifier: writing-post-math-guide
     parent: writing-post
     weight: 40
