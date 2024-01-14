@@ -1,6 +1,9 @@
 ---
 title: "Automatiza las actualizaciones del tema"
 date: 2020-06-08T20:00:15+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Automatiza actualizaciones

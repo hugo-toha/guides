@@ -1,6 +1,9 @@
 ---
 title: "Prepare su sitio web"
 date: 2020-06-08T23:00:20+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Prepare su sitio web

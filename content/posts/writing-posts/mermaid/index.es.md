@@ -1,6 +1,9 @@
 ---
 title: "Soporte Mermaid"
 date: 2022-03-14T06:15:35+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Mermaid

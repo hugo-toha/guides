@@ -2,6 +2,9 @@
 title: "Comentarios"
 date: 2022-03-14T06:00:23+06:00
 description: Añadiendo Comentarios en el tema de hugo Toha
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Comentarios

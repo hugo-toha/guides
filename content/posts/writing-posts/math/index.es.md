@@ -1,6 +1,9 @@
 ---
 title: "Configuración del tipado de Matemáticas"
 date: 2020-06-08T06:15:35+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Guía de Matemáticas

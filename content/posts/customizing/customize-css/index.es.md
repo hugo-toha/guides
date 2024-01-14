@@ -2,8 +2,8 @@
 title: "Personalización del CSS"
 date: 2024-01-13T22:00:50+06:00
 author:
-  name: Emruz Hossain
-  image: images/author/emruz.jpg
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Personalización CSS

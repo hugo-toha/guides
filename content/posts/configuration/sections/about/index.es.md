@@ -1,6 +1,9 @@
 ---
 title: "Configurando la sección Sobre mi"
 date: 2020-06-08T06:20:50+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Sección Sobre mi

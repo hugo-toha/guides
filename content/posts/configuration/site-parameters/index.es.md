@@ -1,6 +1,9 @@
 ---
 title: "Configurando parámetros del sitio web"
 date: 2020-06-08T06:20:55+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Parámetros del sitio

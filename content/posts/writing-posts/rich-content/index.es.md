@@ -1,6 +1,9 @@
 ---
 title: "Contenido Enriquecido"
 date: 2020-06-08T06:15:30+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Contenido Enriquecido

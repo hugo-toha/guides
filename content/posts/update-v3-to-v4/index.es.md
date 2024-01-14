@@ -2,6 +2,9 @@
 title: "Migrar de la versión V3 a V4"
 date: 2024-01-05T02:30:00+06:00
 description: Guía de migración de la versión V3 a V4
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Migración de V3 a V4

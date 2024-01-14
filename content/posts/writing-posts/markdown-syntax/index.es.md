@@ -2,6 +2,9 @@
 title: "Guía de Sintxis de Markdown"
 date: 2020-06-08T06:15:40+06:00
 hero: /images/posts/writing-posts/code.svg
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Guía de Markdown

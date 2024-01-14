@@ -1,6 +1,9 @@
 ---
 title: "Configurando la sección de Experiencia"
 date: 2020-06-08T06:20:40+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Sección de Experiencia

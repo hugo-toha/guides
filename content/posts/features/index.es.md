@@ -2,6 +2,9 @@
 title: "Características"
 date: 2020-06-08T08:59:13+06:00
 description: Características del tema de Hugo Toha
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Características

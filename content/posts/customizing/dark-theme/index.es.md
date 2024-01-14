@@ -2,8 +2,8 @@
 title: "Habilitar Tema Oscuro"
 date: 2022-06-12T01:30:50+06:00
 author:
-  name: Emruz Hossain
-  image: images/author/emruz.jpg
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Habilitar Tema Oscuro

@@ -1,6 +1,9 @@
 ---
 title: "Despliegue el sitio en Github Pages"
 date: 2020-06-08T22:00:20+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Despliegue en Github Pages

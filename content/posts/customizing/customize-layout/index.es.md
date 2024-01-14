@@ -2,8 +2,8 @@
 title: "Personalización de la Disposición"
 date: 2021-08-07T06:20:50+06:00
 author:
-  name: James Ray
-  image: images/author/james.jpg
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Personalizacion Disposición

@@ -2,8 +2,8 @@
 title: "Creando una Categoría"
 date: 2020-06-08T06:15:55+06:00
 author:
-  name: Md.Habibur Rahman
-  image: /images/author/habib.jpg
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Creando una Categoría

@@ -2,6 +2,9 @@
 title: "Inicio Rápido"
 date: 2022-08-09T00:00:00+06:00
 description: Guía de inicio rápido para el tema Toha
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Inicio Rápido

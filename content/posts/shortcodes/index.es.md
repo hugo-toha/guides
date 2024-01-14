@@ -2,6 +2,9 @@
 title: "Los Shortcodes"
 date: 2020-06-08T08:06:25+06:00
 description: Los Shortcodes
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Los Shortcodes

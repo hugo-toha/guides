@@ -2,6 +2,9 @@
 title: "Enlaces de Soporte"
 date: 2022-03-14T06:00:23+06:00
 description: Añade enlaces de soporte en el tema de hugo Toha
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Enlaces de Soporte

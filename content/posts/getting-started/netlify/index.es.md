@@ -1,6 +1,9 @@
 ---
 title: "Despliegue el sitio en Netlify"
 date: 2020-06-08T21:00:15+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Despliegue en Netlify
