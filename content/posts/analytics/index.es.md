@@ -28,7 +28,7 @@ Advertencia: Al añadir analíticas, debe considerar la legislación local para 
 
 [GoatCounter](https://www.goatcounter.com/) son las analíticas que suporta Toha más completas, simples y respetuosas con la privacidad. Su script rastrea las páginas más vistas, el número total de usuarios, dispositivos y mucho más, ¡todo mientras es de código abierto!
 
-Para habilitar las analíticas de GoatCounter en tu sitio, tienes dos opciones: acceder a [goatcounter.com](https://www.goatcounter.com) y obtener un código para tu sitio web, y el segundo es self-hostear una instancia de GoatCounter. Después, tienes que añadir la sección `analytics` debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación.
+Para habilitar las analíticas de GoatCounter en tu sitio, tienes dos opciones: acceder a [goatcounter.com](https://www.goatcounter.com) y obtener un código para tu sitio web, y el segundo es self-hostear una instancia de GoatCounter. Después, tienes que añadir la sección `analytics` debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
 
 ```yaml
 analytics:
@@ -45,7 +45,7 @@ analytics:
 [counter.dev](https://counter.dev) es un sitio web de análisis de código abierto, sencillo y respetuoso con la privacidad que le permite realizar un seguimiento del recuento total de usuarios, la primera página visitada y algunas otras métricas de su sitio web. Desafortunadamente, para simplificar las cosas (y gratis), no muestran una clasificación de las páginas más visitadas, sino de aquellas a las que se accede primero.
 
 You can enable it by adding the email you registered with at counter.dev's page under `params.features` section in your `config.yaml` as below:
-Puedes habilitarlo añadiendo el email que te has registrado a la página de counter.dev debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación.
+Puedes habilitarlo añadiendo el email que te has registrado a la página de counter.dev debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
 
 ```yaml
 analytics:
@@ -65,7 +65,7 @@ Nota: En algunos sitios, aparece [an error has been detected](https://github.com
 Tenga en cuenta que, según la [jurisprudencia reciente](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics podría ser ilegal en la Unión Europea
 {{< /alert >}}
 
-Puedes habilitar Google Analytics en tu sitio añadiendo tu id de rastreo debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación.
+Puedes habilitar Google Analytics en tu sitio añadiendo tu id de rastreo debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
 
 ```yaml
 analytics:
@@ -82,7 +82,7 @@ Para configuraciónes de privacidad adicionales de Google Analytics, puedes prov
 
 ### Matomo
 
-Puedes habilitar Matomo (antes Piwik) en tu sitio añadiendo tu configuración de matomo debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación.
+Puedes habilitar Matomo (antes Piwik) en tu sitio añadiendo tu configuración de matomo debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
 
 ```yaml
 analytics:
