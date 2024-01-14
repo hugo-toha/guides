@@ -1,15 +1,15 @@
-# section information
+# Infomración de la sección
 section:
   name: Habilidades
   id: skills
   enable: true
   weight: 2
   showOnNavbar: true
-  # Can optionally hide the title in sections
+  # Opcionalmente puede ocultar el título del menú
   # hideTitle: true
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
+# Tus habilidades
+# Haz un resumen de cada habilidad.
 skills:
 - name: Kubernetes
   icon: "images/sections/skills/kubernetes.png"
