@@ -297,7 +297,7 @@ softSkills:
 #   color: "#8b8383"
 ```
 
-Pone el archivo `resume.pdf` dentro del directorio `/static/files` de tu repositorio. Puedes encontrar el archivo `about.yaml` usado en el sitio web de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/about.yaml).
+pon el archivo `resume.pdf` dentro del directorio `/static/files` de tu repositorio. Puedes encontrar el archivo `about.yaml` usado en el sitio web de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/about.yaml).
 
 ###### Sección de Habilidades
 

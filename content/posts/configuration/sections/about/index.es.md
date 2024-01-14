@@ -92,7 +92,7 @@ Puedes usar cualquier icono gratis de [Font Awesome](https://fontawesome.com/ico
 
 ### Añade un Currículum
 
-Para añadir un curriculum, pone tu archivo PDF dentro del directorio `files` localizado dentro del directorio `static`. Después incluye la siguiente sección en el archivo `about.yaml`:
+Para añadir un curriculum, pon tu archivo PDF dentro del directorio `files` localizado dentro del directorio `static`. Después incluye la siguiente sección en el archivo `about.yaml`:
 
 ```yaml
 # tu currículum. Este archivo debe ser relativo a tu directorio "static"

@@ -17,7 +17,7 @@ Para obtener una lista completa de los parámetros de configuración disponibles
 
 ### Añade un Fondo
 
-Para empezar, vamos a establecer un fondo a tu sitio web. Pone la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `config.yaml`.
+Para empezar, vamos a establecer un fondo a tu sitio web. pon la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `config.yaml`.
 
 ```yaml
 background: "images/nombre_de_tu_imagen_de_fondo.jpg"
@@ -25,7 +25,7 @@ background: "images/nombre_de_tu_imagen_de_fondo.jpg"
 
 ### Añade un Logo
 
-Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. Pone tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `config.yaml`.
+Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. pon tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `config.yaml`.
 
 ```yaml
 # El logo invertido será usado para la barra de navegación transparente.
