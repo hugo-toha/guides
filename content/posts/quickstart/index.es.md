@@ -11,7 +11,7 @@ menu:
 
 **Saludos!** Gracias para decidirte a utilizar este tema. En esta guía, te enseñaré cómo puedes empezar con este tema rápidamente.
 
-Aquí, asumiré que quieres empezar de zero una página de Hugo utilizando este tema. Si ya estás usando Hugo para tu sitio, entonces ya sabes cómo utilizar un tema. En este caso, por favor, sigui este [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) para más inforación.
+Aquí, asumiré que quieres empezar de cero una página de Hugo utilizando este tema. Si ya estás usando Hugo para tu sitio, entonces ya sabes cómo utilizar un tema. En este caso, por favor, sigui este [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) para más inforación.
 
 ### Requisitos
 
