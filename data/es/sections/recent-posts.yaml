@@ -1,0 +1,11 @@
+# Información de la sección
+section:
+  name: Publicaciones Recientes
+  id: recent-posts
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Opcionalmente puede ocultar el título del menú
+  # hideTitle: true
+
+# No se requiere de configuración adicional

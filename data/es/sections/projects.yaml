@@ -1,0 +1,64 @@
+# Información de la sección
+section:
+  name: Proyectos
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Opcionalmente puede ocultar el título del menú
+  # hideTitle: true
+
+# Botones de filtrado
+buttons:
+- name: Todos
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Académico
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# Tus proyectos
+projects:
+- name: Kubernetes
+  logo: images/sections/projects/kubernetes.png
+  role: Contribuidor
+  timeline: "Marzo 2018 - Presente"
+  repo: https://github.com/kubernetes/kubernetes # Si tu proyecto tiene un repositorio público de Github, entonces provee el link. Mostrará el contador de estrellas.
+  #url: ""  # Si tu proyecto no tiene un repositorio público pero tiene una página web o otro url de detalles externos, proveelo aquí. No provees "repo" y "url" a la vez.
+  summary: Programación y gestión de contenedores de nivel de producción.
+  tags: ["professional", "kubernetes", "cloud"]
+
+- name: Tensorflow
+  logo: images/sections/projects/tensorflow.png
+  role: Desarrollador
+  timeline: "Jun 2018 - Presente"
+  repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: Un framework de aprendizaje automático de código abierto para todos.
+  tags: ["professional", "machine-learning","academic"]
+
+- name: Muestra de trabajo académico
+  role: Jefe de equipo
+  timeline: "Enero 2017 - Noviembre 2017"
+  url: "https://www.example.com"
+  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
+  tags: ["academic","iot"]
+
+- name: Nocode
+  logo: images/sections/projects/no-code.png
+  role: Ningún
+  timeline: "Oct 2019 - Dec 2019"
+  repo: https://github.com/kelseyhightower/nocode
+  #url: ""
+  summary: La mejor manera de escribir aplicaciones seguras y confiables. No escribas nada; desplegar en ninguna parte.
+  tags: ["hobby", "fun"]
+
+- name: Toha
+  logo: images/sections/projects/toha.png
+  role: Propietario
+  timeline: "Jun 2019 - Presente"
+  repo: https://github.com/hossainemruz/toha
+  summary: Un tema de Hugo para portafolio personal.
+  tags: ["hobby","hugo","theme","professional"]
