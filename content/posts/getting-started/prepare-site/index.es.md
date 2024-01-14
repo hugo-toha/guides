@@ -423,7 +423,7 @@ buttons:
 projects:
 - name: Kubernetes
   logo: images/sections/projects/kubernetes.png
-  role: Contributor
+  role: Contribuidor
   timeline: "Marzo 2018 - Presente"
   repo: https://github.com/kubernetes/kubernetes # Si tu proyecto tiene un repositorio público de Github, entonces provee el link. Mostrará el contador de estrellas.
   #url: ""  # Si tu proyecto no tiene un repositorio público pero tiene una página web o otro url de detalles externos, proveelo aquí. No provees "repo" y "url" a la vez.
@@ -432,7 +432,7 @@ projects:
 
 - name: Tensorflow
   logo: images/sections/projects/tensorflow.png
-  role: Developer
+  role: Desarrollador
   timeline: "Jun 2018 - Presente"
   repo: https://github.com/tensorflow/tensorflow
   #url: ""
@@ -441,7 +441,7 @@ projects:
 
 - name: Toha
   logo: images/sections/projects/toha.png
-  role: Owner
+  role: Propietario
   timeline: "Jun 2019 - Presente"
   repo: https://github.com/hossainemruz/toha
   summary: Un tema de Hugo para portafolio personal.

@@ -1,14 +1,14 @@
-# section information
+# Información de la sección
 section:
   name: Proyectos
   id: projects
   enable: true
   weight: 4
   showOnNavbar: true
-  # Can optionally hide the title in sections
+  # Opcionalmente puede ocultar el título del menú
   # hideTitle: true
 
-# filter buttons
+# Botones de filtrado
 buttons:
 - name: Todos
   filter: "all"
@@ -19,20 +19,20 @@ buttons:
 - name: Hobby
   filter: "hobby"
 
-# your projects
+# Tus proyectos
 projects:
 - name: Kubernetes
   logo: images/sections/projects/kubernetes.png
-  role: Contributor
+  role: Contribuidor
   timeline: "Marzo 2018 - Presente"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  repo: https://github.com/kubernetes/kubernetes # Si tu proyecto tiene un repositorio público de Github, entonces provee el link. Mostrará el contador de estrellas.
+  #url: ""  # Si tu proyecto no tiene un repositorio público pero tiene una página web o otro url de detalles externos, proveelo aquí. No provees "repo" y "url" a la vez.
   summary: Programación y gestión de contenedores de nivel de producción.
   tags: ["professional", "kubernetes", "cloud"]
 
 - name: Tensorflow
   logo: images/sections/projects/tensorflow.png
-  role: Developer
+  role: Desarrollador
   timeline: "Jun 2018 - Presente"
   repo: https://github.com/tensorflow/tensorflow
   #url: ""
@@ -57,7 +57,7 @@ projects:
 
 - name: Toha
   logo: images/sections/projects/toha.png
-  role: Owner
+  role: Propietario
   timeline: "Jun 2019 - Presente"
   repo: https://github.com/hossainemruz/toha
   summary: Un tema de Hugo para portafolio personal.
