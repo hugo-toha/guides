@@ -13,7 +13,7 @@ En esta publicación, vamos a desplegar el sitio que hemos creado en la pasada p
 
 #### Crea una rama `gh-pages`
 
-Para empezar, crea una nueva rama llamada `gh-pages`. Github automaticamente establecerá las respectivas configuraciones para Github pages cuando vea la rama con este nombre.
+Para empezar, crea una nueva rama llamada `gh-pages`. Github automáticamente establecerá las respectivas configuraciones para Github pages cuando vea la rama con este nombre.
 
 ```bash
 # crea la rama gh-pages
@@ -24,7 +24,7 @@ $ git push gh-pages gh-pages
 
 #### Habilite Github Action
 
-Vamos a automatizar el proceso de despliegue usando [Github Actions](https://github.com/features/actions). En un principio, asegúrase que Github Action esté habilitado en su repositorio. Vaya a `Settings > Actions` de su repositorio y asegúrese de que `Action permissions` esté en modo `Allow all actions`. Aquí hay una captura de pantalla de la configuración respectiva:
+Vamos a automatizar el proceso de despliegue usando [Github Actions](https://github.com/features/actions). En un principio, asegúrese de que Github Action esté habilitado en su repositorio. Vaya a `Settings > Actions` de su repositorio y asegúrese de que `Action permissions` esté en modo `Allow all actions`. Aquí hay una captura de pantalla de la configuración respectiva:
 
 {{< img src="images/enable_action.png" align="center" >}}
 
@@ -83,7 +83,7 @@ Esta acción se ejecutará en cada push de la rama `main`. Se creará el sitio w
 
 #### Despliegue
 
-Si ha seguido la guía adecuadamente, su sitio debería estar listo para el despliegue en Github Pages. Ahora, si haces un push de cualquier commit a tu rama `main`, se empezará una Github Action y se despliegará su sitio web automaticamente.
+Si ha seguido la guía adecuadamente, su sitio debería estar listo para el despliegue en Github Pages. Ahora, si haces un push de cualquier commit a tu rama `main`, se empezará una Github Action y se desplegará su sitio web automáticamente.
 
 Haz push de un commit a la rama `main` y vaya a la pestaña `Actions` de su repositorio para verificar que la acción ha empezado.
 
@@ -118,12 +118,12 @@ WWW    3600    IN A     185.199.111.153
 
 Para verificar que su dominio y asegurarse que nadie de Github pueda usarlo excepto tu, puedes seguir los pasos en [esta guía](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
 
-Finalemente crea un archivo `CNAME` dentro del directorio `/static` de tu repositorio. Ahí añade tu dominio:
+Finalemente, crea un archivo `CNAME` dentro del directorio `/static` de tu repositorio. Ahí añade tu dominio:
 
 ```
 example.com
 ```
 
-Una vez la Github Action se haya completado correctamente, puede navegar a su sitio web en `https://<su dominio>`.
+Una vez que la Github Action se haya completado correctamente, puede navegar a su sitio web en `https://<su dominio>`.
 
-Ten en cuenta que navegando a `https://<su usuario>.github.io` será redirigido automaticamente a `https://<su dominio>`.
+Ten en cuenta que navegando a `https://<su usuario>.github.io` será redirigido automáticamente a `https://<su dominio>`.

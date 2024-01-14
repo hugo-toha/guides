@@ -9,7 +9,6 @@ menu:
     weight: 60
 ---
 
-Emoji can be enabled in a Hugo project in a number of ways.
 Los emojis se pueden habilitar a un proyecto de Hugo de distintas formas.
 <!--more-->
 La función [`emojify`](https://gohugo.io/functions/emojify/) se puede llamar directamente a las plantillas o a los [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates/#inline-shortcodes).
@@ -24,7 +23,7 @@ El [Emoji cheat sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master
 
 ***
 
-**NÓTESE BIEN.** Los pasos anteriores habilitan secuencias y caracteres emoji estándar Unicode en Hugo; sin embargo, la representación de estos glifos depende del navegador y la plataforma. Para darle estilo al emoji, puedes usar una fuente emoji de terceros o una pila de fuentes; por ejemplo.
+**NÓTESE BIEN.** Los pasos anteriores habilitan secuencias y caracteres emoji estándar Unicode en Hugo; sin embargo, la representación de estos glifos depende del navegador y la plataforma. Para darle estilo al emoji, puedes usar una fuente de emoji de terceros o una pila de fuentes; por ejemplo.
 
 {{< highlight html >}}
 .emoji {

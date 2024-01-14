@@ -9,7 +9,7 @@ menu:
     weight: 140
 ---
 
-El propósito de la sección de `Proyectos` es mostrar eficazmente sus proyectos. En esta publicación, le guiaré a través del proceso de configuración de la sección de `Proyectos` en su sitio web. Para obtener una referencia completa, puede consultar el archivo de ejemplo [projects.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/projects.yaml).
+El propósito de la sección `Proyectos` es mostrar eficazmente sus proyectos. En esta publicación, le guiaré a través del proceso de configuración de la sección de `Proyectos` en su sitio web. Para obtener una referencia completa, puede consultar el archivo de ejemplo [projects.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/projects.yaml).
 
 Para empezar, crea un nuevo archivo llamado `projects.yaml` dentro del directorio `data/es/sections` de tu sitio web. Después, sigue las instrucciones de abajo.
 
@@ -50,7 +50,7 @@ Un botón solo mostrará los proyectos que tengan una etiqueta que coincida con 
 
 ### Añade tus proyectos
 
-Ahora, añade tus proyectos debajo de la sección `projects` del archivo , `projects.yaml` como a continuación,
+Ahora, añade tus proyectos debajo de la sección `projects` del archivo, `projects.yaml` como a continuación,
 
 ```yaml
 projects:
@@ -67,11 +67,11 @@ projects:
 Puedes especificar los siguientes campos en cada proyecto,
 
 - **name**: Nombre del proyecto.
-- **logo**: Logo del proyecto. Si el proyecto no tiene logo, el tema automaticamente añadirá un marcador de posición allí.
+- **logo**: Logo del proyecto. Si el proyecto no tiene logo, el tema automáticamente añadirá un marcador de posición allí.
 - **role**: Tu rol en el proyecto.
-- **timeline**: Interval de tiempo que has trabajado en el proyecto.
-- **repo**: Si tu proyecto tiene un repositorio público de Github, entonces provee el link. Mostrará el contador de estrellas.
-- **url**: Si tu proyecto no tiene un repositorio público pero tiene una página web o otro url de detalles externos, proveelo aquí. No provees "repo" y "url" a la vez. Esto creará un botón con un enlace en la tarjeta del proyecto.
+- **timeline**: Intervalo de tiempo que has trabajado en el proyecto.
+- **repo**: Si tu proyecto tiene un repositorio público de Github, entonces provee el enlace. Mostrará el contador de estrellas.
+- **url**: Si tu proyecto no tiene un repositorio público, pero tiene una página web u otra url de detalles externos, proveelo aquí. No provees "repo" y "url" a la vez. Esto creará un botón con un enlace en la tarjeta del proyecto.
 - **summary**: Breve descripción del proyecto.
 - **tags**: Lista de etiquetas de tu proyecto. Se usarán para seleccionar el proyecto debajo de una categoría con los botones de filtrado.
 
@@ -79,6 +79,6 @@ Puedes especificar los siguientes campos en cada proyecto,
 
 {{< vs 2 >}}
 
-La siguiente imagen muestra cómo el contenido de `projects.yaml` están distribuidos en la sección de `Proyectos`.
+La siguiente imagen muestra cómo el contenido de `projects.yaml` está distribuido en la sección de `Proyectos`.
 
 {{< img src="images/projects.png" >}}

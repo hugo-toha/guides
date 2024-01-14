@@ -10,7 +10,7 @@ menu:
 hero: boat.jpg
 ---
 
-Esta es una publicación de ejemplo con el objectivo de testear lo siguiente:
+Esta es una publicación de ejemplo con el objetivo de testear lo siguiente:
 
 - Imagen de hero determinada.
 - Los distintos shortcodes.
@@ -67,7 +67,7 @@ Esto es un ejemplo de alerta con `type="warning"`.
 Esto es un ejemplo de alerta con `type="warning"`.
 {{< /alert >}}
 
-#### Inforamción
+#### Inforamación
 
 **Código:**
 
@@ -261,4 +261,4 @@ Esta es la segunda línea. Debería tener un espacio vertical `4rem` con la lín
 {{< video src="/videos/sample.mp4" >}}
 
 <!-- markdown-link-check-disable-next-line -->
-Video by [Rahul Sharma](https://www.pexels.com/@rahul-sharma-493988) from [Pexels](https://www.pexels.com).
+Video por [Rahul Sharma](https://www.pexels.com/@rahul-sharma-493988) de [Pexels](https://www.pexels.com).

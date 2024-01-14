@@ -10,7 +10,7 @@ menu:
 mermaid: true
 ---
 
-Este tema soporta mermaid, desarrollado por [maemaidj-js](https://mermaid-js.github.io/mermaid). Para habilitar mermaid para una página, tienes que poner `mermaid: true` en tu página de front-matter. Por ejemplo, esta página tiene el siguiente front-matter:
+Este tema soporta mermaid, desarrollado por [mermaid-js](https://mermaid-js.github.io/mermaid). Para habilitar mermaid para una página, tienes que poner `mermaid: true` en tu página de front-matter. Por ejemplo, esta página tiene el siguiente front-matter:
 
 ```yaml
 title: "Soporte Mermaid"
@@ -32,8 +32,7 @@ Después, puede usar el shortcode `mermaid` para añadir contenido de mermaid. P
 {{</* /mermaid */>}}
 ```
 
-The `mermaid` short code accept the following parameters:
-El shortcode de `mermaid` accepta los siguientes parámetros:
+El shortcode de `mermaid` acepta los siguientes parámetros:
 
 - **align**: Permite alinear el diagrama a la izquierda, derecha o centro. La alineación predeterminada es el centro.
 - **background:** Permite cambiar el color de fondo del diagrama.

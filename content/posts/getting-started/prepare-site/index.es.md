@@ -9,17 +9,17 @@ menu:
     weight: 10
 ---
 
-En esta publicación, vamos a crear un sitio de hugo des de cero. Después, lo configuraremos con el tema `Toha`, lo haremos plurilingüe, y añadiremos publicaciones de ejemplo. Al final de esta publicación, deberías poder ejecutar un sitio hugo con el tema `Toha` totalmente funcional localmente.
+En esta publicación, vamos a crear un sitio de hugo desde cero. Después, lo configuraremos con el tema `Toha`, lo haremos plurilingüe, y añadiremos publicaciones de ejemplo. Al final de esta publicación, deberías poder ejecutar un sitio hugo con el tema `Toha` totalmente funcional localmente.
 
 Si quieres un atajo, puedes simplemente hacer un fork del repositorio [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renombrarlo y actualizarlo con tus datos. Este repositorio ya está configurado para el despliegue en [Github Pages](https://pages.github.com/) y [Netlify](https://www.netlify.com/).
 
 ### Crea el Repositorio
 
-Para empezar, crea un repositorio en Github. Si quieres desplegar este sitio en Github Pages, el nombre de tu repositorio debería ser `<su usuario>.github.io`. Clona el repositorio en tu máquinal local y dirígete hacia él.
+Para empezar, crea un repositorio en Github. Si quieres desplegar este sitio en Github Pages, el nombre de tu repositorio debería ser `<su usuario>.github.io`. Clona el repositorio en tu máquina local y dirígete hacia él.
 
 ### Crea el sitio
 
-Ahora, asegúrase que tiene [Hugo](https://gohugo.io/getting-started/installing/) instalado. Este tema debería funcionar con la versión de hugo `v0.118.0` o posterior. Ahora, ejecuta el siguiente comando en la raíz de su repositorio para inicializar un sitio web de hugo.
+Ahora, asegúrese que tiene [Hugo](https://gohugo.io/getting-started/installing/) instalado. Este tema debería funcionar con la versión de hugo `v0.118.0` o posterior. Ahora, ejecuta el siguiente comando en la raíz de su repositorio para inicializar un sitio web de hugo.
 
 ```console
 hugo new site ./ --format=yaml --force
@@ -67,21 +67,21 @@ npm install
 
 ### Ejecuta el sitio web localmente
 
-Ahora, ya puede ejecutar tu sitio web localmente. Lo ejecutaremos en modo observador con el siguiente comando:
+Ahora, ya puedes ejecutar tu sitio web localmente. Lo ejecutaremos en modo observador con el siguiente comando:
 
 ```console
 hugo server -w
 ```
 
-Si navega hacia `http://localhost:1313`, debería ver un siti web básico con el tema Toha. En la siguiente sección, configuraremos el sitio para que se parezca a [hugo-toha.github.io](https://hugo-toha.github.io/). Como hemos ejecutado el server en modo observador, cualquier cambio que hagamos al sitio, será visible instantaneamente en el navegador.
+Si navega hacia `http://localhost:1313`, debería ver un sitio web básico con el tema Toha. En la siguiente sección, configuraremos el sitio para que se parezca a [hugo-toha.github.io](https://hugo-toha.github.io/). Como hemos ejecutado el server en modo observador, cualquier cambio que hagamos al sitio, será visible instantáneamente en el navegador.
 
-### Configura el stio
+### Configura el sitio
 
 Ahora, ya estamos preparados para configurar nuestro sitio web. En esta sección, añadiremos la información de autor, diferentes secciones, publicaciones de ejemplo, etc.
 
 #### Actualiza `hugo.yaml`
 
-Cuando ha creado el sitio usando el comando `hugo new site`, ha creado un archivo `hugo.yaml` en la raíz de su repositorio. Substituye el contenido por defectro del archivo `hugo.yaml` por el siguiente:
+Cuando ha creado el sitio usando el comando `hugo new site`, ha creado un archivo `hugo.yaml` en la raíz de su repositorio. Substituye el contenido por defecto del archivo `hugo.yaml` por el siguiente:
 
 ```yaml
 baseURL: https://hugo-toha.github.io
@@ -164,7 +164,7 @@ Aquí, está viendo la configuración básica del tema de Toha. Puede ver el arc
 
 #### Añade datos
 
-La mayoria del contenido de este tema es manejado por algún archivo YAML dentro del directorio `data`. En esta sección, vamos a añadir datos de ejemplo. Ya que estamos construyendo un sitio plurilingüe, vamos a mantener los datos de cada idioma separados en su própio directorio de idioma.
+La mayoría del contenido de este tema es manejado por algún archivo YAML dentro del directorio `data`. En esta sección, vamos a añadir datos de ejemplo. Ya que estamos construyendo un sitio plurilingüe, vamos a mantener los datos de cada idioma separados en su propio directorio de idioma.
 
 Para empezar, crea el directorio `es` dentro del directorio `data`. Aquí vamos a añadir los datos en el idioma `Español`.
 
@@ -332,7 +332,7 @@ skills:
   summary: "He trabajado con la mayoría de los principales plataformas de computación en la nube, como GCP, AWS, Azure, etc."
 ```
 
-Pon las imágenes de habilidades dentro del directorio `images/sections/skills/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/skills). También, puede entrontrar el archivo `skills.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/skills.yaml).
+Pon las imágenes de habilidades dentro del directorio `images/sections/skills/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/skills). También, puede encontrar el archivo `skills.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/skills.yaml).
 
 ###### Sección de Experiencia
 
@@ -391,7 +391,7 @@ experiences:
     - Ver muchos vídeos de ejemplo.
 ```
 
-Puede entrontrar el archivo `experiences.yaml` usado en este sitio de ejemplo[aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/experiences.yaml).
+Puede encontrar el archivo `experiences.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/experiences.yaml).
 
 ###### Sección de Proyectos
 
@@ -448,7 +448,7 @@ projects:
   tags: ["hobby","hugo","theme","professional"]
 ```
 
-Pon las imágenes de proyectos dentro del directorio `images/sections/projects/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). También, puede entrontrar el archivo `projects.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
+Pon las imágenes de proyectos dentro del directorio `images/sections/projects/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). También, puede encontrar el archivo `projects.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
 ###### Sección de Publicaciones Recientes
 
@@ -468,7 +468,7 @@ section:
 # No se requiere de configuración adicional
 ```
 
-Puede entrontrar el archivo `recent-posts.yaml` usado en este sitio de ejemplo[aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/recent-posts.yaml).
+Puede encontrar el archivo `recent-posts.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/recent-posts.yaml).
 
 > Esta sección estará vacía hasta que añadas alguna publicación en tu sitio web.
 
@@ -504,7 +504,7 @@ achievements:
   summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto minus facere vero?
 ```
 
-Pon las imágenes de habilidades dentro del directorio `images/sections/projects/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). También, puede entrontrar el archivo `projects.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
+Pon las imágenes de habilidades dentro del directorio `images/sections/projects/` de tu repositorio. Puede encontrar las imágenes [aquí](https://github.com/hugo-toha/hugo-toha.github.io/tree/source/assets/images/sections/projects). También, puede encontrar el archivo `projects.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/projects.yaml).
 
 
 #### Añade Publicaciones

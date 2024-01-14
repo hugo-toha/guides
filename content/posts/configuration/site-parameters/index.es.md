@@ -9,15 +9,15 @@ menu:
     weight: 105
 ---
 
-Después de instalar este tema, cuando ejecutas tu sitio web por primera vez, se iniciará con los parámteros predeterminados. Debería parecerse a este sitio de ejemplo, pero sin secciones en la página de inicio. No te preocupers, puede añadir estas secciones proporcionando los archivos de datos necesarios.
+Después de instalar este tema, cuando ejecutas tu sitio web por primera vez, se iniciará con los parámetros predeterminados. Debería parecerse a este sitio de ejemplo, pero sin secciones en la página de inicio. No te preocupes, puede añadir estas secciones proporcionando los archivos de datos necesarios.
 
-En las próximas publicaciones, le guiaré sobre cómoañadir estas secciones y personalizar tu sitio web. Pero primero, empezaremos cambiando los parámetros del sitio. Puedes modificar el fondo, el logo, la información del autor y habilitar/deshabilitar varias funcionalidades.
+En las próximas publicaciones, le guiaré sobre cómo añadir estas secciones y personalizar tu sitio web. Pero primero, empezaremos cambiando los parámetros del sitio. Puedes modificar el fondo, el logo, la información del autor y habilitar/deshabilitar varias funcionalidades.
 
 Para obtener una lista completa de los parámetros de configuración disponibles, consulte el [sitio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io/tree/main).
 
 ### Añade un Fondo
 
-Para empezar, vamos a establecer un fondo a tu sitio web. pon la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `config.yaml`.
+Para empezar, vamos a establecer un fondo para tu sitio web. Pon la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `config.yaml`.
 
 ```yaml
 background: "images/nombre_de_tu_imagen_de_fondo.jpg"
@@ -25,7 +25,7 @@ background: "images/nombre_de_tu_imagen_de_fondo.jpg"
 
 ### Añade un Logo
 
-Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. pon tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `config.yaml`.
+Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. Pon tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `config.yaml`.
 
 ```yaml
 # El logo invertido será usado para la barra de navegación transparente.
@@ -36,7 +36,7 @@ logo:
   favicon: images/favicon.png
 ```
 
-### Habilita publicaciones de Blog
+### Habilita publicaciones del Blog
 
 Para habilitar publicaciones de blog en tu sitio web, necesitarás aplicar unos cambios en el archivo `config.yaml`. Localiza la sección `params.features` y añada el siguiente código.
 
@@ -69,7 +69,7 @@ Aquí, hemos configurado nuestra Tabla de Contenido para mostrar todos los encab
 
 ### Habilita el botón `<Mejorar esta página>`
 
-Si quieres permitir que los lectores mejoren facilmente una publicación haciendo correcciones como faltas de ortografía o identación, puedes habilitar el botón `<Mejorar esta página>`. Para hacerlo, añada su URL del repositorio de git en la sección `params` del archivo `config.yaml`.
+Si quieres permitir que los lectores mejoren fácilmente una publicación haciendo correcciones como faltas de ortografía o identación, puedes habilitar el botón `<Mejorar esta página>`. Para hacerlo, añada su URL del repositorio de git en la sección `params` del archivo `config.yaml`.
 
 ```yaml
 gitRepo: <URL de tu repositorio de Github del sitio>
@@ -83,9 +83,9 @@ Si tu rama por defecto no tiene el nombre de `main`, necesitarás especificar tu
 gitBranch: <nombre de tu rama por defecto de git>
 ```
 
-### Habilita Boletin Informativo
+### Habilita Boletín Informativo
 
-Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `config.yaml`. Ahora mismo, el boletin informativo solo es soportado por el proveedor Mailchimp. Aquí hay un ejemplo de como debería ser:
+Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `config.yaml`. Ahora mismo, el boletín informativo solo es soportado por el proveedor Mailchimp. Aquí hay un ejemplo de cómo debería ser:
 
 ```yaml
 newsletter:
@@ -94,7 +94,7 @@ newsletter:
   mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
 ```
 
-Para deshabilitar la funcionalidad de boletin informativo, puedes establecerlo con la siguiente configuración.
+Para deshabilitar la funcionalidad del boletín informativo, puedes establecerlo con la siguiente configuración.
 
 ```yaml
 newsletter:
@@ -141,11 +141,11 @@ summary:
   - Me gusta trabajar en proyectos divertidos
 ```
 
-> Nota: Los parámetros de `contactInfo` usarán el campo `icon` para buscar el respectivo icon. Asegúrase que el campo `icon` coincide con los nombres de la fuente awesome. Puedes encontrar ejemplos [aquí](https://fontawesome.com/search?o=r&f=brands).
+> Nota: Los parámetros de `contactInfo` usarán el campo `icon` para buscar el respectivo icono. Asegúrese que el campo `icon` coincide con los nombres de la fuente awesome. Puedes encontrar ejemplos [aquí](https://fontawesome.com/search?o=r&f=brands).
 
 ### Añade un aviso de derechos de autor
 
-Para añadir un aviso de erechos de autor en tu sitio, crea un archivo `site.yaml` dentro del directorio `/data/es`. Añada la siguiente sección al archivo:
+Para añadir un aviso de derechos de autor en tu sitio, crea un archivo `site.yaml` dentro del directorio `/data/es`. Añada la siguiente sección al archivo:
 
 ```yaml
 copyright: © 2024 Copyright.
@@ -162,7 +162,7 @@ description: Página de ejemplo del tema de hugo Toha.
 
 ### Añade Menús personalizados
 
-Para añadir menús personalizados en la barra de navegación, puedes modificar el archivo `site.yaml`. Por defecto, los menús personalizados son visibles en la barra de navegación. Para esconder un menú personalizado, establece la propiedad `hideFromNavbar` a `true`. Por defecto, los menús personalizafos estan ocultos del área del pie de página. Para mostrar un elemento de menú personalizado en el pie de página, establece la propiedad `showOnFooter` a `true`. Esto es particularmente útil cuando desea añadir un enlace a otro sitio en la barra de navegación.
+Para añadir menús personalizados en la barra de navegación, puedes modificar el archivo `site.yaml`. Por defecto, los menús personalizados son visibles en la barra de navegación. Para esconder un menú personalizado, establece la propiedad `hideFromNavbar` a `true`. Por defecto, los menús personalizados están ocultos del área del pie de página. Para mostrar un elemento de menú personalizado en el pie de página, establece la propiedad `showOnFooter` a `true`. Esto es particularmente útil cuando desea añadir un enlace a otro sitio en la barra de navegación.
 
 ```yaml
 customMenus:

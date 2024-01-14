@@ -9,7 +9,7 @@ menu:
     weight: 110
 ---
 
-El propóstio de la sección `Sobre mi` es proveer una breve introducción sobre ti en tu sitio web. En esta publicación, te guiaré en cómo configurar la sección `Sobre mi`. Para obtener una referencia completa, consulte el archivo de ejemplo [about.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/about.yaml).
+El propósito de la sección `Sobre mi` es proveer una breve introducción sobre ti en tu sitio web. En esta publicación, te guiaré en cómo configurar la sección `Sobre mi`. Para obtener una referencia completa, consulte el archivo de ejemplo [about.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/about.yaml).
 
 Para empezar, crea un archivo `about.yaml` dentro del directorio `data/es/sections` de tu sitio web. Después sigue las instrucciones de abajo.
 
@@ -27,7 +27,7 @@ section:
 
 #### Configuración de la plantilla
 
-Tienes la opción de personalizar el "partial" usado para esta sección especificando la propiedad `template.` Simplemente guarde la nueva plantilla en el directorio `layout/partials`.
+Tienes la opción de personalizar el "partial" usado para esta sección especificando la propiedad `template.` Simplemente, guarde la nueva plantilla en el directorio `layout/partials`.
 
 ### Añade tu información de trabajo
 
@@ -57,7 +57,7 @@ Intenta que sea lo más breve posible. No lo hagas demasiado largo. Tenemos otra
 
 ### Añade tus links de redes sociales
 
-Para añadir enlaces de tus perfiles de plataformas como LinkedIn, Twitter, y Github, incluye esta seccións `socialLinks` en tu archivo `about.yaml`.
+Para añadir enlaces de tus perfiles de plataformas como LinkedIn, Twitter y Github, incluye esta sección `socialLinks` en tu archivo `about.yaml`.
 
 ```yaml
 # tus links de redes sociales
@@ -92,7 +92,7 @@ Puedes usar cualquier icono gratis de [Font Awesome](https://fontawesome.com/ico
 
 ### Añade un Currículum
 
-Para añadir un curriculum, pon tu archivo PDF dentro del directorio `files` localizado dentro del directorio `static`. Después incluye la siguiente sección en el archivo `about.yaml`:
+Para añadir un currículum, pon tu archivo PDF dentro del directorio `files` localizado dentro del directorio `static`. Después incluye la siguiente sección en el archivo `about.yaml`:
 
 ```yaml
 # tu currículum. Este archivo debe ser relativo a tu directorio "static"
@@ -150,6 +150,6 @@ Actualmente, el porcentaje de habilidades debe estar entre 0 y 100 y debe ser di
 
 {{< vs 2 >}}
 
-La siguiente imagen muestra cómo el contenido de `about.yaml` están distribuidos en la sección `Sobre mi`. (La porción de configuración de la imagen está obsoleta y la sección de habilidades sociales han sido reemplazados por certificaciones)
+La siguiente imagen muestra cómo el contenido de `about.yaml` está distribuido en la sección `Sobre mi`. (La porción de configuración de la imagen está obsoleta y la sección de habilidades sociales han sido reemplazadas por certificaciones)
 
 {{< img src="images/about.png" >}}

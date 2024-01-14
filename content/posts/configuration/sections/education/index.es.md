@@ -54,4 +54,4 @@ degrees:
     url: "#"
 ```
 
-Asegúrase que el icono que utilices esté disponible en [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
+Asegúrese que el icono que utilices esté disponible en [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).

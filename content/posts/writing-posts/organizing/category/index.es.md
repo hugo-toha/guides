@@ -12,17 +12,17 @@ menu:
     weight: 10
 ---
 
-Primero, necesitamos entender cómo crear una publicación para poder crear categoías.
+Primero, necesitamos entender cómo crear una publicación para poder crear categorías.
 
 ## Crear una Publicación
 
-Para crear una publicación en tu primer blog, primero necesitar ir al directorio `posts`. Ahí, crea un archivo `_index.md` (El nombre tiene que ser exactamente el mismo). Después abre el archivo y añade las siguientes líneas: </br>
+Para crear una publicación en tu primer blog, primero necesitas ir al directorio `posts`. Ahí crea un archivo `_index.md` (el nombre tiene que ser exactamente el mismo). Después, abre el archivo y añade las siguientes líneas: </br>
     
     ---
     title: Posts
     ---  
 
-Ahora, guarda y cierra el archivo. Ahora, supone que quieres escribir una publicación. Primero, crea un archivo, y nombralo con la extensión de markdown al final. Por ejemplo: hemos creado el archivo nombrado `analytics-and-comments.md` y hemos añadido las siguientes líneas: </br>
+Ahora, guarda y cierra el archivo. Ahora, supone que quieres escribir una publicación. Primero, crea un archivo y nómbralo con la extensión de markdown al final. Por ejemplo: hemos creado el archivo nombrado `analytics-and-comments.md` y hemos añadido las siguientes líneas: </br>
 
     ---
     title: "Analytics and Comments"
@@ -43,11 +43,11 @@ Como sabemos, el encabezado de este archivo empieza y acaba con tres guiones hor
 
 **title:** Este es el título de tu publicación. </br>
 **date:** Esta es la fecha y hora que muestra la fecha y hora de publicación de tu blog. La primera porción está en el formato `year-month-date`. Puedes editar la fecha y hora como quieras. </br>
-**hero:** Aquí, necesitarás incluir la ruta de la imagen de portada de tu publicación. Vaya al directorio `static` y crea un directorio nombrado `images` (Sólo si no lo tienes). Después, dentro de este directorio crea un nuevo directorio nombrado `posts`, y dentro de éste, hemos creado un directorio nombrado `writing-posts`, donde hemos puesto el archivo de imagen `analytics.svg`. Ahora copia la ruta, y añadalo al parámetro `hero`. </br>
+**hero:** Aquí, necesitarás incluir la ruta de la imagen de portada de tu publicación. Vaya al directorio `static` y crea un directorio nombrado `images` (únicamente si no lo tienes). Después, dentro de este directorio crea un nuevo directorio nombrado `posts`, y dentro de este, hemos creado un directorio nombrado `writing-posts`, donde hemos puesto el archivo de imagen `analytics.svg`. Ahora copia la ruta, y añádalo al parámetro `hero`. </br>
 **description:** Añade la descripción que te convenga.</br>
-**menu:** Esta sección contiene otros parámetros nombrados `sidebar` que configurarán cómo se mostrará la estructura del archivo en la barra lateral. Debajo de éste, tenemos:</br>
+**menu:** Esta sección contiene otros parámetros nombrados `sidebar` que configurarán cómo se mostrará la estructura del archivo en la barra lateral. Debajo de este, tenemos:</br>
 **name:** Este define cual será el nombre del documento en la barra lateral. </br>
-**identifier:** Éste ayuda a identificar el archivo con otros archivos en términos de la categoería. </br>
+**identifier:** Este ayuda a identificar el archivo con otros archivos en términos de la categoría. </br>
 **weight:** Se asigna un valor a este parámetro como valor de peso y, para varios archivos, los documentos aparecerán en la jerarquía de archivos según este valor de peso en orden ascendente.
 
 Después del front-matter, puedes escribir cualquier contenido siguiendo la sintaxis de markdown.
@@ -61,7 +61,7 @@ La siguiente imagen muestra cómo el contenido de `analytics-and-comments.md` es
 
 ## Crear una Categoría
 
-Como hemos creado un archivo `_index.md` y una publicación anteriormente, ahora, para crear una categoría, necesitamos crear un directorio. Hemos creado un directorio nombrado `getting-started`, y dentro de éste, hemos creado otro archivo `_index.md`, que tendrá el siguiente contenido front-matter:
+Como hemos creado un archivo `_index.md` y una publicación anteriormente, ahora, para crear una categoría, necesitamos crear un directorio. Hemos creado un directorio nombrado `getting-started`, y dentro de este, hemos creado otro archivo `_index.md`, que tendrá el siguiente contenido front-matter:
 
 ```    
 ---

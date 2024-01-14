@@ -49,7 +49,6 @@ El elemento de citas en bloque representa contenido citado de otra fuente, opcio
 
 ## Tablas
 
-Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box.
 Las tablas no son parte de la especificación principal de Markdown, pero Hugo las admite.
 
    | Nombre | Edad |
@@ -107,7 +106,7 @@ html
 </html>
 {{< /highlight >}}
 
-## Tipos de Lita
+## Tipos de Lista
 
 #### Lista Ordenada
 
@@ -139,6 +138,6 @@ H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Pressione <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> para finalizar la sesión.
+Presione <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> para finalizar la sesión.
 
 La mayoría de las <mark>salamandras</mark> son nocturnas y cazan insectos, gusanos y otras criaturas pequeñas.

@@ -9,7 +9,7 @@ menu:
     weight: 660
 ---
 
-Este tema soporta la adición varios enlaces de soporte/donación en su sitio. Actualmente, los enlaces de soporte admitidos son:
+Este tema soporta la adición de varios enlaces de soporte/donación en su sitio. Actualmente, los enlaces de soporte admitidos son:
 
 - [Ko-fi](https://ko-fi.com/)
 - [Buy Me a Coffee](https://www.buymeacoffee.com/zicklam)

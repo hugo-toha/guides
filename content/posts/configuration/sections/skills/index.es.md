@@ -48,6 +48,6 @@ Aquí, debes proveer los campos `name`, `log`, y `summary` para cada habilidad. 
 
 {{< vs 2 >}}
 
-La siguiente imagen muestra cómo el contenido de `skills.yaml` están distribuidos en la sección de `Habilidades`.
+La siguiente imagen muestra cómo el contenido de `skills.yaml` está distribuido en la sección de `Habilidades`.
 
 {{< img src="images/skills.png">}}

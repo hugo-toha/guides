@@ -9,9 +9,9 @@ menu:
     weight: 2
 ---
 
-**Saludos!** Gracias para decidirte a utilizar este tema. En esta guía, te enseñaré cómo puedes empezar con este tema rápidamente.
+**¡Saludos!** Gracias por decidirte utilizar este tema. En esta guía, te enseñaré cómo puedes empezar con este tema rápidamente.
 
-Aquí, asumiré que quieres empezar de cero una página de Hugo utilizando este tema. Si ya estás usando Hugo para tu sitio, entonces ya sabes cómo utilizar un tema. En este caso, por favor, sigui este [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) para más inforación.
+Aquí asumiré que quieres empezar de cero una página de Hugo utilizando este tema. Si ya estás usando Hugo para tu sitio, entonces ya sabes cómo utilizar un tema. En este caso, por favor, sigue este [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) para más información.
 
 ### Requisitos
 
@@ -21,7 +21,7 @@ Para ejecutar el tema localmente, debes tener las siguientes herramientas instal
 2. [Go](https://go.dev/doc/install) language versión `v1.18.x` o posterior.
 3. Versión Node `v18.x` y versión npm `8.x` o posterior.
 
-Asegurate que tienes las herramientas requeridas instaladas con la versión adecuada usando los siguientes comandos.
+Asegúrate de que tienes las herramientas requeridas instaladas con la versión adecuada usando los siguientes comandos.
 
 ```bash
 # Comprobar versión de Hugo
@@ -43,11 +43,11 @@ v18.12.1
 
 ### Empezando
 
-Ahora, volvamos a nuestra misión. Simplemente siga estos 6 pasos para empezar con tu página.
+Ahora, volvamos a nuestra misión. Simplemente, siga estos 6 pasos para empezar con tu página.
 
-#### Paso 1: Haz un fork del repositorio de ejemplo y renombralo
+#### Paso 1: Haz un fork del repositorio de ejemplo y renómbralo
 
-Al principio, haz **fork** del [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) en su cuenta. Después, renombra el repositorio al nombre que desee. Si deseas utilizar [Github Pages](https://pages.github.com/) para desplegar su sitio, entonces renombralo a `<tu usuario>.github.io`. El repositorio de ejemplo viene con Github Actions preconfiguradas para publicar el sitio en Github Pages y Netlify.
+Al principio, haz **fork** del [repositorio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io) en su cuenta. Después, renombra el repositorio al nombre que desee. Si deseas utilizar [Github Pages](https://pages.github.com/) para desplegar su sitio, entonces renómbralo a `<tu usuario>.github.io`. El repositorio de ejemplo viene con Github Actions preconfiguradas para publicar el sitio en Github Pages y Netlify.
 
 #### Paso 2: Clone su repositorio localmente
 
@@ -59,7 +59,7 @@ git clone git@github.com:<su usuario>/<nombre de su repositorio>
 
 #### Paso 3: Actualiza el archivo del módulo
 
-Deberías ver los archivos `go.mod` y `go.sum` en la raíz de su repositorio. Actualize la primeria línea del archivo `go.mod` como a continuación:
+Deberías ver los archivos `go.mod` y `go.sum` en la raíz de su repositorio. Actualice la primera línea del archivo `go.mod` como a continuación:
 
 ```bash
 module github.com/<su usuario>/<nombre de su repositorio>
@@ -67,11 +67,11 @@ module github.com/<su usuario>/<nombre de su repositorio>
 
 #### Paso 4: Cambie el archivo `config.yaml`
 
-Ahora, abre el repositorio en un editor y cambie las siguientes configuraciones en tu archivo `config.yaml` localizado en la raíz de su repositorio.
+Ahora, abre el repositorio en un editor y, cambie las siguientes configuraciones en tu archivo `config.yaml` localizado en la raíz de su repositorio.
 
 ##### Cambia la `baseURL`
 
-Primero, cambia la `baseURL` a la URL de su sitio web. Si quieres utilizar Github Pages para hostear su sitio, entonces establezcalo como a continuación:
+Primero, cambia la `baseURL` a la URL de su sitio web. Si quieres utilizar Github Pages para hostear su sitio, entonces establézcalo como a continuación:
 
 ```yaml
 baseURL: https://<su usuario>.github.io
@@ -79,15 +79,15 @@ baseURL: https://<su usuario>.github.io
 
 ##### Cambia el `gitRepo`
 
-Ahora, cambia el campo `gitRepo`debajo de la sección `params` para apuntar a su repositorio. Por ejemplo,
+Ahora, cambia el campo `gitRepo` debajo de la sección `params` para apuntar a su repositorio. Por ejemplo,
 
 ```yaml
 gitRepo: https://github.com/<su usuario>/<su repositorio>
 ```
 
-##### Deshabilite analíticas o configuralas adecuadamente
+##### Deshabilite analíticas o configúralas adecuadamente
 
-El repositorio de ejemplo viene con Google Analytics preconfigurado. El id de las analíticas apuntan al sitio original. Entonces, deshabilita las analíticas o configuralas adecuadamente de acuerdo a [esta guía](/es/posts/analytics/).
+El repositorio de ejemplo viene con Google Analytics preconfigurado. El id de las analíticas apunta al sitio original. Entonces, deshabilita las analíticas o configúralas adecuadamente de acuerdo a [esta guía](/es/posts/analytics/).
 
 Puede deshabilitar las analíticas estableciendo el siguiente campo debajo de la sección `params.features`:
 
@@ -133,11 +133,11 @@ hugo server -w
 Si todo ha ido bien, deberías ver un output similar a este.
 {{< img src="images/local_site.png" align="center" alt="Command to run site locally">}}
 
-Ahora, dirigete a [localhost:1313](http://localhost:1313/) en tu navegador y deberías ver su sitio web ejecutandose.
+Ahora, dirígete a [localhost:1313](http://localhost:1313/) en tu navegador y deberías ver su sitio web ejecutándose.
 
 #### Paso 6: Haz un push de tus cambios a Github
 
-Si has llegado hasta aquí, significa que su sitio está ejecutandose localmente sin ningún fallo. Vamos a hacer un push de estos cambios a Github.
+Si has llegado hasta aquí, significa que su sitio está ejecutándose localmente sin ningún fallo. Vamos a hacer un push de estos cambios a Github.
 
 ```bash
 # añade todos sus cambios

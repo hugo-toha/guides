@@ -39,7 +39,7 @@ achievements:
   summary: Mejor presentador en la conferencia XYZ 2020.
 ```
 
-Cada entrada de logor, debe tener los siguientes campos,
+Cada entrada de logro, debe tener los siguientes campos,
 
 - **title**: El título del logro.
 - **image**: La imagen del logro.
@@ -49,6 +49,6 @@ Cada entrada de logor, debe tener los siguientes campos,
 
 {{< vs 2 >}}
 
-La siguiente imagen muestra cómo el contenido de `achievements.yaml` están distribuidos en la sección de `Logros`.
+La siguiente imagen muestra cómo el contenido de `achievements.yaml` está distribuido en la sección de `Logros`.
 
 {{< img src="images/achievements.png" >}}

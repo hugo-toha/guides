@@ -21,7 +21,7 @@ Para una lista completa de las extensiones de comentarios soportadas, puede cons
 
 ### Disqus
 
-Disqus es una extensión de comentarios popular. Después de acceder a [Disqus](https://disqus.com/) necesiarás proveer tu shortame debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
+Disqus es una extensión de comentarios popular. Después de acceder a [Disqus](https://disqus.com/) necesitarás proveer tu shortname debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
 
 ```yaml
 comment:
@@ -51,7 +51,7 @@ comment:
 
 ### Utterances
 
-Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [utteranc.es](https://utteranc.es/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Sólo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
+Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [utteranc.es](https://utteranc.es/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
 
 ```yaml
 comment:
@@ -65,9 +65,9 @@ comment:
 
 ### Giscus
 
-Giscus está basado en Utterances, pero usa [GitHub Discussions](https://docs.github.com/en/discussions) como backend. Esto requiere tener un repositorio público, y permitir que la aplicación Giscus use tu repositorio. Las instrucciones de configuración se pueden encotrar a [Giscus home page](https://giscus.app/).
+Giscus está basado en Utterances, pero usa [GitHub Discussions](https://docs.github.com/en/discussions) como backend. Esto requiere tener un repositorio público, y permitir que la aplicación Giscus use tu repositorio. Las instrucciones de configuración se pueden encontrar en [Giscus home page](https://giscus.app/).
 
-Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [giscus.app](https://giscus.app/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Sólo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
+Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [giscus.app](https://giscus.app/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
 
 ```yaml
 comment:

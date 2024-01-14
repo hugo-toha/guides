@@ -31,7 +31,7 @@ section:
 
 ### Añade tu experiencia
 
-Para añadir una experiecia, añade la respectiva información debajo de la sección `experiences` dentro del archivo `experiences.yaml`, como a continuación:
+Para añadir una experiencia, añade la respectiva información debajo de la sección `experiences` dentro del archivo `experiences.yaml`, como a continuación:
 
 ```yaml
 # Tu experiencia
@@ -62,7 +62,6 @@ experiences:
     - Aprender tecnología k,d,w de xyz.
 ```
 
-Each entry in the `experiences` section should have the following information,
 Cada entrada de la sección `experiences` debería tener la siguiente información,
 
 - **company**: Información sobre tu empresa. Deberías proveer `name`, `url`, `location`, y un breve `overview` de la empresa.
@@ -70,7 +69,7 @@ Cada entrada de la sección `experiences` debería tener la siguiente informaci�
 - **designation**: Representa los roles que has tenido en la posición correspondiente.
 - **start**: Fecha en que te uniste en la respectiva posición.
 - **end**: Fecha en que dejaste la posición. Si aún está trabajando en esa posición, no llenes este campo.
-- **responsibilities**: Lista de responsabilidades que tubiste en esa posición. Esta sección es muy importante ya que el visitante podrá tener una idea sobre las responsabilidades profesionales que eres capaz de manejar.
+- **responsibilities**: Lista de responsabilidades que tuviste en esa posición. Esta sección es muy importante, ya que el visitante podrá tener una idea sobre las responsabilidades profesionales que eres capaz de manejar.
 
 > Puedes usar la sintáctica de markdown en el campo `overview` de la sección `company` y el campo de `responsibilities`.
 

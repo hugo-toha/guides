@@ -12,8 +12,7 @@ menu:
     weight: 415
 ---
 
-If the default sections, templates, and components do not meet your needs, you can easily add new sections, templates, and components to your site. This guide will demonstrate how to add a new section to your site.
-Si las secciones, plantillas y componentes existentes no cumplen con tus necesidaades, puedes añadir nuevas secciones, plantillas y componentes a tu sitio web. Esta guía te enseñará como añadir una nueva sección a tu sitio.
+Si las secciones, plantillas y componentes existentes no cumplen con tus necesidades, puedes añadir nuevas secciones, plantillas y componentes a tu sitio web. Esta guía te enseñará cómo añadir una nueva sección a tu sitio.
 
 ### Paso 1: Cambia el archivo de Disposición
 

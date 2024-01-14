@@ -12,13 +12,13 @@ menu:
     weight: 407
 ---
 
-Este tema te permire personalizar la apariencia de tu sitio y sus componentes sobrescribiendo el CSS predeterminado. Esta guía te enseñará cómo sobrescribir el esquema de colores del tema y la personalización de CSS de componentes individuales. 
+Este tema te permite personalizar la apariencia de tu sitio y sus componentes sobrescribiendo el CSS predeterminado. Esta guía te enseñará cómo sobrescribir el esquema de colores del tema y la personalización de CSS de componentes individuales. 
 
 Este tema usa [Sass](https://sass-lang.com/) para generar el CSS. Si no está familiarizado con Sass, puedes aprender más sobre él [aquí](https://sass-lang.com/guide).
 
 ## Sobrescribe las variables de los colores
 
-Si quieres cambiar los colores por defecto del tema, pudes sobrescribir las variables de los colores. Para sobrescribir las variables de los colores del tema, necesitarás crear un archivo nombrado `variables.scss` dentro del directorio `assets/styles` de tu sitio. Después copia el contenido predeterminado del archivo [variables.scss](https://github.com/hugo-toha/toha/blob/main/assets/styles/variables.scss), y ponlo en tu archivo `variables.scss`. Aquí, sólo la sección de `$theme` predeterminada de `variables.scss` es mostrada:
+Si quieres cambiar los colores por defecto del tema, pueds sobrescribir las variables de los colores. Para sobrescribir las variables de los colores del tema, necesitarás crear un archivo nombrado `variables.scss` dentro del directorio `assets/styles` de tu sitio. Después copia el contenido predeterminado del archivo [variables.scss](https://github.com/hugo-toha/toha/blob/main/assets/styles/variables.scss), y ponlo en tu archivo `variables.scss`. Aquí, solo la sección de `$theme` predeterminada de `variables.scss` es mostrada:
 
 ```scss
 // themes
@@ -89,9 +89,9 @@ Los campos `light` y `dark` representan los esquemas de color para el modo claro
 
 ## Override Component CSS
 
-Para sobrescribir el CSS de una componente, crea un archivo `override.scss` dentro del directorio `assets/styles`. Después, allí pon el nuevo código CSS. No necesitar rescribir toda la componente de CSS. Puedes poner sólo los campos que quieras cambiar.
+Para sobrescribir el CSS de un componente, crea un archivo `override.scss` dentro del directorio `assets/styles`. Después, allí pon el nuevo código CSS. No necesitarás reescribir toda la componente de CSS. Puedes poner solo los campos que quieras cambiar.
 
-Por ejemplo, para deshabilitar el efector de difunidado de la imagen de fondo de la página de inicio, puedes añadir el siguiente código SCSS en el archivo `override.scss`:
+Por ejemplo, para deshabilitar el efector de difuminado de la imagen de fondo de la página de inicio, puedes añadir el siguiente código SCSS en el archivo `override.scss`:
 
 ```scss
 .home{

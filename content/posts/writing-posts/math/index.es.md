@@ -17,7 +17,7 @@ En este ejemplo usaremos [KaTeX](https://katex.org/)
 
 - Crea un partial debajo de `/layouts/partials/math.html`
 - Dentro de esta referencia del partial, se hace referencia a la [Auto-render Extension](https://katex.org/docs/autorender.html) o al host de estos scripts localmente.
-- Incluye el partial en tu plantillas de la siguiente forma:
+- Incluye el partial en tus plantillas de la siguiente forma:
 
 ```
 {{ if or .Params.math .Site.Params.math }}

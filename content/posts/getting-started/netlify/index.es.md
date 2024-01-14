@@ -9,7 +9,7 @@ menu:
     weight: 30
 ---
 
-[Netlify](https://www.netlify.com/) ofrece un excelente y fácil proceso para desplegar un sitio de hugo statico. Puedes desplegar su sitio web en cuestión de unos sólos clicks. A diferencia de Github Pages, puedes nombrar su repositorio como quieras. También puede personalizar el URL del sitio.
+[Netlify](https://www.netlify.com/) ofrece un excelente y fácil proceso para desplegar un sitio de hugo estático. Puedes desplegar su sitio web en cuestión de unos solos clics. A diferencia de Github Pages, puedes nombrar su repositorio como quieras. También puede personalizar el URL del sitio.
 
 En esta publicación, mostraremos paso a paso el proceso de despliegue de un sitio hugo con netlify.
 
@@ -62,7 +62,7 @@ Haz commit y haz push del archivo `netlify.toml` en Github. Ahora, está listo p
 
 ### Despliegue el sitio
 
-Ahora, accede a [netlify](https://www.netlify.com/). Después, vaya a a pestaña `Sites` del panel de netlify y pulsa el botón `New site from Git`.
+Ahora, accede a [netlify](https://www.netlify.com/). Después, vaya a la pestaña `Sites` del panel de netlify y pulsa el botón `New site from Git`.
 
 {{< img src="images/2.png" align="center" >}}
 
@@ -86,13 +86,13 @@ Ahora, netlify te llevará a la página de despliegue. Seleccione la rama que qu
 
 {{< vs 2 >}}
 
-Ahora, netlify empezará a publicar su sitio web immediatamente. Espera que el proceso de publicación se complete. Una vez el sitio se haya publicada, puede navegar a su sitio en el URL generado automaticamente por netlify. Este URL auto-generado ha sido apuntado por un rectángulo rojo en la captura de pantalla de abajo.
+Ahora, netlify empezará a publicar su sitio web inmediatamente. Espera que el proceso de publicación se complete. Una vez el sitio se halla publicado, puede navegar a su sitio en el URL generado automáticamente por netlify. Este URL autogenerado ha sido apuntado por un rectángulo rojo en la captura de pantalla de abajo.
 
 {{< img src="images/6.png" align="center" >}}
 
 ### Personaliza la URL
 
-Puede personalizar facilmente la URL de tu sitio con unos pocos clicks mostrados a continuación.
+Puede personalizar fácilmente la URL de tu sitio con unos pocos clics mostrados a continuación.
 
 1. Pulsa el botón `Domain Setting` debajo de la pestaña `Site Overview`.
 
@@ -110,6 +110,6 @@ Puede personalizar facilmente la URL de tu sitio con unos pocos clicks mostrados
 
 {{< vs 2 >}}
 
-4. Una vez haya guardado el nombre nuevo, verá que el URL de su sitio web se ha actualizado instantaneamente. Ahora, puede navegar a su sitio web con la nueva URL.
+4. Una vez haya guardado el nombre nuevo, verá que el URL de su sitio web se ha actualizado instantáneamente. Ahora, puede navegar a su sitio web con la nueva URL.
 
 {{< img src="images/10.png" align="center" >}}
