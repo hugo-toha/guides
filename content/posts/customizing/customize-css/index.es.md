@@ -1,5 +1,5 @@
 ---
-title: "Personalización CSS"
+title: "Personalización del CSS"
 date: 2024-01-13T22:00:50+06:00
 author:
   name: Emruz Hossain
