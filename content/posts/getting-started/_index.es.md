@@ -1,8 +1,8 @@
 ---
-title: Empezando
+title: Primeros Pasos
 menu:
   sidebar:
-    name: Empezando
+    name: Primeros Pasos
     identifier: getting-started
     weight: 10
 ---
