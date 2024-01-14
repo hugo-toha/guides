@@ -158,3 +158,4 @@ git push origin HEAD
 - Ajouter les informations sur vos expériences en suivant [ce guide](/fr/posts/configuration/sections/experiences/).
 - Déployer votre site sur Github Page en suivant le guide par [ici](/fr/posts/getting-started/github-pages/).
 - Déployer votre site sur Netlify en suivant le guide par [ici](/fr/posts/getting-started/netlify/).
+

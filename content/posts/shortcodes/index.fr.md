@@ -18,7 +18,15 @@ Ce billet d'échantillon est destiné à tester les éléments suivants :
 
 ## Alerte
 
-Les alertes suivantes sont disponibles dans ce thème.
+Ce thème propose différents types d'alertes pour votre publication. Par exemple, si on ajoute le code ci-dessous :
+
+```markdown
+{{</* alert type="success" */>}}
+This is sample alert with `type="success"`.
+{{</* /alert */>}}
+```
+
+L'alerte qui apparaîtra ressemblera à ça:
 
 #### Succès
 
@@ -82,6 +90,7 @@ This is sample alert with `type="info"`.
 
 {{< alert type="info" >}}
 This is sample alert with `type="info"`.
+
 {{< /alert >}}
 
 ## Image
