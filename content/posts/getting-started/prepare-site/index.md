@@ -396,6 +396,45 @@ experiences:
 
 You can find the `experiences.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/experiences.yaml).
 
+###### Education Section
+
+Create `education.yaml` file inside your `/data/en/sections/` directory. Then add the following contents there:
+
+```yaml
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your degrees
+degrees:
+- name: Ph.D in Quantum Cryptography
+  icon: fa-microscope
+  timeframe: 2016-2020
+  institution:
+    name: ABC University of Technology
+    url: "#"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.6
+    outOf: 4
+  publications: #(optional)
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    url: "#"
+  - title: Fusce eu augue ut odio porttitor pulvinar.
+    url: "#"
+  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+    url: "#"
+```
+
+You can find the `education.yaml` file used in the example site from [here](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/education.yaml).
+
 ###### Project Section
 
 Create `projects.yaml` file inside your `/data/en/sections/` directory. Then add the following contents there:

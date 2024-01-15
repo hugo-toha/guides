@@ -396,6 +396,44 @@ experiences:
 
 Puede encontrar el archivo `experiences.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/experiences.yaml).
 
+###### Sección de Educación
+
+Crea un archivo `education.yaml` dentro del directorio `/data/es/sections/`. Después añade el siguiente contenido:
+
+```yaml
+# Información de la sección
+section:
+  name: Educación
+  id: education
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Opcionalmente puede ocultar el título del menú
+  # hideTitle: true
+
+# Sus grados
+degrees:
+- name: Doctorado en Criptografía Cuántica
+  icon: fa-microscope
+  timeframe: 2016-2020
+  institution:
+    name: Universidad de Teconología ABC
+    url: "#"
+  grade: #(opcional)
+    scale: CGPA
+    achieved: 3.6
+    outOf: 4
+  publications: #(opcional)
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    url: "#"
+  - title: Fusce eu augue ut odio porttitor pulvinar.
+    url: "#"
+  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+    url: "#"
+```
+
+Puede encontrar el archivo `education.yaml` usado en este sitio de ejemplo [aquí](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/education.yaml).
+
 ###### Sección de Proyectos
 
 Crea un archivo `projects.yaml` dentro del directorio `/data/es/sections/`. Después añade el siguiente contenido:
