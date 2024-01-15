@@ -314,13 +314,13 @@ Put the `resume.pdf` file in `/static/files` directory of your repository. You c
 
 In order to keep this post short, we have splitted it in different posts. Below there's the list of posts that will show you how to configure the other sections:
 
-- If you want to get more details about configuring `About` section, you can visit [Configuring About Section](/posts/configuration/sections/about/) post.
-- If you want to configure `Education` section, you can visit [Configuring Education Section](/posts/configuration/sections/education/) post.
-- If you want to configure `Experiences` section, you can visit [Configuring Experiences Section](/posts/configuration/sections/experiences/) post.
-- If you want to configure `Projects` section, you can visit [Configuring Projects Section](/posts/configuration/sections/projects/) post.
-- If you want to configure `Recent Posts` section, you can visit [Configuring Recent Posts Section](/posts/configuration/sections/recent-posts/) post.
-- If you want to configure `Achievements` section, you can visit [Configuring Achievements Section](/posts/configuration/sections/achievements/) post.
-- If you want to configure `Skills` section, you can visit [Configuring Skills Section](/posts/configuration/sections/skills/) post.
+- [Configuring About Section](/posts/configuration/sections/about/).
+- [Configuring Education Section](/posts/configuration/sections/education/).
+- [Configuring Experiences Section](/posts/configuration/sections/experiences/).
+- [Configuring Projects Section](/posts/configuration/sections/projects/).
+- [Configuring Recent Posts Section](/posts/configuration/sections/recent-posts/).
+- [Configuring Achievements Section](/posts/configuration/sections/achievements/).
+- [Configuring Skills Section](/posts/configuration/sections/skills/).
 
 #### Add Posts
 

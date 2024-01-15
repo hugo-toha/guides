@@ -306,13 +306,13 @@ pon el archivo `resume.pdf` dentro del directorio `/static/files` de tu reposito
 
 Para mantener esta publicación breve, la hemos dividido en distintas publicaciones. A continuación hay la lista de publicaciones que te guiará en cómo configurar las otras secciones.
 
-- Si quieres tener más detalles en cómo configurar la sección `Sobre mi`, puedes visitar la publicación [Configurando la sección Sobre mi](/es/posts/configuration/sections/about/).
-- Si quieres configurar la sección de `Educación`, puedes visitar la publicación [Configurando la sección de Educación](/es/posts/configuration/sections/education/).
-- Si quieres configurar la sección de `Experiencia`, puedes visitar la publicación [Configurando la sección de Experiencia](/es/posts/configuration/sections/experiences/).
-- Si quieres configurar la sección de `Proyectos`, puedes visitar la publicación [Configurando la sección de Proyectos](/es/posts/configuration/sections/projects/).
-- Si quieres configurar la sección de `Publicaciones Recientes`, puedes visitar la publicación [Configurando la sección de Publicaciones Recientes](/es/posts/configuration/sections/recent-posts/).
-- Si quieres configurar la sección de `Logros`, puedes visitar la publicación [Configurando la sección de Logros](/es/posts/configuration/sections/achievements/).
-- Si quieres configurar la sección de `Habilidades`, puedes visitar la publicación [Configurando la sección de Habilidades](/es/posts/configuration/sections/skills/).
+- [Configurando la sección Sobre mi](/es/posts/configuration/sections/about/).
+- [Configurando la sección de Educación](/es/posts/configuration/sections/education/).
+- [Configurando la sección de Experiencia](/es/posts/configuration/sections/experiences/).
+- [Configurando la sección de Proyectos](/es/posts/configuration/sections/projects/).
+- [Configurando la sección de Publicaciones Recientes](/es/posts/configuration/sections/recent-posts/).
+- [Configurando la sección de Logros](/es/posts/configuration/sections/achievements/).
+- [Configurando la sección de Habilidades](/es/posts/configuration/sections/skills/).
 
 #### Añade Publicaciones
 
