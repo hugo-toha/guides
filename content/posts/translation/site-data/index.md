@@ -84,3 +84,7 @@ languages:
 You can translate the main page by creating a new directory into `data` directory. The name of the new directory should be `<language_code>`. For example, if we want to translate it to french, we would create the `fr` directory into `data` directory.
 
 Afterwards you can create your usual data file like `about.yaml` or `education.yaml` files, keeping the same file structure and maintaining the same file names. Inside those files, you can just translate the content of the fields into your desired language. 
+
+## Next up
+
+You can check the following guide [How to Translate Posts](/posts/translation/content/).
