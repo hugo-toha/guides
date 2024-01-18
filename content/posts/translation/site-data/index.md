@@ -53,7 +53,7 @@ If the language you desire to translate the content to is not available, please 
 
 ### Add the language into `config.yaml`
 
-After you know what's the code for the language you wish to translate your site, open `config.yaml` file, and under the `languages sections` add the following:
+After you know what's the code for the language you wish to translate your site, open `config.yaml` file, and under the `languages` section add the following:
 
 ```yaml
 languages:
@@ -66,7 +66,7 @@ languages:
 
 ```
 
-For example, if we want to set `Frech` as the new language, the section would look similar to:
+For example, if we want to set `Français` as the new language, the section would look similar to:
 
 ```yaml
 languages:
@@ -74,7 +74,7 @@ languages:
     languageName: English
     weight: 1
   fr:
-    languageName: French
+    languageName: Français
     weight: 2 # You can set the language order with this value
 
 ```
