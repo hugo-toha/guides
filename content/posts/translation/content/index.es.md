@@ -1,6 +1,9 @@
 ---
 title: "Como traducir las publicaciones"
 date: 2020-06-07T06:20:50+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Traduciendo Publicaciones

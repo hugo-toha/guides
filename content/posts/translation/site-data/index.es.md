@@ -1,6 +1,9 @@
 ---
 title: "Como traducir los datos de la página de inicio"
 date: 2020-06-07T06:20:50+06:00
+author:
+  name: BernatBC
+  image: images/author/bernatbc.png
 menu:
   sidebar:
     name: Traduciendo la página de inicio
