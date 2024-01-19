@@ -1,6 +1,6 @@
 ---
 title: "Déployer dans Github Pages"
-date: 2023-11-11T22:00:20+02:00
+date: 2020-06-08T22:00:20+06:00
 menu:
   sidebar:
     name: Déployer dans Github Pages
