@@ -344,5 +344,5 @@ Pour plus de billets d'échantillon, regardez par [ici](https://github.com/hugo-
 
 A ce stade, votre site doit avoir une apparence similaire au [site d'exemple](https://hugo-toha.github.io/). Maintenant, il est temps de déployer votre site. Vous pouvez suivre les guides de déploiement ci-dessous:
 
-- [Déployer dans Github Pages](https://toha-guides.netlify.app/posts/getting-started/github-pages/)
-- [Déployer dans Netlify](https://toha-guides.netlify.app/posts/getting-started/netlify/)
+- [Déployer dans Github Pages](https://toha-guides.netlify.app/fr/posts/getting-started/github-pages/)
+- [Déployer dans Netlify](https://toha-guides.netlify.app/fr/posts/getting-started/netlify/)
