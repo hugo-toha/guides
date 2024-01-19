@@ -59,7 +59,9 @@ analytics:
 
 El código de seguimiento automáticamente será añadido a tu sitio web.
 
+{{< alert type="warning" >}}
 Nota: En algunos sitios, aparece [an error has been detected](https://github.com/ihucos/counter.dev/issues/37), donde solo el directorio raíz ("/") se pasa a counter.dev, por lo que el seguimiento no mostrará nada en la sección "pages". Para solucionar este problema, se puede añadir `referrerPolicy: no-referrer-when-downgrade` como parámetro en la sección "counterDev", asegurando que las nuevas visitas a la página siempre se pasen correctamente a counter.dev.
+{{< /alert >}}
 
 ### Google Analytics
 
