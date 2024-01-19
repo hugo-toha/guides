@@ -34,10 +34,10 @@ Pull requests are most welcome and I will be happy to review. Just follow the fo
 ### Documentation
 
 You can also contribute to the theme documentation by:
-- Adding more sections
+- Adding information and sections
 - Fixing errors and typos
 - Updating obsolete documentation
-- Translating it to a new language, [this](/posts/translation/content/) guide might be helpful.
+- Translating the documentation to a new language, [this](/posts/translation/content/) guide might be helpful.
 
 ### Translation
 
@@ -51,7 +51,7 @@ For local development, you can make changes in the theme submodule and test the 
 
 At first, fork [this repo](https://github.com/hugo-toha/toha). Then, follow the following steps to use the forked theme for local developments,
 
-**Using the forked theme in your own site:**
+#### Using the forked theme in your own site:
 
 If you want to run your local development against your own site, follow the following steps:
 
@@ -66,7 +66,7 @@ $ git remote add my-fork https://github.com/<your-github-user>/toha
 $ git checkout -b my-feature-branch
 ```
 
-**Using the forked theme in the example site:**
+#### Using the forked theme in the example site:
 
 If your want to run your local development against this [example site](https://github.com/hugo-toha/hugo-toha.github.io), follow the following steps:
 
@@ -83,7 +83,7 @@ $ git checkout -b my-feature-branch
 
 From there you can make changes to the source code of the theme while testing with your running Hugo site or the example site.
 
-### Open a PR
+### Open a Pull Request
 
 When the changes look good, commit and push them to your fork.
 
