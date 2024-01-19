@@ -33,7 +33,7 @@ Cette commande créera une structure de base d'un site hugo. Ici, le flag `--for
 
 Nous allons utiliser un module hugo pour ajouter le thème `Toha` dans votre site. D'abord, initialisez les modules hugo en utilisant la commande suivante:
 ```console
-$ hugo mod init github.com/<votre nom d'utilisateur>/<votre nom de dépôt>
+$ hugo mod init github.com/<votre compte utilisateur>/<votre nom de dépôt>
 ```
 Cette commande va créer un fichier `go.mod` à la racine de votre dépôt.
 
@@ -77,7 +77,7 @@ Si vous naviguez sur `http://localhost:1313`, vous devriez voir un site basique 
 
 ### Configurer le site
 
-Maintenant, nous sommes prêt à configurer notre site. Dans cette section, nous allons ajouter les informations de l'auteur, différentes sections, et des echantillons de billets etc.
+Maintenant, nous sommes prêt à configurer notre site. Dans cette section, nous allons ajouter les informations de l'auteur, différentes sections, et des échantillons de billets etc.
 
 #### Mise à jour `hugo.yaml`
 
