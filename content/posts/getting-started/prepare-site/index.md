@@ -25,7 +25,7 @@ Now, make sure that you have [Hugo](https://gohugo.io/getting-started/installing
 hugo new site ./ --format=yaml --force
 ```
 
-This command will create a basic hugo site structure. Here, `-f=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty. It will create `hugo.yaml` file that will hold the all the necessary configurations for your site.
+This command will create a basic hugo site structure. Here, `--format=yaml` flag tells hugo to create configuration file in YAML format and `--force` flag forces hugo to create a site even if the target directory is not empty. It will create `hugo.yaml` file that will hold the all the necessary configurations for your site.
 
 ### Add Theme
 
