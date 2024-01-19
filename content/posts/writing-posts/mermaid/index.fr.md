@@ -10,10 +10,10 @@ menu:
 mermaid: true
 ---
 
-This theme comes with built in mermaid support powered by [maemaidj-js](https://mermaid-js.github.io/mermaid). To enable mermaid for a page, you have to put `mermaid: true` in your page front-matter. For example, this page has the following front-matter:
+Ce thème est construit avec le support de Mermaid propulsé par [maemaidj-js](https://mermaid-js.github.io/mermaid). Pour activer mermail pour une page, vous devez mettre `mermaid: true` dans le front-matter de votre page. Par exemple, cette page à le front-matter suivant:
 
 ```yaml
-title: "Mermaid Support"
+title: "Support de Mermaid"
 date: 2022-03-14T06:15:35+06:00
 menu:
   sidebar:
@@ -24,24 +24,24 @@ menu:
 mermaid: true
 ```
 
-Then, you can use `mermaid` short code to add your mermaid content. For example:
+Ensuite, vous pouvez utiliser le shortcode `mermaid` pour ajouter du contenu mermaid. Par exemple:
 
 ```bash
 {{</* mermaid align="center"*/>}}
-  # your mermaid content here
+  # Votre contenu mermaid ici
 {{</* /mermaid */>}}
 ```
 
-The `mermaid` short code accept the following parameters:
+Le short code `mermaid` accepte les paramètres suivants:
 
-- **align**: Let's you align your diagram at left, right, or center. The default alignment is center.
-- **background:** Let's you change the background color of your diagram.
+- **align**: aligne votre diagramme à gauche, à droite, ou au centre. L'alignement par défaut est le centre.
+- **background:** change la couleur d'arrière plan de votre diagramme.
 
-## Examples
+## Exemples
 
-Here, are few example of different diagram using mermaid.
+Voici quelques exemples de différents diagramme utilisant mermaid.
 
-#### Graph
+#### Graphique
 
 ```bash
 {{</* mermaid align="left" */>}}
@@ -63,7 +63,7 @@ graph LR;
 
 <hr>
 
-#### Sequence Diagram
+#### Diagramme de séquence
 
 ```bash
 {{</* mermaid */>}}
@@ -97,7 +97,7 @@ sequenceDiagram
 
 <hr>
 
-#### Gantt diagram
+#### diagramme de Gantt
 
 ```bash
 {{</* mermaid */>}}
@@ -129,7 +129,7 @@ section A section
 
 <hr>
 
-#### Class Diagram
+#### Diagramme de classes
 
 ```bash
 {{</* mermaid */>}}
@@ -169,7 +169,7 @@ classDiagram
 
 <hr>
 
-#### Git Graph
+#### Graphique de Git
 
 ```bash
 {{</* mermaid background="black" align="right" */>}}
@@ -213,7 +213,7 @@ merge newbranch
 
 <hr>
 
-#### ER Diagram
+#### Diagramme ER
 
 ```bash
 {{</* mermaid */>}}
