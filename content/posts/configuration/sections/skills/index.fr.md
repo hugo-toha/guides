@@ -34,7 +34,7 @@ section:
 
 ### Ajouter vos compétences
 
-Ajoutez un `skill` et ajoutez ses informations sous la section `skills` dans votre fichier `skills.yaml` comme ci-dessous:
+Ajoutez une `compétence` et ses informations sous la section `skills` dans votre fichier `skills.yaml` comme ci-dessous:
 
 ```yaml
 # Vos compétences.
@@ -46,9 +46,9 @@ skills:
   url: "https://kubernetes.io/"
 ```
 
-Ici, vous renseignez les champs `name`, `log`, et `summary` pour une compétence. Le champs `summary` doit fournir une idée du niveau de connaissance sur une compétence particulière.
+Ici, vous renseignez les champs `name`, `logo`, et `summary` pour une compétence. Le champs `summary` doit fournir une idée du niveau de connaissance sur une compétence particulière.
 
->Vous pouvez utiliser la syntaxte markdown dans le champs `summary`.
+>Vous pouvez utiliser la syntaxe markdown dans le champs `summary`.
 
 {{< vs 2 >}}
 

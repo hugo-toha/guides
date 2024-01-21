@@ -13,17 +13,19 @@ Après l'installation du thème, quand vous lancez le site pour la première foi
 
 Dans ce billet, je vais vous montrer comment vous pouvez changer les paramètres du site pour modifier l'arrière plan, le logo, les informations de l'auteur, et activer/désactiver différentes fonctionnalités.
 
+Pour une liste compréhensive des paramètres de configuration disponibles, consultez s'il vous plaît le [site d'exemple](https://github.com/hugo-toha/hugo-toha.github.io/tree/main).
+
 ### Ajouter une image d'arrière plan
 
 D'abord, on va paramètrer un arrière plan sur votre site. Mettez l'image d'arrière plan désirée dans le répertoire `assets/images`. Ensuite, ajoutez ce qui suit dans la section `params` de votre fichier `config.yaml`.
 
 ```yaml
-background: "images/<le nom de votre image d'arrière plan((avec l'extension du fichier)>"
+background: "images/<nom-de-votre-image-arrière-plan.jpg"
 ```
 
-### Ajouter un logo à votre site
+### Ajouter le logo du site
 
-Maintenant, ajoutons un logo pour votre site. Vous devez fournir deux logos différents. Un pour la barre de navigation transparente et un autre pour la barre de navigation non transparente. Placez vos logos dans le répertoire `assets/images` et ajoutez ce qui suit dans la section `params` du fichier `config.yaml`.
+Pour ajouter des logos pour votre site, vous devez fournir deux logos différents. Un pour la barre de navigation transparente et un autre pour la barre de navigation non transparente. Placez vos logos dans le répertoire `assets/images` et ajoutez le code sous la section `params` du fichier `config.yaml`.
 
 ```yaml
 # The inverted logo will be used in the initial transparent navbar and
@@ -34,22 +36,25 @@ logo:
   favicon: images/favicon.png
 ```
 
-### Activer les articles de blog
+### Activer les billets de blog
 
-Si vous voulez écrire quelques articles de blog, vous devez d'abord l'activer. Activons la publication d'articles de blog en ajoutant ce qui suit dans la section `params` de votre fichier `config.yaml`.
-
-```yaml
-enableBlogPost: true
-```
-
-### Activer `Table Of Contents`
-
-Maintenant, si vous voulez afficher la section `Table Of Contents` dans votre article de blog, vous devez d'abord l'activer dans la section `params` de votre fichier `config.yaml`.
+Pour activer les billets de blog sur votre site, vous aurez besoin de faire quelques changements dans votre fichier `config.yaml`. Localisez la section `params.features` et ajoutez le code suivant:
 
 ```yaml
-enableTOC: true
+# Active et configure la publication de billets
+blog:
+  enable: true
 ```
-Vous pouvez également contrôler le niveau de votre table des matières en ajoutant la configuration suivante dans la section `markup` de votre fichier `config.yaml`.
+
+### Activer la `Table des Matières`
+
+Maintenant, si vous voulez afficher la section `Table des Matières` dans votre billet de blog, vous devez d'abord l'activer dans la section `params.features` de votre fichier `config.yaml`.
+
+```yaml
+toc:
+  enable: true
+```
+Vous pouvez également contrôler le niveau de votre table des matières par l'ajout de la configuration suivante dans la section `markup` de votre fichier `config.yaml`.
 
 ```yaml
 markup:
@@ -59,27 +64,27 @@ markup:
     ordered: false
 ```
 
-Ici, nous avons configuré notre table des matières pour montrer tous les titres à partir de `h2` jusqu'à `h6`.
+Ici, nous avons configuré notre table des matières pour afficher tous les titres à partir de `h2` jusqu'à `h6`.
 
-### Activer le bouton `<Improve This Page>`
+### Activer le bouton `<Améliorer cette page>`
 
-Si vous voulez fournir à vos visiteurs un moyen facile d'améliorer un article (par exemple une faute de frappe, un correctif d'indentation, etc.), vous pouvez activer le bouton `<improve This Page>` en ajoutant l'URL de votre dépôt Git dans la section `params` de votre fichier `config.yaml`.
+Si vous voulez fournir à vos visiteurs un moyen facile d'améliorer un article (par exemple une faute de frappe, un correctif d'indentation, etc.), vous pouvez activer le bouton `<Améliorer cette page>` en ajoutant l'URL de votre dépôt Git dans la section `params` de votre fichier `config.yaml`.
 
 ```yaml
 gitRepo: <L'URL du dépôt Github de votre site>
 ```
 
-Cela ajoutera un bouton labelisé `Improve This Page` au pied de chaque billet. Le bouton redirigera l'utilisateur directement vers le formulaire d'édition de Github de la page.
+Cela ajoutera un bouton labelisé `Améliorer cette page` au pied de chaque billet. Le bouton redirigera l'utilisateur directement vers le formulaire d'édition de Github de la page.
 
 Si vous branche par défaut ne s'appelle pas `main`, alors vous aurez besoin d'ajouter votre branche git par défaut dans la section `params` de votre fichier `config.yaml`.
+
 ```yaml
 gitBranch: <le nom de votre branche git par défaut>
 ```
 
-### Activer/Désactiver la Newsletter
+### Activer la Newsletter
 
-La fonctionnalité de newsletter supporte seulement Mailchimp actuellement.
-Ajoutez ce qui suit dans la section `params` du fichier `config.yaml`.
+Pour activer la fonctionnalité de newsletter, vous avez besoin de fournir les paramètres nécessaires sous la section `params.footer` dans votre fichier `config.yaml`. Actuellement, la fonctionnalité de newsletter supporte seulement le service Mailchip. Ici un exemple de ce à quoi cela doit ressembler:
 
 ```yaml
 newsletter:
@@ -88,7 +93,7 @@ newsletter:
   mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
 ```
 
-Si vous ne voulez pas utliser la fonctionnalité de newsletter, vous pouvez la masquer en ajoutant ce qui suit dans la section `params` du fichier `config.yaml`.
+Pour désactiver la fonctionnalité de newsletter, vous pouvez paramètrer la configuration suivante:
 
 ```yaml
 newsletter:
@@ -97,7 +102,7 @@ newsletter:
 
 ### Activer le RAW HTML dans le fichier Markdown
 
-Si vous voulez utiliser le RAW HTML dans vos fichiers markdown, vous devez activier le rendu non sécurisé. Sinon, Hugo n'affichera pas le rendu HTML. Vous pouvez activer le rendu markdown non sécurisé en ajoutant les paramètres `goldmark` suivants dans la section `markup` du fichier `config.yaml`.
+Si vous voulez inclure le RAW HTML dans vos fichiers markdown, vous avez besoin d'activer le rendu non sécurisé. Sans cette activation, Hugo n'affichera pas le rendu HTML. Pour activer le rendu markdown non sécurisé; ajoutez les paramètres `goldmark` suivants dans la section `markup` du fichier `config.yaml`.
 
 ```yaml
 markup:
@@ -111,52 +116,50 @@ markup:
 Maintenant, fournissons vos informations de base. Créez un fichier `author.yaml` dans le répertoire `/data` et ajoutez-y les informations sur l'auteur.
 
 ```yaml
-# some information about you
+# Quelques informations sur vous
 name: "John Doe"
 nickname: "John"
-# greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
+# Un message de bienvenue avant votre nom. Il sera par défaut "Bonjour! Je suis" s'il n'est pas fourni.
+greeting: "Bonjour, je suis"
 image: "images/author/john.png"
-# give your some contact information. they will be used in the footer
+# Donnez quelques informations pour vous contacter. Ils seront utilisés dans le pied de page
 contactInfo:
   email: "johndoe@example.com"
   phone: "+0123456789"
   github: johndoe
   linkedin: johndoe
 
-# some summary about what you do
+# Un sommaire de ce que vous faites
 summary:
-  - I am a Developer
-  - I am a Devops
-  - I love servers
-  - I work on open-source projects
-  - I love to work with some fun projects
+  - Je suis Développeur
+  - Je suis Devops
+  - J'aime les serveurs
+  - Je travaille sur des projets Open Source
+  - J'adore travailler sur des projets sympas
 ```
 
-> Note: Les paramètres `contactInfo` utiliseront le paramètre `icon` pour trouver l'icône. Ce paramètre doit correspondre au nom de l'icône géniale [examples](https://fontawesome.com/search?o=r&f=brands)
+> Note: Les paramètres `contactInfo` utiliseront le paramètre `icon` pour trouver l'icône. Assurez-vous que le champs `icon` corresponde avec le nom de l'icône sur fontawesome. Vous pouvez trouver des exemples [ici](https://fontawesome.com/search?o=r&f=brands)
 
 ### Ajouter l'avis du droit d'auteur
 
-On va jouter un avis de droit d'auteur pour votre site. Ca sera affiché en bas du pied de page. Créez un fichier `site.yaml` dans votre répertoire `data` et ajoutez-y la section suivante.
+On va ajouter un avis de droit d'auteur pour votre site. Ca sera affiché en bas du pied de page. Créez un fichier `site.yaml` dans votre répertoire `data` et ajoutez-y la section suivante.
 
 ```yaml
-copyright: © 2020 Copyright.
+copyright: © 2024 Copyright.
 ```
 
 ### La description du site
 
-Maintenant, ajoutez une description de votre site qui aidera les moteurs de recherche à trouver votre site. Ajoutez une section de description dans votre votre fichier `site.yaml`.
+Pour ajouter une description de votre site qui aidera les moteurs de recherche à trouver votre site. Vous avez besoin d'ajouter une section `description` dans votre votre fichier `site.yaml`.
 
 ```yaml
-# Meta description for your site.  This will help the search engines to find your site.
-description: Example site for hugo theme Toha.
+# Meta description de votre site. Ca aidera les moteurs de recherche à trouver votre site.
+description: Site d'exemple pour hugo theme Toha.
 ```
 
 ### Ajout d'un menu personnalisé
 
-Si vous voulez ajouter quelques menus personnalisé dans la barre de navigation, vous pouvez facilement les ajouter par l'ajout de ce qui suit dans le fichier `site.yaml`.
-
-Les menus personnalisés sont visibles dans la barre de navigation par défaut. Pour les masquer, paramètrez `hideFromNavbar` sur `true`. Les menus personnalisés sont masqués par défaut dans la zone de navigation du pied de page. Pour afficher un élément de menu personnalisé dans le pied de page, paramètrez sa propriété `showOnFooter` sur `true`.
+Pour ajouter des menus personnalisé dans la barre de navigation, vous pouvez modifier le fichier `site.yaml`. Par défaut, les menus personnalisés sont visibles dans la barre de navigation. Pour  masquer un menu personnalisé, paramètrez la propriété `hideFromNavbar` à `true`. Par défaut, les menus personnalisés sont masqués depuis la zone de navigation du pied de page. Pour afficher un élément de menu personnalisé dans le pied de page, paramètrez sa propriété `showOnFooter` à `true`.
 
 ```yaml
 customMenus:
@@ -166,46 +169,4 @@ customMenus:
   showOnFooter: true
 ```
 
-Cela peut être particulièrement utile lorsque vous souhaitez ajouter un lien vers un autre site dans votre barre de navigation.
-
-### Exemple de Section `params`
-
-Pour terminer, voici la section `params` utilisée dans le site d'exemple.
-
-```yaml
-# Site parameters
-params:
-  # background image of the landing page
-  background: "images/background.jpg"
-
-  # Provide logos for your site. The inverted logo will be used in the initial
-  # transparent navbar and the main logo will be used in the non-transparent navbar.
-  # It will default to the theme logos if not provided.
-  logo:
-    main: images/main-logo.png
-    inverted: images/inverted-logo.png
-    favicon: images/favicon.png
-
-  # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
-
-  features:
-    # Enable and configure blog posts
-    blog:
-      enable: true
-
-    # specify whether you want to show Table of Contents in reading page
-    toc:
-      enable: true
-
-    # Show/hide newsletter section in the footer. Default is "true".
-    # Currently, it supports "mailchimp".
-    newsletter:
-      enable: false
-      # provider: mailchimp
-      # mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
-
-    # Show/hide disclaimer notice in the footer. Default is "false".
-    disclaimer:
-      enable: true
-```
+Maintenant, vous pouvez lancer votre site et voir les changements. Dans les billets qui suivent, je vous guiderai sur comment ajouter des sections à votre page d'accueil et plus loin personnaliser votre site.
