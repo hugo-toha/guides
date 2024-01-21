@@ -18,16 +18,14 @@ To begin, create a new file named `experiences.yaml` in the `data/en/sections` d
 Add the following section metadata to your `experiences.yaml` file:
 
 ```yaml
-# section information
 section:
-  name: Education
-  id: education
-  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  name: Experiences # Titre de la section (par défaut: "" )
+  id: experiences # url id/slug of section *Required*
   enable: true
-  weight: 4
+  weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true
+  # hideTitle: true 
 ```
 
 ### Add Your Experiences
@@ -63,7 +61,7 @@ experiences:
     - Learn k,d,w technology for xyz.
 ```
 
-Each entry in the `experiences` section should have the following information,
+Each entry in the `experiences` section should have the following information:
 
 - **company**: Some information about your company. You should provide `name`, `url`, `location`, and a brief `overview` of the company.
 - **positions**: A list of positions you have held in the company. You can provide multiple positions if you have changed your position in the company.
