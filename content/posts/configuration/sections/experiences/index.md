@@ -61,7 +61,7 @@ experiences:
     - Learn k,d,w technology for xyz.
 ```
 
-Each entry in the `experiences` section should have the following information,
+Each entry in the `experiences` section should have the following information:
 
 - **company**: Some information about your company. You should provide `name`, `url`, `location`, and a brief `overview` of the company.
 - **positions**: A list of positions you have held in the company. You can provide multiple positions if you have changed your position in the company.
