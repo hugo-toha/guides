@@ -1,6 +1,9 @@
 ---
 title: "Automatiser la mise à jour du thème"
 date: 2020-06-08T20:00:15+06:00
+author:
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: MAJ auto du thème

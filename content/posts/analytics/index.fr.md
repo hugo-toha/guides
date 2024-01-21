@@ -1,6 +1,9 @@
 ---
 title: "Analytiques"
 date: 2020-06-08T06:00:23+06:00
+author:
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 description: Ajouter l'analytique dans hugo theme Toha
 menu:
   sidebar:
@@ -21,7 +24,7 @@ Ce thème a été construit avec le support de divers outils d'analyse. Actuelle
 Pour une liste complète des analyses supportées, référez vous  au fichier d'échantillon [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
 
 {{< alert type="warning" >}}
-Avertissement: Lors de l'ajout d'analyses, vous devriez prendre en considération la législation locale pour voir si une bannière de confidentialité est nécessaire pour informer les visiteurs du suivi de ses données personnelles. En général (pas un conseil juridique), les méthodes anonymes et respectueuses de la vie privée telles que [counter.dev](https://counter.dev) et [GoatCounter](https://www.goatcounter.com/) n'ont pas besoin d'une bannière, car ells ne collectent pas de données personnelles identifiables.
+Avertissement: Lors de l'ajout d'analyses, vous devriez prendre en considération la législation locale pour voir si une bannière de confidentialité est nécessaire pour informer les visiteurs du suivi de ses données personnelles. En général (pas un conseil juridique), les méthodes anonymes et respectueuses de la vie privée telles que [counter.dev](https://counter.dev) et [GoatCounter](https://www.goatcounter.com/) n'ont pas besoin d'une bannière, car elles ne collectent pas de données personnelles identifiables.
 {{< /alert >}}
 
 ### Goat Counter
