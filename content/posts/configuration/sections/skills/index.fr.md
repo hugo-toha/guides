@@ -6,7 +6,7 @@ author:
   image: images/author/nicolas.jpg
 menu:
   sidebar:
-    name: Section compétences
+    name: Section des compétences
     identifier: skills-sections
     parent: sections
     weight: 120
@@ -14,7 +14,7 @@ menu:
 
 La section `Compétences` est conçue pour mettre en valeur vos compétences et fournir des informations sur votre expertise pour chaque compétence. Dans ce billet, nous vous guiderons sur la façon de configurer la section `compétences` de votre site. Pour une référence complète, consultez s'il vous plaît cet échantillon du fichier [skills.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/skills.yaml).
 
-Pour commencer, créez un fichier `skills.yaml` dans le répertoire `data/en/sections` de votre site. Ensuite, suivez les instructions ci-dessous:
+Pour commencer, créez un fichier `skills.yaml` dans le répertoire `data/fr/sections` de votre site. Ensuite, suivez les instructions ci-dessous:
 
 ### Ajouter les informations de section
 
@@ -23,10 +23,10 @@ Ajoutez les métadonnées de la section à votre fichier `skills.yaml`:
 ```yaml
 # section information
 section:
-  name: Compétences
-  id: skills
-  enable: true
-  weight: 2
+  name: Compétences # Titre de votre section
+  id: skills # URL id/slug de section *valeur à conserver & obligatoire*
+  enable: true # Booléen pour déterminer si la section est activée (par défaut: false)
+  weight: 2 # Ordre d'affichage de la section (par defaut: alphabetique suivi par poids)
   showOnNavbar: true
   # Peut optionnellement masquer les titres de la section
   # hideTitle: true

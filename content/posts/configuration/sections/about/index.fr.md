@@ -14,17 +14,20 @@ menu:
 
 L'objet de la section `A propos` est de fournir une brève introduction sur vous sur votre site web. Dans ce billet, nous vous guiderons sur la façon de configurer la section `A propos`. Pour une référence complète, consultez s'il vous plaît l'extrait du fichier [about.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/about.yaml).
 
-Pour commencer, créez un fichier `about.yaml` dans le répertoire `data/en/sections` de votre site web. Suivez ensuite, les instructions ci-dessous:
+Pour commencer, créez un fichier `about.yaml` dans le répertoire `data/fr/sections` de votre site web. Suivez ensuite, les instructions ci-dessous:
 
 ### Ajouter les informations de section
 
+Ajoutez les métadonnées de la section suivante dans votre fichier `about.yaml`:
+
 ```yaml
+# section information
 section:
   name: A propos # Titre de votre section (default: "")
-  id: about # URL id/slug de section *Requise*
+  id: about # URL id/slug de section *valeur à conserver & obligatoire*
   enable: true # Booléen pour déterminer si la section est activée (par défaut: false)
   weight: 1 # Ordre d'affichage de la section (par defaut: alphabetique suivi par poids)
-  showOnNavbar: true # Booléen pour détermoiner si le lien doit être affiché pour cette section dans la barre de navigation
+  showOnNavbar: true # Booléen pour déterminer si le lien doit être affiché pour cette section dans la barre de navigation
   template: sections/about.html # Vous Permet de pointer vers un modèle spécifique.
 ```
 
