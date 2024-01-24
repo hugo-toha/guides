@@ -52,37 +52,76 @@ Para el desarrollo local, puedes hacer cambios al submódulo del tema y probar l
 
 Para comenzar, haz fork de [este repositorio](https://github.com/hugo-toha/toha). Después, sigue los siguientes pasos para usar el tema forkeado para el desarrollo local,
 
-#### Usando el tema forkeado en tu propio sitio:
 
-Si quiéres ejecutar el desarrollo local con tu propio sitio, sigue los siguientes pasos:
+#### Ejecuta el tema forkeado con el sitio de ejemplo
 
-```bash
-# añade el tema original como submódulo de tu sitio si aún no lo has hecho
-$ git submodule add https://github.com/hugo-toha/toha.git themes/toha
-# navega hacia el directorio del tema de toha
-$ cd themes/toha
-# añade un fork a github
-$ git remote add my-fork https://github.com/<tu-usuario-de-github>/toha
-# crea una nueva rama para tus cambios
-$ git checkout -b mi-nueva-rama
-```
-
-#### Usando el tema forkeado en el sitio de ejemplo
-
-Si quiéres ejecutar el desarrollo local con este [sitio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io), sigue los siguientes pasos:
+Si quieres ejecutar tu desarrollo local con este [sitio de ejemplo](https://github.com/hugo-toha/hugo-toha.github.io), sigue los siguientes pasos:
 
 ```bash
-# clona el sitio de ejemplo junto con los submódulos
-$ git clone git@github.com:hugo-toha/hugo-toha.github.io.git --recursive
-# navega hacia el directorio del tema de toha
-$ cd themes/toha
-# añade un fork a github
-$ git remote add my-fork https://github.com/<tu-usuario-de-github>/toha
-# crea una nueva rama para tus cambios
-$ git checkout -b mi-nueva-rama
+# va al directorio exampleSite
+$ cd exampleSite
+# instala los módulos de hugo
+$ hugo mod tidy
+# instala las dependencias
+$ hugo mod npm pack
+$ npm install
+# ejecuta el sitio de ejemplo localmente
+$ hugo server -w
 ```
 
-Desde aquí ya puedes hacer cambios al código fuente del tema mientras lo pruebas con to sitio Hugo o con el de ejemplo.
+Ahora, puedes hacer cambios en el tema, y se verán reflectados inmediatamente en el sitio. Si necesitas cambiar alguna configuración, lo puedes hacer en el archivo `config.yaml` dentro del directorio `exampleSite`. Si necesitas añadir contenido o datos, puedes crear el respectivo directorio dentro de `exampleSite` y añade tu contenido o datos deseados ahí.
+
+#### Ejecuta el tema forkeado con tu propio sitio
+
+Si quieres ejecutar tu desarrollo local con tu sitio, sigue los siguientes pasos:
+
+**Sustituye los módulos del tema:**
+
+Abre el archivo `go.mod` de tu sitio y sustituye `github.com/hugo-toha/toha/v4` por el path de tu repositorio forkeado. Por ejemplo, si tu repositorio forkeado es `github.com/<tu-usuario-de-github>/toha`, sustituye `github.com/hugo-toha/toha/v4` por `github.com/<tu-usuario-de-github>/toha/v4`.
+
+```go
+module github.com/hugo-toha/hugo-toha.github.io
+
+go 1.19
+
+require github.com/hugo-toha/toha/v4 v4.0.1-0.20231229170427-d3968ca711ef // indirect
+
+replace(
+    github.com/hugo-toha/toha/v4 => github.com/<your-github-user>/toha <git branch>
+)
+```
+
+Para el desarrollo interactivo, puedes sustituir el tema con tu fork clonado localmente. Por ejemplo, si has clonado tu fork en `/home/mis-proyectos/toha`, sustituye `github.com/hugo-toha/toha/v4` por `/home/mis-proyectos/toha`.
+
+```go
+module github.com/hugo-toha/hugo-toha.github.io
+
+go 1.19
+
+require github.com/hugo-toha/toha/v4 v4.0.1-0.20231229170427-d3968ca711ef // indirect
+
+replace(
+    github.com/hugo-toha/toha/v4 => /home/my-projects/toha
+)
+```
+
+**Actualizar dependencias:**
+
+```bash
+# actualiza los módulos de hugo
+$ hugo mod tidy
+# instala las dependencias
+$ hugo mod npm pack
+$ npm install
+```
+
+**Ejecuta tu sitio localmente:**
+
+```bash
+$ hugo server -w
+```
+
+Desde aquí ya puedes hacer cambios al código fuente del tema mientras lo pruebas con tu sitio Hugo o con el de ejemplo.
 
 ### Abre un Pull Request
 
