@@ -91,7 +91,7 @@ menu:
 ### Próximamente...
 ```
 
-Ya conocemos los parámetros usados aquí, pero tenemos uno nuevo incluido, que es `parent`. Si nos damos cuenta, entenderemos que el valor de este parámetro y el valor del parámetro `identifier` en el archivo `_index.md` dentro de este directorio son ambos iguales. Debemos tener cuidado de que el valor de ambos parámetros coincida. Ahora puedes agregar tantas publicaciones y categorías como quieras siguiendo el procedimiento mencionado anteriormente. Así es como creamos las categorías.
+Ya conocemos los parámetros usados aquí, pero tenemos uno nuevo incluido, que es `parent`. Si nos damos cuenta, entenderemos que el valor de este parámetro y el valor del parámetro `identifier` en el archivo `_index.md` dentro de este directorio son ambos iguales. Debemos tener cuidado de que el valor de ambos parámetros coincida. Ahora puedes agregar tantas publicaciones y categorías como quieras siguiendo el procedimiento mencionado anteriormente. Así es cómo creamos las categorías.
 
 La siguiente imagen muestra cómo el contenido está distribuido en la sección de la barra lateral. 
 
