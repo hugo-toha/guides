@@ -1,12 +1,12 @@
 ---
-title: "Ajout d'une nouvelle section"
+title: "Ajouter une nouvelle section"
 date: 2024-01-13T22:30:50+06:00
 author:
   name: Nicolas DIETLIN
   image: images/author/nicolas.jpg
 menu:
   sidebar:
-    name: Ajout Nouvelle Section
+    name: Ajouter une nouvelle section
     identifier: customizing-add-new-section
     parent: customizing
     weight: 415
