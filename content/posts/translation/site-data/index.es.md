@@ -1,5 +1,5 @@
 ---
-title: "Como traducir los datos de la página de inicio"
+title: "Cómo traducir los datos de la página de inicio"
 date: 2020-06-07T06:20:50+06:00
 author:
   name: BernatBC
@@ -88,4 +88,4 @@ Luego, puede crear sus archivos de datos habituales, como `about.yaml` o `educat
 
 ## A continuación
 
-Puedes consultar la siguiente guía [Como traducir las publicaciones](/es/posts/translation/content/).
+Puedes consultar la siguiente guía [Cómo traducir las publicaciones](/es/posts/translation/content/).
