@@ -1,6 +1,9 @@
 ---
 title: "Utilisation d'Emoji"
 date: 2020-06-08T06:15:25+06:00
+author:
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Utilisation d'Emoji

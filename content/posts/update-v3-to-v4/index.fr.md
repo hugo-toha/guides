@@ -2,6 +2,9 @@
 title: "Migrer de la V3 à la V4"
 date: 2024-01-05T02:30:00+06:00
 description: Un guide de migration de la version 3 du thème vers la version 4.
+author:
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Migration V3 à V4

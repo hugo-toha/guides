@@ -78,6 +78,6 @@ Cada entrada de la sección `experiences` debería tener la siguiente informaci�
 
 <!-- {{< vs 2 >}}
 
-La siguiente imagen muestra como se distribuye el contenido de `experiences.yaml` de la sección de `Experiencia`.
+La siguiente imagen muestra cómo se distribuye el contenido de `experiences.yaml` de la sección de `Experiencia`.
 
 {{< img src="images/experiences.png" >}} -->

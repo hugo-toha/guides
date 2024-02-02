@@ -1,6 +1,9 @@
 ---
 title: "Analytiques"
 date: 2020-06-08T06:00:23+06:00
+author:
+  name: Nicolas Dietlin
+  image: images/author/nicolas.jpg
 description: Ajouter l'analytique dans hugo theme Toha
 menu:
   sidebar:
