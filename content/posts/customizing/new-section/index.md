@@ -31,7 +31,7 @@ To add a new section to your site, you need to create a layout file in the `layo
 
 ### Step 2: Add CSS Styles
 
-If you want to add custom CSS for your new section, you can do so by adding the CSS code to the `assets/styles/override.scss` file in your site. This file is automatically loaded by the theme and will apply the custom styles. Alternatively, you can create a separate SCSS file in the `assets/styles directory` of your repository and include it in the `assets/styles/override.scss` file using the following syntax:
+If you want to add custom CSS for your new section, you can do so by adding the CSS code to the `assets/styles/override.scss` file in your site. This file is automatically loaded by the theme and will apply the custom styles. Alternatively, you can create a separate SCSS file in the `assets/styles` directory of your repository and include it in the `assets/styles/override.scss` file using the following syntax:
 
 ```scss
 @import "your-style-file-name";
