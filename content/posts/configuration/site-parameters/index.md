@@ -53,6 +53,7 @@ Now, if you want to show `Table Of Contents` section in your blog post, you have
 ```yaml
 toc:
   enable: true
+  showAuthor: true # shows the post author (defaults true)
 ```
 
 You can also control the level of your TOC by adding the following configuration in the `markup` section of your `config.yaml` file.
