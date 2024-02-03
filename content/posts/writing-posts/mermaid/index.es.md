@@ -40,6 +40,22 @@ El shortcode de `mermaid` acepta los siguientes parámetros:
 - **align**: Permite alinear el diagrama a la izquierda, derecha o centro. La alineación predeterminada es el centro.
 - **background:** Permite cambiar el color de fondo del diagrama.
 
+Además, también puedes personalizar el tema de tus diagramas, por ejemplo:
+
+```bash
+{{</* mermaid align="center" */>}}
+%%{init: {'theme':'default'}}%%
+  # your mermaid content here
+{{</* mermaid */>}}
+```
+
+El parámetro `theme` acepta los siguientes valores:
+- `default`
+- `neutral`
+- `dark`
+- `forest`
+- `base`
+
 ## Ejemplos
 
 Aquí hay algunos ejemplos de distintos diagramas usando mermaid.
@@ -197,21 +213,21 @@ merge newbranch
 
 {{< mermaid background="black" align="right" >}}
 gitGraph:
-options
-{
+  options
+  {
     "nodeSpacing": 150,
     "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+  }
+  end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
 {{< /mermaid >}}
 
 <hr>

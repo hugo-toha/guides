@@ -36,7 +36,7 @@ Si vous voulez ajouter un CSS personnalisé pour votre nouvelle section, vous po
 @import "your-style-file-name";
 ```
 
-### Step 3: Ajouter JavaScript
+### Etape 3: Ajouter JavaScript
 
 De façon similaire, si votre nouvelle section requiert un JavaScript supplémentaire, la méthode recommandée est d'ajouter le JavaScript dans le fichier de mise en page lui-même avec le tag `<script>`. Si vous voulez ajouter le JavaScript dans un fichier séparé, alors placez le fichier JavaScript dans le répertoire `assets/scripts` de votre dépôt et l'inclure dans le fichier de mise en page comme suit:
 
