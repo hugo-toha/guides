@@ -12,13 +12,13 @@ menu:
     weight: 407
 ---
 
-Ce thème vous permet de personnaliser l'apparence de votre site et ces composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.
+Ce thème vous permet de personnaliser l'apparence de votre site et ses composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.
 
 Le thème utilise [Sass](https://sass-lang.com/) pour générer du CSS. Si vous n'êtes pas familier avec Sass, vous pouvez en apprendre plus à son sujet [ici](https://sass-lang.com/guide).
 
 ## Surcharger les variables des couleurs du thème
 
-Si vous voulez changer le schéma des couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème. Pour surcharger les variables de couleur du thème, vous devrez créer un fichier nommé `variables.scss` dans le répertoire `assets/styles` de votre site. Puis copiez le contenu du fichier [variables.scss](https://github.com/hugo-toha/toha/blob/main/assets/styles/variables.scss) par défaut et coller le dans votre fichier de personnalisation `variables.scss`. Ici, seule la section `$theme` du fichier `variables.scss` par defaut est montré ci-dessous:
+Si vous voulez changer le schéma de couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème. Pour surcharger les variables de couleur du thème, vous devrez créer un fichier nommé `variables.scss` dans le répertoire `assets/styles` de votre site. Puis copiez le contenu du fichier [variables.scss](https://github.com/hugo-toha/toha/blob/main/assets/styles/variables.scss) par défaut et collez le dans votre fichier de personnalisation `variables.scss`. Ici, seule la section `$theme` du fichier `variables.scss` par defaut est montré ci-dessous:
 
 ```scss
 // themes
