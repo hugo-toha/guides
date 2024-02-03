@@ -1,5 +1,5 @@
 ---
-title: "Ajout d'une nouvelle section"
+title: "Ajouter une nouvelle section"
 date: 2024-01-13T22:30:50+06:00
 author:
   name: Nicolas DIETLIN
