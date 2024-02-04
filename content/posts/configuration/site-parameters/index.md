@@ -44,6 +44,7 @@ To enable blog posting on your site, you need to make some changes in the `confi
 # Enable and configure blog posts
 blog:
   enable: true
+  showAuthor: true # shows the post author (defaults true)
 ```
 
 ### Enable `Table Of Contents`
@@ -53,7 +54,6 @@ Now, if you want to show `Table Of Contents` section in your blog post, you have
 ```yaml
 toc:
   enable: true
-  showAuthor: true # shows the post author (defaults true)
 ```
 
 You can also control the level of your TOC by adding the following configuration in the `markup` section of your `config.yaml` file.
