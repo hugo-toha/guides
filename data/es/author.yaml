@@ -1,17 +1,17 @@
-# some information about you
+# información sobre ti
 name: "John Doe"
 nickname: "John"
-# greeting message before your name. it will default to "Hi! I am" if not provided
+# mensaje de beinvenida antes de tu nombre. Por defecto será "Hi! I am"
 greeting: "Hola, soy"
 image: "images/author/john.png"
-# give your some contact information. they will be used in the footer
+# da información de contacto. Será usado en el pie de página
 contactInfo:
   email: "johndoe@example.com"
   phone: "+0123456789"
   github: johndoe
   linkedin: johndoe
 
-# some summary about what you do
+# un resumen sobre qué haces
 summary:
   - Soy Developer
   - Soy Devops
