@@ -3,7 +3,7 @@ section:
   name: Logros
   id: achievements
   enable: true
-  weight: 8
+  weight: 9
   showOnNavbar: true
   # Opcionalmente puede ocultar el título del menú
   # hideTitle: true

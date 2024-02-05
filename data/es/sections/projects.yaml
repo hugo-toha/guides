@@ -3,7 +3,7 @@ section:
   name: Proyectos
   id: projects
   enable: true
-  weight: 4
+  weight: 5
   showOnNavbar: true
   # Opcionalmente puede ocultar el título del menú
   # hideTitle: true
@@ -22,7 +22,7 @@ buttons:
 # Tus proyectos
 projects:
 - name: Kubernetes
-  logo: images/sections/projects/kubernetes.png
+  logo: /images/sections/projects/kubernetes.png
   role: Contribuidor
   timeline: "Marzo 2018 - Presente"
   repo: https://github.com/kubernetes/kubernetes # Si tu proyecto tiene un repositorio público de Github, entonces provee el link. Mostrará el contador de estrellas.
@@ -31,13 +31,13 @@ projects:
   tags: ["professional", "kubernetes", "cloud"]
 
 - name: Tensorflow
-  logo: images/sections/projects/tensorflow.png
+  logo: /images/sections/projects/tensorflow.png
   role: Desarrollador
   timeline: "Jun 2018 - Presente"
   repo: https://github.com/tensorflow/tensorflow
   #url: ""
   summary: Un framework de aprendizaje automático de código abierto para todos.
-  tags: ["professional", "machine-learning","academic"]
+  tags: ["professional", "machine-learning"]
 
 - name: Muestra de trabajo académico
   role: Jefe de equipo
@@ -47,7 +47,7 @@ projects:
   tags: ["academic","iot"]
 
 - name: Nocode
-  logo: images/sections/projects/no-code.png
+  logo: /images/sections/projects/no-code.png
   role: Ningún
   timeline: "Oct 2019 - Dec 2019"
   repo: https://github.com/kelseyhightower/nocode
@@ -56,7 +56,7 @@ projects:
   tags: ["hobby", "fun"]
 
 - name: Toha
-  logo: images/sections/projects/toha.png
+  logo: /images/sections/projects/toha.png
   role: Propietario
   timeline: "Jun 2019 - Presente"
   repo: https://github.com/hossainemruz/toha
