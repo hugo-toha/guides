@@ -55,6 +55,9 @@ degrees:
     url: "#"
   - title: Nullam vitae orci tincidunt purus viverra pulvinar.
     url: "#"
+  extracurricularActivities: #(opcional), suporta markdown
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - Fusce eu augue ut odio porttitor pulvinar.
 ```
 
 Asegúrese que el icono que utilices esté disponible en [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
