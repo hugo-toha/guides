@@ -39,6 +39,7 @@ experiences:
     name: Example Co.
     url: "https://www.example.com"
     location: Dhaka Branch
+    logo: /images/experiences/company.png
     # company overview
     overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
   positions:
@@ -63,7 +64,7 @@ experiences:
 
 Each entry in the `experiences` section should have the following information:
 
-- **company**: Some information about your company. You should provide `name`, `url`, `location`, and a brief `overview` of the company.
+- **company**: Some information about your company. You should provide `name`, `url`, `location`, `logo`, and a brief `overview` of the company.
 - **positions**: A list of positions you have held in the company. You can provide multiple positions if you have changed your position in the company.
 - **designation**: Represents the role that you were playing at the position.
 - **start**: Time when you had joined at the position.
