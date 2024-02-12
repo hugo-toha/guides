@@ -47,6 +47,7 @@ Para habilitar publicaciones de blog en tu sitio web, necesitarás aplicar unos 
 # Habilita y configura publicaciones de Blog
 blog:
   enable: true
+  showAuthor: true # muestra el autor de la publicación (por defecto: true)
 ```
 
 ### Habilita `Tabla de Contenido`

@@ -44,6 +44,7 @@ Pour activer les billets de blog sur votre site, vous aurez besoin de faire quel
 # Active et configure la publication de billets
 blog:
   enable: true
+  showAuthor: true
 ```
 
 ### Activer la `Table des Matières`
