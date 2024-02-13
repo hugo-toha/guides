@@ -57,6 +57,11 @@ degrees:
     url: "#"
   - title: Nullam vitae orci tincidunt purus viverra pulvinar.
     url: "#"
+  custonSections: #(optionnel)
+    - name: Thesis
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - name: Supervisor
+      content: Fusce eu augue ut odio porttitor pulvinar.
 ```
 
 Assurez-vous que l'icône que vous utilisez soit disponible sur [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
