@@ -44,6 +44,7 @@ To enable blog posting on your site, you need to make some changes in the `confi
 # Enable and configure blog posts
 blog:
   enable: true
+  showAuthor: true # shows the post author (defaults true)
 ```
 
 ### Enable `Table Of Contents`

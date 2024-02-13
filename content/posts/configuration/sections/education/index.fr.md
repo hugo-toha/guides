@@ -45,6 +45,7 @@ degrees:
   institution:
     name: ABC University of Technology
     url: "#"
+    logo: /images/education/college.png
   grade: #(optionnel)
     scale: CGPA
     achieved: 3.6

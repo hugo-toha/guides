@@ -37,7 +37,7 @@ experiences:
 
 - company:
     name: PreExample Co.
-    url: "https://example.com"
+    url: "https://www.example.com"
     location: Ninguna parte
     overview: PreExample Co. es una empresa de entrada para Example co. Entonces, nada especial aquí.
   positions:
@@ -51,7 +51,7 @@ experiences:
 
 - company:
     name: Intern Counting Company (ICC).
-    url: "https://example.com"
+    url: "https://www.example.com"
     location: Territorio de becarios
     overview: Intern counting Company (ICC) es responsable de contar los becarios ingenieros a nivel mundial.
   positions:

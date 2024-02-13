@@ -12,38 +12,38 @@ section:
 # Haz un resumen de cada habilidad.
 skills:
 - name: Kubernetes
-  icon: "images/sections/skills/kubernetes.png"
+  logo: /images/sections/skills/kubernetes.png
   summary: "Capaz de implementar y administrar aplicaciones en Kubernetes. Con experiencia en escribir controladores de Kubernetes para CRD."
   url: https://kubernetes.io/
 
 - name: Desarrollo con Go
-  icon: "images/sections/skills/go.png"
+  logo: /images/sections/skills/go.png
   summary: "Utilizando como lenguaje principal para el desarrollo profesional. Capaz de escribir programas escalables, comprobables y mantenibles."
   url: "https://golang.org/"
 
 - name: Computación en la Nube
-  icon: "images/sections/skills/cloud.png"
+  logo: /images/sections/skills/cloud.png
   summary: "He trabajado con la mayoría de los principales plataformas de computación en la nube, como GCP, AWS, Azure, etc."
 
 - name: Docker
-  icon: "images/sections/skills/docker.svg"
+  logo: /images/sections/skills/docker.svg
   summary: "Escribo la mayoría de los programas como contenedores dockerizados. Experimentado con los procesos de construcción multi-stage y multi-arch."
   url: "https://www.docker.com/"
 
 - name: Prometheus
-  icon: "images/sections/skills/prometheus.png"
+  logo: /images/sections/skills/prometheus.png
   summary: "Capaz de configurar y configurar métricas de Prometheus. Experimentado con PromQL, AlertManager. Además, tengo experiencia en la redacción de exportadores de métricas."
   url: "https://prometheus.io/"
 
 - name: Linux
-  icon: "images/sections/skills/linux.png"
+  logo: /images/sections/skills/linux.png
   summary: "Utilizando como sistema operativo principal. Capaz de escribir scripts bash/shell."
 
 - name: Git
-  icon: "images/sections/skills/git.png"
+  logo: /images/sections/skills/git.png
   summary: "Experimentado con desarrollo basado en git. Principalmente, uso Github. Además, tengo experiencia trabajando con GitLab."
   url: "https://git-scm.com/"
 
 - name: C++
-  icon: "images/sections/skills/c++.png"
+  logo: /images/sections/skills/c++.png
   summary: "Programación básica en C/C++. Utilizada para competiciones de programación y resolución de problemas."
