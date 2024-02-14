@@ -45,6 +45,7 @@ degrees:
   institution:
     name: ABC University of Technology
     url: "#"
+    logo: /images/education/college.png
   grade: #(optionnel)
     scale: CGPA
     achieved: 3.6
@@ -59,6 +60,11 @@ degrees:
   extracurricularActivities: #(optionnel)
   - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   - Fusce eu augue ut odio porttitor pulvinar.
+  custonSections: #(optionnel)
+    - name: Thesis
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - name: Supervisor
+      content: Fusce eu augue ut odio porttitor pulvinar.
 ```
 
 Assurez-vous que l'icône que vous utilisez soit disponible sur [Font Awesome](https://fontawesome.com/icons?d=gallery&m=free).
