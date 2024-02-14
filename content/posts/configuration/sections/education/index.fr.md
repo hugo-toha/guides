@@ -57,6 +57,9 @@ degrees:
     url: "#"
   - title: Nullam vitae orci tincidunt purus viverra pulvinar.
     url: "#"
+  extracurricularActivities: #(optionnel)
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - Fusce eu augue ut odio porttitor pulvinar.
   custonSections: #(optionnel)
     - name: Thesis
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
