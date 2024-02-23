@@ -3,7 +3,7 @@ title: "Comment traduire les données du site ?"
 date: 2024-01-15T06:20:50+06:00
 author:
   name: Nicolas Dietlin
-  image: images/author/nicolas.png
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Traduction Page d'accueil

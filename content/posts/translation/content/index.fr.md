@@ -3,7 +3,7 @@ title: "Comment traduire des billets ?"
 date: 2024-01-15T06:20:50+06:00
 author:
   name: Nicolas Dietlin
-  image: images/author/nicolas.png
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Traduire des billets
