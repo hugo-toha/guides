@@ -1,11 +1,29 @@
-# Copyright Notice
-copyright: © 2024 Copyright.
+# Nota de copyright
+copyright: © 2020 Copyright.
 
-# Meta description for your site.  This will help the search engines to find your site.
+# Un aviso de exención de responsabilidad para el pie de página. Asegúrese de haber configurado "params.footer.disclaimer.enable: true" en su archivo `config.yaml`.
+disclaimer: "Este tema está bajo licencia MIT. Por lo tanto, puede utilizarlo para usos no comerciales, comerciales o privados.
+Puede modificar o distribuir el tema sin requerir ningún permiso del autor del tema.
+Sin embargo, el autor del tema no ofrece ninguna garantía ni asume ninguna responsabilidad por cualquier problema con el tema."
+
+# Metadescripción de tu sitio. Esto ayudará a los motores de búsqueda a encontrar tu sitio.
 description: Página de ejemplo del tema de hugo Toha.
 
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
+# Especifica la lista de menús personalizados que quieres mostrar en la barra de navegación.
+# estarán separados de los menús principales
 customMenus:
-- name: Notas
-  url: https://hossainemruz.gitbook.io/notes/
+- name: Docs
+  url: https://toha-guides.netlify.app/posts/
+  # especifica si quieres esconder el elemento de la barra de navegación o no.
+  hideFromNavbar: false
+  # especifica si quieres mostrar el elemento en el pie de página o no.
+  # si está configurado a true, assegúrase que tienes `footer.navigation.customMenus: true` en tu archivo config.yaml
+  showOnFooter: false
+
+# Especificar el encabezado OpenGraph
+openGraph:
+  title: John's Blog
+  type: website
+  description: Portfolio and personal blog of John Doe.
+  image: images/author/john.png
+  url: https://hugo-toha.github.io

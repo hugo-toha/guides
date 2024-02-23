@@ -14,6 +14,7 @@ experiences:
     name: Example Co.
     url: "https://www.example.com"
     location: Dhaka Branch
+    logo: /images/sections/experiences/company1.jpg
     # resumen de la empresa
     overview: Example Co. es una empresa ampliamente reconocida de cloud-native development. Crea herramientas para Kubernetes.
   positions:
@@ -37,8 +38,9 @@ experiences:
 
 - company:
     name: PreExample Co.
-    url: "https://example.com"
+    url: "https://www.example.com"
     location: Ninguna parte
+    logo: /images/sections/experiences/company2.jpg
     overview: PreExample Co. es una empresa de entrada para Example co. Entonces, nada especial aquí.
   positions:
   - designation: Ingeniero de Software
@@ -51,8 +53,9 @@ experiences:
 
 - company:
     name: Intern Counting Company (ICC).
-    url: "https://example.com"
+    url: "https://www.example.com"
     location: Territorio de becarios
+    logo: /images/sections/experiences/company3.jpg
     overview: Intern counting Company (ICC) es responsable de contar los becarios ingenieros a nivel mundial.
   positions:
   - designation: Becario
