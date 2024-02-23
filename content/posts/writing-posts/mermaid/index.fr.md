@@ -10,7 +10,7 @@ menu:
 mermaid: true
 ---
 
-Ce thème est construit avec le support de Mermaid propulsé par [maemaidj-js](https://mermaid-js.github.io/mermaid). Pour activer mermail pour une page, vous devez mettre `mermaid: true` dans le front-matter de votre page. Par exemple, cette page à le front-matter suivant:
+Ce thème est construit avec le support de Mermaid propulsé par [mermaid-js](https://mermaid-js.github.io/mermaid). Pour activer mermaid pour une page, vous devez mettre `mermaid: true` dans le front-matter de votre page. Par exemple, cette page à le front-matter suivant:
 
 ```yaml
 title: "Support de Mermaid"
@@ -36,6 +36,22 @@ Le short code `mermaid` accepte les paramètres suivants:
 
 - **align**: aligne votre diagramme à gauche, à droite, ou au centre. L'alignement par défaut est le centre.
 - **background:** change la couleur d'arrière plan de votre diagramme.
+
+De plus, vous pouvez également personnaliser le thème de vos diagrammes, par exemple:
+
+```bash
+{{</* mermaid align="center" */>}}
+%%{init: {'theme':'default'}}%%
+  # your mermaid content here
+{{</* mermaid */>}}
+```
+
+Le paramètre `theme` accepte les valeurs suivantes:
+- `default`
+- `neutral`
+- `dark`
+- `forest`
+- `base`
 
 ## Exemples
 
@@ -172,43 +188,17 @@ classDiagram
 #### Graphique de Git
 
 ```bash
-{{</* mermaid background="black" align="right" */>}}
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
-{{</* /mermaid */>}}
-```
-
 {{< mermaid background="black" align="right" >}}
 gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
 {{< /mermaid >}}
 
 <hr>

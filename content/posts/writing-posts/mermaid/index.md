@@ -10,7 +10,7 @@ menu:
 mermaid: true
 ---
 
-This theme comes with built in mermaid support powered by [maemaidj-js](https://mermaid-js.github.io/mermaid). To enable mermaid for a page, you have to put `mermaid: true` in your page front-matter. For example, this page has the following front-matter:
+This theme comes with built in mermaid support powered by [mermaid-js](https://mermaid-js.github.io/mermaid). To enable mermaid for a page, you have to put `mermaid: true` in your page front-matter. For example, this page has the following front-matter:
 
 ```yaml
 title: "Mermaid Support"
@@ -36,6 +36,22 @@ The `mermaid` short code accept the following parameters:
 
 - **align**: Let's you align your diagram at left, right, or center. The default alignment is center.
 - **background:** Let's you change the background color of your diagram.
+
+In addition, you can also customize the theme of yours diagrams, for example:
+
+```bash
+{{</* mermaid align="center" */>}}
+%%{init: {'theme':'default'}}%%
+  # your mermaid content here
+{{</* mermaid */>}}
+```
+
+The `theme` parameter accept the following values:
+- `default`
+- `neutral`
+- `dark`
+- `forest`
+- `base`
 
 ## Examples
 
@@ -194,21 +210,21 @@ merge newbranch
 
 {{< mermaid background="black" align="right" >}}
 gitGraph:
-options
-{
+  options
+  {
     "nodeSpacing": 150,
     "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
+  }
+  end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
 {{< /mermaid >}}
 
 <hr>
