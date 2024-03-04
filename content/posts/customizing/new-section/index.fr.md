@@ -28,6 +28,7 @@ Pour ajouter une nouvelle section à votre site, vous devez créer un fichier de
   // Your custom HTML code here
 </div>
 ```
+
 ### Etape 2: Ajouter des styles CSS
 
 Si vous voulez ajouter un CSS personnalisé pour votre nouvelle section, vous pouvez le faire en ajouter le code CSS au fichier `assets/styles/overrides.scss` dans votre site. Ce fichier est automatiquement chargé par le thème et appliquera les styles personnalisés. Alternativement, vous pouvez créer un fichier SCSS séparé dans le répertoire `assets/styles` de votre dépôt et l'inclure dans le fichier `assets/styles/overrides.scss` en utilisant la syntaxe suivante:
