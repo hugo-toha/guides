@@ -21,9 +21,9 @@ You can contribute to this theme in various ways.
 Pull requests are most welcome and I will be happy to review. Just follow the following principles:
 
 - Keep it simple.
-- Keep it consistent with the design.
+- Keep it consistent with the design of the UI.
 - Use as few dependencies as possible.
-- Have patience.
+- Be patient.
 
 ### Testing and reporting issues
 
@@ -34,16 +34,17 @@ Pull requests are most welcome and I will be happy to review. Just follow the fo
 ### Documentation
 
 You can also contribute to the theme documentation by:
-- Adding information and sections
-- Fixing errors and typos
-- Updating obsolete documentation
+
+- Adding information and sections.
+- Fixing errors and typos.
+- Updating obsolete documentation.
 - Translating the documentation to a new language, [this](/posts/translation/content/) guide might be helpful.
 
 ### Translation
 
 Finally, you can contribute to the translation of the theme to several languages, by completing missing words, or by adding a new language. You can follow the guide [How to add an unsupported language](/posts/translation/new-language/) for more information.
 
-## How to contibute?
+## How to contribute?
 
 For local development, you can make changes in the theme submodule and test the changes against your own site or this [example site](https://github.com/hugo-toha/hugo-toha.github.io) locally.
 

@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Experiences
+  name: Expériences
   id: experiences
   enable: true
   weight: 3
@@ -17,9 +17,9 @@ experiences:
     location: Dhaka Branch
     logo: /images/sections/experiences/company1.jpg
     # company overview
-    overview: Example Co. est une entreprise largement reconnue pour le développement de l'utilisation des nuages. Elle construit des outils pour Kubernetes.
+    overview: Example Co. est une entreprise largement reconnue pour le développement cloud-native. Elle construit des outils pour Kubernetes.
   positions:
-  - designation: Ingénieur logiciel senior
+  - designation: Ingénieur logiciel sénior
     start: Nov 2019
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
@@ -33,14 +33,14 @@ experiences:
     start: Nov 2017
     end: Oct 2019
     responsibilities:
-    - Implémenter et tester la fonction xyz pour l'outil abc.
-    - Support client pour abc tool.
+    - Implémenter et tester la fonctionnalité xyz pour l'outil abc.
+    - Support client pour l'outil abc .
     - Apprendre la technologie k,d,w pour xyz.
 
 - company:
     name: PreExample Co.
     url: "https://example.com"
-    location: Nowhere
+    location: Quelque part
     logo: /images/sections/experiences/company2.jpg
     overview: PreExample Co. est une société passerelle pour entrer dans Example co. Donc, rien de spécial ici.
   positions:
@@ -48,21 +48,21 @@ experiences:
     start: Mars 2016
     end: Mai 2017
     responsibilities:
-    - Rédigez de nombreux exemples de codes.
+    - Ecrire de nombreux exemples de codes.
     - Lire de nombreux exemples.
     - Voir de nombreux exemples de vidéos.
 
 - company:
     name: Intern Counting Company (ICC).
     url: "https://example.com"
-    location: Intern Land
+    location: Pays des stagiaires
     logo: /images/sections/experiences/company3.jpg
-    overview: La Compagnie de comptage des stagiaires (ICC) est responsable du comptage des ingénieurs stagiaires du monde entier.
+    overview: La compagnie de comptage des stagiaires (ICC) est responsable du comptage des ingénieurs stagiaires du monde entier.
   positions:
   - designation: Stagiaire
     start: Juin 2015
     end: Jan 2016
     responsibilities:
-    - Compte perdu des stagiaires.
-    - Comptez plus de stagiaires.
-    - Comptez-moi comme un stagiaire.
+    - Compte les stagiaires perdus.
+    - Compte plus de stagiaires.
+    - Me compte comme un stagiaire.
