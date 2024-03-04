@@ -1,10 +1,10 @@
 ---
 title: "Comment contribuer ?"
 date: 2024-01-19T02:30:00+06:00
-description: A guide on how to contribute to toha
+description: Un guide sur comment contribuer à Toha
 author:
   name: Nicolas Dietlin
-  image: images/author/nicolas.png
+  image: images/author/nicolas.jpg
 menu:
   sidebar:
     name: Contribution
@@ -127,11 +127,11 @@ A partir d'ici vous pouvez faire des changements au code source du thème tout e
 Lorsque les changements semblent corrects, validez et poussez-les vers votre dépôt cloné.
 
 ```bash
-# Indexé tous les changements
+# Indexez tous les changements
 $ git add .
 # Validez vos changements avec un message complet sur ce que ça apporte
 $ git commit -m "A meaningful commit message"
-# push the commit to your fork
+# Poussez le commit de votre branche
 $ git push my-fork my-feature-branch
 ```
 
