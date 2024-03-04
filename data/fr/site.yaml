@@ -22,6 +22,6 @@ customMenus:
 openGraph:
   title: Le blog de Jane
   type: website
-  description: Portfolio et blog personnel of Jane Doe.
+  description: Portfolio et blog personnel de Jane Doe.
   image: images/author/jessica.png
   url: https://hugo-toha.github.io
