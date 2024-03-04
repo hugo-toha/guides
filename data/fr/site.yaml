@@ -1,11 +1,27 @@
 # Copyright Notice
-copyright: © 2020 Droits d'auteur.
+copyright: © 2020 Copyright.
+
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
+disclaimer: "Ce thème est sous licence MIT. Donc, vous pouvez l'utiliser pour des usages non-commercial, commercial, ou privé. Vous pouvez modifier ou distribuer ce thème qui ne requiert pas de permissions de l'auteur du thème. Cependant, l'auteur du thème ne fournit aucune garantie ou n'assume de responsabilité pour tout problème avec ce thème."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio et blog personnel de Jane Doe.
+description: Portfolio et blog personnel of Jane Doe.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-- name: Remarques
-  url: https://hossainemruz.gitbook.io/
+- name: Docs
+  url: https://toha-guides.netlify.app/posts/
+  # specify whether to hide the menu item from top navbar or not.
+  hideFromNavbar: false
+  # specify whether to show the menu item in footer or not.
+  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
+  showOnFooter: false
+
+# Specify OpenGraph Headers
+openGraph:
+  title: Le blog de Jane
+  type: website
+  description: Portfolio et blog personnel of Jane Doe.
+  image: images/author/jessica.png
+  url: https://hugo-toha.github.io
