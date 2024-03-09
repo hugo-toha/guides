@@ -14,15 +14,15 @@ menu:
 
 Ce thème prend en charge plusieurs langues.
 
-Avant de commencer la traduction d'un billet, assurez-vous que vous avez activé la langue sur votre site. Si ce n'est pas le cas, vous pouvez suivre la section `Ajout d'une langue à votre site` du guide [Comment traduire les données du site ?](/fr/posts/translation/site-data/).
+Avant de commencer la traduction d'un billet, assurez-vous que vous avez activé la langue sur votre site. Si ce n'est pas le cas, vous pouvez suivre la section `Ajout d'une langue à votre site` du guide [Comment traduire les données du site ?](/fr/posts/translation/site-data/)
 
 ## Création du billet
 
-Lorsque vous avez ajouté la langue désirée à votre site web, sachez que vous pouvez traduire un billet vers cette langue. Nous allons supposer que vous voulez traduire un billet existant.
+Lorsque vous avez ajouté la langue désirée à votre site web, sachez que vous pouvez traduire un billet dans cette langue. Nous allons supposer que vous voulez traduire un billet existant.
 
 ### Création du fichier index
 
-La première étape est de localiser le fichier `index.md` du billet que vous voulez traduire. Puis vous allez créer un fichier dans le même répertoire (ou bien vous pouvez juste dupliquer le fichier `index.md`), et le nommer `index.<code_langue>.md`, où `<code_langue>` est le code du langage que vous pouvez retrouver dans le tableau des langages sur [Comment traduire les données du site ?](/fr/posts/translation/site-data/).
+La première étape est de localiser le fichier `index.md` du billet que vous voulez traduire. Puis vous allez créer un fichier dans le même répertoire (ou bien vous pouvez juste dupliquer le fichier `index.md`), et le nommer `index.<code_langue>.md`, où `<code_langue>` est le code du langage que vous pouvez retrouver dans le tableau des langages sur [Comment traduire les données du site ?](/fr/posts/translation/site-data/)
 
 ### Traduction du billet
 

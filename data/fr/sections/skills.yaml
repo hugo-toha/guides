@@ -14,17 +14,17 @@ section:
 skills:
 - name: Kubernetes
   logo: "images/sections/skills/kubernetes.png"
-  summary: "Capable de déployer, de gérer l'application sur Kubernetes. Expérimenté dans la rédaction de contrôleurs Kubernetes pour les CRD."
+  summary: "Capable d'implémenter et administrer des applications dans Kubernetes. Avec une expérience dans la rédaction de contrôleurs Kubernetes pour les CRD."
   url: "https://kubernetes.io/"
 
 - name: Go
   logo: "images/sections/skills/go.png"
-  summary: "Utilisé comme principal language pour le développement professionnel. Capable d'écrire des programmes évolutifs, testables et maintenables."
+  summary: "Utilisé comme language principal pour le développement professionnel. Capable d'écrire des programmes évolutifs, testables et maintenables."
   url: "https://golang.org/"
 
 - name: Cloud Computing
   logo: "images/sections/skills/cloud.png"
-  summary: "A travaillé avec la plupart des principaux clouds tels que GCP, AWS, Azure, etc."
+  summary: "A travaillé avec la plupart des principales plateformes de cloud computing comme GCP, AWS, Azure, etc."
 
 - name: Docker
   logo: "images/sections/skills/docker.svg"
@@ -42,9 +42,9 @@ skills:
 
 - name: Git
   logo: "images/sections/skills/git.png"
-  summary: "Expérimenté dans le développement basé sur GIT. Utilise surtout Github. Egalement, a une expérience de travail avec GitLab."
+  summary: "Expérimenté dans le développement basé sur GIT. Utilise surtout Github. Egalement, une expérience de travail avec GitLab."
   url: "https://git-scm.com/"
 
 - name: C++
   logo: "images/sections/skills/c++.png"
-  summary: "Connaît les bases de la programmation C/C++. Utilisé pour la programmation de concours et la résolution de problèmes."
+  summary: "Connaît les bases de la programmation C/C++. Utilisé pour la programmation lors de concours et la résolution de problèmes."

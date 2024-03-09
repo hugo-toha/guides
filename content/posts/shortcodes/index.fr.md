@@ -1,5 +1,4 @@
 ---
-
 title: "Les Shortcodes"
 date: 2023-11-05T14:06:25+02:00
 description: "Codes abrégés"
@@ -13,22 +12,15 @@ hero: boat.jpg
 
 Ce billet d'échantillon est destiné à tester les éléments suivants :
 
+- Différents blocs d'alerte.
 - Manipulation d'une image.
 - Différents shortcodes.
 
 ## Alerte
 
-Ce thème propose différents types d'alertes pour votre publication. Par exemple, si on ajoute le code ci-dessous :
+Les alertes suivantes sont disponibles dans ce thème.
 
-```markdown
-{{</* alert type="success" */>}}
-This is sample alert with `type="success"`.
-{{</* /alert */>}}
-```
-
-L'alerte qui apparaîtra ressemblera à ça:
-
-#### Succès
+### Succès
 
 **code**
 
@@ -125,7 +117,6 @@ This is sample alert with `type="info"`.
 
 #### Une image centrée avec les attributs `height` et `width`.
 
-
 **Code:**
 
 ```markdown
@@ -177,7 +168,7 @@ Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida tu
 {{</* /split */>}}
 ```
 
-**Result:**
+**Résultat:**
 
 {{< split 6 6>}}
 
@@ -218,7 +209,7 @@ Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida tu
 {{</* /split */>}}
 ```
 
-**Result:**
+**Résultat:**
 
 {{< split 4 4 4 >}}
 

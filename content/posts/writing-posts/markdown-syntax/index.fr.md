@@ -10,7 +10,7 @@ menu:
     weight: 30
 ---
 
-Cet article propose un échantillon des syntaxes de base du Markdown qui peut être utilisé dans les fichiers de contenu d'Hugo, et montre également des balises HTML de base décorés avec CSS dans un thème Hugo.
+Cet article propose un échantillon des syntaxes de base du Markdown qui peut être utilisé dans les fichiers de contenu d'Hugo, et montre également des balises HTML de base décorées avec CSS dans un thème Hugo.
 
 <!--more-->
 
@@ -33,7 +33,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Bloc de citation
 
-Les éléments blockquote représentent le contenu qui est coté à partir d'une autre source, éventuellement avec une citation qui doit être dans un élément `footer` ou `cite`, et éventuellement avec des changments en ligne tel que les annotations et les abrévations.
+Les éléments blockquote représentent le contenu qui est cité à partir d'une autre source, éventuellement avec une citation qui doit être dans un élément `footer` ou `cite`, et éventuellement avec des changments en ligne tel que les annotations et les abrévations.
 
 #### Bloc de citation sans attribution
 
@@ -45,8 +45,7 @@ Les éléments blockquote représentent le contenu qui est coté à partir d'une
 > Don't communicate by sharing memory, share memory by communicating.</p>
 > — <cite>Rob Pike[^1]</cite>
 
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: La citation ci-dessus est extraite de la [conférence](https://www.youtube.com/watch?v=PAAkCSZUG1c) de Rob Pike's lors du Gopherfest, le 18 Novembre 2015.
 
 ## Tableaux
 
@@ -67,8 +66,7 @@ Les tableaux ne font pas partie de la spécification de base du Markdown, mais H
 
 #### Bloc de code avec backticks
 
-```
-html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,6 +78,7 @@ html
 </body>
 </html>
 ```
+
 #### bloc de code indenté avec quatre espaces
 
     <!DOCTYPE html>
@@ -92,8 +91,9 @@ html
       <p>Test</p>
     </body>
     </html>
-    
+
 #### Bloc de code avec code abrégé de mise en évidence d'Hugo
+
 {{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
@@ -134,23 +134,33 @@ html
 ## Autres Elements — abbr, sub, sup, kbd, mark
 
 Ici, vous trouverez d'autres balises HTML décorées par CSS: 
+
 ```
 <abbr title="Graphics Interchange Format">GIF</abbr> est un format d'image bitmap.
 ```
+
 <abbr title="Graphics Interchange Format">GIF</abbr> est un format d'image bitmap.
+
 ```
 H<sub>2</sub>O
 ```
+
 H<sub>2</sub>O
+
 ```
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 ```
+
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+
 ```
 Pressez <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> pour terminer la session.
 ```
+
 Pressez <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> pour terminer la session.
+
 ```
 La plupart des <mark>salamandres</mark> sont nocturnes, et chassent les insectes, les vers, et d'autres petites créatures.
 ```
+
 La plupart des <mark>salamandres</mark> sont nocturnes, et chassent les insectes, les vers, et d'autres petites créatures.
