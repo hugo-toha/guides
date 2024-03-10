@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Toha</title>
+    <link>http://localhost:1313/fr/</link>
+    <description>Recent content on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 19 Jan 2024 02:30:00 +0600</lastBuildDate><atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Comment contribuer ?</title>
+      <link>http://localhost:1313/fr/posts/contributing/</link>
+      <pubDate>Fri, 19 Jan 2024 02:30:00 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/contributing/</guid>
+      <description>Les manières de contribuer Vous pouvez contribuer à ce thème de différentes manières.
+Code Les Pull Requests sont les bienvenues et je serai heureux de les examiner. Suivez simplement les principes suivants:
+Gardez les simple. Gardez les cohérentes avec le design de l&amp;rsquo;UI. Utilisez le moins de dépendances possibles. Soyez patient. Tests et rapport des problèmes Vous pouvez signaler un bug Vous pouvez aussi faire une demande de fonctionnalité Partager vos réflexions Documentation Vous pouvez aussi contribuer à la documentation du thème par :</description>
+    </item>
+    
+    <item>
+      <title>Comment ajouter un langage non supporté ?</title>
+      <link>http://localhost:1313/fr/posts/translation/new-language/</link>
+      <pubDate>Mon, 15 Jan 2024 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/translation/new-language/</guid>
+      <description>Si vous voulez traduire vers une langue non supportée, vous pouvez traduire les éléments de l&amp;rsquo;UI.
+Créer un fichier i18n Pour ce faire, vous avez à créer un répertoire i18n à l&amp;rsquo;intérieur de la racine de votre site, le répertoire où vous pouvez trouver le fichier config.yaml, et les répertoires tel que data, content, etc.
+Après cela, vous pouvez créer le fichier &amp;lt;langage code&amp;gt;.toml dans le répertoire i18n. Dans ce répertoire, vous pouvez trouver tous les codes de langue avec le drapeau qui apparaît avec ce code.</description>
+    </item>
+    
+    <item>
+      <title>Comment traduire des billets ?</title>
+      <link>http://localhost:1313/fr/posts/translation/content/</link>
+      <pubDate>Mon, 15 Jan 2024 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/translation/content/</guid>
+      <description>Ce thème prend en charge plusieurs langues.
+Avant de commencer la traduction d&amp;rsquo;un billet, assurez-vous que vous avez activé la langue sur votre site. Si ce n&amp;rsquo;est pas le cas, vous pouvez suivre la section Ajout d&#39;une langue à votre site du guide Comment traduire les données du site ?
+Création du billet Lorsque vous avez ajouté la langue désirée à votre site web, sachez que vous pouvez traduire un billet dans cette langue.</description>
+    </item>
+    
+    <item>
+      <title>Comment traduire les données du site ?</title>
+      <link>http://localhost:1313/fr/posts/translation/site-data/</link>
+      <pubDate>Mon, 15 Jan 2024 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/translation/site-data/</guid>
+      <description>Ce thème prend en charge plusieurs langues.
+Ajouter une langue à votre site L&amp;rsquo;ajout d&amp;rsquo;une langue à votre site traduira l&amp;rsquo;interface dans cette langue (incluant les boutons, la barre de navigation, etc.).
+Obtenir le code de la langue Pour traduire votre site, vous aurez besoin du code de la langue. Le tableau suivant contient les langues supportées ainsi que leurs codes:
+Languages Code English en / none বাংলা bn Français fr Indonesian id Deutsch de Español es 简体中文 zh-cn / zh-tw हिन्दी hi Italiano it 日本語 jp 한국어 ko русский ru suomi fi Tiếng Việt vn Turkish tr Arabic (العربية) ar Português Europeu pt-pt Català ad Português Brasileiro pt-br Dutch nl Pour la liste complète des langages supportées, consultez s&amp;rsquo;il vous plaît le fichier README du dépôt Toha.</description>
+    </item>
+    
+    <item>
+      <title>Ajouter une nouvelle section</title>
+      <link>http://localhost:1313/fr/posts/customizing/new-section/</link>
+      <pubDate>Sat, 13 Jan 2024 22:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/customizing/new-section/</guid>
+      <description>Si les sections par défaut, modèles, et composants ne satisfont pas vos besoins, vous pouvez facilemement ajouter de nouvelles sections, modèles, et composants à votre site. Ce guide montrera comment ajouter une nouvelle section à votre site.
+Etape 1 : Ajouter du fichier de mise en page Pour ajouter une nouvelle section à votre site, vous devez créer un fichier de mise en page dans le répertoire layout/partials/sections. Le fichier doit être nommé d&amp;rsquo;après le nom de la section.</description>
+    </item>
+    
+    <item>
+      <title>Personnalisation CSS</title>
+      <link>http://localhost:1313/fr/posts/customizing/customize-css/</link>
+      <pubDate>Sat, 13 Jan 2024 22:00:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/customizing/customize-css/</guid>
+      <description>Ce thème vous permet de personnaliser l&amp;rsquo;apparence de votre site et ses composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.
+Le thème utilise Sass pour générer du CSS. Si vous n&amp;rsquo;êtes pas familier avec Sass, vous pouvez en apprendre plus à son sujet ici.
+Surcharger les variables des couleurs du thème Si vous voulez changer le schéma de couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème.</description>
+    </item>
+    
+    <item>
+      <title>Migrer de la V3 à la V4</title>
+      <link>http://localhost:1313/fr/posts/update-v3-to-v4/</link>
+      <pubDate>Fri, 05 Jan 2024 02:30:00 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/update-v3-to-v4/</guid>
+      <description>Toha V4 a introduit de nombreux changements structurant en terme d&amp;rsquo;utilisation et de configuration du thème. Ce guide vous aidera à passer de la version v3 à la version v4 du thème. S&amp;rsquo;il vous plaît, veuillez vérifier cette note de publication pour compléter le changelog.
+Dans ce guide, je vais vous guider à travers les étapes pour migrer de la version 3 à la version 4 du thème Toha. Ce guide est basé sur le guide de migration écrit par Alexandre Neto dans cette issue.</description>
+    </item>
+    
+    <item>
+      <title>Les Shortcodes</title>
+      <link>http://localhost:1313/fr/posts/shortcodes/</link>
+      <pubDate>Sun, 05 Nov 2023 14:06:25 +0200</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/shortcodes/</guid>
+      <description>Ce billet d&amp;rsquo;échantillon est destiné à tester les éléments suivants :
+Différents blocs d&amp;rsquo;alerte. Manipulation d&amp;rsquo;une image. Différents shortcodes. Alerte Les alertes suivantes sont disponibles dans ce thème.
+Succès code
+{{&amp;lt; alert type=&amp;#34;success&amp;#34; &amp;gt;}} This is sample alert with `type=&amp;#34;success&amp;#34;`. {{&amp;lt; /alert &amp;gt;}} Résultat:
+This is sample alert with type=&amp;quot;success&amp;quot;. Danger Code:
+{{&amp;lt; alert type=&amp;#34;danger&amp;#34; &amp;gt;}} This is sample alert with `type=&amp;#34;danger&amp;#34;`. {{&amp;lt; /alert &amp;gt;}} Résultat:
+This is sample alert with type=&amp;quot;danger&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Caractéristiques</title>
+      <link>http://localhost:1313/fr/posts/features/</link>
+      <pubDate>Sun, 05 Nov 2023 12:02:54 +0200</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/features/</guid>
+      <description>Ce thème a été conçu à partir d&amp;rsquo;un point de préférence personnel. En tant que développeur, je veux organiser mon portfolio de façon à ce qu&amp;rsquo;il reflète au mieux mes compétences. Donc, ce thème peut ou non répondre à vos besoins, mais je serai heureux d&amp;rsquo;avoir vos commentaires.
+Ce billet vous donnera un aperçu des fonctionnalités intégrées à ce thème.
+Design minimaliste Ce thème a été conçu pour être minimaliste et beau.</description>
+    </item>
+    
+    <item>
+      <title>Démarrage rapide</title>
+      <link>http://localhost:1313/fr/posts/quickstart/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/quickstart/</guid>
+      <description>Salutation ! Merci d&amp;rsquo;avoir décidé d&amp;rsquo;utiliser ce thème. Dans ce guide, Je vais vous montrer comment commencer rapidement avec ce thème.
+Ici, je vais supposer que vous voulez commencer un nouveau site Hugo en utilisant ce thème. Si vous utilisez déjà Hugo pour votre site, alors vous devez savoir comment utiliser un thème. Dans ce cas, veuillez suivre ce dépôt échantillon pour plus de détails.
+Le nécessaire Pour exécuter ce thème localement, vous devez avoir les outils suivants installés.</description>
+    </item>
+    
+    <item>
+      <title>Activer le mode sombre</title>
+      <link>http://localhost:1313/fr/posts/customizing/dark-theme/</link>
+      <pubDate>Sun, 12 Jun 2022 01:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/customizing/dark-theme/</guid>
+      <description>Activation du mode sombre Toha v3.6.0 a introduit un thème sombre. Un grand merci à @donfiguerres. Ce guide vous montrera comment l&amp;rsquo;activer.
+Tout d&amp;rsquo;abord, assurez-vous d&amp;rsquo;avoir mis à jour la version du thème en v3.6.0 ou plus. Ensuite, ajoutez la section suivante sous la section params de votre fichier config.yaml.
+darkMode: enable: true provider: darkreader default: system Ici,
+enable: Spécifie ou non l&amp;rsquo;activation du mode sombre. provider: Spécifie le fournisseur sous-jacent qui sera utilisé pour fournir la fonctionnalité du mode sombre.</description>
+    </item>
+    
+    <item>
+      <title>Support de Mermaid</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/mermaid/</link>
+      <pubDate>Mon, 14 Mar 2022 06:15:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/mermaid/</guid>
+      <description>Ce thème est construit avec le support de Mermaid propulsé par mermaid-js. Pour activer mermaid pour une page, vous devez mettre mermaid: true dans le front matter de votre page. Par exemple, cette page a le front matter suivant:
+title: &amp;#34;Support de Mermaid&amp;#34; date: 2022-03-14T06:15:35+06:00 menu: sidebar: name: Mermaid identifier: writing-post-mermaid parent: writing-post weight: 60 mermaid: true Ensuite, vous pouvez utiliser le shortcode mermaid pour ajouter du contenu mermaid. Par exemple:</description>
+    </item>
+    
+    <item>
+      <title>Commentaires</title>
+      <link>http://localhost:1313/fr/posts/comments/</link>
+      <pubDate>Mon, 14 Mar 2022 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/comments/</guid>
+      <description>Commentaires Ce thème supporte les commentaires dans les billets. Actuellement, il supporte les plugins de commentaires suivants:
+Disqus Valine Utterances Giscus Disqus Disqus est un plugin de commentaires très populaire. Après vous êtes inscrit sur Disqus vous aurez besoin de fournir votre pseudonyme sous la section params.features.comment de votre fichier config.yaml comme ci-après:
+params: features: comment: enable: true disqus: shortName: &amp;lt;your-disqus-shortname&amp;gt; Valine Valine semble être un plugin de commentaires chinois. Vous pouvez activer le plugin de commentaires valine en ajoutant une section valine sous params.</description>
+    </item>
+    
+    <item>
+      <title>Les liens de soutien/donation</title>
+      <link>http://localhost:1313/fr/posts/supports/</link>
+      <pubDate>Mon, 14 Mar 2022 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/supports/</guid>
+      <description>Ce thème supporte l&amp;rsquo;ajout de liens de soutien/donation sur votre site. Actuellement, les liens de soutien supportés sont:
+Ko-fi Buy Me a Coffee Ko-fi Vous pouvez ajouter votre button flottant ko-fi sur votre site web. Pour ajouter le button flottant, ajoutez une section support sous la section params.features dans votre fichier config.yaml:
+params: features: support: enabled: true kofi: user: &amp;lt;your ko-fi user id&amp;gt; text: Tip Me textColor: &amp;#39;#f9fafc&amp;#39; backgroundColor: &amp;#39;#248aaa&amp;#39; Buy Me a Coffee Vous pouvez ajouter votre bouton flottant &amp;ldquo;Buy Me a Coffee&amp;rdquo; sur votre site web.</description>
+    </item>
+    
+    <item>
+      <title>Lien externe sur barre latérale</title>
+      <link>http://localhost:1313/fr/posts/external-link/</link>
+      <pubDate>Mon, 14 Mar 2022 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/external-link/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Préparer Votre Site</title>
+      <link>http://localhost:1313/fr/posts/getting-started/prepare-site/</link>
+      <pubDate>Mon, 08 Jun 2020 23:00:20 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/getting-started/prepare-site/</guid>
+      <description>Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons avec le thème toha, le rendrons multilingue, et ajouterons quelques exemples de billets. A la fin de ce billet, vous devriez être capable d&amp;rsquo;exécuter pleinement un site Hugo avec le thème Toha localement.
+Si vous voulez démarrer d&amp;rsquo;une base, vous pouvez juste cloner le dépôt hugo-toha/hugo-toha.github.io, renommez-le et mettez-le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur Github Pages et Netlify.</description>
+    </item>
+    
+    <item>
+      <title>Déployer dans Github Pages</title>
+      <link>http://localhost:1313/fr/posts/getting-started/github-pages/</link>
+      <pubDate>Mon, 08 Jun 2020 22:00:20 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/getting-started/github-pages/</guid>
+      <description>Dans ce billet, nous allons déployer le site que nous avons créé dans le précédent billet dans Github Pages. D&amp;rsquo;abord, assurez-vous que le nom de votre dépôt soit &amp;lt;your username&amp;gt;.github.io. Ensuite, commitez n&amp;rsquo;importe quelles modifications locales et poussez dans Github.
+Créer une branche gh-pages D&amp;rsquo;abord, créez une nouvelle branche nommée gh-pages. Github définira automatiquement les configurations pour Github Pages quand il verra une branche avec ce nom.
+# Création de la branche the gh-pages $ git checkout -b gh-pages # push de la branche source sur Github $ git push gh-pages gh-pages Activer Github Action Nous allons automatiser le processus de déploiement en utilisant Github Actions.</description>
+    </item>
+    
+    <item>
+      <title>Déployer dans Netlify</title>
+      <link>http://localhost:1313/fr/posts/getting-started/netlify/</link>
+      <pubDate>Mon, 08 Jun 2020 21:00:15 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/getting-started/netlify/</guid>
+      <description>Netlify offre un facile et excellent processus pour le déploiement d&amp;rsquo;un site statique hugo. Vous pouvez déployer votre site en quelques clics. Contrairement à Github Pages, vous pouvez nommer votre dépôt comme vous le souhaitez. Vous pouvez également personnaliser l&amp;rsquo;URL du site.
+Dans ce billet, nous montrerons le processus pas-à-pas d&amp;rsquo;un déploiement de site hugo avec Netlify.
+Ajouter une configuration de Netlify D&amp;rsquo;abord, créons un ficher netlify.toml à la racine de votre dépôt et ajoutez-y la configuration suivante:</description>
+    </item>
+    
+    <item>
+      <title>Automatiser la mise à jour du thème</title>
+      <link>http://localhost:1313/fr/posts/getting-started/theme-update/</link>
+      <pubDate>Mon, 08 Jun 2020 20:00:15 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/getting-started/theme-update/</guid>
+      <description>Pour garantir que votre site bénéfie des fonctionnalités et correctifs les plus récents, il est crucial de le maintenir à jour avec la dernière version du thème. Cet article vous guidera tout au long du processus de mise en place du workflow Github qui mettra à jour automatiquement la version du thème. Cette action réalisera quotidiennement une vérification d&amp;rsquo;une mise à jour du thème. Si une mise à jour est détectée, cela va générer une PR qui mettra à jour votre site avec la version du thème la plus récente.</description>
+    </item>
+    
+    <item>
+      <title>Configuration des paramètres du site</title>
+      <link>http://localhost:1313/fr/posts/configuration/site-parameters/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:55 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/site-parameters/</guid>
+      <description>Après l&amp;rsquo;installation du thème, quand vous lancez le site pour la première fois, cela démarrera avec les paramètres par défaut. Cela devrait avoir l&amp;rsquo;apparence du site d&amp;rsquo;exemple excepté qu&amp;rsquo;il n&amp;rsquo;a pas de sections sur la page d&amp;rsquo;accueil. Ces sections sont ajoutées via quelques fichiers de données. Dans les prochains billets, je vais vous montrer comment vous pouvez ajouter ces sections en fournissant des fichiers de données.
+Dans ce billet, je vais vous montrer comment vous pouvez changer les paramètres du site pour modifier l&amp;rsquo;arrière plan, le logo, les informations de l&amp;rsquo;auteur, et activer/désactiver différentes fonctionnalités.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section A propos</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/about/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/about/</guid>
+      <description>L&amp;rsquo;objet de la section A propos est de fournir une brève introduction sur vous sur votre site web. Dans ce billet, nous vous guiderons sur la façon de configurer la section A propos. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier about.yaml.
+Pour commencer, créez un fichier about.yaml dans le répertoire data/fr/sections de votre site web. Suivez ensuite, les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier about.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Section Compétences</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/skills/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:45 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/skills/</guid>
+      <description>La section Compétences est conçue pour mettre en valeur vos compétences et fournir des informations sur votre expertise pour chaque compétence. Dans ce billet, nous vous guiderons sur la façon de configurer la section compétences de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît cet échantillon du fichier skills.yaml.
+Pour commencer, créez un fichier skills.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section à votre fichier skills.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Etudes</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/education/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/education/</guid>
+      <description>La section Etude a été conçue pour mettre en valeur votre parcours d&amp;rsquo;étude. Dans ce billet, nous vous guiderons sur la façon de configurer la section Etude de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier education.yaml.
+Pour commencer, créez un nouveau fichier nommé education.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous.
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier education.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Expériences</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/experiences/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/experiences/</guid>
+      <description>La section expériences a été conçue pour mettre en valeur votre carrière et mettre en évidence les responsabilités que vous avez assumées tout au long de votre parcours professionnel. Dans ce billet, nous vous guiderons sur la façon de configurer la section Expériences de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier experiences.yaml.
+Pour commencer, créez un nouveau fichier nommé experiences.yaml dans le répertoire data/fr/sections de votre site.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Projets</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/projects/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/projects/</guid>
+      <description>L&amp;rsquo;objet de la section Projets est de présenter efficacement vos projets. Dans ce billet, nous vous guiderons sur la façon de configurer la section Projets de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier projects.yaml.
+Pour commencer, créez un nouveau fichier nommé projects.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier projects.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Section Billets Récents</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/recent-posts/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:34 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/recent-posts/</guid>
+      <description>La section Billets récents est utilisée pour mettre en valeur les derniers billets de votre contenu. Pour activer cette section, créez une fichier recent-posts.yaml dans votre répertoire data/fr/sections et incluez le contenu suivant:
+# section information section: name: Billets récents # Titre de la section (par défaut: &amp;#34;&amp;#34; ) id: recent-posts # URL id/slug de section *valeur à conserver &amp;amp; obligatoire* enable: true # Booléen pour déterminer si la section est activée (par défaut: false) weight: 6 # # Ordre d&amp;#39;affichage de la section (par defaut: alphabetique suivi par poids) showOnNavbar: # true Booléen pour déterminer si le lien doit être affiché pour cette section dans la barre de navigation hideTitle: true # Peut optionnellement masquer les titres de la section (defaut: false) numShow: 4 # Peut optionnellement augmenter le nombre de billets à afficher (defaut: 3) showMoreButton: false # Peu optionnellement afficher le bouton &amp;#39;Plus de billets&amp;#39; (default: false) </description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Réalisations</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/achievements/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/achievements/</guid>
+      <description>La section Réalisations a été conçue pour afficher vos réalisations dans le format d&amp;rsquo;une galerie attrayante. Ce guide vous accompagnera à travers le processus de configuration de la section Réalisations sur votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier achievements.yaml.
+Pour commencer, créez un nouveau fichier nommé achievements.yaml dans le répertoire data/fr/sections de votre site web. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier achievements.</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/front-matter/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:45 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/front-matter/</guid>
+      <description>Article complet à venir&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Guide Syntaxique Markdown</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/markdown-syntax/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;Cet article propose un échantillon des syntaxes de base du Markdown qui peut être utilisé dans les fichiers de contenu d&amp;rsquo;Hugo, et montre également des balises HTML de base décorées avec CSS dans un thème Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paramètres de type Maths</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/math/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/math/</guid>
+      <description>&lt;p&gt;La notation Mathématique dans un projet Hugo peut être activée en utilisant des librairies JavaScript tierces.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Contenu riche</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/rich-content/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:30 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo est livré avec quelques &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shortcode intégrés&lt;/a&gt; pour du contenu riche, ainsi qu&amp;rsquo;une &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;configuration pour le respect de la vie privée&lt;/a&gt; et un ensemble de Shortcode simples qui active des versions statiques et sans JS de différents médias sociaux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilisation d&#39;Emoji</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/using-emoji/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/using-emoji/</guid>
+      <description>&lt;p&gt;Emoji peut être activé dans un projet Hugo de plusieurs façons.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Analytiques</title>
+      <link>http://localhost:1313/fr/posts/analytics/</link>
+      <pubDate>Mon, 08 Jun 2020 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/analytics/</guid>
+      <description>Analytiques Ce thème a été construit avec le support de divers outils d&amp;rsquo;analyse. Actuellement, il prend en charge les analyses suivantes:
+GoatCounter counter.dev Google Analytics Matomo Pour une liste complète des analytiques supportés, référez-vous au fichier d&amp;rsquo;échantillon config.yaml.
+Avertissement: Lors de l&amp;rsquo;ajout d&amp;rsquo;analyses, vous devriez prendre en considération la législation locale pour voir si une bannière de confidentialité est nécessaire pour informer les visiteurs du suivi de ses données personnelles. En général (pas un conseil juridique), les méthodes anonymes et respectueuses de la vie privée telles que counter.</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>http://localhost:1313/fr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>http://localhost:1313/fr/search/</link>
+      <pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
+    
+    
+  </channel>
+</rss>

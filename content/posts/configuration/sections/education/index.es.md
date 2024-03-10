@@ -45,6 +45,7 @@ degrees:
     name: Universidad de Teconología ABC
     url: "#"
     logo: /images/education/college.png # Ruta del logo
+    darkLogo: /images/education/college-dark.png #(opcional), si no se provee, el tema oscuro cotendrá 'logo'
   grade: #(opcional)
     scale: CGPA
     achieved: 3.6

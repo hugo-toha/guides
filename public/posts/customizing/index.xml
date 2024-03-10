@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customizing on Toha</title>
+    <link>http://localhost:1313/posts/customizing/</link>
+    <description>Recent content in Customizing on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Jan 2024 22:30:50 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/customizing/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Adding a new section</title>
+      <link>http://localhost:1313/posts/customizing/new-section/</link>
+      <pubDate>Sat, 13 Jan 2024 22:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/customizing/new-section/</guid>
+      <description>If the default sections, templates, and components do not meet your needs, you can easily add new sections, templates, and components to your site. This guide will demonstrate how to add a new section to your site.
+Step 1 : Add Layout File To add a new section to your site, you need to create a layout file in the layouts/partials/sections directory. The file should be named after the section&amp;rsquo;s name.</description>
+    </item>
+    
+    <item>
+      <title>Customizing CSS</title>
+      <link>http://localhost:1313/posts/customizing/customize-css/</link>
+      <pubDate>Sat, 13 Jan 2024 22:00:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/customizing/customize-css/</guid>
+      <description>This theme allows you to customize the appearance of your site and its components by overriding the default CSS. This guide will demonstrate how to override the theme&amp;rsquo;s color scheme and customize the CSS of individual components.
+This theme uses Sass to generate CSS. If you are not familiar with Sass, you can learn more about it from here.
+Override Theme Colors Variables If you want to change the default color scheme of the theme, you can override the theme color variables.</description>
+    </item>
+    
+    <item>
+      <title>Enable Dark Theme</title>
+      <link>http://localhost:1313/posts/customizing/dark-theme/</link>
+      <pubDate>Sun, 12 Jun 2022 01:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/customizing/dark-theme/</guid>
+      <description>To enable the dark mode in Toha v4.0.0, simply set the darkMode.enable field to true under the params.features section in your config.yaml file. For example:
+params: features: darkMode: enable: true Congratulations! You are all set. You can now enjoy the dark mode in your site. The dark mode will obey user&amp;rsquo;s system preference.</description>
+    </item>
+    
+    <item>
+      <title>Customizing the layout</title>
+      <link>http://localhost:1313/posts/customizing/customize-layout/</link>
+      <pubDate>Sat, 07 Aug 2021 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/customizing/customize-layout/</guid>
+      <description>If you customize the layout of an existing component, you will not receive any future updates for that component when the theme is updated. You will need to manually update the component in your repository. In this tutorial, I will guide you on how to customize the layout of a theme. I have personally gone through the process and will share my insights to make it easier for you.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

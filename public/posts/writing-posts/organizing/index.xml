@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category on Toha</title>
+    <link>http://localhost:1313/posts/writing-posts/organizing/</link>
+    <description>Recent content in Category on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Jun 2020 06:15:55 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/writing-posts/organizing/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Creating Category</title>
+      <link>http://localhost:1313/posts/writing-posts/organizing/category/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:55 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/writing-posts/organizing/category/</guid>
+      <description>First, we need to understand how to create a post then we will be able to create categories.
+Post Creation To create a post in your blog first you need to go to the folder named posts. Here, create a file _index.md(The file name has to be exactly the same as it is mentioned). Then open the file and add below lines: --- title: Posts --- now, save and close the file.</description>
+    </item>
+    
+    <item>
+      <title>Creating Sub Category</title>
+      <link>http://localhost:1313/posts/writing-posts/organizing/sub-category/example/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/writing-posts/organizing/sub-category/example/</guid>
+      <description>Complete Post Coming Soon&amp;hellip; </description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Prepare su sitio web</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.f4aec35945767ba4a3201caff8cb743b910fa0acb58b56a724b7e1c0c85d357e.css" integrity="sha256-9K7DWUV2e6SjIByv&#43;Mt0O5EPoKy1i1anJLfhwMhdNX4=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Prepare su sitio web" />
+<meta property="og:description" content="En esta publicación, vamos a crear un sitio de hugo desde cero. Después, lo configuraremos con el tema Toha, lo haremos plurilingüe, y añadiremos publicaciones de ejemplo. Al final de esta publicación, deberías poder ejecutar un sitio hugo con el tema Toha totalmente funcional localmente.
+Si quieres un atajo, puedes simplemente hacer un fork del repositorio hugo-toha/hugo-toha.github.io, renombrarlo y actualizarlo con tus datos. Este repositorio ya está configurado para el despliegue en Github Pages y Netlify." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/es/posts/getting-started/prepare-site/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-08T23:00:20+06:00" />
+<meta property="article:modified_time" content="2020-06-08T23:00:20+06:00" />
+
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Prepare su sitio web"/>
+<meta name="twitter:description" content="En esta publicación, vamos a crear un sitio de hugo desde cero. Después, lo configuraremos con el tema Toha, lo haremos plurilingüe, y añadiremos publicaciones de ejemplo. Al final de esta publicación, deberías poder ejecutar un sitio hugo con el tema Toha totalmente funcional localmente.
+Si quieres un atajo, puedes simplemente hacer un fork del repositorio hugo-toha/hugo-toha.github.io, renombrarlo y actualizarlo con tus datos. Este repositorio ya está configurado para el despliegue en Github Pages y Netlify."/>
+
+    
+    
+<meta name="description" content="Prepare su sitio web" />
+
+
+    
+
+    
+        
+        
+        
+            
+            
+            
+        
+
+        
+        
+
+        
+	
+
+        
+        
+
+        
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('darkmode:color-scheme') || 'system';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/es">
+      
+        <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" id="logo" alt="Logo">
+      Toha</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/es#home">Inicio</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#about">Sobre mi</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#skills">Habilidades</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#experiences">Experiencia</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#featured-posts">Publicaciones Destacadas</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#projects">Proyectos</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#recent-posts">Publicaciones Recientes</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#achievements">Logros</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/es/posts">Posts</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="note-link" href="/es/notes">Notas</a>
+          </li>
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">Docs</a>
+              </li>
+            
+        
+        
+          
+
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="flag-icon flag-icon-es"></span>
+        
+        Español
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/getting-started/prepare-site">
+            
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/fr/posts/getting-started/prepare-site">
+            
+                
+                <span class="flag-icon flag-icon-fr"></span>
+            
+            Français
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/bn/posts/getting-started/prepare-site">
+            
+                
+                <span class="flag-icon flag-icon-bd"></span>
+            
+            বাংলা
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/getting-started/prepare-site">
+            
+                
+                <span class="flag-icon flag-icon-es"></span>
+            
+            Español
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/es/search">
+          <input type="text" name="keyword" value="" placeholder="Búsqueda" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/features/" title="Características">Características</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/quickstart/" title="Inicio Rápido">Inicio Rápido</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/es/posts/getting-started/"> Primeros Pasos</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/es/posts/getting-started/prepare-site/" title="Prepare su sitio web">Prepare su sitio web</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/github-pages/" title="Despliegue en Github Pages">Despliegue en Github Pages</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/netlify/" title="Despliegue en Netlify">Despliegue en Netlify</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/theme-update/" title="Automatiza actualizaciones">Automatiza actualizaciones</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/configuration/"> Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/site-parameters/" title="Parámetros del sitio">Parámetros del sitio</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/configuration/sections/"> Secciones</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/about/" title="Sección Sobre mi">Sección Sobre mi</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/skills/" title="Sección de Habilidades">Sección de Habilidades</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/experiences/" title="Sección de Experiencia">Sección de Experiencia</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/education/" title="Sección de Educación">Sección de Educación</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/projects/" title="Sección de Proyectos">Sección de Proyectos</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/featured-posts/" title="Sección de Publicaciones Destacadas">Sección de Publicaciones Destacadas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/recent-posts/" title="Sección de Publicaciones Recientes">Sección de Publicaciones Recientes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/achievements/" title="Sección de Logros">Sección de Logros</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/"> Escribiendo Publicaciones</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/organizing/"> Organizando Publicaciones</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/organizing/category/" title="Creando una Categoría">Creando una Categoría</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/organizing/sub-category/"> Sub-Categoría</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/organizing/sub-category/example/" title="Creando una Sub-Categoría">Creando una Sub-Categoría</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/front-matter/" title="Front-matter">Front-matter</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/markdown-syntax/" title="Guía de Markdown">Guía de Markdown</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/math/" title="Guía de Matemáticas">Guía de Matemáticas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/rich-content/" title="Contenido Enriquecido">Contenido Enriquecido</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/mermaid/" title="Mermaid">Mermaid</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/using-emoji/" title="Usando Emojis">Usando Emojis</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/customizing/"> Personalización</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/dark-theme/" title="Habilitar Tema Oscuro">Habilitar Tema Oscuro</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/customize-css/" title="Personalización CSS">Personalización CSS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/customize-layout/" title="Personalizacion Disposición">Personalizacion Disposición</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/new-section/" title="Añadiendo nueva Sección">Añadiendo nueva Sección</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/translation/"> Traducción</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/new-language/" title="Añadiendo un nuevo idioma">Añadiendo un nuevo idioma</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/site-data/" title="Traduciendo la página de inicio">Traduciendo la página de inicio</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/content/" title="Traduciendo Publicaciones">Traduciendo Publicaciones</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/analytics/" title="Analíticas">Analíticas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/comments/" title="Comentarios">Comentarios</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/supports/" title="Enlaces de Soporte">Enlaces de Soporte</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/shortcodes/" title="Los Shortcodes">Los Shortcodes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="https://example.com/" title="Ejemplo de link externo">Ejemplo de link externo</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/contributing/" title="Contribuyendo">Contribuyendo</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/update-v3-to-v4/" title="Migración de V3 a V4">Migración de V3 a V4</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/getting-started/prepare-site/hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/bernatbc_hu9ff16388b8679801ac412661150baf9b_460_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">BernatBC</h5>
+          <p class="text-muted">lunes, 8 de junio de 2020</p>
+        </div>
+        
+        
+        <div class="title">
+          <h1>Prepare su sitio web</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>En esta publicación, vamos a crear un sitio de hugo desde cero. Después, lo configuraremos con el tema <code>Toha</code>, lo haremos plurilingüe, y añadiremos publicaciones de ejemplo. Al final de esta publicación, deberías poder ejecutar un sitio hugo con el tema <code>Toha</code> totalmente funcional localmente.</p>
+<p>Si quieres un atajo, puedes simplemente hacer un fork del repositorio <a href="https://github.com/hugo-toha/hugo-toha.github.io" target="_blank" rel="noopener">hugo-toha/hugo-toha.github.io</a>, renombrarlo y actualizarlo con tus datos. Este repositorio ya está configurado para el despliegue en <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a> y <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.</p>
+<h3 id="crea-el-repositorio">Crea el Repositorio</h3>
+<p>Para empezar, crea un repositorio en Github. Si quieres desplegar este sitio en Github Pages, el nombre de tu repositorio debería ser <code>&lt;su usuario&gt;.github.io</code>. Clona el repositorio en tu máquina local y dirígete hacia él.</p>
+<h3 id="crea-el-sitio">Crea el sitio</h3>
+<p>Ahora, asegúrese que tiene <a href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener">Hugo</a> instalado. Este tema debería funcionar con la versión de hugo <code>v0.118.0</code> o posterior. Ahora, ejecuta el siguiente comando en la raíz de su repositorio para inicializar un sitio web de hugo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>hugo new site ./ --format=yaml --force
+</span></span></code></pre></div><p>Este comando creará una estructura básica de un sitio de hugo. Aquí, el parámetro <code>-f=yaml</code> indica a hugo que cree el archivo de configuración en el formato YAML, y el parámetro <code>--force</code> fuerza a hugo que cree el sitio aunque el directorio destino no esté vacío. Creará un archivo <code>hugo.yaml</code>  que contendrá todas las configuraciones necesarias para su sitio.</p>
+<h3 id="añade-el-tema">Añade el tema</h3>
+<p>Vamos a usar el módulo de hugo para añadir el tema <code>Toha</code> a nuestro sitio web. Para empezar, inicializa los módulos de hugo usando el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod init github.com/&lt;su usuario&gt;/&lt;su repositorio&gt;
+</span></span></code></pre></div><p>Este comando creará un archivo <code>go.mod</code> a la raíz de su repositorio.</p>
+<p>Después, añade la siguiente sección de módulo en el archivo <code>hugo.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">module</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">imports</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">path</span>: <span style="color:#ae81ff">github.com/hugo-toha/toha/v4</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mounts</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/flag-icon-css/flags</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/flags</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/@fontsource/mulish/files</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/files</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/katex/dist/fonts</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/fonts</span>
+</span></span></code></pre></div><p>Finalmente, ejecuta los siguientes comandos para descargar el tema y sus dependencias:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># descargar el tema</span>
+</span></span><span style="display:flex;"><span>hugo mod get -u
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># descargar las dependencias del tema</span>
+</span></span><span style="display:flex;"><span>hugo mod tidy
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># genera dependencias de node</span>
+</span></span><span style="display:flex;"><span>hugo mod npm pack
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># instala dependencias</span>
+</span></span><span style="display:flex;"><span>npm install
+</span></span></code></pre></div><h3 id="ejecuta-el-sitio-web-localmente">Ejecuta el sitio web localmente</h3>
+<p>Ahora, ya puedes ejecutar tu sitio web localmente. Lo ejecutaremos en modo observador con el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>hugo server -w
+</span></span></code></pre></div><p>Si navega hacia <code>http://localhost:1313</code>, debería ver un sitio web básico con el tema Toha. En la siguiente sección, configuraremos el sitio para que se parezca a <a href="https://hugo-toha.github.io/" target="_blank" rel="noopener">hugo-toha.github.io</a>. Como hemos ejecutado el server en modo observador, cualquier cambio que hagamos al sitio, será visible instantáneamente en el navegador.</p>
+<h3 id="configura-el-sitio">Configura el sitio</h3>
+<p>Ahora, ya estamos preparados para configurar nuestro sitio web. En esta sección, añadiremos la información de autor, diferentes secciones, publicaciones de ejemplo, etc.</p>
+<h4 id="actualiza-hugoyaml">Actualiza <code>hugo.yaml</code></h4>
+<p>Cuando ha creado el sitio usando el comando <code>hugo new site</code>, ha creado un archivo <code>hugo.yaml</code> en la raíz de su repositorio. Substituye el contenido por defecto del archivo <code>hugo.yaml</code> por el siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">baseURL</span>: <span style="color:#ae81ff">https://hugo-toha.github.io</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">languageCode</span>: <span style="color:#ae81ff">en-us</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;John&#39;s Blog&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Utiliza Hugo modules para añadir el tema</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">module</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">imports</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">path</span>: <span style="color:#ae81ff">github.com/hugo-toha/toha/v4</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mounts</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">static/files</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/files</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/flag-icon-css/flags</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/flags</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/@fontsource/mulish/files</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/files</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">source</span>: <span style="color:#ae81ff">./node_modules/katex/dist/fonts</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">target</span>: <span style="color:#ae81ff">static/fonts</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Administrar idiomas</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Para más detalles, puedes visitar la documentación oficial de hugo: https://gohugo.io/content-management/multilingual/</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">languages</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">es</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">languageName</span>: <span style="color:#ae81ff">Español</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">en</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">languageName</span>: <span style="color:#ae81ff">English</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Forzar el uso de una configuración regional, ¡realmente útil para desarrollar la aplicación!</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># DefaultContentLanguage: bn</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Autorizar raw html en markdown</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">markup</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">goldmark</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">renderer</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unsafe</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tableOfContents</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">startLevel</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">endLevel</span>: <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ordered</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Al menos HTML y JSON son requeridos por el contenido principal de HTML y búsqueda de Javascript en el lado del cliente.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">outputs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">home</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">HTML</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">RSS</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">JSON</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Habilitar soporte global de emojis</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">enableEmoji</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parámetros del sitio</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># URL del repositorio de Github de tu sitio web</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">gitRepo</span>: <span style="color:#ae81ff">https://github.com/hugo-toha/hugo-toha.github.io</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">features</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Habilitar sección de portfolio</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">portfolio</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Habilitar publicaciones de Blog</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">blog</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Habilitar tabla de contenido en la página de lectura</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">toc</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Configurar pie de págna</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">footer</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>Aquí, está viendo la configuración básica del tema de Toha. Puede ver el archivo de configuración usado en el sitio web de ejemplo <a href="https://github.com/hugo-toha/hugo-toha.github.io/blob/source/hugo.yaml" target="_blank" rel="noopener">aquí</a>. Para más detalles en las opciones de configuración, por favor visite <a href="/es/posts/configuration/site-parameters/">esta publicación</a>.</p>
+<h4 id="añade-datos">Añade datos</h4>
+<p>La mayoría del contenido de este tema es manejado por algún archivo YAML dentro del directorio <code>data</code>. En esta sección, vamos a añadir datos de ejemplo. Ya que estamos construyendo un sitio plurilingüe, vamos a mantener los datos de cada idioma separados en su propio directorio de idioma.</p>
+<p>Para empezar, crea el directorio <code>es</code> dentro del directorio <code>data</code>. Aquí vamos a añadir los datos en el idioma <code>Español</code>.</p>
+<h5 id="información-del-sitio">Información del sitio</h5>
+<p>Ahora, crea un sitio <code>site.yaml</code> dentro del directorio <code>/data/es/</code> de tu repositorio. Añade el siguiente contenido:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Aviso de copyright</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">copyright</span>: <span style="color:#ae81ff">© 2024 Copyright.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Meta descripción de su sitio. Esto ayudará a los motores de búsqueda a encontrar su sitio.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#ae81ff">Página de ejemplo del tema de hugo Toha.</span>
+</span></span></code></pre></div><p>Para ver todas las opciones disponibles para la información del sitio, visite <a href="https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/site.yaml" target="_blank" rel="noopener">este archivo de ejemplo</a>.</p>
+<h5 id="información-del-autor">Información del Autor</h5>
+<p>Ahora, crea un archivo <code>author.yaml</code> dentro del directorio <code>/data/es/</code> y añade tu información como a continuación:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Alguna información sobre ti</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;John Doe&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">nickname</span>: <span style="color:#e6db74">&#34;John&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># mensaje de saludo antes de tu nombre. El valor predeterminado será &#34;Hi!, I am&#34; si no se proporciona.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">greeting</span>: <span style="color:#e6db74">&#34;Hola, soy&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">image</span>: <span style="color:#e6db74">&#34;images/author/john.png&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># da tu información de contacto. Se utilizará en el pie de página</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">contactInfo</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">email</span>: <span style="color:#e6db74">&#34;johndoe@example.com&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">phone</span>: <span style="color:#e6db74">&#34;+0123456789&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">github</span>: <span style="color:#ae81ff">johndoe</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">linkedin</span>: <span style="color:#ae81ff">johndoe</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Un pequeño resumen de lo que haces</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">summary</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Soy un desarrollador</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Soy un Devops</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Me gustan los servers</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Trabajo en proyectos de código abierto</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Me gusta trabajar en proyectos divertidos</span>
+</span></span></code></pre></div><h5 id="añade-secciones">Añade secciones</h5>
+<p>Ahora, vamos a añadir distintas secciones en nuestra página de inicio. Al principio, crea un directorio <code>sections</code> dentro de tu directorio <code>/data/es</code>. Aquí añadiremos algunas secciones con configuraciones mínimas. Para ver opciones de configuraciones detalladas para las secciones, por favor, visite <a href="/es/posts/configuration/sections/">aquí</a>.</p>
+<h6 id="sección-sobre-mi">Sección Sobre mi</h6>
+<p>Crea un archivo <code>about.yaml</code> dentro del directorio <code>/data/es/sections/</code>. Después añade el siguiente contenido:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Información de la sección</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">section</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Sobre mi</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">about</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">showOnNavbar</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tu designación</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">designation</span>: <span style="color:#ae81ff">Ingeniero de Software</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Información de tu empresa</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">company</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Example Co.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;https://www.example.com&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># tu currículum. Este archivo debe ser relativo a tu directorio &#34;static&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">resume</span>: <span style="color:#e6db74">&#34;files/resume.pdf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Un resumen sobre ti</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">summary</span>: <span style="color:#e6db74">&#39;Soy un ingeniero de software apsionado con x años de experiencia. He creado herramientas OSS para [Kubernetes](https://kubernetes.io/) utilizando Go. Mis herramientas ayudan a personas a desplegar sus workloads en Kubernetes. A veces trabajo en projectos divertidos como crear un tema, etc.&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># tus links de redes sociales</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># da tantos como quieras. Utilitza font-awesome para los iconos.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">socialLinks</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Email</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fas fa-envelope&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;example@gmail.com&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Github</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fab fa-github&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;https://www.github.com/example&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Stackoverflow</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fab fa-stack-overflow&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">LinkedIn</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fab fa-linkedin&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Twitter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fab fa-twitter&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Facebook</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">icon</span>: <span style="color:#e6db74">&#34;fab fa-facebook&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># competencias sociales</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Da un percentaje entre 50 y 100, en intervalos de 5 unidades.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># colores soportados: blue, yellow, pink, green, sky, orange.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">softSkills</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Liderazgo</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">blue</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Trabajo en equipo</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">90</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">yellow</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Comunicación</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">pink</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Trabajo duro</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">green</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Aprendizaje rápido</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">sky</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Solucionador de problemas</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">percentage</span>: <span style="color:#ae81ff">85</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">color</span>: <span style="color:#ae81ff">orange</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># también puede dar códigos de colores en vez de un nombre de color predeterminado</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># - name: Example 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   percentage: 75</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   color: &#34;#00adb5&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># - name: Example 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   percentage: 65</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   color: &#34;#8b8383&#34;</span>
+</span></span></code></pre></div><p>pon el archivo <code>resume.pdf</code> dentro del directorio <code>/static/files</code> de tu repositorio. Puedes encontrar el archivo <code>about.yaml</code> usado en el sitio web de ejemplo <a href="https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/sections/about.yaml" target="_blank" rel="noopener">aquí</a>.</p>
+<h6 id="añade-las-otras-secciones">Añade las otras secciones</h6>
+<p>Para mantener esta publicación breve, la hemos dividido en distintas publicaciones. A continuación hay la lista de publicaciones que te guiará en cómo configurar las otras secciones.</p>
+<ul>
+<li><a href="/es/posts/configuration/sections/about/">Configurando la sección Sobre mi</a>.</li>
+<li><a href="/es/posts/configuration/sections/education/">Configurando la sección de Educación</a>.</li>
+<li><a href="/es/posts/configuration/sections/experiences/">Configurando la sección de Experiencia</a>.</li>
+<li><a href="/es/posts/configuration/sections/projects/">Configurando la sección de Proyectos</a>.</li>
+<li><a href="/es/posts/configuration/sections/recent-posts/">Configurando la sección de Publicaciones Recientes</a>.</li>
+<li><a href="/es/posts/configuration/sections/achievements/">Configurando la sección de Logros</a>.</li>
+<li><a href="/es/posts/configuration/sections/skills/">Configurando la sección de Habilidades</a>.</li>
+</ul>
+<h4 id="añade-publicaciones">Añade Publicaciones</h4>
+<p>Ahora, ya estamos listos para añadir nuestra primera publicación a nuestro sitio. Aquí, añadiremos <a href="https://hugo-toha.github.io/posts/introduction/" target="_blank" rel="noopener">esta publicación</a>.</p>
+<ul>
+<li>Para empezar, crea un directorio <code>posts</code> dentro del directorio <code>content</code> de tu sitio.</li>
+<li>Después, crea un archivo <code>_index.md</code> dentro del directorio <code>posts</code>. Copia el contenido de <a href="https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/_index.md" target="_blank" rel="noopener">este archivo</a> y pégalo dentro del archivo <code>_index.md</code> creado recientemente.</li>
+<li>Crea un directorio <code>introduction</code> dentro del directorio <code>posts</code>.</li>
+<li>Añade el siguiente <a href="https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/hero.svg" target="_blank" rel="noopener">hero.svg</a> dentro de tu directorio <code>introduction</code>.</li>
+<li>Ahora, crea un archivo <code>index.md</code> dentro del directorio <code>introduction</code>. Este <code>index.md</code> tendrá el contenido de la publicación.</li>
+<li>Añade el siguiente <a href="https://raw.githubusercontent.com/hugo-toha/hugo-toha.github.io/source/content/posts/introduction/index.md" target="_blank" rel="noopener">contenido de ejemplo</a> dentro del archivo <code>index.md</code> creado recientemente.</li>
+</ul>
+<p>Ahora, tu publicación debería aparecer en <code>http://localhost:1313/posts</code> y tu sección <code>Publicaciones Recientes</code> también mostrarán esta tarjeta. Para traducir una publicación, simplemente crea un archivo con el nombre <code>index.&lt;código de idioma&gt;.md</code> en el mismo directorio. Después, añade el contenido traducido ahí.</p>
+<p>Para más publicaciones de ejemplo, por favor, visite <a href="https://github.com/hugo-toha/hugo-toha.github.io/tree/source/content/posts" target="_blank" rel="noopener">aquí</a>.</p>
+<h3 id="siguientes-pasos">Siguientes pasos</h3>
+<p>En este punto, tu sitio debería ser similar al de <a href="https://hugo-toha.github.io/" target="_blank" rel="noopener">ejemplo</a>. Ahora, es hora de desplegar tu sitio web. Puedes seguir las siguientes guías de despliegue:</p>
+<ul>
+<li><a href="/es/posts/getting-started/github-pages/">Despliegue en Github Pages</a></li>
+<li><a href="/es/posts/getting-started/netlify/">Despliegue en Netlify</a></li>
+</ul>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Compartir en:</strong>
+            
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f&text=Prepare%20su%20sitio%20web&via=Toha" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            
+            
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f&title=Prepare%20su%20sitio%20web" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f&title=Prepare%20su%20sitio%20web" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Prepare%20su%20sitio%20web http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Prepare%20su%20sitio%20web&body=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fgetting-started%2fprepare-site%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/guides/edit/main/content/posts/getting-started/prepare-site/index.es.md" title="Mejorar esta página" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Mejorar esta página
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/es/posts/quickstart/" title="Inicio Rápido" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Anterior</div>
+        <div class="next-prev-text">Inicio Rápido</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/es/posts/getting-started/github-pages/" title="Despliegue el sitio en Github Pages" class="btn filled-button">
+          <div>Siguiente <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Despliegue el sitio en Github Pages</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function () {
+      
+      
+      if (window.location.hostname == "localhost") return;
+
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      var disqus_shortname = "toha-example-site";
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Por favor, activa JavaScript para ver el
+    <a href="https://disqus.com/?ref_noscript"
+      >comentarios cortesía de Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comentarios cortesía de <span class="logo-disqus">Disqus</span></a
+  >
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"  data-toggle="tooltip" data-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Contenido</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#crea-el-repositorio">Crea el Repositorio</a></li>
+        <li><a href="#crea-el-sitio">Crea el sitio</a></li>
+        <li><a href="#añade-el-tema">Añade el tema</a></li>
+        <li><a href="#ejecuta-el-sitio-web-localmente">Ejecuta el sitio web localmente</a></li>
+        <li><a href="#configura-el-sitio">Configura el sitio</a>
+          <ul>
+            <li><a href="#actualiza-hugoyaml">Actualiza <code>hugo.yaml</code></a></li>
+            <li><a href="#añade-datos">Añade datos</a>
+              <ul>
+                <li><a href="#información-del-sitio">Información del sitio</a></li>
+                <li><a href="#información-del-autor">Información del Autor</a></li>
+                <li><a href="#añade-secciones">Añade secciones</a>
+                  <ul>
+                    <li><a href="#sección-sobre-mi">Sección Sobre mi</a></li>
+                    <li><a href="#añade-las-otras-secciones">Añade las otras secciones</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#añade-publicaciones">Añade Publicaciones</a></li>
+          </ul>
+        </li>
+        <li><a href="#siguientes-pasos">Siguientes pasos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navegación</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#about">Sobre mi</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#skills">Habilidades</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#experiences">Experiencia</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#featured-posts">Publicaciones Destacadas</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#projects">Proyectos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#recent-posts">Publicaciones Recientes</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#achievements">Logros</a>
+                </li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contacto</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>johndoe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>John Doe</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Aviso de responsabilidad:</strong> Este tema está bajo licencia MIT. Por lo tanto, puede utilizarlo para usos no comerciales, comerciales o privados. Puede modificar o distribuir el tema sin requerir ningún permiso del autor del tema. Sin embargo, el autor del tema no ofrece ninguna garantía ni asume ninguna responsabilidad por cualquier problema con el tema.</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Funcionando con
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f19912e4cef70554ad246d412e5a55aec6f78c2dd12cee78f620f2f9a0bf7f45.js" integrity="sha256-8ZkS5M73BVStJG1BLlpVrsb3jC3RLO549iDy&#43;aC/f0U=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

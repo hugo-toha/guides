@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Configurando la sección de Proyectos</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.f4aec35945767ba4a3201caff8cb743b910fa0acb58b56a724b7e1c0c85d357e.css" integrity="sha256-9K7DWUV2e6SjIByv&#43;Mt0O5EPoKy1i1anJLfhwMhdNX4=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Configurando la sección de Proyectos" />
+<meta property="og:description" content="El propósito de la sección Proyectos es mostrar eficazmente sus proyectos. En esta publicación, le guiaré a través del proceso de configuración de la sección de Proyectos en su sitio web. Para obtener una referencia completa, puede consultar el archivo de ejemplo projects.yaml.
+Para empezar, crea un nuevo archivo llamado projects.yaml dentro del directorio data/es/sections de tu sitio web. Después, sigue las instrucciones de abajo.
+Añade la información de la sección Añade la siguiente sección de metadatos en el archivo projects." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/es/posts/configuration/sections/projects/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-08T06:20:35+06:00" />
+<meta property="article:modified_time" content="2020-06-08T06:20:35+06:00" />
+
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Configurando la sección de Proyectos"/>
+<meta name="twitter:description" content="El propósito de la sección Proyectos es mostrar eficazmente sus proyectos. En esta publicación, le guiaré a través del proceso de configuración de la sección de Proyectos en su sitio web. Para obtener una referencia completa, puede consultar el archivo de ejemplo projects.yaml.
+Para empezar, crea un nuevo archivo llamado projects.yaml dentro del directorio data/es/sections de tu sitio web. Después, sigue las instrucciones de abajo.
+Añade la información de la sección Añade la siguiente sección de metadatos en el archivo projects."/>
+
+    
+    
+<meta name="description" content="Configurando la sección de Proyectos" />
+
+
+    
+
+    
+        
+        
+        
+            
+            
+            
+        
+
+        
+        
+
+        
+	
+
+        
+        
+
+        
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('darkmode:color-scheme') || 'system';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/es">
+      
+        <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" id="logo" alt="Logo">
+      Toha</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/es#home">Inicio</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#about">Sobre mi</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#skills">Habilidades</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#experiences">Experiencia</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/es#featured-posts">Publicaciones Destacadas</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#projects">Proyectos</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#recent-posts">Publicaciones Recientes</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/es#achievements">Logros</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/es/posts">Posts</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="note-link" href="/es/notes">Notas</a>
+          </li>
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">Docs</a>
+              </li>
+            
+        
+        
+          
+
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="flag-icon flag-icon-es"></span>
+        
+        Español
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/configuration/sections/projects">
+            
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/fr/posts/configuration/sections/projects">
+            
+                
+                <span class="flag-icon flag-icon-fr"></span>
+            
+            Français
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/bn/posts/configuration/sections/projects">
+            
+                
+                <span class="flag-icon flag-icon-bd"></span>
+            
+            বাংলা
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/configuration/sections/projects">
+            
+                
+                <span class="flag-icon flag-icon-es"></span>
+            
+            Español
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/es/search">
+          <input type="text" name="keyword" value="" placeholder="Búsqueda" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/features/" title="Características">Características</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/quickstart/" title="Inicio Rápido">Inicio Rápido</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/getting-started/"> Primeros Pasos</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/prepare-site/" title="Prepare su sitio web">Prepare su sitio web</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/github-pages/" title="Despliegue en Github Pages">Despliegue en Github Pages</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/netlify/" title="Despliegue en Netlify">Despliegue en Netlify</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/getting-started/theme-update/" title="Automatiza actualizaciones">Automatiza actualizaciones</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/es/posts/configuration/"> Configuración</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/site-parameters/" title="Parámetros del sitio">Parámetros del sitio</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/es/posts/configuration/sections/"> Secciones</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/about/" title="Sección Sobre mi">Sección Sobre mi</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/skills/" title="Sección de Habilidades">Sección de Habilidades</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/experiences/" title="Sección de Experiencia">Sección de Experiencia</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/education/" title="Sección de Educación">Sección de Educación</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/es/posts/configuration/sections/projects/" title="Sección de Proyectos">Sección de Proyectos</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/featured-posts/" title="Sección de Publicaciones Destacadas">Sección de Publicaciones Destacadas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/recent-posts/" title="Sección de Publicaciones Recientes">Sección de Publicaciones Recientes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/configuration/sections/achievements/" title="Sección de Logros">Sección de Logros</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/"> Escribiendo Publicaciones</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/organizing/"> Organizando Publicaciones</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/organizing/category/" title="Creando una Categoría">Creando una Categoría</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/writing-posts/organizing/sub-category/"> Sub-Categoría</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/organizing/sub-category/example/" title="Creando una Sub-Categoría">Creando una Sub-Categoría</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/front-matter/" title="Front-matter">Front-matter</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/markdown-syntax/" title="Guía de Markdown">Guía de Markdown</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/math/" title="Guía de Matemáticas">Guía de Matemáticas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/rich-content/" title="Contenido Enriquecido">Contenido Enriquecido</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/mermaid/" title="Mermaid">Mermaid</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/writing-posts/using-emoji/" title="Usando Emojis">Usando Emojis</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/customizing/"> Personalización</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/dark-theme/" title="Habilitar Tema Oscuro">Habilitar Tema Oscuro</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/customize-css/" title="Personalización CSS">Personalización CSS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/customize-layout/" title="Personalizacion Disposición">Personalizacion Disposición</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/customizing/new-section/" title="Añadiendo nueva Sección">Añadiendo nueva Sección</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/es/posts/translation/"> Traducción</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/new-language/" title="Añadiendo un nuevo idioma">Añadiendo un nuevo idioma</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/site-data/" title="Traduciendo la página de inicio">Traduciendo la página de inicio</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/translation/content/" title="Traduciendo Publicaciones">Traduciendo Publicaciones</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/analytics/" title="Analíticas">Analíticas</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/comments/" title="Comentarios">Comentarios</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/supports/" title="Enlaces de Soporte">Enlaces de Soporte</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/shortcodes/" title="Los Shortcodes">Los Shortcodes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="https://example.com/" title="Ejemplo de link externo">Ejemplo de link externo</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/contributing/" title="Contribuyendo">Contribuyendo</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/es/posts/update-v3-to-v4/" title="Migración de V3 a V4">Migración de V3 a V4</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/configuration/sections/projects/hero.svg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/bernatbc_hu9ff16388b8679801ac412661150baf9b_460_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">BernatBC</h5>
+          <p class="text-muted">lunes, 8 de junio de 2020</p>
+        </div>
+        
+        
+        <div class="title">
+          <h1>Configurando la sección de Proyectos</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>El propósito de la sección <code>Proyectos</code> es mostrar eficazmente sus proyectos. En esta publicación, le guiaré a través del proceso de configuración de la sección de <code>Proyectos</code> en su sitio web. Para obtener una referencia completa, puede consultar el archivo de ejemplo <a href="https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/projects.yaml" target="_blank" rel="noopener">projects.yaml</a>.</p>
+<p>Para empezar, crea un nuevo archivo llamado <code>projects.yaml</code> dentro del directorio <code>data/es/sections</code> de tu sitio web. Después, sigue las instrucciones de abajo.</p>
+<h3 id="añade-la-información-de-la-sección">Añade la información de la sección</h3>
+<p>Añade la siguiente sección de metadatos en el archivo <code>projects.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">section</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name: Proyectos # Título de la sección (predeterminado</span>: <span style="color:#e6db74">&#34;&#34;</span><span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">projects</span> <span style="color:#75715e"># id del url de la sección *se requiere*</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enable: true # Booleano que determina si la sección está activada (predeterminado</span>: <span style="color:#66d9ef">false</span><span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">weight: 5 # Orden de la sección (predeterminado</span>: <span style="color:#ae81ff">alfabeticamente seguida del peso)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">showOnNavbar</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># Booleano que determina si el enlace de esta sección debe aparecer en la barra de navegación</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Opcionalmente puede ocultar el título del menú</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># hideTitle: true</span>
+</span></span></code></pre></div><h3 id="añade-los-botones-de-filtrado-de-proyectos">Añade los botones de filtrado de proyectos</h3>
+<p>Ahora, añade una sección <code>buttons</code> dentro del archivo <code>projects.yaml</code>, como a continuación,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">buttons</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Todos</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">filter</span>: <span style="color:#e6db74">&#34;all&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Professional</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">filter</span>: <span style="color:#e6db74">&#34;professional&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Académico</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">filter</span>: <span style="color:#e6db74">&#34;academic&#34;</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Hobby</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">filter</span>: <span style="color:#e6db74">&#34;hobby&#34;</span>
+</span></span></code></pre></div><p>Cada botón tiene dos propiedades. La primera propiedad es <code>name</code>, que es el texto que se mostrará en el botón, y la otra es <code>filter</code> que especifica la categoría de los proyectos que el botón debe seleccionar.</p>
+<p>Un botón solo mostrará los proyectos que tengan una etiqueta que coincida con el texto especificado en el campo <code>filter</code>. El filtro del valor <code>all</code> es tratado especialmente. Selecciona todos los proyectos aunque no tengan la etiqueta <code>all</code> en su campo <code>tags</code>.</p>
+<h3 id="añade-tus-proyectos">Añade tus proyectos</h3>
+<p>Ahora, añade tus proyectos debajo de la sección <code>projects</code> del archivo, <code>projects.yaml</code> como a continuación,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">projects</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Kubernetes</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">logo</span>: <span style="color:#ae81ff">images/sections/projects/kubernetes.png</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">role</span>: <span style="color:#ae81ff">Contribuidor</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">timeline</span>: <span style="color:#e6db74">&#34;Marzo 2018 - Presente&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">repo</span>: <span style="color:#ae81ff">https://github.com/kubernetes/kubernetes</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">#url: &#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">summary</span>: <span style="color:#ae81ff">Programación y gestión de contenedores de nivel de producción.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;professional&#34;</span>, <span style="color:#e6db74">&#34;kubernetes&#34;</span>, <span style="color:#e6db74">&#34;cloud&#34;</span>]
+</span></span></code></pre></div><p>Puedes especificar los siguientes campos en cada proyecto,</p>
+<ul>
+<li><strong>name</strong>: Nombre del proyecto.</li>
+<li><strong>logo</strong>: Logo del proyecto. Si el proyecto no tiene logo, el tema automáticamente añadirá un marcador de posición allí.</li>
+<li><strong>role</strong>: Tu rol en el proyecto.</li>
+<li><strong>timeline</strong>: Intervalo de tiempo que has trabajado en el proyecto.</li>
+<li><strong>repo</strong>: Si tu proyecto tiene un repositorio público de Github, entonces provee el enlace. Mostrará el contador de estrellas.</li>
+<li><strong>url</strong>: Si tu proyecto no tiene un repositorio público, pero tiene una página web u otra url de detalles externos, proveelo aquí. No provees &ldquo;repo&rdquo; y &ldquo;url&rdquo; a la vez. Esto creará un botón con un enlace en la tarjeta del proyecto.</li>
+<li><strong>summary</strong>: Breve descripción del proyecto.</li>
+<li><strong>tags</strong>: Lista de etiquetas de tu proyecto. Se usarán para seleccionar el proyecto debajo de una categoría con los botones de filtrado.</li>
+</ul>
+<blockquote>
+<p>Puedes usar la sintáctica de markdown en el campo <code>summary</code>.</p>
+</blockquote>
+<div style="margin-top: 2rem;"></div>
+<p>La siguiente imagen muestra cómo el contenido de <code>projects.yaml</code> está distribuido en la sección de <code>Proyectos</code>.</p>
+<img src="images/projects.png"
+    
+    
+    
+    
+    
+>
+
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Compartir en:</strong>
+            
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f&text=Configurando%20la%20secci%c3%b3n%20de%20Proyectos&via=Toha" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            
+            
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f&title=Configurando%20la%20secci%c3%b3n%20de%20Proyectos" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f&title=Configurando%20la%20secci%c3%b3n%20de%20Proyectos" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Configurando%20la%20secci%c3%b3n%20de%20Proyectos http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Configurando%20la%20secci%c3%b3n%20de%20Proyectos&body=http%3a%2f%2flocalhost%3a1313%2fes%2fposts%2fconfiguration%2fsections%2fprojects%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/guides/edit/main/content/posts/configuration/sections/projects/index.es.md" title="Mejorar esta página" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Mejorar esta página
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/es/posts/configuration/sections/education/" title="Configurando la sección de Educación" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Anterior</div>
+        <div class="next-prev-text">Configurando la sección de Educación</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/es/posts/configuration/sections/featured-posts/" title="Configurando la sección de Publicaciones Destacadas" class="btn filled-button">
+          <div>Siguiente <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Configurando la sección de Publicaciones Destacadas</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function () {
+      
+      
+      if (window.location.hostname == "localhost") return;
+
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      var disqus_shortname = "toha-example-site";
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Por favor, activa JavaScript para ver el
+    <a href="https://disqus.com/?ref_noscript"
+      >comentarios cortesía de Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comentarios cortesía de <span class="logo-disqus">Disqus</span></a
+  >
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"  data-toggle="tooltip" data-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Contenido</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#añade-la-información-de-la-sección">Añade la información de la sección</a></li>
+        <li><a href="#añade-los-botones-de-filtrado-de-proyectos">Añade los botones de filtrado de proyectos</a></li>
+        <li><a href="#añade-tus-proyectos">Añade tus proyectos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navegación</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#about">Sobre mi</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#skills">Habilidades</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#experiences">Experiencia</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#featured-posts">Publicaciones Destacadas</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#projects">Proyectos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#recent-posts">Publicaciones Recientes</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/es/#achievements">Logros</a>
+                </li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contacto</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>johndoe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>John Doe</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Aviso de responsabilidad:</strong> Este tema está bajo licencia MIT. Por lo tanto, puede utilizarlo para usos no comerciales, comerciales o privados. Puede modificar o distribuir el tema sin requerir ningún permiso del autor del tema. Sin embargo, el autor del tema no ofrece ninguna garantía ni asume ninguna responsabilidad por cualquier problema con el tema.</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Funcionando con
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f19912e4cef70554ad246d412e5a55aec6f78c2dd12cee78f620f2f9a0bf7f45.js" integrity="sha256-8ZkS5M73BVStJG1BLlpVrsb3jC3RLO549iDy&#43;aC/f0U=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

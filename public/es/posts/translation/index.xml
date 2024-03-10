@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traducción on Toha</title>
+    <link>http://localhost:1313/es/posts/translation/</link>
+    <description>Recent content in Traducción on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 15 Jan 2024 06:20:50 +0600</lastBuildDate><atom:link href="http://localhost:1313/es/posts/translation/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Cómo añadir un idioma sin soporte</title>
+      <link>http://localhost:1313/es/posts/translation/new-language/</link>
+      <pubDate>Mon, 15 Jan 2024 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/translation/new-language/</guid>
+      <description>Si desea traducir a un idioma si soporte, puede traducir los elementos de la interfaz de usuario.
+Crea el archivo i18n Para haerlo, debes crear el directorio i18n dentro de la raíz del sitio, el directorio dónde puede encontrar el archivo config.yaml, y directorios como data, content, etc.
+Luego, puedes crear el archivo &amp;lt;código_del_idioma&amp;gt;.toml dentro del directorio i18n. En este directorio puedes encontrar todos los códigos de idiomas con las banderas que aparecerán junto a ese idioma.</description>
+    </item>
+    
+    <item>
+      <title>Cómo traducir las publicaciones</title>
+      <link>http://localhost:1313/es/posts/translation/content/</link>
+      <pubDate>Sun, 07 Jun 2020 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/translation/content/</guid>
+      <description>Este tema tiene soporte integrado para varios idiomas.
+Antes de empezar la traducción de la publicación, asegúrese de haber habilitado el idioma en su sitio. Si ese no es el caso, puedes seguir la sección Añade el idioma en el sitio de la guía Cómo traducir los datos de la página de inicio.
+Creando la publicación Una vez que haya agregado el idioma deseado a su sitio web, sepa que puede traducir publicaciones a ese idioma.</description>
+    </item>
+    
+    <item>
+      <title>Cómo traducir los datos de la página de inicio</title>
+      <link>http://localhost:1313/es/posts/translation/site-data/</link>
+      <pubDate>Sun, 07 Jun 2020 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/translation/site-data/</guid>
+      <description>Este tema tiene soporte integrado para varios idiomas.
+Añade el idioma en el sitio Añadiendo el idioma a su sitio traducirá la interfaz de usuario a ese idioma (por ejemplo, los botones, las barras de navegación, etc.).
+Obtener el código del idioma Para traducir su sitio, necesitará el código de su idioma. La siguiente tabla contiene los idiomas soportados junto con sus códigos:
+Idioma Código English en / none বাংলা bn Français fr Indonesian id Deutsch de Español es 简体中文 zh-cn / zh-tw हिन्दी hi Italiano it 日本語 jp 한국어 ko русский ru suomi fi Tiếng Việt vn Turkish tr Arabic (العربية) ar Português Europeu pt-pt Català ad Português Brasileiro pt-br Dutch nl Para una lista completa de los idiomas soportados, por favor, consulte el archivo README de toha repository.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

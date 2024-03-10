@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Mermaid Support</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.f4aec35945767ba4a3201caff8cb743b910fa0acb58b56a724b7e1c0c85d357e.css" integrity="sha256-9K7DWUV2e6SjIByv&#43;Mt0O5EPoKy1i1anJLfhwMhdNX4=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Mermaid Support" />
+<meta property="og:description" content="This theme comes with built in mermaid support powered by mermaid-js. To enable mermaid for a page, you have to put mermaid: true in your page front-matter. For example, this page has the following front-matter:
+title: &#34;Mermaid Support&#34; date: 2022-03-14T06:15:35&#43;06:00 menu: sidebar: name: Mermaid identifier: writing-post-mermaid parent: writing-post weight: 60 mermaid: true Then, you can use mermaid short code to add your mermaid content. For example:
+{{&lt; mermaid align=&#34;center&#34;&gt;}} # your mermaid content here {{&lt; /mermaid &gt;}} The mermaid short code accept the following parameters:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/writing-posts/mermaid/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-14T06:15:35+06:00" />
+<meta property="article:modified_time" content="2022-03-14T06:15:35+06:00" />
+
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Mermaid Support"/>
+<meta name="twitter:description" content="This theme comes with built in mermaid support powered by mermaid-js. To enable mermaid for a page, you have to put mermaid: true in your page front-matter. For example, this page has the following front-matter:
+title: &#34;Mermaid Support&#34; date: 2022-03-14T06:15:35&#43;06:00 menu: sidebar: name: Mermaid identifier: writing-post-mermaid parent: writing-post weight: 60 mermaid: true Then, you can use mermaid short code to add your mermaid content. For example:
+{{&lt; mermaid align=&#34;center&#34;&gt;}} # your mermaid content here {{&lt; /mermaid &gt;}} The mermaid short code accept the following parameters:"/>
+
+    
+    
+<meta name="description" content="Mermaid Support" />
+
+
+    
+
+    
+        
+        
+        
+            
+            
+            
+        
+
+        
+        
+
+        
+	
+
+        
+        
+
+        
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('darkmode:color-scheme') || 'system';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" id="logo" alt="Logo">
+      Toha</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#skills">Skills</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experiences">Experiences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#projects">Projects</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#featured-posts">Featured Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#recent-posts">Recent Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#achievements">Achievements</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="note-link" href="/notes">Notes</a>
+          </li>
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">Docs</a>
+              </li>
+            
+        
+        
+          
+
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="flag-icon flag-icon-gb"></span>
+        
+        English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/writing-posts/mermaid">
+            
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/fr/posts/writing-posts/mermaid">
+            
+                
+                <span class="flag-icon flag-icon-fr"></span>
+            
+            Français
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/bn/posts/writing-posts/mermaid">
+            
+                
+                <span class="flag-icon flag-icon-bd"></span>
+            
+            বাংলা
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/writing-posts/mermaid">
+            
+                
+                <span class="flag-icon flag-icon-es"></span>
+            
+            Español
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/features/" title="Features">Features</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/quickstart/" title="Quickstart">Quickstart</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/getting-started/"> Getting Started</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/getting-started/prepare-site/" title="Prepare Site">Prepare Site</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/getting-started/github-pages/" title="Deploy in Github Pages">Deploy in Github Pages</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/getting-started/netlify/" title="Deploy in Netlify">Deploy in Netlify</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/getting-started/theme-update/" title="Automate Theme Update">Automate Theme Update</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/configuration/"> Configuration</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/site-parameters/" title="Site Parameters">Site Parameters</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/configuration/sections/"> Sections</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/about/" title="About Section">About Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/skills/" title="Skills Section">Skills Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/experiences/" title="Experiences Section">Experiences Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/education/" title="Education Section">Education Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/projects/" title="Projects Section">Projects Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/featured-posts/" title="Featured Posts Section">Featured Posts Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/recent-posts/" title="Recent Posts Section">Recent Posts Section</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/configuration/sections/achievements/" title="Achievements Section">Achievements Section</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/writing-posts/"> Writing Posts</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/writing-posts/organizing/"> Organizing Posts</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/organizing/category/" title="Creating Category">Creating Category</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/writing-posts/organizing/sub-category/"> Sub-Category</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/organizing/sub-category/example/" title="Creating Sub-Category">Creating Sub-Category</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/front-matter/" title="Front Matter">Front Matter</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/markdown-syntax/" title="Markdown Guide">Markdown Guide</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/math/" title="Math Guide">Math Guide</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/rich-content/" title="Rich Content">Rich Content</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/writing-posts/mermaid/" title="Mermaid">Mermaid</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/writing-posts/using-emoji/" title="Using Emoji">Using Emoji</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/customizing/"> Customizing</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/customizing/dark-theme/" title="Enable Dark Theme">Enable Dark Theme</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/customizing/customize-css/" title="CSS Customization">CSS Customization</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/customizing/customize-layout/" title="Layout Customization">Layout Customization</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/customizing/new-section/" title="Adding New Section">Adding New Section</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/translation/"> Translation</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/translation/new-language/" title="Adding new language">Adding new language</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/translation/site-data/" title="Translating Homepage">Translating Homepage</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/translation/content/" title="Translating Posts">Translating Posts</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/analytics/" title="Analytics">Analytics</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/comments/" title="Comments">Comments</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/supports/" title="Support Links">Support Links</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/shortcodes/" title="Shortcodes">Shortcodes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="https://example.com/" title="External Link Example">External Link Example</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/contributing/" title="Contributing">Contributing</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/update-v3-to-v4/" title="V3 to V4 Migration">V3 to V4 Migration</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/writing-posts/mermaid/hero.svg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/john_hu7f9991f5b5d471ecdfc6cff3db1a9fe6_6397_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">John Doe</h5>
+          <p class="text-muted">Monday, March 14, 2022</p>
+        </div>
+        
+        
+        <div class="title">
+          <h1>Mermaid Support</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>This theme comes with built in mermaid support powered by <a href="https://mermaid-js.github.io/mermaid" target="_blank" rel="noopener">mermaid-js</a>. To enable mermaid for a page, you have to put <code>mermaid: true</code> in your page front-matter. For example, this page has the following front-matter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Mermaid Support&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-03-14T06:15:35</span><span style="color:#ae81ff">+06</span>:<span style="color:#ae81ff">00</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">menu</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">sidebar</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Mermaid</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">identifier</span>: <span style="color:#ae81ff">writing-post-mermaid</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">parent</span>: <span style="color:#ae81ff">writing-post</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">mermaid</span>: <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><p>Then, you can use <code>mermaid</code> short code to add your mermaid content. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid align<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>&gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># your mermaid content here</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>The <code>mermaid</code> short code accept the following parameters:</p>
+<ul>
+<li><strong>align</strong>: Let&rsquo;s you align your diagram at left, right, or center. The default alignment is center.</li>
+<li><strong>background:</strong> Let&rsquo;s you change the background color of your diagram.</li>
+</ul>
+<p>In addition, you can also customize the theme of yours diagrams, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid align<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span> &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>%%<span style="color:#f92672">{</span>init: <span style="color:#f92672">{</span><span style="color:#e6db74">&#39;theme&#39;</span>:<span style="color:#e6db74">&#39;default&#39;</span><span style="color:#f92672">}}</span>%%
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># your mermaid content here</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>The <code>theme</code> parameter accept the following values:</p>
+<ul>
+<li><code>default</code></li>
+<li><code>neutral</code></li>
+<li><code>dark</code></li>
+<li><code>forest</code></li>
+<li><code>base</code></li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>Here, are few example of different diagram using mermaid.</p>
+<h4 id="graph">Graph</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid align<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;left&#34;</span> &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>graph LR;
+</span></span><span style="display:flex;"><span>    A<span style="color:#f92672">[</span>Hard edge<span style="color:#f92672">]</span> --&gt;|Link text| B<span style="color:#f92672">(</span>Round edge<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    B --&gt; C<span style="color:#f92672">{</span>Decision<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    C --&gt;|One| D<span style="color:#f92672">[</span>Result one<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    C --&gt;|Two| E<span style="color:#f92672">[</span>Result two<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+
+
+
+    
+
+
+<div class="mermaid" align="left" style="background-color: none; border-radius: 5px;">
+    
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+
+</div>
+
+<hr>
+<h4 id="sequence-diagram">Sequence Diagram</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>sequenceDiagram
+</span></span><span style="display:flex;"><span>    participant Alice
+</span></span><span style="display:flex;"><span>    participant Bob
+</span></span><span style="display:flex;"><span>    Alice-&gt;&gt;John: Hello John, how are you?
+</span></span><span style="display:flex;"><span>    loop Healthcheck
+</span></span><span style="display:flex;"><span>        John-&gt;&gt;John: Fight against hypochondria
+</span></span><span style="display:flex;"><span>    end
+</span></span><span style="display:flex;"><span>    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+</span></span><span style="display:flex;"><span>    John--&gt;&gt;Alice: Great!
+</span></span><span style="display:flex;"><span>    John-&gt;&gt;Bob: How about you?
+</span></span><span style="display:flex;"><span>    Bob--&gt;&gt;John: Jolly good!
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+    
+
+
+
+
+    
+
+
+<div class="mermaid" align="center" style="background-color: none; border-radius: 5px;">
+    
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+
+</div>
+
+<hr>
+<h4 id="gantt-diagram">Gantt diagram</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>gantt
+</span></span><span style="display:flex;"><span>  dateFormat  YYYY-MM-DD
+</span></span><span style="display:flex;"><span>  title Adding GANTT diagram to mermaid
+</span></span><span style="display:flex;"><span>  excludes weekdays 2014-01-10
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>section A section
+</span></span><span style="display:flex;"><span>  Completed task            :done,    des1, 2014-01-06,2014-01-08
+</span></span><span style="display:flex;"><span>  Active task               :active,  des2, 2014-01-09, 3d
+</span></span><span style="display:flex;"><span>  Future task               :         des3, after des2, 5d
+</span></span><span style="display:flex;"><span>  Future task2               :         des4, after des3, 5d
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+    
+
+
+
+
+    
+
+
+<div class="mermaid" align="center" style="background-color: none; border-radius: 5px;">
+    
+gantt
+  dateFormat  YYYY-MM-DD
+  title Adding GANTT diagram to mermaid
+  excludes weekdays 2014-01-10
+
+section A section
+  Completed task            :done,    des1, 2014-01-06,2014-01-08
+  Active task               :active,  des2, 2014-01-09, 3d
+  Future task               :         des3, after des2, 5d
+  Future task2               :         des4, after des3, 5d
+
+</div>
+
+<hr>
+<h4 id="class-diagram">Class Diagram</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>classDiagram
+</span></span><span style="display:flex;"><span>  Class01 &lt;|-- AveryLongClass : Cool
+</span></span><span style="display:flex;"><span>  Class03 *-- Class04
+</span></span><span style="display:flex;"><span>  Class05 o-- Class06
+</span></span><span style="display:flex;"><span>  Class07 .. Class08
+</span></span><span style="display:flex;"><span>  Class09 --&gt; C2 : Where am i?
+</span></span><span style="display:flex;"><span>  Class09 --* C3
+</span></span><span style="display:flex;"><span>  Class09 --|&gt; Class07
+</span></span><span style="display:flex;"><span>  Class07 : equals<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  Class07 : Object<span style="color:#f92672">[]</span> elementData
+</span></span><span style="display:flex;"><span>  Class01 : size<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  Class01 : int chimp
+</span></span><span style="display:flex;"><span>  Class01 : int gorilla
+</span></span><span style="display:flex;"><span>  Class08 &lt;--&gt; C2: Cool label
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+    
+
+
+
+
+    
+
+
+<div class="mermaid" align="center" style="background-color: none; border-radius: 5px;">
+    
+classDiagram
+  Class01 <|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --> C2 : Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 <--> C2: Cool label
+
+</div>
+
+<hr>
+<h4 id="git-graph">Git Graph</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid background<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span> align<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;right&#34;</span> &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>gitGraph:
+</span></span><span style="display:flex;"><span>options
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;nodeSpacing&#34;</span>: 150,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;nodeRadius&#34;</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>end
+</span></span><span style="display:flex;"><span>commit
+</span></span><span style="display:flex;"><span>branch newbranch
+</span></span><span style="display:flex;"><span>checkout newbranch
+</span></span><span style="display:flex;"><span>commit
+</span></span><span style="display:flex;"><span>commit
+</span></span><span style="display:flex;"><span>checkout master
+</span></span><span style="display:flex;"><span>commit
+</span></span><span style="display:flex;"><span>commit
+</span></span><span style="display:flex;"><span>merge newbranch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+
+
+
+
+<div class="mermaid" align="right" style="background-color: black; border-radius: 5px;">
+    
+gitGraph:
+  options
+  {
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+  }
+  end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+
+</div>
+
+<hr>
+<h4 id="er-diagram">ER Diagram</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>erDiagram
+</span></span><span style="display:flex;"><span>    CUSTOMER <span style="color:#f92672">||</span>--o<span style="color:#f92672">{</span> ORDER : places
+</span></span><span style="display:flex;"><span>    ORDER <span style="color:#f92672">||</span>--|<span style="color:#f92672">{</span> LINE-ITEM : contains
+</span></span><span style="display:flex;"><span>    CUSTOMER <span style="color:#f92672">}</span>|..|<span style="color:#f92672">{</span> DELIVERY-ADDRESS : uses
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; /mermaid &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div>
+
+    
+
+
+
+
+    
+
+
+<div class="mermaid" align="center" style="background-color: none; border-radius: 5px;">
+    
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+
+</div>
+
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Share on:</strong>
+            
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f&text=Mermaid%20Support&via=Toha" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            
+            
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f&title=Mermaid%20Support" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f&title=Mermaid%20Support" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Mermaid%20Support http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Mermaid%20Support&body=http%3a%2f%2flocalhost%3a1313%2fposts%2fwriting-posts%2fmermaid%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/guides/edit/main/content/posts/writing-posts/mermaid/index.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/writing-posts/rich-content/" title="Rich Content" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Rich Content</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/writing-posts/using-emoji/" title="Using Emoji" class="btn filled-button">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Using Emoji</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function () {
+      
+      
+      if (window.location.hostname == "localhost") return;
+
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      var disqus_shortname = "toha-example-site";
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comments powered by <span class="logo-disqus">Disqus</span></a
+  >
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"  data-toggle="tooltip" data-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#graph">Graph</a></li>
+            <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+            <li><a href="#gantt-diagram">Gantt diagram</a></li>
+            <li><a href="#class-diagram">Class Diagram</a></li>
+            <li><a href="#git-graph">Git Graph</a></li>
+            <li><a href="#er-diagram">ER Diagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#featured-posts">Featured Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#achievements">Achievements</a>
+                </li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>johndoe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>John Doe</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Liability Notice:</strong> This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses. You can modify or distribute the theme without requiring any permission from the theme author. However, the theme author does not provide any warranty or takes any liability for any issue with the theme.</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f19912e4cef70554ad246d412e5a55aec6f78c2dd12cee78f620f2f9a0bf7f45.js" integrity="sha256-8ZkS5M73BVStJG1BLlpVrsb3jC3RLO549iDy&#43;aC/f0U=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rédaction de billets on Toha</title>
+    <link>http://localhost:1313/fr/posts/writing-posts/</link>
+    <description>Recent content in Rédaction de billets on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 14 Mar 2022 06:15:35 +0600</lastBuildDate><atom:link href="http://localhost:1313/fr/posts/writing-posts/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Support de Mermaid</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/mermaid/</link>
+      <pubDate>Mon, 14 Mar 2022 06:15:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/mermaid/</guid>
+      <description>Ce thème est construit avec le support de Mermaid propulsé par mermaid-js. Pour activer mermaid pour une page, vous devez mettre mermaid: true dans le front matter de votre page. Par exemple, cette page a le front matter suivant:
+title: &amp;#34;Support de Mermaid&amp;#34; date: 2022-03-14T06:15:35+06:00 menu: sidebar: name: Mermaid identifier: writing-post-mermaid parent: writing-post weight: 60 mermaid: true Ensuite, vous pouvez utiliser le shortcode mermaid pour ajouter du contenu mermaid. Par exemple:</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/front-matter/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:45 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/front-matter/</guid>
+      <description>Article complet à venir&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Guide Syntaxique Markdown</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/markdown-syntax/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;Cet article propose un échantillon des syntaxes de base du Markdown qui peut être utilisé dans les fichiers de contenu d&amp;rsquo;Hugo, et montre également des balises HTML de base décorées avec CSS dans un thème Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paramètres de type Maths</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/math/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/math/</guid>
+      <description>&lt;p&gt;La notation Mathématique dans un projet Hugo peut être activée en utilisant des librairies JavaScript tierces.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Contenu riche</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/rich-content/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:30 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo est livré avec quelques &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shortcode intégrés&lt;/a&gt; pour du contenu riche, ainsi qu&amp;rsquo;une &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;configuration pour le respect de la vie privée&lt;/a&gt; et un ensemble de Shortcode simples qui active des versions statiques et sans JS de différents médias sociaux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Utilisation d&#39;Emoji</title>
+      <link>http://localhost:1313/fr/posts/writing-posts/using-emoji/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/writing-posts/using-emoji/</guid>
+      <description>&lt;p&gt;Emoji peut être activé dans un projet Hugo de plusieurs façons.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

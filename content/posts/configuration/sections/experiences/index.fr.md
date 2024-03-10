@@ -44,6 +44,7 @@ experiences:
     url: "https://www.example.com"
     location: Dhaka Branch
     logo: /images/experiences/company.png
+    darkLogo: /images/experiences/company-dark.png #(optionnel)
     # Aperçu de votre compagnie
     overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
   positions:

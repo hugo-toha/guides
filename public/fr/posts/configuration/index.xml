@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration on Toha</title>
+    <link>http://localhost:1313/fr/posts/configuration/</link>
+    <description>Recent content in Configuration on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 08 Jun 2020 06:20:55 +0600</lastBuildDate><atom:link href="http://localhost:1313/fr/posts/configuration/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Configuration des paramètres du site</title>
+      <link>http://localhost:1313/fr/posts/configuration/site-parameters/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:55 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/site-parameters/</guid>
+      <description>Après l&amp;rsquo;installation du thème, quand vous lancez le site pour la première fois, cela démarrera avec les paramètres par défaut. Cela devrait avoir l&amp;rsquo;apparence du site d&amp;rsquo;exemple excepté qu&amp;rsquo;il n&amp;rsquo;a pas de sections sur la page d&amp;rsquo;accueil. Ces sections sont ajoutées via quelques fichiers de données. Dans les prochains billets, je vais vous montrer comment vous pouvez ajouter ces sections en fournissant des fichiers de données.
+Dans ce billet, je vais vous montrer comment vous pouvez changer les paramètres du site pour modifier l&amp;rsquo;arrière plan, le logo, les informations de l&amp;rsquo;auteur, et activer/désactiver différentes fonctionnalités.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section A propos</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/about/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/about/</guid>
+      <description>L&amp;rsquo;objet de la section A propos est de fournir une brève introduction sur vous sur votre site web. Dans ce billet, nous vous guiderons sur la façon de configurer la section A propos. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier about.yaml.
+Pour commencer, créez un fichier about.yaml dans le répertoire data/fr/sections de votre site web. Suivez ensuite, les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier about.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Section Compétences</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/skills/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:45 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/skills/</guid>
+      <description>La section Compétences est conçue pour mettre en valeur vos compétences et fournir des informations sur votre expertise pour chaque compétence. Dans ce billet, nous vous guiderons sur la façon de configurer la section compétences de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît cet échantillon du fichier skills.yaml.
+Pour commencer, créez un fichier skills.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section à votre fichier skills.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Etudes</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/education/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/education/</guid>
+      <description>La section Etude a été conçue pour mettre en valeur votre parcours d&amp;rsquo;étude. Dans ce billet, nous vous guiderons sur la façon de configurer la section Etude de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier education.yaml.
+Pour commencer, créez un nouveau fichier nommé education.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous.
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier education.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Expériences</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/experiences/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:40 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/experiences/</guid>
+      <description>La section expériences a été conçue pour mettre en valeur votre carrière et mettre en évidence les responsabilités que vous avez assumées tout au long de votre parcours professionnel. Dans ce billet, nous vous guiderons sur la façon de configurer la section Expériences de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier experiences.yaml.
+Pour commencer, créez un nouveau fichier nommé experiences.yaml dans le répertoire data/fr/sections de votre site.</description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Projets</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/projects/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:35 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/projects/</guid>
+      <description>L&amp;rsquo;objet de la section Projets est de présenter efficacement vos projets. Dans ce billet, nous vous guiderons sur la façon de configurer la section Projets de votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier projects.yaml.
+Pour commencer, créez un nouveau fichier nommé projects.yaml dans le répertoire data/fr/sections de votre site. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier projects.</description>
+    </item>
+    
+    <item>
+      <title>Configuration Section Billets Récents</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/recent-posts/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:34 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/recent-posts/</guid>
+      <description>La section Billets récents est utilisée pour mettre en valeur les derniers billets de votre contenu. Pour activer cette section, créez une fichier recent-posts.yaml dans votre répertoire data/fr/sections et incluez le contenu suivant:
+# section information section: name: Billets récents # Titre de la section (par défaut: &amp;#34;&amp;#34; ) id: recent-posts # URL id/slug de section *valeur à conserver &amp;amp; obligatoire* enable: true # Booléen pour déterminer si la section est activée (par défaut: false) weight: 6 # # Ordre d&amp;#39;affichage de la section (par defaut: alphabetique suivi par poids) showOnNavbar: # true Booléen pour déterminer si le lien doit être affiché pour cette section dans la barre de navigation hideTitle: true # Peut optionnellement masquer les titres de la section (defaut: false) numShow: 4 # Peut optionnellement augmenter le nombre de billets à afficher (defaut: 3) showMoreButton: false # Peu optionnellement afficher le bouton &amp;#39;Plus de billets&amp;#39; (default: false) </description>
+    </item>
+    
+    <item>
+      <title>Configuration de la section Réalisations</title>
+      <link>http://localhost:1313/fr/posts/configuration/sections/achievements/</link>
+      <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
+      
+      <guid>http://localhost:1313/fr/posts/configuration/sections/achievements/</guid>
+      <description>La section Réalisations a été conçue pour afficher vos réalisations dans le format d&amp;rsquo;une galerie attrayante. Ce guide vous accompagnera à travers le processus de configuration de la section Réalisations sur votre site. Pour une référence complète, consultez s&amp;rsquo;il vous plaît l&amp;rsquo;extrait du fichier achievements.yaml.
+Pour commencer, créez un nouveau fichier nommé achievements.yaml dans le répertoire data/fr/sections de votre site web. Ensuite, suivez les instructions ci-dessous:
+Ajouter les informations de section Ajoutez les métadonnées de la section suivante dans votre fichier achievements.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

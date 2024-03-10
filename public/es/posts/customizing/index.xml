@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personalización on Toha</title>
+    <link>http://localhost:1313/es/posts/customizing/</link>
+    <description>Recent content in Personalización on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 13 Jan 2024 22:30:50 +0600</lastBuildDate><atom:link href="http://localhost:1313/es/posts/customizing/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Añadiendo una nueva Sección</title>
+      <link>http://localhost:1313/es/posts/customizing/new-section/</link>
+      <pubDate>Sat, 13 Jan 2024 22:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/customizing/new-section/</guid>
+      <description>Si las secciones, plantillas y componentes existentes no cumplen con tus necesidades, puedes añadir nuevas secciones, plantillas y componentes a tu sitio web. Esta guía te enseñará cómo añadir una nueva sección a tu sitio.
+Paso 1: Cambia el archivo de Disposición Para añadir una nueva sección a tu sitio, necesitarás crear un archivo de disposicion en el directorio layouts/partials/sections. El archivo debería tener el nombre de la sección. Por ejemplo, si quieres añadir una sección contact con un formulario de contacto, crea un archivo llamado contact.</description>
+    </item>
+    
+    <item>
+      <title>Personalización del CSS</title>
+      <link>http://localhost:1313/es/posts/customizing/customize-css/</link>
+      <pubDate>Sat, 13 Jan 2024 22:00:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/customizing/customize-css/</guid>
+      <description>Este tema te permite personalizar la apariencia de tu sitio y sus componentes sobrescribiendo el CSS predeterminado. Esta guía te enseñará cómo sobrescribir el esquema de colores del tema y la personalización de CSS de componentes individuales.
+Este tema usa Sass para generar el CSS. Si no está familiarizado con Sass, puedes aprender más sobre él aquí.
+Sobrescribe las variables de los colores Si quieres cambiar los colores por defecto del tema, pueds sobrescribir las variables de los colores.</description>
+    </item>
+    
+    <item>
+      <title>Habilitar Tema Oscuro</title>
+      <link>http://localhost:1313/es/posts/customizing/dark-theme/</link>
+      <pubDate>Sun, 12 Jun 2022 01:30:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/customizing/dark-theme/</guid>
+      <description>Para habilitar el modo oscuro en Toha v4.0.0, simplemente establece el campo darkMode.enable a true debajo de la sección params.features dentro del archivo config.yaml. Por ejemplo:
+params: features: darkMode: enable: true ¡Felicidades! Estas listo. Ahora puedes disfrutar del modo oscuro en tu sitio. El modo oscuro obedecerá a las preferencias del sistema del usuario.</description>
+    </item>
+    
+    <item>
+      <title>Personalización de la Disposición</title>
+      <link>http://localhost:1313/es/posts/customizing/customize-layout/</link>
+      <pubDate>Sat, 07 Aug 2021 06:20:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/customizing/customize-layout/</guid>
+      <description>Si personalizas la disposición de un componente existente, no recibirás actualizaciones futuras para ese componente una vez el tema sea actualizado. Necesitarás actualizar ese componente en tu repositorio. En este tutorial, te guiaré en cómo personalizar la disposición de un tema. Yo personalmente he pasado por el proceso y compartiré mis ideas para ponértelo más fácil.
+Paso 1: Cambia el archivo de Disposición Para personalizar la disposición de una sección, página o componente existente, necesitarás localizar el archivo correspondiente en el directorio layout del tema.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

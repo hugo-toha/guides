@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Configuration de la section Expériences</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.f4aec35945767ba4a3201caff8cb743b910fa0acb58b56a724b7e1c0c85d357e.css" integrity="sha256-9K7DWUV2e6SjIByv&#43;Mt0O5EPoKy1i1anJLfhwMhdNX4=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Configuration de la section Expériences" />
+<meta property="og:description" content="La section expériences a été conçue pour mettre en valeur votre carrière et mettre en évidence les responsabilités que vous avez assumées tout au long de votre parcours professionnel. Dans ce billet, nous vous guiderons sur la façon de configurer la section Expériences de votre site. Pour une référence complète, consultez s&rsquo;il vous plaît l&rsquo;extrait du fichier experiences.yaml.
+Pour commencer, créez un nouveau fichier nommé experiences.yaml dans le répertoire data/fr/sections de votre site." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/fr/posts/configuration/sections/experiences/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-08T06:20:40+06:00" />
+<meta property="article:modified_time" content="2020-06-08T06:20:40+06:00" />
+
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Configuration de la section Expériences"/>
+<meta name="twitter:description" content="La section expériences a été conçue pour mettre en valeur votre carrière et mettre en évidence les responsabilités que vous avez assumées tout au long de votre parcours professionnel. Dans ce billet, nous vous guiderons sur la façon de configurer la section Expériences de votre site. Pour une référence complète, consultez s&rsquo;il vous plaît l&rsquo;extrait du fichier experiences.yaml.
+Pour commencer, créez un nouveau fichier nommé experiences.yaml dans le répertoire data/fr/sections de votre site."/>
+
+    
+    
+<meta name="description" content="Configuration de la section Expériences" />
+
+
+    
+
+    
+        
+        
+        
+            
+            
+            
+        
+
+        
+        
+
+        
+	
+
+        
+        
+
+        
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('darkmode:color-scheme') || 'system';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/fr">
+      
+        <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" id="logo" alt="Logo">
+      Toha</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/fr#home">Accueil</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#about">A propos</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#skills">Compétences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#experiences">Expériences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#projects">Projets</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suite</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/fr#recent-posts">Billets récents</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/fr#achievements">Realisations</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/fr/posts">Articles</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="note-link" href="/fr/notes">Notes</a>
+          </li>
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">Docs</a>
+              </li>
+            
+        
+        
+          
+
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="flag-icon flag-icon-fr"></span>
+        
+        Français
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/configuration/sections/experiences">
+            
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/fr/posts/configuration/sections/experiences">
+            
+                
+                <span class="flag-icon flag-icon-fr"></span>
+            
+            Français
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/bn/posts/configuration/sections/experiences">
+            
+                
+                <span class="flag-icon flag-icon-bd"></span>
+            
+            বাংলা
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/configuration/sections/experiences">
+            
+                
+                <span class="flag-icon flag-icon-es"></span>
+            
+            Español
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/fr/search">
+          <input type="text" name="keyword" value="" placeholder="Chercher" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/fr/posts/" data-filter="all">Articles</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/features/" title="Caractéristiques">Caractéristiques</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/quickstart/" title="Démarrage rapide">Démarrage rapide</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/getting-started/"> Démarrer</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/prepare-site/" title="Préparer votre site">Préparer votre site</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/github-pages/" title="Déployer dans Github Pages">Déployer dans Github Pages</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/netlify/" title="Déployer dans Netlify">Déployer dans Netlify</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/theme-update/" title="MAJ auto du thème">MAJ auto du thème</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/fr/posts/configuration/"> Configuration</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/site-parameters/" title="Paramètres du site">Paramètres du site</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/fr/posts/configuration/sections/"> Sections</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/about/" title="Section A propos">Section A propos</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/skills/" title="Section des compétences">Section des compétences</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/fr/posts/configuration/sections/experiences/" title="Section des expériences">Section des expériences</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/education/" title="Section des études">Section des études</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/projects/" title="Section des projets">Section des projets</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/recent-posts/" title="Section billets récents">Section billets récents</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/achievements/" title="Section des réalisations">Section des réalisations</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/writing-posts/"> Rédaction de billets</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/front-matter/" title="Front Matter">Front Matter</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/markdown-syntax/" title="Guide Markdown">Guide Markdown</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/math/" title="Paramètre de type Maths">Paramètre de type Maths</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/rich-content/" title="Contenu riche">Contenu riche</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/mermaid/" title="Mermaid">Mermaid</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/using-emoji/" title="Utilisation d&#39;Emoji">Utilisation d&#39;Emoji</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/customizing/"> Personnalisation</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/customizing/dark-theme/" title="Activer le thème sombre">Activer le thème sombre</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/customizing/customize-css/" title="Personnaliser les CSS">Personnaliser les CSS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/customizing/new-section/" title="Ajouter une nouvelle section">Ajouter une nouvelle section</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/translation/"> Traduction</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/new-language/" title="Ajout d&#39;une nouvelle langue">Ajout d&#39;une nouvelle langue</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/site-data/" title="Traduction Page d&#39;accueil">Traduction Page d&#39;accueil</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/content/" title="Traduire des billets">Traduire des billets</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/analytics/" title="Analytiques">Analytiques</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/comments/" title="Commentaires">Commentaires</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/supports/" title="Liens de soutien">Liens de soutien</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/shortcodes/" title="Les Shortcodes">Les Shortcodes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="https://example.com/" title="Exemple de lien externe">Exemple de lien externe</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/contributing/" title="Contribution">Contribution</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/update-v3-to-v4/" title="Migration V3 à V4">Migration V3 à V4</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/configuration/sections/experiences/hero.svg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/nicolas_hu70a773b78172703804b88f8c613165a5_9090_120x120_fit_q75_box.jpg' alt="Author Image">
+          <h5 class="author-name">Nicolas Dietlin</h5>
+          <p class="text-muted">lundi 8 juin 2020</p>
+        </div>
+        
+        
+        <div class="title">
+          <h1>Configuration de la section Expériences</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>La section <code>expériences</code> a été conçue pour mettre en valeur votre carrière et mettre en évidence les responsabilités que vous avez assumées tout au long de votre parcours professionnel. Dans ce billet, nous vous guiderons sur la façon de configurer la section <code>Expériences</code> de votre site. Pour une référence complète, consultez s&rsquo;il vous plaît l&rsquo;extrait du fichier <a href="https://github.com/hugo-toha/hugo-toha.github.io/blob/main/data/en/sections/experiences.yaml" target="_blank" rel="noopener">experiences.yaml</a>.</p>
+<p>Pour commencer, créez un nouveau fichier nommé <code>experiences.yaml</code> dans le répertoire <code>data/fr/sections</code> de votre site. Ensuite, suivez les instructions ci-dessous:</p>
+<h3 id="ajouter-les-informations-de-section">Ajouter les informations de section</h3>
+<p>Ajoutez les métadonnées de la section suivante dans votre fichier <code>experiences.yaml</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># section information</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">section</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name: Experiences # Titre de la section (par défaut</span>: <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">experiences</span> <span style="color:#75715e"># URL id/slug de section *valeur à conserver &amp; obligatoire*</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">showOnNavbar</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Peut optionnellement masquer les titres de la section</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># hideTitle: true </span>
+</span></span></code></pre></div><h3 id="ajouter-vos-expériences">Ajouter vos expériences</h3>
+<p>Pour ajouter une expérience, incluez les informations correspondantes sous la section <code>experiences</code> de votre fichier <code>experiences.yaml</code> comme ci-dessous:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Vos expériences</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">experiences</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">company</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Example Co.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;https://www.example.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span>: <span style="color:#ae81ff">Dhaka Branch</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">logo</span>: <span style="color:#ae81ff">/images/experiences/company.png</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">darkLogo</span>: <span style="color:#ae81ff">/images/experiences/company-dark.png</span> <span style="color:#75715e">#(optionnel)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Aperçu de votre compagnie</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">overview</span>: <span style="color:#ae81ff">Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">positions</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">designation</span>: <span style="color:#ae81ff">Senior Software Engineer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">start</span>: <span style="color:#ae81ff">Nov 2019</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Ne pas fournir de date de fin sur votre poste actuel. Ca sera remplacé par &#34;Aujourd&#39;hui&#34;.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># end: Dec 2020</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Donnez quelques points à propos de vos responsabilités dans cette entreprise.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">responsibilities</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Design and develop XYZ tool for ABC task</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster&#39;s resource definition.</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Lead backend team.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">designation</span>: <span style="color:#ae81ff">Junior Software Engineer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">start</span>: <span style="color:#ae81ff">Nov 2017</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">end</span>: <span style="color:#ae81ff">Oct 2019</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">responsibilities</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Implement and test xyz feature for abc tool.</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Support client for abc tool.</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Learn k,d,w technology for xyz.</span>
+</span></span></code></pre></div><p>Chaque entrée dans une section <code>expériences</code> devrait avoir les informations suivantes:</p>
+<ul>
+<li><strong>company</strong>: Quelques informations sur votre entreprise. Vous devez fournir <code>name</code>, <code>url</code>, <code>location</code>, <code>logo</code>, et une brève <code>overview</code> de votre entreprise.</li>
+<li><strong>positions</strong>: Une liste des postes que vous avez occupé dans l&rsquo;entreprise. Vous pouvez fournir plusieurs postes si vous en avez changé au sein de cette entreprise.</li>
+<li><strong>designation</strong>: Indique le rôle que vous jouiez sur ce poste.</li>
+<li><strong>start</strong>: Temps quand vous avez démarré à ce poste.</li>
+<li><strong>end</strong>: Temps quand vous avez quitté ce poste. Si vous occupé actuellement ce poste, ne renseignez pas ce champs.</li>
+<li><strong>responsibilities</strong>: Une liste des responsabilités que vous avez assumée à ce poste. Cette section est très importante car elle donnera aux visiteurs une idée des responsabilités que vous êtes capable de gérer.</li>
+</ul>
+<blockquote>
+<p>Vous pouvez utiliser la syntaxe markdown dans le champs <code>overview</code> de la section <code>company</code> et dans le champs <code>responsabilities</code>.</p>
+</blockquote>
+<!-- <div style="margin-top: 2rem;"></div>
+
+The following image shows how the contents of `experiences.yaml` are mapped into the `Experiences` section.
+
+<img src="images/experiences.png"
+    
+    
+    
+    
+    
+>
+ -->
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Partager sur:</strong>
+            
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f&text=Configuration%20de%20la%20section%20Exp%c3%a9riences&via=Toha" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            
+            
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f&title=Configuration%20de%20la%20section%20Exp%c3%a9riences" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f&title=Configuration%20de%20la%20section%20Exp%c3%a9riences" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Configuration%20de%20la%20section%20Exp%c3%a9riences http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Configuration%20de%20la%20section%20Exp%c3%a9riences&body=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fconfiguration%2fsections%2fexperiences%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/guides/edit/main/content/posts/configuration/sections/experiences/index.fr.md" title="Améliorez cette page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Améliorez cette page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/fr/posts/configuration/sections/skills/" title="Configuration Section Compétences" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Précédent</div>
+        <div class="next-prev-text">Configuration Section Compétences</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/fr/posts/configuration/sections/education/" title="Configuration de la section Etudes" class="btn filled-button">
+          <div>Suivant <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Configuration de la section Etudes</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function () {
+      
+      
+      if (window.location.hostname == "localhost") return;
+
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      var disqus_shortname = "toha-example-site";
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Merci d&#39;activer JavaScript pour voir le
+    <a href="https://disqus.com/?ref_noscript"
+      >commentaires fournis par Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >commentaires fournis par <span class="logo-disqus">Disqus</span></a
+  >
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"  data-toggle="tooltip" data-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table des matières</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#ajouter-les-informations-de-section">Ajouter les informations de section</a></li>
+        <li><a href="#ajouter-vos-expériences">Ajouter vos expériences</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#about">A propos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#skills">Compétences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#experiences">Expériences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#projects">Projets</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#recent-posts">Billets récents</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#achievements">Realisations</a>
+                </li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contactez moi :</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:janedoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>janedoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Avis de responsabilité:</strong> Ce thème est sous licence MIT. Donc, vous pouvez l&rsquo;utiliser pour des usages non-commercial, commercial, ou privé. Vous pouvez modifier ou distribuer ce thème qui ne requiert pas de permissions de l&rsquo;auteur du thème. Cependant, l&rsquo;auteur du thème ne fournit aucune garantie ou n&rsquo;assume de responsabilité pour tout problème avec ce thème.</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f19912e4cef70554ad246d412e5a55aec6f78c2dd12cee78f620f2f9a0bf7f45.js" integrity="sha256-8ZkS5M73BVStJG1BLlpVrsb3jC3RLO549iDy&#43;aC/f0U=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

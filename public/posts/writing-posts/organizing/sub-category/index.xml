@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sub-Category on Toha</title>
+    <link>http://localhost:1313/posts/writing-posts/organizing/sub-category/</link>
+    <description>Recent content in Sub-Category on Toha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Jun 2020 06:15:50 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/writing-posts/organizing/sub-category/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Creating Sub Category</title>
+      <link>http://localhost:1313/posts/writing-posts/organizing/sub-category/example/</link>
+      <pubDate>Mon, 08 Jun 2020 06:15:50 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/writing-posts/organizing/sub-category/example/</guid>
+      <description>Complete Post Coming Soon&amp;hellip; </description>
+    </item>
+    
+    
+  </channel>
+</rss>

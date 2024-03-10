@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Personnalisation CSS</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.f4aec35945767ba4a3201caff8cb743b910fa0acb58b56a724b7e1c0c85d357e.css" integrity="sha256-9K7DWUV2e6SjIByv&#43;Mt0O5EPoKy1i1anJLfhwMhdNX4=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Personnalisation CSS" />
+<meta property="og:description" content="Ce thème vous permet de personnaliser l&rsquo;apparence de votre site et ses composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.
+Le thème utilise Sass pour générer du CSS. Si vous n&rsquo;êtes pas familier avec Sass, vous pouvez en apprendre plus à son sujet ici.
+Surcharger les variables des couleurs du thème Si vous voulez changer le schéma de couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/fr/posts/customizing/customize-css/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-13T22:00:50+06:00" />
+<meta property="article:modified_time" content="2024-01-13T22:00:50+06:00" />
+
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Personnalisation CSS"/>
+<meta name="twitter:description" content="Ce thème vous permet de personnaliser l&rsquo;apparence de votre site et ses composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.
+Le thème utilise Sass pour générer du CSS. Si vous n&rsquo;êtes pas familier avec Sass, vous pouvez en apprendre plus à son sujet ici.
+Surcharger les variables des couleurs du thème Si vous voulez changer le schéma de couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème."/>
+
+    
+    
+<meta name="description" content="Personnalisation CSS" />
+
+
+    
+
+    
+        
+        
+        
+            
+            
+            
+        
+
+        
+        
+
+        
+	
+
+        
+        
+
+        
+        
+    
+
+
+
+
+<script>
+      theme = localStorage.getItem('darkmode:color-scheme') || 'system';
+      if (theme == 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'dark';
+        } else {
+          theme = 'light';
+        }
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+  </head>
+
+  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/fr">
+      
+        <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" id="logo" alt="Logo">
+      Toha</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/fr#home">Accueil</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#about">A propos</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#skills">Compétences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#experiences">Expériences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/fr#projects">Projets</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suite</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/fr#recent-posts">Billets récents</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/fr#achievements">Realisations</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/fr/posts">Articles</a>
+          </li>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="note-link" href="/fr/notes">Notes</a>
+          </li>
+        
+        
+            
+              <li class="nav-item">
+                <a class="nav-link" href="https://toha-guides.netlify.app/posts/">Docs</a>
+              </li>
+            
+        
+        
+          
+
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="flag-icon flag-icon-fr"></span>
+        
+        Français
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/customizing/customize-css">
+            
+                
+                <span class="flag-icon flag-icon-gb"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/fr/posts/customizing/customize-css">
+            
+                
+                <span class="flag-icon flag-icon-fr"></span>
+            
+            Français
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/bn/posts/customizing/customize-css">
+            
+                
+                <span class="flag-icon flag-icon-bd"></span>
+            
+            বাংলা
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/customizing/customize-css">
+            
+                
+                <span class="flag-icon flag-icon-es"></span>
+            
+            Español
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
+          <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu9ad2f25a877e6fef77c7a3dbef5094ad_6881_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hub02d7508a1c89b2b7812eab204efeb9a_4223_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/fr/search">
+          <input type="text" name="keyword" value="" placeholder="Chercher" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/fr/posts/" data-filter="all">Articles</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/features/" title="Caractéristiques">Caractéristiques</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/quickstart/" title="Démarrage rapide">Démarrage rapide</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/getting-started/"> Démarrer</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/prepare-site/" title="Préparer votre site">Préparer votre site</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/github-pages/" title="Déployer dans Github Pages">Déployer dans Github Pages</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/netlify/" title="Déployer dans Netlify">Déployer dans Netlify</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/getting-started/theme-update/" title="MAJ auto du thème">MAJ auto du thème</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/configuration/"> Configuration</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/site-parameters/" title="Paramètres du site">Paramètres du site</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/configuration/sections/"> Sections</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/about/" title="Section A propos">Section A propos</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/skills/" title="Section des compétences">Section des compétences</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/experiences/" title="Section des expériences">Section des expériences</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/education/" title="Section des études">Section des études</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/projects/" title="Section des projets">Section des projets</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/recent-posts/" title="Section billets récents">Section billets récents</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/configuration/sections/achievements/" title="Section des réalisations">Section des réalisations</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/writing-posts/"> Rédaction de billets</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/front-matter/" title="Front Matter">Front Matter</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/markdown-syntax/" title="Guide Markdown">Guide Markdown</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/math/" title="Paramètre de type Maths">Paramètre de type Maths</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/rich-content/" title="Contenu riche">Contenu riche</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/mermaid/" title="Mermaid">Mermaid</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/writing-posts/using-emoji/" title="Utilisation d&#39;Emoji">Utilisation d&#39;Emoji</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/fr/posts/customizing/"> Personnalisation</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/customizing/dark-theme/" title="Activer le thème sombre">Activer le thème sombre</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/fr/posts/customizing/customize-css/" title="Personnaliser les CSS">Personnaliser les CSS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/customizing/new-section/" title="Ajouter une nouvelle section">Ajouter une nouvelle section</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/fr/posts/translation/"> Traduction</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/new-language/" title="Ajout d&#39;une nouvelle langue">Ajout d&#39;une nouvelle langue</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/site-data/" title="Traduction Page d&#39;accueil">Traduction Page d&#39;accueil</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/translation/content/" title="Traduire des billets">Traduire des billets</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/analytics/" title="Analytiques">Analytiques</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/comments/" title="Commentaires">Commentaires</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/supports/" title="Liens de soutien">Liens de soutien</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/shortcodes/" title="Les Shortcodes">Les Shortcodes</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="https://example.com/" title="Exemple de lien externe">Exemple de lien externe</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/contributing/" title="Contribution">Contribution</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/fr/posts/update-v3-to-v4/" title="Migration V3 à V4">Migration V3 à V4</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/customizing/customize-css/hero.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/nicolas_hu70a773b78172703804b88f8c613165a5_9090_120x120_fit_q75_box.jpg' alt="Author Image">
+          <h5 class="author-name">Nicolas Dietlin</h5>
+          <p class="text-muted">samedi 13 janvier 2024</p>
+        </div>
+        
+        
+        <div class="title">
+          <h1>Personnalisation CSS</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>Ce thème vous permet de personnaliser l&rsquo;apparence de votre site et ses composants par une surcharge du CSS par defaut. Ce guide vous montrera comment surcharger le schéma de couleurs et personnaliser les CSS des composants individuels.</p>
+<p>Le thème utilise <a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a> pour générer du CSS. Si vous n&rsquo;êtes pas familier avec Sass, vous pouvez en apprendre plus à son sujet <a href="https://sass-lang.com/guide" target="_blank" rel="noopener">ici</a>.</p>
+<h2 id="surcharger-les-variables-des-couleurs-du-thème">Surcharger les variables des couleurs du thème</h2>
+<p>Si vous voulez changer le schéma de couleurs par défaut de votre thème, vous pouvez surcharger les variables de couleur du thème. Pour surcharger les variables de couleur du thème, vous devrez créer un fichier nommé <code>variables.scss</code> dans le répertoire <code>assets/styles</code> de votre site. Puis copiez le contenu du fichier <a href="https://github.com/hugo-toha/toha/blob/main/assets/styles/variables.scss" target="_blank" rel="noopener">variables.scss</a> par défaut et collez le dans votre fichier de personnalisation <code>variables.scss</code>. Ici, seule la section <code>$theme</code> du fichier <code>variables.scss</code> par defaut est montré ci-dessous:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#75715e">// themes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$themes<span style="color:#f92672">:</span> (
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">&#39;light&#39;</span><span style="color:#f92672">:</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// cyan 600</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0891b2</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// cyan 500</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;hover-over-accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#06b6d4</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// zinc 200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;text-over-accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#e4e4e7</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 50</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-primary&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#f8fafc</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-primary-inverse&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0f172a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-secondary&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#e2e8f0</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-card&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#fff</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 800</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;heading-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#1e293b</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 700</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#334155</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 300</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;inverse-text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#cbd5e1</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 500</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;muted-text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#64748b</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// red 600</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;inline-code-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#dc2626</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// amber 200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;highlight-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#fde68a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;footer-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0f172a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>  )<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">&#39;dark&#39;</span><span style="color:#f92672">:</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// cyan 600</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0891b2</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// cyan 500</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;hover-over-accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#06b6d4</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// zinc 200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;text-over-accent-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#e4e4e7</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// gray-800</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-primary&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#1f2937</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-primary-inverse&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0f172a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// gray 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-secondary&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#111827</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 800</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;bg-card&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#1e293b</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 100</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;heading-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#f1f5f9</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 300</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#cbd5e1</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;inverse-text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0f172a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 500</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;muted-text-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#64748b</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// red 600</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;inline-code-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#dc2626</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// amber 200</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;highlight-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#fde68a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// slate 900</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&#39;footer-color&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">#0f172a</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>  )<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>Les champs <code>light</code> et <code>dark</code> dans la cartopgraphie de couleur représentent respectivement les schémas de couleur pour le mode lumière et le mode sombre. En modifiant les codes couleurs dans ces champs, vous pouvez personnaliser l&rsquo;apparence de votre site.</p>
+<h2 id="surcharger-un-composant-css">Surcharger un composant CSS</h2>
+<p>Pour surcharger le CSS d&rsquo;un composant, créez un fichier <code>override.scss</code> dans le répertoire <code>assets/styles</code> de votre site. Puis, placez le nouveau CSS pour ce composant ici. Vous n&rsquo;avez pas besoin de réécrire l&rsquo;ensemble du CSS du composant. Vous pouvez juste mettre les champs modifiés.</p>
+<p>Par exemple, pour désactiver l&rsquo;effet flou de l&rsquo;image d&rsquo;arrière plan sur la page d&rsquo;accueil, vous pouvez ajouter le code SCSS suivant dans votre fichier <code>override.scss</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#a6e22e">.home</span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">.background</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">filter</span><span style="color:#f92672">:</span> none;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+            <strong>Partager sur:</strong>
+            
+            <a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            
+                <a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f&text=Personnalisation%20CSS&via=Toha" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+            
+            
+                <a  class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f&title=Personnalisation%20CSS" target="_blank">
+                  <i class="fab fa-reddit"></i>
+                </a>
+            
+            
+            
+            
+                <a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f&title=Personnalisation%20CSS" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            
+            
+             
+            
+                 <a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=Personnalisation%20CSS http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+            
+            
+                <a class="btn icon-button" href="mailto:?subject=Personnalisation%20CSS&body=http%3a%2f%2flocalhost%3a1313%2ffr%2fposts%2fcustomizing%2fcustomize-css%2f" target="_blank">
+                  <i class="fas fa-envelope-open-text"></i>
+                </a>
+            
+          
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/guides/edit/main/content/posts/customizing/customize-css/index.fr.md" title="Améliorez cette page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Améliorez cette page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/fr/posts/customizing/dark-theme/" title="Activer le mode sombre" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Précédent</div>
+        <div class="next-prev-text">Activer le mode sombre</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/fr/posts/customizing/new-section/" title="Ajouter une nouvelle section" class="btn filled-button">
+          <div>Suivant <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Ajouter une nouvelle section</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+        
+    
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function () {
+      
+      
+      if (window.location.hostname == "localhost") return;
+
+      var dsq = document.createElement("script");
+      dsq.type = "text/javascript";
+      dsq.async = true;
+      var disqus_shortname = "toha-example-site";
+      dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      (
+        document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Merci d&#39;activer JavaScript pour voir le
+    <a href="https://disqus.com/?ref_noscript"
+      >commentaires fournis par Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >commentaires fournis par <span class="logo-disqus">Disqus</span></a
+  >
+
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"  data-toggle="tooltip" data-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table des matières</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#surcharger-les-variables-des-couleurs-du-thème">Surcharger les variables des couleurs du thème</a></li>
+    <li><a href="#surcharger-un-composant-css">Surcharger un composant CSS</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#about">A propos</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#skills">Compétences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#experiences">Expériences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#projects">Projets</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#recent-posts">Billets récents</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/fr/#achievements">Realisations</a>
+                </li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contactez moi :</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:janedoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>janedoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    <hr />
+    <div class="container">
+      <p id="disclaimer"><strong>Avis de responsabilité:</strong> Ce thème est sous licence MIT. Donc, vous pouvez l&rsquo;utiliser pour des usages non-commercial, commercial, ou privé. Vous pouvez modifier ou distribuer ce thème qui ne requiert pas de permissions de l&rsquo;auteur du thème. Cependant, l&rsquo;auteur du thème ne fournit aucune garantie ou n&rsquo;assume de responsabilité pour tout problème avec ce thème.</p>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f19912e4cef70554ad246d412e5a55aec6f78c2dd12cee78f620f2f9a0bf7f45.js" integrity="sha256-8ZkS5M73BVStJG1BLlpVrsb3jC3RLO549iDy&#43;aC/f0U=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>
