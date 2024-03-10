@@ -20,7 +20,7 @@ L'ajout d'une langue à votre site traduira l'interface dans cette langue (inclu
 
 ### Obtenir le code de la langue
 
-Pour traduire votre site, vous aurez besoin du code de la langue. Le tableau suivant contient lzs langues supportées ainsi que leurs codes:
+Pour traduire votre site, vous aurez besoin du code de la langue. Le tableau suivant contient les langues supportées ainsi que leurs codes:
 
 | Languages            | Code              |
 |----------------------|-------------------|
@@ -47,7 +47,7 @@ Pour traduire votre site, vous aurez besoin du code de la langue. Le tableau sui
 
 </br>
 
-Pour la liste complète des langages supportés, consultez s'il vous plaît le fichier README du [dépôt Toha](https://github.com/hugo-toha/toha).
+Pour la liste complète des langages supportées, consultez s'il vous plaît le fichier README du [dépôt Toha](https://github.com/hugo-toha/toha).
 
 Si la langue désirée pour la traduction du votre contenu n'est pas disponible, consultez s'il vous plaît le guide [Comment ajouter un langage non supporté ?](/fr/posts/translation/new-language/)
 
@@ -65,7 +65,7 @@ languages:
     weight: 2 # Vous pouvez paramètrer l'ordre des langues avec cette valeur
 ```
 
-Par exemple, si vous voulez configurer `Français` comme nouvelle langue, la section devrait ressembler à ça:
+Par exemple, si vous voulez configurer le `Français` comme nouvelle langue, la section devrait ressembler à ça:
 
 ```yaml
 languages:
@@ -77,12 +77,12 @@ languages:
     weight: 2 # Vous pouvez paramètrer l'ordre des langues avec cette valeur
 ```
 
-## Translating the Main Page
+## Traduire la page principale
 
-Vous pouvez traduire la page principale en créant un nouveau répertoire dans le répertoire `data`. Le nom de ce nouveau répertoire devra être `<code_langue>`. Par exemple, si nous voulons traduire vers le français, nous devrons créer le répertoire `fr` dans le répertoire `data`.
+Vous pouvez traduire la page principale en créant un nouveau répertoire dans le répertoire `data`. Le nom de ce nouveau répertoire devra être le `<code_langue>`. Par exemple, si nous voulons traduire vers le français, nous devrons créer le répertoire `fr` dans le répertoire `data`.
 
 Ensuite, vous pouvez créer votre fichier de données habituel tel que `about.yaml` ou `education.yaml`, en conservant la même structure et le même nom de fichier. Dans ces fichiers, vous pouvez simplement traduire le contenu des champs dans la langue désirée.
 
 ## Et ensuite ?
 
-Vous pouvez consulter le guide suivant [Comment traduire des billets ?](/fr/posts/translation/content).
+Vous pouvez consulter le guide suivant [Comment traduire des billets ?](/fr/posts/translation/content)

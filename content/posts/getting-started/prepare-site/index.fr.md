@@ -9,7 +9,7 @@ menu:
     weight: 10
 ---
 
-Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons avec le thème `toha`, le rendre multilingue, ajouter quelques exemples de billets. A la fin de ce billet, vous devriez être capable d'exécuter pleinement un site Hugo avec le thème `Toha` localement.
+Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons avec le thème `toha`, le rendrons multilingue, et ajouterons quelques exemples de billets. A la fin de ce billet, vous devriez être capable d'exécuter pleinement un site Hugo avec le thème `Toha` localement.
 
 Si vous voulez démarrer d'une base, vous pouvez juste cloner le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez-le et mettez-le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
 
@@ -32,9 +32,11 @@ Cette commande créera une structure de base d'un site hugo. Ici, le flag `--for
 ### Ajouter un thème
 
 Nous allons utiliser un module hugo pour ajouter le thème `Toha` dans votre site. D'abord, initialisez les modules hugo en utilisant la commande suivante:
+
 ```console
 $ hugo mod init github.com/<votre compte utilisateur>/<votre nom de dépôt>
 ```
+
 Cette commande va créer un fichier `go.mod` à la racine de votre dépôt.
 
 Puis, ajoutez la section module suivante dans votre fichier `hugo.yaml`:

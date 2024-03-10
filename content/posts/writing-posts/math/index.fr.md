@@ -10,24 +10,26 @@ menu:
 math: true
 ---
 
-La notation Mathématique dans un projet Hugo peut être activé en utilisant des librairies JavaScript tierces.
+La notation Mathématique dans un projet Hugo peut être activée en utilisant des librairies JavaScript tierces.
 <!--more-->
 
 Dans cet exemple, nous utiliserons [KaTeX](https://katex.org/)
 
 - Créez un partiel sous `/layouts/partials/math.html`
-- A l'intérieur de cette référence de partiel, l'[Auto-render Extension](https://katex.org/docs/autorender.html) ou héberger ces scripts localement.
+- A l'intérieur de ce partiel référencez l'[Auto-render Extension](https://katex.org/docs/autorender.html) ou hébergez ces scripts localement.
 - Inclure le partiel dans votre template comme suit:  
 
-```
+```bash
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
-```  
+```
+
 - Pour activer KaText globalement mettez le paramètre `math` à `true` dans la configuration du projet.
 - Pour activer KaTex par page, incluez le paramètre `math: true` dans le front matter de votre fichier de contenu.
 
 **Note:** Utilisez le référentiel en ligne des [Fonctions TeX supportées](https://katex.org/docs/supported.html)
+
 {{< math.inline >}}
 {{ if or .Page.Params.math .Site.Params.math }}
 <!-- KaTeX -->
@@ -38,6 +40,7 @@ Dans cet exemple, nous utiliserons [KaTeX](https://katex.org/)
 {{</ math.inline >}}
 
 ### Exemples
+
 {{< math.inline >}}
 <p>
 Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)

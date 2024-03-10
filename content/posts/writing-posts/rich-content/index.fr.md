@@ -9,7 +9,7 @@ menu:
     weight: 50
 ---
 
-Hugo est livré avec quelques [Shortcodes intégrés](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) pour du contenu riche, ainsi qu'une [configuration pour le respect de la vie privée](https://gohugo.io/about/hugo-and-gdpr/) et un ensemble de Shortcode simples qui activent des versions statiques et sans JS de différents médias sociaux.
+Hugo est livré avec quelques [Shortcode intégrés](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) pour du contenu riche, ainsi qu'une [configuration pour le respect de la vie privée](https://gohugo.io/about/hugo-and-gdpr/) et un ensemble de Shortcode simples qui active des versions statiques et sans JS de différents médias sociaux.
 
 <!--more-->
 ---
@@ -29,7 +29,7 @@ Hugo est livré avec quelques [Shortcodes intégrés](https://gohugo.io/content-
 
 ---
 
-## Shortcode simple Twitter 
+## Shortcode simple X (ex-Twiter) 
 
 {{< tweet user="SanDiegoZoo" id="1453110110599868418" >}}
 

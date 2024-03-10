@@ -14,14 +14,14 @@ menu:
 
 ## Analytiques
 
-Ce thème a été construit avec le support de divers outils d'analyse. Actuellement, il prends en charge les analyses suivantes:
+Ce thème a été construit avec le support de divers outils d'analyse. Actuellement, il prend en charge les analyses suivantes:
 
 - [GoatCounter](https://www.goatcounter.com/)
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
 
-Pour une liste complète des analyses supportées, référez vous  au fichier d'échantillon [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
+Pour une liste complète des analytiques supportés, référez-vous au fichier d'échantillon [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
 
 {{< alert type="warning" >}}
 Avertissement: Lors de l'ajout d'analyses, vous devriez prendre en considération la législation locale pour voir si une bannière de confidentialité est nécessaire pour informer les visiteurs du suivi de ses données personnelles. En général (pas un conseil juridique), les méthodes anonymes et respectueuses de la vie privée telles que [counter.dev](https://counter.dev) et [GoatCounter](https://www.goatcounter.com/) n'ont pas besoin d'une bannière, car elles ne collectent pas de données personnelles identifiables.
