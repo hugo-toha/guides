@@ -43,7 +43,7 @@ degrees:
     name: ABC University of Technology
     url: "#"
     logo: /images/education/college.png # Path of the logo image
-    darkLogo: /images/education/college-dark.png #(optional), if not provided, dark theme will contain 'logo'
+    darkLogo: /images/education/college-dark.png #(optional), Can optionally show a different logo for dark theme
   grade: #(optional)
     scale: CGPA
     achieved: 3.6
