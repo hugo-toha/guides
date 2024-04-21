@@ -173,4 +173,11 @@ customMenus:
   showOnFooter: true
 ```
 
+### Change Navbar Title
+To change the title appearing on the navbar, you can modify `site.yaml` file. By defauly, the title corresponds to the website name. You can add the following line:
+
+```yaml
+navBarTitle: "Title"
+```
+
 Now, you can run your site and see the changes. In the upcoming posts, I'll guide you on how to add sections to your homepage and customize your site further.
