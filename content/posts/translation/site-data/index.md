@@ -44,6 +44,7 @@ In order to translate your site, you will need the code from your language. The 
 | Català               | `ad`              |
 | Português Brasileiro | `pt-br`           |
 | Dutch                | `nl`              |
+| Hebrew               | `he`              |
 
 </br>
 

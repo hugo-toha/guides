@@ -44,6 +44,7 @@ Para traducir su sitio, necesitará el código de su idioma. La siguiente tabla 
 | Català               | `ad`              |
 | Português Brasileiro | `pt-br`           |
 | Dutch                | `nl`              |
+| Hebrew               | `he`              |
 
 </br>
 
