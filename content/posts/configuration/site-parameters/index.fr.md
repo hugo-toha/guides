@@ -170,4 +170,11 @@ customMenus:
   showOnFooter: true
 ```
 
+### Changer le titre de la barre de navigation
+Pour changer le titre qui apparaît sur la barre de navigation, vous pouvez midifier le fichier `site.yaml`. Par defaut, le titre correpond au nom du site. Vous pouvez ajouter la ligne suivante::
+
+```yaml
+navBarTitle: "Titre"
+```
+
 Maintenant, vous pouvez lancer votre site et voir les changements. Dans les billets qui suivent, je vous guiderai sur comment ajouter des sections à votre page d'accueil et plus loin personnaliser votre site.

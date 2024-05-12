@@ -176,4 +176,11 @@ customMenus:
   showOnFooter: true
 ```
 
+### Cambiar Título de la Barra de Navegación
+Para cambiar el título que aparece en la barra de navegación, puedes modificar el archivo `site.yaml`. Por defecto, el título corresponde con el nombre de la página web. Puedes añadir la siguiente línea:
+
+```yaml
+navBarTitle: "Título"
+```
+
 Ahora, puedes ejecutar tu sitio y ver los cambios. En las siguientes publicaciones, te guiaré en cómo añadir secciones a tu página de inicio y personalizar aún más su sitio.

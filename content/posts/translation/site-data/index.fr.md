@@ -44,6 +44,7 @@ Pour traduire votre site, vous aurez besoin du code de la langue. Le tableau sui
 | Català               | `ad`              |
 | Português Brasileiro | `pt-br`           |
 | Dutch                | `nl`              |
+| Hebrew               | `he`              |
 
 </br>
 
