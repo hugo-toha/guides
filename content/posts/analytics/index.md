@@ -106,9 +106,9 @@ analytics:
   services:
     # Umami Analytics
     umai:
-      proto: https
+      scheme: https
       instance: analytics.eu.umami.is
       id: <your Umami website id>
 ```
-where `proto` is the protocol you want to use to connect to instance and `instance` is the domain (or address) of your deplyment, by default pointing to the EU cloud instance.
+where `scheme` is the scheme (i.e: https, http) you want to use to connect to instance, and `instance` is the domain (or address) of your deployment, by default pointing to the EU cloud instance.
 
