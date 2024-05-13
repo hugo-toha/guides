@@ -105,7 +105,7 @@ analytics:
   enable: true
   services:
     # Umami Analytics
-    umai:
+    umami:
       scheme: https
       instance: analytics.eu.umami.is
       id: <your Umami website id>
