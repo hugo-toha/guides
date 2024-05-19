@@ -20,6 +20,7 @@ Ce thème a été construit avec le support de divers outils d'analyse. Actuelle
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
+- [Umami](https://umami.is/)
 
 Pour une liste complète des analytiques supportés, référez-vous au fichier d'échantillon [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
 
