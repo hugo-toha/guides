@@ -17,6 +17,7 @@ This theme has built in support for various analytic tools. Currently, it suppor
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
+- [Umami](https://umami.is/)
 
 For a complete list of supported analytics, please refer the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) file.
 
