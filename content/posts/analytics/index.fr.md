@@ -96,3 +96,20 @@ analytics:
       instance: matomo.example.com
       siteId: 1 # The number generated after adding a site in your instance
 ```
+
+### Umami
+
+[Umami](https://umami.is) est un outil d'analyse open source en total conformité avec le <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr> avec une approche sans cookies. Il peut être installé sur site ou vous pouvez utiliser la version Cloud fournie. Vous pouvez activer le suivi d'Umami en ajoutant les configurations suivantes sous `params.features` section dans le fichier `config.yaml`:
+
+```yaml
+analytics:
+  enable: true
+  services:
+    # Umami Analytics
+    umami:
+      scheme: https
+      instance: analytics.eu.umami.is
+      id: <your Umami website id>
+```
+
+où `scheme` est le système (c'est-à-dir: https, http) que vous voulez utiliser pour vous connecter à l'instance, et `instance` est le domaine (ou l'adresse) de votre déploiement, en pointant par défaut sur l'instance cloud de l'<abbr title="Union Européenne">UE</abbr>.
