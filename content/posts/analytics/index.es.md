@@ -20,6 +20,7 @@ Este tema tiene soporte para varias herramientas de analíticas. Actualmente, so
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
+- [Umami](https://umami.is/)
 
 Para una lista completa de las analíticas soportadas, puede consultar el archivo de ejemplo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
 
