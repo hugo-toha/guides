@@ -98,3 +98,20 @@ analytics:
       instance: matomo.example.com
       siteId: 1 # Número generado después de agregar tu sitio a tu instancia
 ```
+### Umami
+
+[Umami](https://umami.is) es una herramienta de analíticas de código abierto totalmente compatible con GDPR y con un enfoque sin cookies. Puede instalarse localmente o puede utilizar la versión en la nube proporcionada.
+
+Puedes habilitar el seguimiento de Umami añadiendo la siguiente configuración en la sección `params.features` de tu archivo `config.yaml`:
+
+```yaml
+analytics:
+  enable: true
+  services:
+    # Umami Analytics
+    umami:
+      scheme: https
+      instance: analytics.eu.umami.is
+      id: <su id de Umami>
+```
+donde `scheme` es el protocolo que quieres usar para conectarte a la instancia (por ejemplo: https, http), e `instance` es el dominio (o dirección) de su implementación, que de forma predeterminada apunta a la instancia de la nube de la UE.
