@@ -17,6 +17,7 @@ This theme has built in support for various analytic tools. Currently, it suppor
 - [counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
+- [Umami](https://umami.is/)
 
 For a complete list of supported analytics, please refer the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) file.
 
@@ -97,7 +98,7 @@ analytics:
 
 ### Umami
 
-[Umami](https://umami.is) is an open source analytics tool fully compliant with GDPR and with a cookieless approach. It can be installed on-premise or you can use the provided cloud version.
+[Umami](https://umami.is) is an open source analytics tool fully compliant with <abbr title="General Data Protection Regulation">GDPR</abbr> and with a cookieless approach. It can be installed on-premise or you can use the provided cloud version.
 You can enable the Umami tracking by adding the following configs under `params.features` section in the `config.yaml` file:
 
 ```yaml
