@@ -1,7 +1,7 @@
 # Nota de copyright
 copyright: © 2020 Copyright.
 
-# Un aviso de exención de responsabilidad para el pie de página. Asegúrese de haber configurado "params.footer.disclaimer.enable: true" en su archivo `config.yaml`.
+# Un aviso de exención de responsabilidad para el pie de página. Asegúrese de haber configurado "params.footer.disclaimer.enable: true" en su archivo `hugo.yaml`.
 disclaimer: "Este tema está bajo licencia MIT. Por lo tanto, puede utilizarlo para usos no comerciales, comerciales o privados.
 Puede modificar o distribuir el tema sin requerir ningún permiso del autor del tema.
 Sin embargo, el autor del tema no ofrece ninguna garantía ni asume ninguna responsabilidad por cualquier problema con el tema."
@@ -17,7 +17,7 @@ customMenus:
   # especifica si quieres esconder el elemento de la barra de navegación o no.
   hideFromNavbar: false
   # especifica si quieres mostrar el elemento en el pie de página o no.
-  # si está configurado a true, assegúrase que tienes `footer.navigation.customMenus: true` en tu archivo config.yaml
+  # si está configurado a true, assegúrase que tienes `footer.navigation.customMenus: true` en tu archivo hugo.yaml
   showOnFooter: false
 
 # Especificar el encabezado OpenGraph

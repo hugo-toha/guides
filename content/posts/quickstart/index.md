@@ -65,7 +65,7 @@ You should see `go.mod` and `go.sum` files in the root of the repository. Update
 module github.com/<your username>/<forked repo name>
 ```
 
-#### Step 4: Change `config.yaml` file
+#### Step 4: Change `hugo.yaml` file
 
 Now, open the repository in an editor and change the following configurations in your `hugo.yaml` file located at the root of your repository.
 

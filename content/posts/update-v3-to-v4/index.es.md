@@ -25,9 +25,9 @@ git rm themes/toha/
 git commit -m "Remove v3 theme"
 ```
 
-### 2. Borra `theme` de `config.yaml`
+### 2. Borra `theme` de `hugo.yaml`
 
-En la nueva versión, ya no necesitamos especificar `theme` en el archivo `config.yaml`. En cambio, necesitaremos añadir el tema como módulo. Por lo tanto, borra la siguiente línea del archivo `config.yaml`.
+En la nueva versión, ya no necesitamos especificar `theme` en el archivo `hugo.yaml`. En cambio, necesitaremos añadir el tema como módulo. Por lo tanto, borra la siguiente línea del archivo `hugo.yaml`.
 
 ```yaml
 theme: toha
@@ -55,7 +55,7 @@ Este comando creará un archivo `go.mod` a la raíz de su repositorio. Compruebe
 
 ### 5. Añade el tema como módulo
 
-Ahora, añade la siguiente sección `module` en el archivo `config.yaml`. Esto añadirá el tema como módulo y lo montará en los archivos estáticos del tema.
+Ahora, añade la siguiente sección `module` en el archivo `hugo.yaml`. Esto añadirá el tema como módulo y lo montará en los archivos estáticos del tema.
 
 ```yaml
 # Usa los modules de Hugo para añadir el tema
@@ -73,13 +73,13 @@ module:
     target: static/fonts
 ```
 
-### 6. Actualiza el archivo `config.yaml`
+### 6. Actualiza el archivo `hugo.yaml`
 
-En la nueva versión, la estructura de configuración de las funcionalidades ha sido restructurada. Asimismo, será necesario actualizar el archivo `config.yaml`. Como referencia, puede consultar el ejemplo del archivo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml). Aquí resaltaremos las configuraciones más comunes que necesitan cambiarse.
+En la nueva versión, la estructura de configuración de las funcionalidades ha sido restructurada. Asimismo, será necesario actualizar el archivo `hugo.yaml`. Como referencia, puede consultar el ejemplo del archivo [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml). Aquí resaltaremos las configuraciones más comunes que necesitan cambiarse.
 
 **Modo oscuro:**
 
-Hemos introducido soporte para un nuevo modo oscuro. Como resultado, ya no necesitamos usar servicios de terceros como `darkreader`. Para habilitar el nuevo modo oscuro, por favor borra las siguientes líneas de tu archivo `config.yaml`:
+Hemos introducido soporte para un nuevo modo oscuro. Como resultado, ya no necesitamos usar servicios de terceros como `darkreader`. Para habilitar el nuevo modo oscuro, por favor borra las siguientes líneas de tu archivo `hugo.yaml`:
 
 ```yaml
  darkMode:
@@ -214,7 +214,7 @@ flags:
 
 ```
 
-Ha habido algunos otros cambios. Consulte el archivo de configuración de muestra [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) para obtener más detalles.
+Ha habido algunos otros cambios. Consulte el archivo de configuración de muestra [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml) para obtener más detalles.
 
 ### 7. Ejecuta el sitio
 

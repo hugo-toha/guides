@@ -16,7 +16,7 @@ menu:
 
 Toha `v3.6.0` a introduit un thème sombre. Un grand merci à [@donfiguerres](https://github.com/donfiguerres). Ce guide vous montrera comment l'activer.
 
-Tout d'abord, assurez-vous d'avoir mis à jour la version du thème en `v3.6.0` ou plus. Ensuite, ajoutez la section suivante sous la section `params` de votre fichier `config.yaml`.
+Tout d'abord, assurez-vous d'avoir mis à jour la version du thème en `v3.6.0` ou plus. Ensuite, ajoutez la section suivante sous la section `params` de votre fichier `hugo.yaml`.
 
 ```yaml
   darkMode:

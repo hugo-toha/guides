@@ -25,9 +25,9 @@ git rm themes/toha/
 git commit -m "Remove v3 theme"
 ```
 
-### 2. Supprimer le `theme` du `config.yaml`
+### 2. Supprimer le `theme` du `hugo.yaml`
 
-Dans cette nouvelle version, nous n'avons pas besoin de spécifier le `theme` dans le fichier `config.yaml`. A la place, nous ajouterons le thème comme un module. D'abord, supprimez la ligne suivante de votre fichier `config.yaml`:
+Dans cette nouvelle version, nous n'avons pas besoin de spécifier le `theme` dans le fichier `hugo.yaml`. A la place, nous ajouterons le thème comme un module. D'abord, supprimez la ligne suivante de votre fichier `hugo.yaml`:
 
 ```yaml
 theme: toha
@@ -55,7 +55,7 @@ Cela créera un fichier `go.mod` à la racine de votre site. Vous pouvez vérifi
 
 ### 5. Ajouter le thème en tant que module
 
-Maintenant, ajoutez la section `module` suivante dans votre fichier `config.yaml`. Cela ajoutera le thème comme un module et montera aussi les fichiers statiques à partir du thème.
+Maintenant, ajoutez la section `module` suivante dans votre fichier `hugo.yaml`. Cela ajoutera le thème comme un module et montera aussi les fichiers statiques à partir du thème.
 
 ```yaml
 # Utilise les modules Hugo pour ajouter le thème
@@ -73,13 +73,13 @@ module:
     target: static/fonts
 ```
 
-### 6. Actualiser le fichier `config.yaml`
+### 6. Actualiser le fichier `hugo.yaml`
 
-Dans la nouvelle version, la structure de configuration pour la gestion des fonctionnalités a été refondue. Donc, il est nécessaire d'actualiser le fichier `config.yaml` . Pour référence, vous pouvez vérifier l'extrait du [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml). Ici, nous mettrons en évidence les configurations les plus couramment utilisées qui ont besoin d'être changé.
+Dans la nouvelle version, la structure de configuration pour la gestion des fonctionnalités a été refondue. Donc, il est nécessaire d'actualiser le fichier `hugo.yaml` . Pour référence, vous pouvez vérifier l'extrait du [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml). Ici, nous mettrons en évidence les configurations les plus couramment utilisées qui ont besoin d'être changé.
 
 **Mode sombre:**
 
-Nous avons introduit un nouveau support intégré du mode sombre. En conséquence, il n'est plus nécessaire d'utiliser un service tiers tel que `darkreader`. Pour activer le nouveau mode sombre, s'il vous plaît supprimez les lignes suivantes de votre `config.yaml`.
+Nous avons introduit un nouveau support intégré du mode sombre. En conséquence, il n'est plus nécessaire d'utiliser un service tiers tel que `darkreader`. Pour activer le nouveau mode sombre, s'il vous plaît supprimez les lignes suivantes de votre `hugo.yaml`.
 
 ```yaml
  darkMode:

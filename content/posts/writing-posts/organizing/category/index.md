@@ -94,7 +94,7 @@ The following image shows how the contents are mapped into the sidebar section. 
 
 ## Customizing post's author information
 
-By default, the post should use author information from `config.yaml`. If you want to overwrite the default author information, just add following author section in the front-matter:
+By default, the post should use author information from `hugo.yaml`. If you want to overwrite the default author information, just add following author section in the front-matter:
 
 ```yaml
 author:

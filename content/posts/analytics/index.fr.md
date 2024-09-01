@@ -22,7 +22,7 @@ Ce thème a été construit avec le support de divers outils d'analyse. Actuelle
 - [Matomo](https://matomo.org/)
 - [Umami](https://umami.is/)
 
-Pour une liste complète des analytiques supportés, référez-vous au fichier d'échantillon [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
+Pour une liste complète des analytiques supportés, référez-vous au fichier d'échantillon [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml).
 
 {{< alert type="warning" >}}
 Avertissement: Lors de l'ajout d'analyses, vous devriez prendre en considération la législation locale pour voir si une bannière de confidentialité est nécessaire pour informer les visiteurs du suivi de ses données personnelles. En général (pas un conseil juridique), les méthodes anonymes et respectueuses de la vie privée telles que [counter.dev](https://counter.dev) et [GoatCounter](https://www.goatcounter.com/) n'ont pas besoin d'une bannière, car elles ne collectent pas de données personnelles identifiables.
@@ -32,7 +32,7 @@ Avertissement: Lors de l'ajout d'analyses, vous devriez prendre en considératio
 
 [GoatCounter](https://www.goatcounter.com/) est la méthode d'analyse la plus complète, simple et respectueuse de la vie privée supportée dans Toha. Ces scripts traquent les pages les plus vues, le nombre total d'utilisateur, et plus encore, tout en étant open source !
 
-Pour activer l'analyse GoatCounter sur votre site, vous avez deux options: la première est de s'inscrire sur [goatcounter.com](https://www.goatcounter.com) et obtenir un code pour votre site, la seconde est une instance auto-hébergée de GoatCounter. Ensuite, vous avez à ajouter une section `analytics` sous la section `params.features` de votre fichier `config.yaml` comme ci-dessous:
+Pour activer l'analyse GoatCounter sur votre site, vous avez deux options: la première est de s'inscrire sur [goatcounter.com](https://www.goatcounter.com) et obtenir un code pour votre site, la seconde est une instance auto-hébergée de GoatCounter. Ensuite, vous avez à ajouter une section `analytics` sous la section `params.features` de votre fichier `hugo.yaml` comme ci-dessous:
 
 ```yaml
 analytics:
@@ -48,7 +48,7 @@ analytics:
 
 [counter.dev](https://counter.dev) est un site d'analytique simple et respectueux de la vie privée qui vous permet de suivre le nombre total d'utilisateurs, la première page visitée et quelques autres métriques sur votre site web. Malheureusement, pour que les choses restent simples (et gratuites), elles ne montrent pas un classement des pages les plus visités, mais plutôt celles qui ont été consultées en premier.
 
-Vous pouvez l'activer par l'ajout de l'email avec lequel vous vous êtes inscrit sur la page de counter.dev sous la section `params.features` dans votre fichier `config.yaml` comme ci-dessous:
+Vous pouvez l'activer par l'ajout de l'email avec lequel vous vous êtes inscrit sur la page de counter.dev sous la section `params.features` dans votre fichier `hugo.yaml` comme ci-dessous:
 
 ```yaml
 analytics:
@@ -69,7 +69,7 @@ Remarques : Sur certains sites, [une erreur a été détectée](https://github.c
 Méfiez-vous, [d'après une récente jurisprudence](https://www.euractiv.com/section/politics/short_news/use-of-google-analytics-violates-eu-law-austrian-authority-rules/), Google Analytics pourrait être illégal dans l'Union Européenne.
 {{< /alert >}}
 
-Vous pouvez activer Google Analytics sur votre site en ajoutant votre id de suivi sous la section `params.features` dans votre fichier `config.yaml` comme ci-dessous:
+Vous pouvez activer Google Analytics sur votre site en ajoutant votre id de suivi sous la section `params.features` dans votre fichier `hugo.yaml` comme ci-dessous:
 
 ```yaml
 analytics:
@@ -82,11 +82,11 @@ analytics:
 
 Vous pouvez utiliser à la fois la V3 ou V4 de l'ID de suivi. Le thème détectera automatiquement la version du code de suivi et ajoutera les scripts de suivi correspondants en fonction de votre site.
 
-Pour des paramètres de confidentialité additionnels concernant Google Analytics, vous pouvez fournir une section `privacy.googleAnalytics` dans votre fichier `config.yaml` comme décrit [ici](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings).
+Pour des paramètres de confidentialité additionnels concernant Google Analytics, vous pouvez fournir une section `privacy.googleAnalytics` dans votre fichier `hugo.yaml` comme décrit [ici](https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings).
 
 ### Matomo
 
-Vous pouvez activer Matomo (anciennement Piwik) par l'ajout de la configuration Matomo sous la section `params.features` dans votre fichier `config.yaml` comme ci-dessous:
+Vous pouvez activer Matomo (anciennement Piwik) par l'ajout de la configuration Matomo sous la section `params.features` dans votre fichier `hugo.yaml` comme ci-dessous:
 
 ```yaml
 analytics:
@@ -100,7 +100,7 @@ analytics:
 
 ### Umami
 
-[Umami](https://umami.is) est un outil d'analyse open source en total conformité avec le <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr> avec une approche sans cookies. Il peut être installé sur site ou vous pouvez utiliser la version Cloud fournie. Vous pouvez activer le suivi d'Umami en ajoutant les configurations suivantes sous `params.features` section dans le fichier `config.yaml`:
+[Umami](https://umami.is) est un outil d'analyse open source en total conformité avec le <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr> avec une approche sans cookies. Il peut être installé sur site ou vous pouvez utiliser la version Cloud fournie. Vous pouvez activer le suivi d'Umami en ajoutant les configurations suivantes sous `params.features` section dans le fichier `hugo.yaml`:
 
 ```yaml
 analytics:

@@ -65,9 +65,9 @@ Vous devriez voir les fichiers `go.mod` et `go.sum` à la racine du dépôt. Met
 module github.com/<votre username>/<nom du dépôt forké>
 ```
 
-#### Etape 4: Modifier le fichier `config.yaml`
+#### Etape 4: Modifier le fichier `hugo.yaml`
 
-Maintenant, ouvrez le dépôt dans un éditeur et modifiez les configurations dans votre fichier `config.yaml` situé à la racine de votre dépôt.
+Maintenant, ouvrez le dépôt dans un éditeur et modifiez les configurations dans votre fichier `hugo.yaml` situé à la racine de votre dépôt.
 
 ##### Modifier le `baseURL`
 

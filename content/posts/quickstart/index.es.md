@@ -68,9 +68,9 @@ Deberías ver los archivos `go.mod` y `go.sum` en la raíz de su repositorio. Ac
 module github.com/<su usuario>/<nombre de su repositorio>
 ```
 
-#### Paso 4: Cambie el archivo `config.yaml`
+#### Paso 4: Cambie el archivo `hugo.yaml`
 
-Ahora, abre el repositorio en un editor y, cambie las siguientes configuraciones en tu archivo `config.yaml` localizado en la raíz de su repositorio.
+Ahora, abre el repositorio en un editor y, cambie las siguientes configuraciones en tu archivo `hugo.yaml` localizado en la raíz de su repositorio.
 
 ##### Cambia la `baseURL`
 

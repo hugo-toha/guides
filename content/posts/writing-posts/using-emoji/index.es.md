@@ -16,7 +16,7 @@ Los emojis se pueden habilitar a un proyecto de Hugo de distintas formas.
 <!--more-->
 La función [`emojify`](https://gohugo.io/functions/emojify/) se puede llamar directamente a las plantillas o a los [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates/#inline-shortcodes).
 
-Para habilitar los emojis globalmente, establece `enableEmoji` a `true` en el archivo `config.yaml` y después puedes escribir los códigos de los emojis directamente en archivos de contenido; por ejemplo. Más información [aquí](https://gohugo.io/getting-started/configuration/).
+Para habilitar los emojis globalmente, establece `enableEmoji` a `true` en el archivo `hugo.yaml` y después puedes escribir los códigos de los emojis directamente en archivos de contenido; por ejemplo. Más información [aquí](https://gohugo.io/getting-started/configuration/).
 
 
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>

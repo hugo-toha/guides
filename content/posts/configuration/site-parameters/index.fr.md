@@ -17,7 +17,7 @@ Pour une liste compréhensive des paramètres de configuration disponibles, cons
 
 ### Ajouter une image d'arrière plan
 
-D'abord, on va paramètrer un arrière plan sur votre site. Mettez l'image d'arrière plan désirée dans le répertoire `assets/images`. Ensuite, ajoutez ce qui suit dans la section `params` de votre fichier `config.yaml`.
+D'abord, on va paramètrer un arrière plan sur votre site. Mettez l'image d'arrière plan désirée dans le répertoire `assets/images`. Ensuite, ajoutez ce qui suit dans la section `params` de votre fichier `hugo.yaml`.
 
 ```yaml
 background: "images/<nom-de-votre-image-arrière-plan.jpg"
@@ -25,7 +25,7 @@ background: "images/<nom-de-votre-image-arrière-plan.jpg"
 
 ### Ajouter le logo du site
 
-Pour ajouter des logos pour votre site, vous devez fournir deux logos différents. Un pour la barre de navigation transparente et un autre pour la barre de navigation non transparente. Placez vos logos dans le répertoire `assets/images` et ajoutez le code sous la section `params` du fichier `config.yaml`.
+Pour ajouter des logos pour votre site, vous devez fournir deux logos différents. Un pour la barre de navigation transparente et un autre pour la barre de navigation non transparente. Placez vos logos dans le répertoire `assets/images` et ajoutez le code sous la section `params` du fichier `hugo.yaml`.
 
 ```yaml
 # The inverted logo will be used in the initial transparent navbar and
@@ -38,7 +38,7 @@ logo:
 
 ### Activer les billets de blog
 
-Pour activer les billets de blog sur votre site, vous aurez besoin de faire quelques changements dans votre fichier `config.yaml`. Localisez la section `params.features` et ajoutez le code suivant:
+Pour activer les billets de blog sur votre site, vous aurez besoin de faire quelques changements dans votre fichier `hugo.yaml`. Localisez la section `params.features` et ajoutez le code suivant:
 
 ```yaml
 # Active et configure la publication de billets
@@ -49,13 +49,13 @@ blog:
 
 ### Activer la `Table des Matières`
 
-Maintenant, si vous voulez afficher la section `Table des Matières` dans votre billet de blog, vous devez d'abord l'activer dans la section `params.features` de votre fichier `config.yaml`.
+Maintenant, si vous voulez afficher la section `Table des Matières` dans votre billet de blog, vous devez d'abord l'activer dans la section `params.features` de votre fichier `hugo.yaml`.
 
 ```yaml
 toc:
   enable: true
 ```
-Vous pouvez également contrôler le niveau de votre table des matières par l'ajout de la configuration suivante dans la section `markup` de votre fichier `config.yaml`.
+Vous pouvez également contrôler le niveau de votre table des matières par l'ajout de la configuration suivante dans la section `markup` de votre fichier `hugo.yaml`.
 
 ```yaml
 markup:
@@ -69,7 +69,7 @@ Ici, nous avons configuré notre table des matières pour afficher tous les titr
 
 ### Activer le bouton `<Améliorer cette page>`
 
-Si vous voulez fournir à vos visiteurs un moyen facile d'améliorer un article (par exemple une faute de frappe, un correctif d'indentation, etc.), vous pouvez activer le bouton `<Améliorer cette page>` en ajoutant l'URL de votre dépôt Git dans la section `params` de votre fichier `config.yaml`.
+Si vous voulez fournir à vos visiteurs un moyen facile d'améliorer un article (par exemple une faute de frappe, un correctif d'indentation, etc.), vous pouvez activer le bouton `<Améliorer cette page>` en ajoutant l'URL de votre dépôt Git dans la section `params` de votre fichier `hugo.yaml`.
 
 ```yaml
 gitRepo: <L'URL du dépôt Github de votre site>
@@ -77,7 +77,7 @@ gitRepo: <L'URL du dépôt Github de votre site>
 
 Cela ajoutera un bouton labelisé `Améliorer cette page` au pied de chaque billet. Le bouton redirigera l'utilisateur directement vers le formulaire d'édition de Github de la page.
 
-Si vous branche par défaut ne s'appelle pas `main`, alors vous aurez besoin d'ajouter votre branche git par défaut dans la section `params` de votre fichier `config.yaml`.
+Si vous branche par défaut ne s'appelle pas `main`, alors vous aurez besoin d'ajouter votre branche git par défaut dans la section `params` de votre fichier `hugo.yaml`.
 
 ```yaml
 gitBranch: <le nom de votre branche git par défaut>
@@ -85,7 +85,7 @@ gitBranch: <le nom de votre branche git par défaut>
 
 ### Activer la Newsletter
 
-Pour activer la fonctionnalité de newsletter, vous avez besoin de fournir les paramètres nécessaires sous la section `params.footer` dans votre fichier `config.yaml`. Actuellement, la fonctionnalité de newsletter supporte seulement le service Mailchip. Ici un exemple de ce à quoi cela doit ressembler:
+Pour activer la fonctionnalité de newsletter, vous avez besoin de fournir les paramètres nécessaires sous la section `params.footer` dans votre fichier `hugo.yaml`. Actuellement, la fonctionnalité de newsletter supporte seulement le service Mailchip. Ici un exemple de ce à quoi cela doit ressembler:
 
 ```yaml
 newsletter:
@@ -103,7 +103,7 @@ newsletter:
 
 ### Activer le RAW HTML dans le fichier Markdown
 
-Si vous voulez inclure le RAW HTML dans vos fichiers markdown, vous avez besoin d'activer le rendu non sécurisé. Sans cette activation, Hugo n'affichera pas le rendu HTML. Pour activer le rendu markdown non sécurisé; ajoutez les paramètres `goldmark` suivants dans la section `markup` du fichier `config.yaml`.
+Si vous voulez inclure le RAW HTML dans vos fichiers markdown, vous avez besoin d'activer le rendu non sécurisé. Sans cette activation, Hugo n'affichera pas le rendu HTML. Pour activer le rendu markdown non sécurisé; ajoutez les paramètres `goldmark` suivants dans la section `markup` du fichier `hugo.yaml`.
 
 ```yaml
 markup:

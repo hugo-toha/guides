@@ -16,7 +16,7 @@ If you want to translate to an unsupported language, you can translate the UI el
 
 ## Create an `i18n` file
 
-To do so, you have to create the `i18n` diretory inside the root of the site, the directory where you can find the `config.yaml` file, and directories like `data`, `content`, etc.
+To do so, you have to create the `i18n` diretory inside the root of the site, the directory where you can find the `hugo.yaml` file, and directories like `data`, `content`, etc.
 
 Afterwards, you can create the file `<language_code>.toml` into the `i18n` directory. In this [directory](https://github.com/hugo-toha/hugo-toha.github.io/tree/gh-pages/flags/1x1), you can find all language codes with the flag that will appear with that code.
 

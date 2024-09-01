@@ -27,7 +27,7 @@ En este ejemplo usaremos [KaTeX](https://katex.org/)
 {{ partial "math.html" . }}
 {{ end }}
 ```  
-- Para habilitar Katex globalmente establece el parámetro `math` a `true` en la configuración del proyecto en el archivo `config.yaml`.
+- Para habilitar Katex globalmente establece el parámetro `math` a `true` en la configuración del proyecto en el archivo `hugo.yaml`.
 - Para habilitar Katex en publicaciones concretas, incluye el parámetro `math: true` en los archivos de contenido correspondientes.
 
 **Nota:** Usa la referencia online de [Supported TeX Functions](https://katex.org/docs/supported.html)

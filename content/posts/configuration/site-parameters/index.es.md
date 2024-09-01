@@ -20,7 +20,7 @@ Para obtener una lista completa de los parámetros de configuración disponibles
 
 ### Añade un Fondo
 
-Para empezar, vamos a establecer un fondo para tu sitio web. Pon la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `config.yaml`.
+Para empezar, vamos a establecer un fondo para tu sitio web. Pon la imagen de fondo que desee en el directorio `assets/images`. Después, añade lo siguiente en la sección `params` del archivo `hugo.yaml`.
 
 ```yaml
 background: "images/nombre_de_tu_imagen_de_fondo.jpg"
@@ -28,7 +28,7 @@ background: "images/nombre_de_tu_imagen_de_fondo.jpg"
 
 ### Añade un Logo
 
-Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. Pon tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `config.yaml`.
+Para añadir logos para tu sitio, necesitas dos logos diferentes: uno para la barra de navegación transparente, y otro para la barra de navegación no-transparente. Pon tus logos dentro del directorio `assets/images` y añade las siguientes líneas debajo de la sección `params` del archivo `hugo.yaml`.
 
 ```yaml
 # El logo invertido será usado para la barra de navegación transparente.
@@ -41,7 +41,7 @@ logo:
 
 ### Habilita publicaciones del Blog
 
-Para habilitar publicaciones de blog en tu sitio web, necesitarás aplicar unos cambios en el archivo `config.yaml`. Localiza la sección `params.features` y añada el siguiente código.
+Para habilitar publicaciones de blog en tu sitio web, necesitarás aplicar unos cambios en el archivo `hugo.yaml`. Localiza la sección `params.features` y añada el siguiente código.
 
 ```yaml
 # Habilita y configura publicaciones de Blog
@@ -52,14 +52,14 @@ blog:
 
 ### Habilita `Tabla de Contenido`
 
-Ahora, si quiere mostrar la sección `Tabla de Contenido` en tu publicación de blog, tienes que habilitarlo en la sección `params.features` del archivo `config.yaml`.
+Ahora, si quiere mostrar la sección `Tabla de Contenido` en tu publicación de blog, tienes que habilitarlo en la sección `params.features` del archivo `hugo.yaml`.
 
 ```yaml
 toc:
   enable: true
 ```
 
-También puedes controlar los niveles de tu Tabla de Contenido añadiendo la siguiente configuración en la sección de `markup` de tu archivo `config.yaml`.
+También puedes controlar los niveles de tu Tabla de Contenido añadiendo la siguiente configuración en la sección de `markup` de tu archivo `hugo.yaml`.
 
 ```yaml
 markup:
@@ -73,7 +73,7 @@ Aquí, hemos configurado nuestra Tabla de Contenido para mostrar todos los encab
 
 ### Habilita el botón `<Mejorar esta página>`
 
-Si quieres permitir que los lectores mejoren fácilmente una publicación haciendo correcciones como faltas de ortografía o identación, puedes habilitar el botón `<Mejorar esta página>`. Para hacerlo, añada su URL del repositorio de git en la sección `params` del archivo `config.yaml`.
+Si quieres permitir que los lectores mejoren fácilmente una publicación haciendo correcciones como faltas de ortografía o identación, puedes habilitar el botón `<Mejorar esta página>`. Para hacerlo, añada su URL del repositorio de git en la sección `params` del archivo `hugo.yaml`.
 
 ```yaml
 gitRepo: <URL de tu repositorio de Github del sitio>
@@ -81,7 +81,7 @@ gitRepo: <URL de tu repositorio de Github del sitio>
 
 Esto añadirá un botón con la etiqueta `Mejorar esta página` al final de cada publicación de blog. El botón dirigirá al usuario directamente a la página de edición respectiva en Github.
 
-Si tu rama por defecto no tiene el nombre de `main`, necesitarás especificar tu rama por defecto de git en la sección `params` en el archivo `config.yaml`.
+Si tu rama por defecto no tiene el nombre de `main`, necesitarás especificar tu rama por defecto de git en la sección `params` en el archivo `hugo.yaml`.
 
 ```yaml
 gitBranch: <nombre de tu rama por defecto de git>
@@ -89,7 +89,7 @@ gitBranch: <nombre de tu rama por defecto de git>
 
 ### Habilita Boletín Informativo
 
-Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `config.yaml`. Ahora mismo, el boletín informativo solo es soportado por el proveedor Mailchimp. Aquí hay un ejemplo de cómo debería ser:
+Para habilitar la funcionalidad de boletín informativo, necesitarás proveer los parámetros necesarios debajo de la sección `params.footer` en el archivo `hugo.yaml`. Ahora mismo, el boletín informativo solo es soportado por el proveedor Mailchimp. Aquí hay un ejemplo de cómo debería ser:
 
 ```yaml
 newsletter:
@@ -107,7 +107,7 @@ newsletter:
 
 ### Habilita RAW HTML en los archivos de Markdown
 
-Si quiere incluir RAW HTML en tus archivos de markdown, necesitarás habilitar el rendering inseguro. Sin habilitarlo, Hugo no podrá renderizar HTML. Para habilitar rendering inseguro de markdown, añade la siguiente configuración de `goldmark` en la sección `markup` del archivo `config.yaml`.
+Si quiere incluir RAW HTML en tus archivos de markdown, necesitarás habilitar el rendering inseguro. Sin habilitarlo, Hugo no podrá renderizar HTML. Para habilitar rendering inseguro de markdown, añade la siguiente configuración de `goldmark` en la sección `markup` del archivo `hugo.yaml`.
 
 ```yaml
 markup:
