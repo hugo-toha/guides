@@ -163,7 +163,7 @@ params:
     enable: true
 ```
 
-Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
+Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/hugo.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
 
 #### Ajouter des données
 

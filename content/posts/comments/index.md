@@ -17,11 +17,11 @@ This theme has built-in support for comment on the posts. Currently, it support 
 - [Utterances](https://utteranc.es/)
 - [Giscus](https://giscus.app/)
 
-For a complete list of supported comments, please refer the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) file.
+For a complete list of supported comments, please refer the sample [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml) file.
 
 ### Disqus
 
-Disqus is a popular comment plug-in. After signing up to [Disqus](https://disqus.com/) you will need to provide your shortname under `params.features` section of your `config.yaml` file as below:
+Disqus is a popular comment plug-in. After signing up to [Disqus](https://disqus.com/) you will need to provide your shortname under `params.features` section of your `hugo.yaml` file as below:
 
 ```yaml
 comment:

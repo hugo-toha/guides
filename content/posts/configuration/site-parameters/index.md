@@ -17,7 +17,7 @@ For a comprehensive list of available configuration parameters, please refer to 
 
 ### Add Background Image
 
-At first, let's set a background on your website. Put your desired background image in the `assets/images` directory. Then add the following in the `params` section of your `config.yaml` file.
+At first, let's set a background on your website. Put your desired background image in the `assets/images` directory. Then add the following in the `params` section of your `hugo.yaml` file.
 
 ```yaml
 background: "images/name-of-your-background-image.jpg"
@@ -25,7 +25,7 @@ background: "images/name-of-your-background-image.jpg"
 
 ### Add Site's Logo
 
-To add logos for your site, you need two different logos: one for the transparent navbar and another for the non-transparent navbar. Place your logos in the `assets/images` directory and add the following code under the `params` section of your `config.yaml` file.
+To add logos for your site, you need two different logos: one for the transparent navbar and another for the non-transparent navbar. Place your logos in the `assets/images` directory and add the following code under the `params` section of your `hugo.yaml` file.
 
 ```yaml
 # The inverted logo will be used in the initial transparent navbar and
@@ -38,7 +38,7 @@ logo:
 
 ### Enable Blog Post
 
-To enable blog posting on your site, you need to make some changes in the `config.yaml` file. Locate the `params.features` section and add the following code:
+To enable blog posting on your site, you need to make some changes in the `hugo.yaml` file. Locate the `params.features` section and add the following code:
 
 ```yaml
 # Enable and configure blog posts
@@ -49,14 +49,14 @@ blog:
 
 ### Enable `Table Of Contents`
 
-Now, if you want to show `Table Of Contents` section in your blog post, you have to enable it in the `params.features` section of `config.yaml` file.
+Now, if you want to show `Table Of Contents` section in your blog post, you have to enable it in the `params.features` section of `hugo.yaml` file.
 
 ```yaml
 toc:
   enable: true
 ```
 
-You can also control the level of your TOC by adding the following configuration in the `markup` section of your `config.yaml` file.
+You can also control the level of your TOC by adding the following configuration in the `markup` section of your `hugo.yaml` file.
 
 ```yaml
 markup:
@@ -70,7 +70,7 @@ Here, we have configured our TOC to show all headings from `h2` to `h6`.
 
 ### Enable `<Improve This Page>` Button
 
-If you want to allow readers to easily improve a post by making corrections such as fixing typos or indentation, you can enable the `<Improve This Page>` button. To do this, add your git repository URL in the `params` section of your `config.yaml` file.
+If you want to allow readers to easily improve a post by making corrections such as fixing typos or indentation, you can enable the `<Improve This Page>` button. To do this, add your git repository URL in the `params` section of your `hugo.yaml` file.
 
 ```yaml
 gitRepo: <your site's Github repo URL>
@@ -78,7 +78,7 @@ gitRepo: <your site's Github repo URL>
 
 This will add a button labeled `Improve This Page` at the bottom of every blog post. The button will route the user directly to the respective edit page in Github.
 
-If your default branch is not named `main`, you need to specify your git default branch in the `params` section of your `config.yaml` file.
+If your default branch is not named `main`, you need to specify your git default branch in the `params` section of your `hugo.yaml` file.
 
 ```yaml
 gitBranch: <your git default branch name>
@@ -86,7 +86,7 @@ gitBranch: <your git default branch name>
 
 ### Enable Newsletter
 
-To enable the newsletter feature, you need to provide the necessary parameters under the `params.footer` section in your `config.yaml` file. Currently, the newsletter feature only supports the Mailchimp provider. Here is an example of how it should look:
+To enable the newsletter feature, you need to provide the necessary parameters under the `params.footer` section in your `hugo.yaml` file. Currently, the newsletter feature only supports the Mailchimp provider. Here is an example of how it should look:
 
 ```yaml
 newsletter:
@@ -104,7 +104,7 @@ newsletter:
 
 ### Enable RAW HTML in the Markdown File
 
-If you want to include RAW HTML in your markdown files, you need to enable unsafe rendering. Without enabling this, Hugo will not render the HTML. To enable unsafe markdown rendering, add the following `goldmark` settings to the `markup` section of your `config.yaml` file.
+If you want to include RAW HTML in your markdown files, you need to enable unsafe rendering. Without enabling this, Hugo will not render the HTML. To enable unsafe markdown rendering, add the following `goldmark` settings to the `markup` section of your `hugo.yaml` file.
 
 ```yaml
 markup:

@@ -12,7 +12,7 @@ menu:
     weight: 405
 ---
 
-Para habilitar el modo oscuro en Toha `v4.0.0`, simplemente establece el campo `darkMode.enable` a `true` debajo de la sección `params.features` dentro del archivo `config.yaml`. Por ejemplo:
+Para habilitar el modo oscuro en Toha `v4.0.0`, simplemente establece el campo `darkMode.enable` a `true` debajo de la sección `params.features` dentro del archivo `hugo.yaml`. Por ejemplo:
 
 ```yaml
 params:

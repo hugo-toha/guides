@@ -17,11 +17,11 @@ Este tema soporta la adición de varios enlaces de soporte/donación en su sitio
 - [Ko-fi](https://ko-fi.com/)
 - [Buy Me a Coffee](https://www.buymeacoffee.com/zicklam)
 
-Para una lista completa de los enlaces de soporte admitidos, puede consultar el archivo de ejemplo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
+Para una lista completa de los enlaces de soporte admitidos, puede consultar el archivo de ejemplo [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml).
 
 ## Ko-fi
 
-Puedes añadir tu botón flotante Ko-fi en tu sitio web. Para añadir el botón flotante, añade la sección `support` debajo de la sección `params.features`  del archivo `config.yaml`.
+Puedes añadir tu botón flotante Ko-fi en tu sitio web. Para añadir el botón flotante, añade la sección `support` debajo de la sección `params.features`  del archivo `hugo.yaml`.
 
 ```yaml
 support:
@@ -36,7 +36,7 @@ support:
 
 ## Buy Me a Coffee
 
-Puedes añadir tu botón flotante "Buy Me a Coffee" en tu sitio web. Para añadir el botón flotante, añade la sección `support` debajo de la sección `params.features`  del archivo `config.yaml`.
+Puedes añadir tu botón flotante "Buy Me a Coffee" en tu sitio web. Para añadir el botón flotante, añade la sección `support` debajo de la sección `params.features`  del archivo `hugo.yaml`.
 
 ![bmacbutton](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-button.png)
 ![bmacwidget](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-widget.png)

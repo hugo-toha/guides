@@ -16,7 +16,7 @@ Ce thème supporte l'ajout de liens de soutien/donation sur votre site. Actuelle
 
 ## Ko-fi
 
-Vous pouvez ajouter votre button flottant ko-fi sur votre site web. Pour ajouter le button flottant, ajoutez une section `support` sous la section `params.features` dans votre fichier `config.yaml`:
+Vous pouvez ajouter votre button flottant ko-fi sur votre site web. Pour ajouter le button flottant, ajoutez une section `support` sous la section `params.features` dans votre fichier `hugo.yaml`:
 
 ```yaml
 params:
@@ -32,7 +32,7 @@ params:
 
 ## Buy Me a Coffee
 
-Vous pouvez ajouter votre bouton flottant "Buy Me a Coffee" sur votre site web. Pour ajoutez une section `support` sous la section `params.features` dans votre fichier `config.yaml`:
+Vous pouvez ajouter votre bouton flottant "Buy Me a Coffee" sur votre site web. Pour ajoutez une section `support` sous la section `params.features` dans votre fichier `hugo.yaml`:
 
 ![bmacbutton](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-button.png)
 ![bmacwidget](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-widget.png)

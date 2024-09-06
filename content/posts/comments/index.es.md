@@ -20,11 +20,11 @@ Este tema tiene soporte para comentarios en las publicaciones. Actualmente, sopo
 - [Utterances](https://utteranc.es/)
 - [Giscus](https://giscus.app/)
 
-Para una lista completa de las extensiones de comentarios soportadas, puede consultar el archivo de ejemplo [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml).
+Para una lista completa de las extensiones de comentarios soportadas, puede consultar el archivo de ejemplo [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml).
 
 ### Disqus
 
-Disqus es una extensión de comentarios popular. Después de acceder a [Disqus](https://disqus.com/) necesitarás proveer tu shortname debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación:
+Disqus es una extensión de comentarios popular. Después de acceder a [Disqus](https://disqus.com/) necesitarás proveer tu shortname debajo de la sección `params.features` de tu archivo `hugo.yaml`, como a continuación:
 
 ```yaml
 comment:
@@ -36,7 +36,7 @@ comment:
 
 ### Valine
 
-[Valine](https://valine.js.org/) resulta ser una extensión de comentarios chino. Puedes habilitar la extensión de comentarios valine añadiendo la sección `valine` debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
+[Valine](https://valine.js.org/) resulta ser una extensión de comentarios chino. Puedes habilitar la extensión de comentarios valine añadiendo la sección `valine` debajo de la sección `params.features` de tu archivo `hugo.yaml`, como a continuación: 
 
 ```yaml
 comment:
@@ -54,7 +54,7 @@ comment:
 
 ### Utterances
 
-Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [utteranc.es](https://utteranc.es/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
+Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [utteranc.es](https://utteranc.es/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `hugo.yaml`, como a continuación: 
 
 ```yaml
 comment:
@@ -70,7 +70,7 @@ comment:
 
 Giscus está basado en Utterances, pero usa [GitHub Discussions](https://docs.github.com/en/discussions) como backend. Esto requiere tener un repositorio público, y permitir que la aplicación Giscus use tu repositorio. Las instrucciones de configuración se pueden encontrar en [Giscus home page](https://giscus.app/).
 
-Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [giscus.app](https://giscus.app/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `config.yaml`, como a continuación: 
+Para habilitar la extensión de comentarios Utterances, necesitarás ir primero a [giscus.app](https://giscus.app/). En la sección de `Configuration`, provee la información necesaria. Te dará un script para incluir en tu sitio. Solo necesitarás extraer la información respectiva del script, y proveerla debajo de la sección `params.features` de tu archivo `hugo.yaml`, como a continuación: 
 
 ```yaml
 comment:

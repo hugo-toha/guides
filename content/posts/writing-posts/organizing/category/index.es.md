@@ -99,7 +99,7 @@ La siguiente imagen muestra cómo el contenido está distribuido en la sección 
 
 ## Personalizando la información del auto de la publicación
 
-Por defecto, la publicación usa la información de autor del archivo `config.yaml`. Si quieres sobrescribir la información predeterminada, simplemente añade la siguiente sección en el front-matter:
+Por defecto, la publicación usa la información de autor del archivo `hugo.yaml`. Si quieres sobrescribir la información predeterminada, simplemente añade la siguiente sección en el front-matter:
 
 ```yaml
 author:

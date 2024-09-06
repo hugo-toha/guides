@@ -16,7 +16,7 @@ Si vous voulez traduire vers une langue non supportée, vous pouvez traduire les
 
 ## Créer un fichier `i18n`
 
-Pour ce faire, vous avez à créer un répertoire `i18n` à l'intérieur de la racine de votre site, le répertoire où vous pouvez trouver le fichier `config.yaml`, et les répertoires tel que `data`, `content`, etc.
+Pour ce faire, vous avez à créer un répertoire `i18n` à l'intérieur de la racine de votre site, le répertoire où vous pouvez trouver le fichier `hugo.yaml`, et les répertoires tel que `data`, `content`, etc.
 
 Après cela, vous pouvez créer le fichier `<langage code>.toml` dans le répertoire `i18n`. Dans ce [répertoire](https://github.com/hugo-toha/hugo-toha.github.io/tree/gh-pages/flags/1x1), vous pouvez trouver tous les codes de langue avec le drapeau qui apparaît avec ce code.
 

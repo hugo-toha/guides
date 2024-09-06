@@ -52,9 +52,9 @@ For a complete list of the supported languages, please check the README file fro
 
 If the language you desire to translate the content to is not available, please check the guide [How to add an unsupported language](/posts/translation/new-language/).
 
-### Add the language into `config.yaml`
+### Add the language into `hugo.yaml`
 
-After you know what's the code for the language you wish to translate your site, open `config.yaml` file, and under the `languages` section add the following:
+After you know what's the code for the language you wish to translate your site, open `hugo.yaml` file, and under the `languages` section add the following:
 
 ```yaml
 languages:

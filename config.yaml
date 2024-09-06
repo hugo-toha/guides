@@ -230,7 +230,7 @@ params:
     # To disable Hugo's builtin syntax highlight,
     # see: https://gohugo.io/getting-started/configuration-markup#highlight
     # ```
-    # # config.yaml
+    # # hugo.yaml
     # markup:
     #   # this disables hugo's syntax highlighting.
     #   codeFences: false
