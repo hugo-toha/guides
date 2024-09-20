@@ -191,14 +191,12 @@ classDiagram
 #### Grafo de Git
 
 ```bash
-{{</* mermaid background="black" align="right" */>}}
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
+{{</* mermaid background="black" align="center" */>}}
+%%{init: { 'themeVariables': {
+           'commitLabelColor': '#000000',
+           'commitLabelFontSize': '12px'
+  } } }%%
+gitGraph
 commit
 branch newbranch
 checkout newbranch
@@ -211,19 +209,18 @@ merge newbranch
 {{</* /mermaid */>}}
 ```
 
-{{< mermaid background="black" align="right" >}}
-gitGraph:
-  options
-  {
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-  }
-  end
+{{< mermaid background="black" align="center" >}}
+%%{init: { 'themeVariables': {
+           'commitLabelColor': '#000000',
+           'commitLabelFontSize': '12px'
+  } } }%%
+gitGraph
   commit
   branch newbranch
   checkout newbranch
   commit
   commit
+  branch master
   checkout master
   commit
   commit
