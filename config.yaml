@@ -253,6 +253,13 @@ params:
           # options doc: https://github.com/sampotts/plyr#options
           # fullscreen: true
 
+    # Enables copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time support in post cards and in post pages
+    readingTime:
+      enable: true
 
   # Provide footer configuration.
   footer:
