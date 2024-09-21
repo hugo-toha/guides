@@ -49,10 +49,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # checkout del commit que ha sido pusheado
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.6.0
+      uses: peaceiris/actions-hugo@v3
       with:
         hugo-version: 'latest'
         extended: true
@@ -61,9 +61,9 @@ jobs:
       run: hugo mod tidy
 
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20
 
     - name: Install node modules
       run: |
@@ -75,7 +75,7 @@ jobs:
 
     # hace push del contenido generado a la rama `gh-pages`.
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.9.0
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
