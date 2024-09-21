@@ -25,8 +25,8 @@ Dans cet exemple, nous utiliserons [KaTeX](https://katex.org/)
 {{ end }}
 ```
 
-- Pour activer KaText globalement mettez le paramètre `math` à `true` dans la configuration du projet.
-- Pour activer KaTex par page, incluez le paramètre `math: true` dans le front matter de votre fichier de contenu.
+- Pour activer KaTeX globalement mettez le paramètre `math` à `true` dans la configuration du projet.
+- Pour activer KaTeX par page, incluez le paramètre `math: true` dans le front matter de votre fichier de contenu.
 
 **Note:** Utilisez le référentiel en ligne des [Fonctions TeX supportées](https://katex.org/docs/supported.html)
 

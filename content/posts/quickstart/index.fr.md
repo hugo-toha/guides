@@ -47,7 +47,7 @@ Maintenant, revenons à notre mission. Suivez simplement les 5 étapes pour comm
 
 #### Etape 1: Forker le dépôt d'exemple et renommer
 
-D'abord, **forkez** ce [dépôt échantillon](https://github.com/hugo-toha/hugo-toha.github.io) sur votre compte. Ensuite, renommez ce dépôt commme vous voulez. Si vous voulez utiliser les [Github Pages](https://pages.github.com/) pour déployer votre site, alors renommez le en `<your username>.github.io`. Ce dépôt échantillon fourni des Github Actions pré-configurés pour publier le site dans Github Pages et Netlify.
+D'abord, **forkez** ce [dépôt échantillon](https://github.com/hugo-toha/hugo-toha.github.io) sur votre compte. Ensuite, renommez ce dépôt comme vous voulez. Si vous voulez utiliser les [Github Pages](https://pages.github.com/) pour déployer votre site, alors renommez le en `<your username>.github.io`. Ce dépôt échantillon fourni des Github Actions pré-configurés pour publier le site dans Github Pages et Netlify.
 
 #### Etape 2: Cloner le dépôt forké localement
 

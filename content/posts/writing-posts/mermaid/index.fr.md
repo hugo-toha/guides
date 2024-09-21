@@ -113,7 +113,7 @@ sequenceDiagram
 
 <hr>
 
-#### diagramme de Gantt
+#### Diagramme de Gantt
 
 ```bash
 {{</* mermaid */>}}
@@ -188,13 +188,37 @@ classDiagram
 #### Graphique de Git
 
 ```bash
-{{< mermaid background="black" align="right" >}}
+{{</* mermaid background="black" align="center" */>}}
+%%{init: { 'themeVariables': {
+           'commitLabelColor': '#000000',
+           'commitLabelFontSize': '12px'
+  } } }%%
 gitGraph:
   commit
   branch newbranch
   checkout newbranch
   commit
   commit
+  branch master
+  checkout master
+  commit
+  commit
+  merge newbranch
+{{</* /mermaid */>}}
+```
+
+{{< mermaid background="black" align="center" >}}
+%%{init: { 'themeVariables': {
+           'commitLabelColor': '#000000',
+           'commitLabelFontSize': '12px'
+  } } }%%
+gitGraph
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  branch master
   checkout master
   commit
   commit
