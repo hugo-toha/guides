@@ -13,7 +13,7 @@ Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons 
 
 Si vous voulez démarrer d'une base, vous pouvez juste cloner le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez-le et mettez-le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
 
-Si vous avez déjà un site hugo, sautez à la section [Ajouter un thème](#add-theme)
+Si vous avez déjà un site hugo, sautez à la section [Ajouter un thème](#ajouter-un-thème)
 
 ### Créer un dépôt
 
