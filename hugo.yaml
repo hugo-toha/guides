@@ -230,7 +230,7 @@ params:
     # To disable Hugo's builtin syntax highlight,
     # see: https://gohugo.io/getting-started/configuration-markup#highlight
     # ```
-    # # config.yaml
+    # # hugo.yaml
     # markup:
     #   # this disables hugo's syntax highlighting.
     #   codeFences: false
@@ -253,6 +253,13 @@ params:
           # options doc: https://github.com/sampotts/plyr#options
           # fullscreen: true
 
+    # Enables copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time support in post cards and in post pages
+    readingTime:
+      enable: true
 
   # Provide footer configuration.
   footer:

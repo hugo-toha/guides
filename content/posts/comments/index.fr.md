@@ -19,7 +19,7 @@ Ce thème supporte les commentaires dans les billets. Actuellement, il supporte 
 
 ### Disqus
 
-Disqus est un plugin de commentaires très populaire. Après vous êtes inscrit sur [Disqus](https://disqus.com/) vous aurez besoin de fournir votre pseudonyme sous la section `params.features.comment` de votre fichier `config.yaml` comme ci-après:
+Disqus est un plugin de commentaires très populaire. Après vous êtes inscrit sur [Disqus](https://disqus.com/) vous aurez besoin de fournir votre pseudonyme sous la section `params.features.comment` de votre fichier `hugo.yaml` comme ci-après:
 
 ```yaml
 params:
@@ -32,7 +32,7 @@ params:
 
 ### Valine
 
-[Valine](https://valine.js.org/) semble être un plugin de commentaires chinois. Vous pouvez activer le plugin de commentaires `valine` en ajoutant une section `valine` sous `params.features.comments` de votre fichier `config.yaml` comme ci-après:
+[Valine](https://valine.js.org/) semble être un plugin de commentaires chinois. Vous pouvez activer le plugin de commentaires `valine` en ajoutant une section `valine` sous `params.features.comments` de votre fichier `hugo.yaml` comme ci-après:
 
 ```yaml
 params:

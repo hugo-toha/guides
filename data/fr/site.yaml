@@ -1,7 +1,7 @@
 # Copyright Notice
 copyright: © 2020 Copyright.
 
-# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `hugo.yaml` file.
 disclaimer: "Ce thème est sous licence MIT. Donc, vous pouvez l'utiliser pour des usages non-commercial, commercial, ou privé. Vous pouvez modifier ou distribuer ce thème qui ne requiert pas de permissions de l'auteur du thème. Cependant, l'auteur du thème ne fournit aucune garantie ou n'assume de responsabilité pour tout problème avec ce thème."
 
 # Meta description for your site.  This will help the search engines to find your site.
@@ -15,7 +15,7 @@ customMenus:
   # specify whether to hide the menu item from top navbar or not.
   hideFromNavbar: false
   # specify whether to show the menu item in footer or not.
-  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your config.yaml
+  # if you set it to true, make sure you have set `footer.navigation.customMenus: true` in your hugo.yaml
   showOnFooter: false
 
 # Specify OpenGraph Headers

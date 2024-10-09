@@ -68,7 +68,7 @@ $ npm install
 $ hugo server -w
 ```
 
-Now, you can make change in the theme and they will be reflected immediately on the running site. If you need to change any configuration, you can do that in the `config.yaml` file inside `exampleSite` folder. If you need to add any content or data, you can create the respective folder inside `exampleSite` directory and add your desired content or data there.
+Now, you can make change in the theme and they will be reflected immediately on the running site. If you need to change any configuration, you can do that in the `hugo.yaml` file inside `exampleSite` folder. If you need to add any content or data, you can create the respective folder inside `exampleSite` directory and add your desired content or data there.
 
 #### Running the forked theme against your own site
 

@@ -79,6 +79,6 @@ Vous pouvez spécifier les champs suivants pour votre projet:
 
 {{< vs 2 >}}
 
-L'image suivante montre commment les contenus de `projects.yaml` sont cartographiés dans la section `projects.yaml`.
+L'image suivante montre comment les contenus de `projects.yaml` sont cartographiés dans la section `projects.yaml`.
 
 {{< img src="images/projects.png" >}}

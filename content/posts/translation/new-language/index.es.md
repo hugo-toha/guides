@@ -16,7 +16,7 @@ Si desea traducir a un idioma si soporte, puede traducir los elementos de la int
 
 ## Crea el archivo `i18n`
 
-Para haerlo, debes crear el directorio `i18n` dentro de la raíz del sitio, el directorio dónde puede encontrar el archivo `config.yaml`, y directorios como `data`, `content`, etc.
+Para haerlo, debes crear el directorio `i18n` dentro de la raíz del sitio, el directorio dónde puede encontrar el archivo `hugo.yaml`, y directorios como `data`, `content`, etc.
 
 Luego, puedes crear el archivo `<código_del_idioma>.toml` dentro del directorio `i18n`. En este [directorio](https://github.com/hugo-toha/hugo-toha.github.io/tree/gh-pages/flags/1x1) puedes encontrar todos los códigos de idiomas con las banderas que aparecerán junto a ese idioma.
 

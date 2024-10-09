@@ -68,7 +68,7 @@ $ npm install
 $ hugo server -w
 ```
 
-Maintenant, vous pouvez faire des changements dans le thème et ils seront immédiatement restitués sur le site en cours d'exécution. Si vous avez besoin de changer n'importe quelle configuration, vous pouvez faire cela dans le fichier `config.yaml` à l'intérieur du répertoire `exampleSite`. Si vous avez besoin d'ajouter n'importe quel contenu ou donnée, vous pouvez créer le dossier correspondant à l'intérieur du répertoire `exampleSite` et ajouter votre contenu ou donnée désirés.
+Maintenant, vous pouvez faire des changements dans le thème et ils seront immédiatement restitués sur le site en cours d'exécution. Si vous avez besoin de changer n'importe quelle configuration, vous pouvez faire cela dans le fichier `hugo.yaml` à l'intérieur du répertoire `exampleSite`. Si vous avez besoin d'ajouter n'importe quel contenu ou donnée, vous pouvez créer le dossier correspondant à l'intérieur du répertoire `exampleSite` et ajouter votre contenu ou donnée désirés.
 
 #### Lancer le thème cloné par rapport à votre propre site
 

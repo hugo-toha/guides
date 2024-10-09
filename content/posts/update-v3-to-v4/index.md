@@ -22,9 +22,9 @@ git rm themes/toha/
 git commit -m "Remove v3 theme"
 ```
 
-### 2. Remove `theme` from `config.yaml`
+### 2. Remove `theme` from `hugo.yaml`
 
-In the new version, we no longer need to specify the `theme` in the `config.yaml` file. Instead, we will add the theme as a module. Therefore, remove the following line from your `config.yaml` file:
+In the new version, we no longer need to specify the `theme` in the `hugo.yaml` file. Instead, we will add the theme as a module. Therefore, remove the following line from your `hugo.yaml` file:
 
 ```yaml
 theme: toha
@@ -52,7 +52,7 @@ This will create a `go.mod` file in the root of your site. You can check the fil
 
 ### 5. Add the theme as a module
 
-Now, add the following `module` section in your `config.yaml` file. This will add the theme as a module and also mount the static files from the theme.
+Now, add the following `module` section in your `hugo.yaml` file. This will add the theme as a module and also mount the static files from the theme.
 
 ```yaml
 # Use Hugo modules to add theme
@@ -70,13 +70,13 @@ module:
     target: static/fonts
 ```
 
-### 6. Update the `config.yaml` file
+### 6. Update the `hugo.yaml` file
 
-In the new version, the configuration structure for managing features has been restructured. Therefore, it is necessary to update the `config.yaml` file. For reference, you can check the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml). Here, we will highlight the most commonly used configurations that need to be changed.
+In the new version, the configuration structure for managing features has been restructured. Therefore, it is necessary to update the `hugo.yaml` file. For reference, you can check the sample [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml). Here, we will highlight the most commonly used configurations that need to be changed.
 
 **Dark Mode:**
 
-We have introduced a new built-in dark mode support. As a result, there is no longer a need to use a third-party service like `darkreader`. To enable the new dark mode, please remove the following lines from your `config.yaml` file:
+We have introduced a new built-in dark mode support. As a result, there is no longer a need to use a third-party service like `darkreader`. To enable the new dark mode, please remove the following lines from your `hugo.yaml` file:
 
 ```yaml
  darkMode:

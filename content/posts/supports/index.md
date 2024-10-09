@@ -14,11 +14,11 @@ This theme supports adding various support/donation links in your site. Currentl
 - [Ko-fi](https://ko-fi.com/)
 - [Buy Me a Coffee](https://www.buymeacoffee.com/zicklam)
 
-For a complete list of supported support links, please refer the sample [config.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/config.yaml) file.
+For a complete list of supported support links, please refer the sample [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml) file.
 
 ## Ko-fi
 
-You can add your Ko-fi floating button in your website. To add the floating button, add the `support` section under `params.features` section of your sites `config.yaml` file:
+You can add your Ko-fi floating button in your website. To add the floating button, add the `support` section under `params.features` section of your sites `hugo.yaml` file:
 
 ```yaml
 support:
@@ -33,7 +33,7 @@ support:
 
 ## Buy Me a Coffee
 
-You can add your "Buy Me a Coffee" floating button in your website. To add the floating button, add the `support` section under `params.features` section of your sites `config.yaml` file:
+You can add your "Buy Me a Coffee" floating button in your website. To add the floating button, add the `support` section under `params.features` section of your sites `hugo.yaml` file:
 
 ![bmacbutton](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-button.png)
 ![bmacwidget](https://git-doc-files.s3.eu-central-1.amazonaws.com/github.com/hugo-toha/guides/buymeacoffe-widget.png)

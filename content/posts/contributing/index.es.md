@@ -69,7 +69,7 @@ $ npm install
 $ hugo server -w
 ```
 
-Ahora, puedes hacer cambios en el tema, y se verán reflectados inmediatamente en el sitio. Si necesitas cambiar alguna configuración, lo puedes hacer en el archivo `config.yaml` dentro del directorio `exampleSite`. Si necesitas añadir contenido o datos, puedes crear el respectivo directorio dentro de `exampleSite` y añade tu contenido o datos deseados ahí.
+Ahora, puedes hacer cambios en el tema, y se verán reflectados inmediatamente en el sitio. Si necesitas cambiar alguna configuración, lo puedes hacer en el archivo `hugo.yaml` dentro del directorio `exampleSite`. Si necesitas añadir contenido o datos, puedes crear el respectivo directorio dentro de `exampleSite` y añade tu contenido o datos deseados ahí.
 
 #### Ejecuta el tema forkeado con tu propio sitio
 

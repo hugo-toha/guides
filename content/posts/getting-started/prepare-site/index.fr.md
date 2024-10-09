@@ -13,7 +13,7 @@ Dans ce billet, nous allons créer un site hugo de zéro. Nous le configurerons 
 
 Si vous voulez démarrer d'une base, vous pouvez juste cloner le dépôt [hugo-toha/hugo-toha.github.io](https://github.com/hugo-toha/hugo-toha.github.io), renommez-le et mettez-le à jour avec vos propres données. Ce dépôt a déjà été configuré pour déployer sur [Github Pages](https://pages.github.com/) et [Netlify](https://www.netlify.com/).
 
-Si vous avez déjà un site hugo, sautez à la section [Ajouter un thème](#add-theme)
+Si vous avez déjà un site hugo, sautez à la section [Ajouter un thème](#ajouter-un-thème)
 
 ### Créer un dépôt
 
@@ -163,7 +163,7 @@ params:
     enable: true
 ```
 
-Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/config.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
+Ici, vous voyez une configuration de base pour le thème Toha. Vous pouvez voir le fichier de configuration utilisé dans le site d'exemple [ici](https://github.com/hugo-toha/hugo-toha.github.io/blob/source/hugo.yaml). Pour des options de configurations plus détaillées, s'il vous plaît consultez [ce billet](https://toha-guides.netlify.app/posts/configuration/site-parameters/).
 
 #### Ajouter des données
 

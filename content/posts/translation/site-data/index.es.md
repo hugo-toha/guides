@@ -52,9 +52,9 @@ Para una lista completa de los idiomas soportados, por favor, consulte el archiv
 
 Si el idioma al que desea traducir el contenido no está disponible, consulte la guía [Cómo añadir un idioma sin soporte](/es/posts/translation/new-language/).
 
-### Añade el idioma a `config.yaml`
+### Añade el idioma a `hugo.yaml`
 
-Después de conocer el código para el idioma al que desea traducir su sitio, abra el archivo `config.yaml` y, debajo de la sección `language`, añade lo siguiente:
+Después de conocer el código para el idioma al que desea traducir su sitio, abra el archivo `hugo.yaml` y, debajo de la sección `language`, añade lo siguiente:
 
 ```yaml
 languages:

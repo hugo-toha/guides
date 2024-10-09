@@ -47,7 +47,7 @@ Maintenant, revenons à notre mission. Suivez simplement les 5 étapes pour comm
 
 #### Etape 1: Forker le dépôt d'exemple et renommer
 
-D'abord, **forkez** ce [dépôt échantillon](https://github.com/hugo-toha/hugo-toha.github.io) sur votre compte. Ensuite, renommez ce dépôt commme vous voulez. Si vous voulez utiliser les [Github Pages](https://pages.github.com/) pour déployer votre site, alors renommez le en `<your username>.github.io`. Ce dépôt échantillon fourni des Github Actions pré-configurés pour publier le site dans Github Pages et Netlify.
+D'abord, **forkez** ce [dépôt échantillon](https://github.com/hugo-toha/hugo-toha.github.io) sur votre compte. Ensuite, renommez ce dépôt comme vous voulez. Si vous voulez utiliser les [Github Pages](https://pages.github.com/) pour déployer votre site, alors renommez le en `<your username>.github.io`. Ce dépôt échantillon fourni des Github Actions pré-configurés pour publier le site dans Github Pages et Netlify.
 
 #### Etape 2: Cloner le dépôt forké localement
 
@@ -65,9 +65,9 @@ Vous devriez voir les fichiers `go.mod` et `go.sum` à la racine du dépôt. Met
 module github.com/<votre username>/<nom du dépôt forké>
 ```
 
-#### Etape 4: Modifier le fichier `config.yaml`
+#### Etape 4: Modifier le fichier `hugo.yaml`
 
-Maintenant, ouvrez le dépôt dans un éditeur et modifiez les configurations dans votre fichier `config.yaml` situé à la racine de votre dépôt.
+Maintenant, ouvrez le dépôt dans un éditeur et modifiez les configurations dans votre fichier `hugo.yaml` situé à la racine de votre dépôt.
 
 ##### Modifier le `baseURL`
 
