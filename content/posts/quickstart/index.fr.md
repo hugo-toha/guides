@@ -105,7 +105,7 @@ newsletter:
   enable: false
 ```
 
-#### Step 5: Exécuter le site localement
+#### Etape 5: Exécuter le site localement
 
 Maintenant, exécutez les commandes suivantes pour lancer votre site localement:
 
