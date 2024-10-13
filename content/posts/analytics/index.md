@@ -14,7 +14,7 @@ menu:
 This theme has built in support for various analytic tools. Currently, it supports the following analytics:
 
 - [GoatCounter](https://www.goatcounter.com/)
-- [counter.dev](https://counter.dev/)
+- [Counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
 - [Umami](https://umami.is/)
@@ -41,7 +41,7 @@ analytics:
       instance: <your GoatCounter instance url>  # For self-hosted you should use only one of the two methods
 ```
 
-### counter.dev
+### Counter.dev
 
 [counter.dev](https://counter.dev) is a simple, privacy friendly and open source analytics website which enables you to track the total user count, first visited page and some other metrics on your website. Unfortunately, to keep things simple (and free) they don't show a ranking of the most visited pages, but rather the ones that are accessed the first.
 
@@ -99,7 +99,7 @@ analytics:
 ### Umami
 
 [Umami](https://umami.is) is an open source analytics tool fully compliant with <abbr title="General Data Protection Regulation">GDPR</abbr> and with a cookieless approach. It can be installed on-premise or you can use the provided cloud version.
-You can enable the Umami tracking by adding the following configs under `params.features` section in the `hugo.yaml` file:
+You can enable the Umami tracking by adding the following configs under `params.features` section in the `config.yaml` file:
 
 ```yaml
 analytics:
@@ -111,5 +111,4 @@ analytics:
       instance: analytics.eu.umami.is
       id: <your Umami website id>
 ```
-where `scheme` is the scheme (i.e: https, http) you want to use to connect to instance, and `instance` is the domain (or address) of your deployment, by default pointing to the EU cloud instance.
-
+where `scheme` is the scheme (i.e: https, http) you want to use to connect to instance, and `instance` is the domain (or address) of your deployment, by default pointing to the <abbr title="European Union">EU</abbr> cloud instance.
