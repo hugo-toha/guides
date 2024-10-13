@@ -17,7 +17,7 @@ menu:
 Ce thème a été construit avec le support de divers outils d'analyse. Actuellement, il prend en charge les analyses suivantes:
 
 - [GoatCounter](https://www.goatcounter.com/)
-- [counter.dev](https://counter.dev/)
+- [Counter.dev](https://counter.dev/)
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
 - [Umami](https://umami.is/)
@@ -44,7 +44,7 @@ analytics:
       instance: <your GoatCounter instance url>  # For self-hosted you should use only one of the two methods
 ```
 
-### counter.dev
+### Counter.dev
 
 [counter.dev](https://counter.dev) est un site d'analytique simple et respectueux de la vie privée qui vous permet de suivre le nombre total d'utilisateurs, la première page visitée et quelques autres métriques sur votre site web. Malheureusement, pour que les choses restent simples (et gratuites), elles ne montrent pas un classement des pages les plus visités, mais plutôt celles qui ont été consultées en premier.
 
@@ -113,4 +113,4 @@ analytics:
       id: <your Umami website id>
 ```
 
-où `scheme` est le système (c'est-à-dir: https, http) que vous voulez utiliser pour vous connecter à l'instance, et `instance` est le domaine (ou l'adresse) de votre déploiement, en pointant par défaut sur l'instance cloud de l'<abbr title="Union Européenne">UE</abbr>.
+où `scheme` est le système (c'est-à-dire: https, http) que vous voulez utiliser pour vous connecter à l'instance, et `instance` est le domaine (ou l'adresse) de votre déploiement, en pointant par défaut sur l'instance cloud de l'<abbr title="Union Européenne">UE</abbr>.
