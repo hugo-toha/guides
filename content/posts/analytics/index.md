@@ -18,6 +18,7 @@ This theme has built in support for various analytic tools. Currently, it suppor
 - [Google Analytics](https://analytics.google.com)
 - [Matomo](https://matomo.org/)
 - [Umami](https://umami.is/)
+- [statcounter](https://statcounter.com)
 
 For a complete list of supported analytics, please refer the sample [hugo.yaml](https://github.com/hugo-toha/hugo-toha.github.io/blob/main/hugo.yaml) file.
 
@@ -112,3 +113,20 @@ analytics:
       id: <your Umami website id>
 ```
 where `scheme` is the scheme (i.e: https, http) you want to use to connect to instance, and `instance` is the domain (or address) of your deployment, by default pointing to the <abbr title="European Union">EU</abbr> cloud instance.
+
+### Statcounter
+
+[Statcounter](https://statcounter.com) is an ad-free page counter and analytics program. You can display a hit-count on the page, or leave it completely hidden and just see the stats on the statcounter website.
+You can enable the statcounter tool by adding the following configs under `params.features` section in the `config.yaml` file:
+
+```yaml
+analytics:
+  enable: true
+  services:
+    # Statcounter Analytics
+  statcounter:
+    project: <your project id>
+    security: <your security code>
+    invisible: 1
+```
+where `project` is the project id, and `security` is the security id from statcounter, and `invisible` tells the code whether or not to display the hit-counter on your page. `0` is visible, `1` is invisible. Invisible is suggested.
