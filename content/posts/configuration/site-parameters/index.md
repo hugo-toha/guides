@@ -21,6 +21,8 @@ At first, let's set a background on your website. Put your desired background im
 
 ```yaml
 background: "images/name-of-your-background-image.jpg"
+# Optional, for a different background image in dark mode
+darkBackground: "images/name-of-your-dark-background-image.jpg"
 ```
 
 ### Add Site's Logo

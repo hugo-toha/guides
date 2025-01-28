@@ -21,6 +21,8 @@ D'abord, on va paramètrer un arrière plan sur votre site. Mettez l'image d'arr
 
 ```yaml
 background: "images/<nom-de-votre-image-arrière-plan.jpg"
+# Optionnel, pour une image d'arrière-plan différente en mode sombre
+darkBackground: "images/<nom-de-votre-image-arrière-plan-sombre.jpg"
 ```
 
 ### Ajouter le logo du site
