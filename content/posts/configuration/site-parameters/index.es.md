@@ -24,6 +24,8 @@ Para empezar, vamos a establecer un fondo para tu sitio web. Pon la imagen de fo
 
 ```yaml
 background: "images/nombre_de_tu_imagen_de_fondo.jpg"
+# Opcional, para tener un fondo diferente en modo oscuro
+darkBackground: "images/nombre_de_tu_imagen_de_fondo_oscuro.jpg"
 ```
 
 ### Añade un Logo
